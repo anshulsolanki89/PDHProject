@@ -1,0 +1,34 @@
+//
+//  OrderHistoryView.swift
+//  PDH
+//
+//  Created by Anshul Solanki on 12/6/15.
+//  Copyright © 2015 Anshul Solanki. All rights reserved.
+//
+
+import Foundation
+import UIKit
+
+class OrderHistoryView: UIView, UITableViewDataSource, UITableViewDelegate {
+    
+    let rowHeight: CGFloat = 65.0
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
+    
+    // MARK:- TableViewDataSource
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("PDHOrderHistoryCell",
+            forIndexPath: indexPath)
+        return cell
+    }
+    
+    // MARK:- TableViewDelegate
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return rowHeight
+    }
+}
