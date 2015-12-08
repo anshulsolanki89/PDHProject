@@ -55,12 +55,27 @@
 		E534872C1C0F5C5C00203548 /* DishSearchTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E534872B1C0F5C5C00203548 /* DishSearchTableView.swift */; };
 		E534872D1C0F5C5C00203548 /* DishSearchTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E534872B1C0F5C5C00203548 /* DishSearchTableView.swift */; };
 		E534872E1C0F5C5C00203548 /* DishSearchTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E534872B1C0F5C5C00203548 /* DishSearchTableView.swift */; };
+		E5368A861C16B5E600A487F1 /* PDHCustomStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5368A851C16B5E600A487F1 /* PDHCustomStepper.swift */; settings = {ASSET_TAGS = (); }; };
+		E5368A871C16B5E600A487F1 /* PDHCustomStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5368A851C16B5E600A487F1 /* PDHCustomStepper.swift */; settings = {ASSET_TAGS = (); }; };
+		E5368A881C16B5E600A487F1 /* PDHCustomStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5368A851C16B5E600A487F1 /* PDHCustomStepper.swift */; settings = {ASSET_TAGS = (); }; };
+		E5368A8A1C16B62500A487F1 /* PDHCustomStepper.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5368A891C16B62500A487F1 /* PDHCustomStepper.xib */; settings = {ASSET_TAGS = (); }; };
+		E5368A8B1C16B62500A487F1 /* PDHCustomStepper.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5368A891C16B62500A487F1 /* PDHCustomStepper.xib */; settings = {ASSET_TAGS = (); }; };
+		E5368A8C1C16B62500A487F1 /* PDHCustomStepper.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5368A891C16B62500A487F1 /* PDHCustomStepper.xib */; settings = {ASSET_TAGS = (); }; };
 		E553E4A91C05F2D9007DD045 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E553E4A81C05F2D9007DD045 /* AppDelegate.swift */; };
 		E553E4AE1C05F2D9007DD045 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E553E4AC1C05F2D9007DD045 /* Main.storyboard */; };
 		E553E4B01C05F2D9007DD045 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E553E4AF1C05F2D9007DD045 /* Assets.xcassets */; };
 		E553E4B31C05F2D9007DD045 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E553E4B11C05F2D9007DD045 /* LaunchScreen.storyboard */; };
 		E553E4BE1C05F2D9007DD045 /* PDHTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E553E4BD1C05F2D9007DD045 /* PDHTests.swift */; };
 		E553E4C91C05F2D9007DD045 /* PDHUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E553E4C81C05F2D9007DD045 /* PDHUITests.swift */; };
+		E56B6D871C17286F003E8E26 /* PDHDishCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56B6D861C17286F003E8E26 /* PDHDishCustomCell.swift */; settings = {ASSET_TAGS = (); }; };
+		E56B6D881C17286F003E8E26 /* PDHDishCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56B6D861C17286F003E8E26 /* PDHDishCustomCell.swift */; settings = {ASSET_TAGS = (); }; };
+		E56B6D891C17286F003E8E26 /* PDHDishCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56B6D861C17286F003E8E26 /* PDHDishCustomCell.swift */; settings = {ASSET_TAGS = (); }; };
+		E56B6D8D1C173F47003E8E26 /* PDHMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56B6D8C1C173F47003E8E26 /* PDHMenuView.swift */; settings = {ASSET_TAGS = (); }; };
+		E56B6D8E1C173F47003E8E26 /* PDHMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56B6D8C1C173F47003E8E26 /* PDHMenuView.swift */; settings = {ASSET_TAGS = (); }; };
+		E56B6D8F1C173F47003E8E26 /* PDHMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56B6D8C1C173F47003E8E26 /* PDHMenuView.swift */; settings = {ASSET_TAGS = (); }; };
+		E56B6D911C1743D7003E8E26 /* PDHQuantitySelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56B6D901C1743D7003E8E26 /* PDHQuantitySelectorView.swift */; settings = {ASSET_TAGS = (); }; };
+		E56B6D921C1743D7003E8E26 /* PDHQuantitySelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56B6D901C1743D7003E8E26 /* PDHQuantitySelectorView.swift */; settings = {ASSET_TAGS = (); }; };
+		E56B6D931C1743D7003E8E26 /* PDHQuantitySelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56B6D901C1743D7003E8E26 /* PDHQuantitySelectorView.swift */; settings = {ASSET_TAGS = (); }; };
 		E59825A11C1200D20033F619 /* SlidingMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59825A01C1200D20033F619 /* SlidingMenuController.swift */; settings = {ASSET_TAGS = (); }; };
 		E59825A31C1201200033F619 /* SlidingMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59825A21C1201200033F619 /* SlidingMenuView.swift */; settings = {ASSET_TAGS = (); }; };
 		E59825A51C1203850033F619 /* SlidingMenuCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59825A41C1203850033F619 /* SlidingMenuCustomCell.swift */; settings = {ASSET_TAGS = (); }; };
@@ -123,6 +138,8 @@
 		E53487231C0F426C00203548 /* MenuScreenController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuScreenController.swift; sourceTree = "<group>"; };
 		E53487271C0F42D200203548 /* MenuScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuScreenView.swift; sourceTree = "<group>"; };
 		E534872B1C0F5C5C00203548 /* DishSearchTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DishSearchTableView.swift; sourceTree = "<group>"; };
+		E5368A851C16B5E600A487F1 /* PDHCustomStepper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHCustomStepper.swift; sourceTree = "<group>"; };
+		E5368A891C16B62500A487F1 /* PDHCustomStepper.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PDHCustomStepper.xib; sourceTree = "<group>"; };
 		E553E4A51C05F2D9007DD045 /* PDH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDH.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E553E4A81C05F2D9007DD045 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E553E4AD1C05F2D9007DD045 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -135,6 +152,9 @@
 		E553E4C41C05F2D9007DD045 /* PDHUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PDHUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E553E4C81C05F2D9007DD045 /* PDHUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDHUITests.swift; sourceTree = "<group>"; };
 		E553E4CA1C05F2D9007DD045 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E56B6D861C17286F003E8E26 /* PDHDishCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHDishCustomCell.swift; sourceTree = "<group>"; };
+		E56B6D8C1C173F47003E8E26 /* PDHMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHMenuView.swift; sourceTree = "<group>"; };
+		E56B6D901C1743D7003E8E26 /* PDHQuantitySelectorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHQuantitySelectorView.swift; sourceTree = "<group>"; };
 		E59825A01C1200D20033F619 /* SlidingMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlidingMenuController.swift; sourceTree = "<group>"; };
 		E59825A21C1201200033F619 /* SlidingMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlidingMenuView.swift; sourceTree = "<group>"; };
 		E59825A41C1203850033F619 /* SlidingMenuCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlidingMenuCustomCell.swift; sourceTree = "<group>"; };
@@ -200,6 +220,8 @@
 		E505D0CA1C13458400571A4B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E56B6D8C1C173F47003E8E26 /* PDHMenuView.swift */,
+				E56B6D901C1743D7003E8E26 /* PDHQuantitySelectorView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -369,6 +391,8 @@
 				E5F08F911C12BF4E0017B703 /* PDHButton.swift */,
 				E5E7802C1C15FD0300800B9C /* PDHCustomCurveView.swift */,
 				E5E780301C16045600800B9C /* PDHCustomCircleButton.swift */,
+				E5368A851C16B5E600A487F1 /* PDHCustomStepper.swift */,
+				E5368A891C16B62500A487F1 /* PDHCustomStepper.xib */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -406,6 +430,7 @@
 				E534872B1C0F5C5C00203548 /* DishSearchTableView.swift */,
 				E59825A21C1201200033F619 /* SlidingMenuView.swift */,
 				E59825A41C1203850033F619 /* SlidingMenuCustomCell.swift */,
+				E56B6D861C17286F003E8E26 /* PDHDishCustomCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -441,8 +466,8 @@
 				E52F15371C081DE00027DE10 /* RegistrationPage */,
 				E534871F1C0F424700203548 /* Menu Screen */,
 				E505D0C71C13458400571A4B /* MenuView */,
-				E553E4AF1C05F2D9007DD045 /* Assets.xcassets */,
 				E59AB29D1C1485F1003A8F19 /* OrderHistory */,
+				E553E4AF1C05F2D9007DD045 /* Assets.xcassets */,
 				E553E4AC1C05F2D9007DD045 /* Main.storyboard */,
 				E553E4B11C05F2D9007DD045 /* LaunchScreen.storyboard */,
 				E59B4F381C0CBA2B00D1B6E7 /* Resources */,
@@ -572,6 +597,7 @@
 		E553E49D1C05F2D9007DD045 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = PDH;
 				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Anshul Solanki";
@@ -618,6 +644,7 @@
 				E553E4B01C05F2D9007DD045 /* Assets.xcassets in Resources */,
 				E59B4F3A1C0CBA5400D1B6E7 /* SkiaRegular.ttf in Resources */,
 				E59B4F3E1C0CC39000D1B6E7 /* Info.plist in Resources */,
+				E5368A8A1C16B62500A487F1 /* PDHCustomStepper.xib in Resources */,
 				E553E4AE1C05F2D9007DD045 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -626,6 +653,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5368A8B1C16B62500A487F1 /* PDHCustomStepper.xib in Resources */,
 				E59B4F3B1C0CBA5400D1B6E7 /* SkiaRegular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -634,6 +662,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5368A8C1C16B62500A487F1 /* PDHCustomStepper.xib in Resources */,
 				E59B4F3C1C0CBA5400D1B6E7 /* SkiaRegular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -646,6 +675,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E52F154C1C0883510027DE10 /* PDHViewActionProtocol.swift in Sources */,
+				E5368A861C16B5E600A487F1 /* PDHCustomStepper.swift in Sources */,
 				E52F15501C0884B70027DE10 /* PDHActionEnum.swift in Sources */,
 				E5189DAD1C077036008CC84C /* LandingViewController.swift in Sources */,
 				E52F15551C088A0D0027DE10 /* PDHView.swift in Sources */,
@@ -657,9 +687,11 @@
 				E534872C1C0F5C5C00203548 /* DishSearchTableView.swift in Sources */,
 				E5E780311C16045600800B9C /* PDHCustomCircleButton.swift in Sources */,
 				E5189DB91C0770E5008CC84C /* LandingView.swift in Sources */,
+				E56B6D911C1743D7003E8E26 /* PDHQuantitySelectorView.swift in Sources */,
 				E5189DB11C07705E008CC84C /* LoginViewController.swift in Sources */,
 				E5E7802D1C15FD0300800B9C /* PDHCustomCurveView.swift in Sources */,
 				E59825A11C1200D20033F619 /* SlidingMenuController.swift in Sources */,
+				E56B6D871C17286F003E8E26 /* PDHDishCustomCell.swift in Sources */,
 				E59825A51C1203850033F619 /* SlidingMenuCustomCell.swift in Sources */,
 				E505D0CC1C1345AA00571A4B /* MenuViewController.swift in Sources */,
 				E5189DB51C0770DB008CC84C /* LoginView.swift in Sources */,
@@ -667,6 +699,7 @@
 				E553E4A91C05F2D9007DD045 /* AppDelegate.swift in Sources */,
 				E53487281C0F42D200203548 /* MenuScreenView.swift in Sources */,
 				E52F15341C081B430027DE10 /* PDHUtilityExtension.swift in Sources */,
+				E56B6D8D1C173F47003E8E26 /* PDHMenuView.swift in Sources */,
 				E5F08F921C12BF4E0017B703 /* PDHButton.swift in Sources */,
 				E59825A31C1201200033F619 /* SlidingMenuView.swift in Sources */,
 				E52F153E1C0823250027DE10 /* RegistrationView.swift in Sources */,
@@ -692,10 +725,14 @@
 				E5189DB61C0770DB008CC84C /* LoginView.swift in Sources */,
 				E5E7802E1C15FD0300800B9C /* PDHCustomCurveView.swift in Sources */,
 				E59825A61C12053B0033F619 /* SlidingMenuView.swift in Sources */,
+				E56B6D921C1743D7003E8E26 /* PDHQuantitySelectorView.swift in Sources */,
+				E56B6D881C17286F003E8E26 /* PDHDishCustomCell.swift in Sources */,
 				E59AB2A71C148632003A8F19 /* OrderHistoryView.swift in Sources */,
 				E59825A81C12053F0033F619 /* SlidingMenuCustomCell.swift in Sources */,
 				E52F15311C0815E80027DE10 /* PDHHelper.swift in Sources */,
 				E505D0CD1C1345AA00571A4B /* MenuViewController.swift in Sources */,
+				E56B6D8E1C173F47003E8E26 /* PDHMenuView.swift in Sources */,
+				E5368A871C16B5E600A487F1 /* PDHCustomStepper.swift in Sources */,
 				E5E780321C16045600800B9C /* PDHCustomCircleButton.swift in Sources */,
 				E553E4BE1C05F2D9007DD045 /* PDHTests.swift in Sources */,
 				E53487291C0F42D200203548 /* MenuScreenView.swift in Sources */,
@@ -723,10 +760,14 @@
 				E5189DB71C0770DB008CC84C /* LoginView.swift in Sources */,
 				E5E7802F1C15FD0300800B9C /* PDHCustomCurveView.swift in Sources */,
 				E59825A71C12053C0033F619 /* SlidingMenuView.swift in Sources */,
+				E56B6D931C1743D7003E8E26 /* PDHQuantitySelectorView.swift in Sources */,
+				E56B6D891C17286F003E8E26 /* PDHDishCustomCell.swift in Sources */,
 				E59AB2A81C148632003A8F19 /* OrderHistoryView.swift in Sources */,
 				E59825A91C1205400033F619 /* SlidingMenuCustomCell.swift in Sources */,
 				E52F15321C0815E80027DE10 /* PDHHelper.swift in Sources */,
 				E505D0CE1C1345AA00571A4B /* MenuViewController.swift in Sources */,
+				E56B6D8F1C173F47003E8E26 /* PDHMenuView.swift in Sources */,
+				E5368A881C16B5E600A487F1 /* PDHCustomStepper.swift in Sources */,
 				E5E780331C16045600800B9C /* PDHCustomCircleButton.swift in Sources */,
 				E553E4C91C05F2D9007DD045 /* PDHUITests.swift in Sources */,
 				E534872A1C0F42D200203548 /* MenuScreenView.swift in Sources */,

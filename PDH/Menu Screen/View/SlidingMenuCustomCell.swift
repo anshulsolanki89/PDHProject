@@ -10,7 +10,6 @@ import Foundation
 import UIKit
 
 class SlidingMenuCustomCell: UITableViewCell {
-    
     @IBOutlet weak var leftImageView: UIImageView!
     @IBOutlet weak var menuLabel: UILabel!
 }

@@ -9,12 +9,30 @@
 import Foundation
 import UIKit
 
-class DishMenuController: UIViewController {
+protocol PDHDishMenuControllerDelegate: class {
+    func dishClicked(dishController: DishMenuController)
+}
+
+class DishMenuController: UIViewController, ViewActionDelegate {
+    
+    var dishListView: DishSearchTableView!
+    weak var delegate: PDHDishMenuControllerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        dishListView = self.view as! DishSearchTableView
+        dishListView.delegate = self
     }
     
+    func viewPerformedAction(action: ViewActions) {
+        switch action {
+        case .AddToOrder:
+            delegate?.dishClicked(self)
+        default:
+            fatalError("Switch case not handled properly!")
+        }
+    }
+        
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }

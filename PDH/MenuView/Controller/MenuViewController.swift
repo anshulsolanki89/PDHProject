@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class MenuViewController: UIViewController, UIPageViewControllerDataSource {
+class MenuViewController: UIViewController, UIPageViewControllerDataSource, PDHDishMenuControllerDelegate {
     
     let numberOfPages = 3
     
@@ -32,8 +32,11 @@ class MenuViewController: UIViewController, UIPageViewControllerDataSource {
         pageViewController.dataSource = self
         
         vegDishVC = createDishMenuVC()
+        vegDishVC.delegate = self
         nonVegDishVC = createDishMenuVC()
+        nonVegDishVC.delegate = self
         mixDishVC = createDishMenuVC()
+        mixDishVC.delegate = self
         
         pageViewContentArray = [vegDishVC, nonVegDishVC, mixDishVC]
         
@@ -44,9 +47,9 @@ class MenuViewController: UIViewController, UIPageViewControllerDataSource {
         }
         
         pageViewController.view.frame = CGRect(x: 0,
-            y: (64 + 44),
+            y: (64 + 44 + 44),
             width: self.view.frame.size.width,
-            height: (self.view.frame.size.height - 64 - 44))
+            height: (self.view.frame.size.height - 64 - 44 - 44))
         
         self.addChildViewController(pageViewController)
         self.view.addSubview(pageViewController.view)
@@ -78,6 +81,14 @@ class MenuViewController: UIViewController, UIPageViewControllerDataSource {
         }
             
         return nil
+    }
+    
+    // MARK:- DishControllerDelegate
+    func dishClicked(dishController: DishMenuController) {
+        let quantityVC = self.storyboard?.instantiateViewControllerWithIdentifier("PDHQuantiySelectVC")
+        self.addChildViewController(quantityVC!)
+        self.view.addSubview(quantityVC!.view)
+        self.didMoveToParentViewController(quantityVC)        
     }
     
     override func didReceiveMemoryWarning() {

@@ -8,6 +8,7 @@
 
 import UIKit
 
+@IBDesignable
 class PDHButton: UIButton {
     
     override func drawRect(rect: CGRect) {

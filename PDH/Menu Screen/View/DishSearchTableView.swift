@@ -9,12 +9,13 @@
 import Foundation
 import UIKit
 
-class DishSearchTableView: UIView, UITableViewDataSource, UITableViewDelegate {
+class DishSearchTableView: PDHView, UITableViewDataSource, UITableViewDelegate, PDHCustomCellDelegate {
 
-    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
+    
+    // MARK:- TableViewDataSource
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 70
@@ -25,7 +26,21 @@ class DishSearchTableView: UIView, UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-       let cell = tableView.dequeueReusableCellWithIdentifier("PDHDishSearchCell", forIndexPath: indexPath)
+       let cell = tableView.dequeueReusableCellWithIdentifier(
+            "PDHDishSearchCell",
+        forIndexPath: indexPath) as! PDHDishCustomCell
+        cell.delegate = self
+        cell.tag = indexPath.row
         return cell
+    }
+    
+    // MARK:- TableViewDelegate
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+    }
+    
+    // MARK:- PDHCustomCellDelegate
+    func addToOrderButtonClicked(btn: PDHDishCustomCell, atIndex index: Int) {
+        delegate?.viewPerformedAction(ViewActions.AddToOrder)
     }
 }

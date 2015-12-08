@@ -11,4 +11,5 @@ enum ViewActions: Int {
     case Login
     case Register
     case MenuBtnClciked
+    case AddToOrder
 }
