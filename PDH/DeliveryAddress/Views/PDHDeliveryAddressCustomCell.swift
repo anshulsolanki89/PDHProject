@@ -11,7 +11,7 @@ import UIKit
 
 protocol PDHDeliveryAddressCustomCellDelegate: class {
     func selectAddressBtnClicked(cell: PDHDeliveryAddressCustomCell, indexPath: NSIndexPath)
-    func changeAddressBtnClicked(cell: PDHDeliveryAddressCustomCell, indexPath: NSIndexPath)
+    func editAddressBtnClicked(cell: PDHDeliveryAddressCustomCell, indexPath: NSIndexPath)
     
 }
 
@@ -29,6 +29,6 @@ class PDHDeliveryAddressCustomCell: UITableViewCell {
     }
     
     @IBAction func changeAddressBtnClicked(sender: AnyObject) {
-        delegate?.changeAddressBtnClicked(self, indexPath: indexPath)
+        delegate?.editAddressBtnClicked(self, indexPath: indexPath)
     }
 }

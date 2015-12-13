@@ -11,8 +11,20 @@ import UIKit
 
 class PDHDeliveryAddressView: PDHView {
     
+    var editAddressView: PDHEditAddressView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        editAddressView = UINib(
+            nibName: "PDHEditAddressView",
+            bundle: NSBundle.mainBundle()
+            ).instantiateWithOwner(nil, options: nil)[0] as! PDHEditAddressView
+        editAddressView.delegate = self
+    }
+    
+    override func layoutSubviews() {
+        editAddressView.frame = self.bounds
     }
     
     deinit {
@@ -66,11 +78,17 @@ extension PDHDeliveryAddressView: UITableViewDelegate {
 }
 
 extension PDHDeliveryAddressView: PDHDeliveryAddressCustomCellDelegate {
-    func changeAddressBtnClicked(cell: PDHDeliveryAddressCustomCell, index: Int) {
-        
+    func editAddressBtnClicked(cell: PDHDeliveryAddressCustomCell, indexPath: NSIndexPath) {
+        self.addSubview(editAddressView)
     }
     
-    func selectAddressBtnClicked(cell: PDHDeliveryAddressCustomCell, index: Int) {
+    func selectAddressBtnClicked(cell: PDHDeliveryAddressCustomCell, indexPath: NSIndexPath) {
         
+    }
+}
+
+extension PDHDeliveryAddressView: PDHEditAddressViewDelegate {
+    func editAddressViewBtnClicked(view: PDHEditAddressView) {
+        editAddressView.removeFromSuperview()
     }
 }
