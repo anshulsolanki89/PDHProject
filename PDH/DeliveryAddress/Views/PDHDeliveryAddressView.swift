@@ -33,7 +33,9 @@ extension PDHDeliveryAddressView: UITableViewDataSource {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(
             "PDHAddressIdentifier",
-            forIndexPath: indexPath)
+            forIndexPath: indexPath) as! PDHDeliveryAddressCustomCell
+        cell.delegate = self
+        cell.indexPath = indexPath
         return cell
     }
 }
@@ -60,5 +62,15 @@ extension PDHDeliveryAddressView: UITableViewDelegate {
     
     func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 140
+    }
+}
+
+extension PDHDeliveryAddressView: PDHDeliveryAddressCustomCellDelegate {
+    func changeAddressBtnClicked(cell: PDHDeliveryAddressCustomCell, index: Int) {
+        
+    }
+    
+    func selectAddressBtnClicked(cell: PDHDeliveryAddressCustomCell, index: Int) {
+        
     }
 }
