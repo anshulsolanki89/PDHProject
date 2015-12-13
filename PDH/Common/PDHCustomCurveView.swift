@@ -23,9 +23,17 @@ class PDHCustomCurveView: UIView {
         }
     }
   
-    @IBInspectable var borderColor: UIColor? {
+    @IBInspectable var borderColor: UIColor = UIColor.clearColor() {
         didSet {
-            self.layer.borderColor = borderColor?.CGColor
+            self.layer.borderColor = borderColor.CGColor
         }
+    }
+    
+    override func drawRect(rect: CGRect) {
+        super.drawRect(rect)
+        self.clipsToBounds = true
+        self.layer.cornerRadius = cornerRadius
+        self.layer.borderWidth = borderWidth
+        self.layer.borderColor = borderColor.CGColor
     }
 }

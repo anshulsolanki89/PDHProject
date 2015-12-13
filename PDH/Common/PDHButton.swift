@@ -12,6 +12,7 @@ import UIKit
 class PDHButton: UIButton {
     
     override func drawRect(rect: CGRect) {
+        super.drawRect(rect)
         self.layer.borderColor = UIColor(red: (255.0 / 255.0), green:
             (187.0 / 255.0),
             blue: 0,

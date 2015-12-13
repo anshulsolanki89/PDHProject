@@ -17,7 +17,7 @@ class MenuScreenView: PDHView, UICollectionViewDataSource, UISearchBarDelegate {
     
     @IBOutlet weak var dishSearchTableView: UIView!
     
-    var overlayView: UIView!
+    var overlayView: PDHOverlayView!
    
     @IBOutlet weak var dishSearchBar: UISearchBar!
     @IBAction func menuBtnClicked(sender: AnyObject) {
@@ -38,12 +38,12 @@ class MenuScreenView: PDHView, UICollectionViewDataSource, UISearchBarDelegate {
             selector: "keyboardWillHide:",
             name: UIKeyboardWillHideNotification,
             object: nil)
-        overlayView = UIView(frame: CGRect(x: 0,
+ 
+        overlayView = PDHOverlayView(frame: CGRect(x: 0,
             y: 108,
             width: self.frame.size.width,
             height: self.frame.size.height - 108))
-        overlayView.backgroundColor = UIColor.blackColor()
-        overlayView.alpha = 0.5
+        overlayView.delegate = self
     }
     
     func keyboardWillShow(notification: NSNotification) {
@@ -113,5 +113,11 @@ class MenuScreenView: PDHView, UICollectionViewDataSource, UISearchBarDelegate {
             name: UIKeyboardWillHideNotification,
             object: nil)
         print("\(self) DEALLOCATED")
+    }
+}
+
+extension MenuScreenView: PDHOverlayViewDelegate {
+    func overlayViewClicked(overlayView: PDHOverlayView) {
+        
     }
 }

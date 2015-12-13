@@ -11,27 +11,9 @@
         <mutableArray key="SkiaRegular.ttf">
             <string>Skia-Regular_Light</string>
             <string>Skia-Regular_Light</string>
-            <string>Skia-Regular_Light</string>
-            <string>Skia-Regular</string>
-            <string>Skia-Regular</string>
-            <string>Skia-Regular</string>
-            <string>Skia-Regular</string>
-            <string>Skia-Regular</string>
             <string>Skia-Regular</string>
             <string>Skia-Regular_Light</string>
-            <string>Skia-Regular_Light</string>
-            <string>Skia-Regular_Light</string>
-            <string>Skia-Regular_Light</string>
-            <string>Skia-Regular_Light</string>
-            <string>Skia-Regular_Light</string>
             <string>Skia-Regular</string>
-            <string>Skia-Regular_Light</string>
-            <string>Skia-Regular_Light</string>
-            <string>Skia-Regular_Light</string>
-            <string>Skia-Regular_Light</string>
-            <string>Skia-Regular_Light</string>
-            <string>Skia-Regular_Light</string>
-            <string>Skia-Regular_Light</string>
             <string>Skia-Regular</string>
             <string>Skia-Regular</string>
             <string>Skia-Regular</string>
@@ -39,7 +21,26 @@
             <string>Skia-Regular</string>
             <string>Skia-Regular_Light</string>
             <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
             <string>Skia-Regular_Light</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular_Light</string>
+            <string>Skia-Regular_Light</string>
+            <string>Skia-Regular_Light</string>
+            <string>Skia-Regular_Light</string>
+            <string>Skia-Regular_Light</string>
+            <string>Skia-Regular_Light</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular_Light</string>
+            <string>Skia-Regular_Light</string>
+            <string>Skia-Regular_Light</string>
+            <string>Skia-Regular_Light</string>
+            <string>Skia-Regular_Light</string>
+            <string>Skia-Regular_Light</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -270,11 +271,12 @@
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uz5-LZ-CdP">
                                         <rect key="frame" x="0.0" y="318" width="304" height="42"/>
-                                        <color key="backgroundColor" red="0.81568627449999997" green="0.62745098040000002" blue="0.070588235289999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.47450980392156861" green="0.81176470588235294" blue="0.24705882352941178" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="42" id="Hfh-Dq-41U"/>
                                             <constraint firstAttribute="height" constant="42" id="o9Z-QL-RFh"/>
                                         </constraints>
+                                        <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="16"/>
                                         <state key="normal" title="Register">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -450,7 +452,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="0.73333333333333328" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.76862745098039209" blue="0.070588235294117646" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="uQ6-zd-qOI" firstAttribute="centerX" secondItem="SfG-0M-6zC" secondAttribute="centerX" id="6dI-ei-s7c"/>
                                     <constraint firstAttribute="bottom" secondItem="KST-ef-myx" secondAttribute="bottom" constant="16" id="8KM-UI-R31"/>
@@ -572,7 +574,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.94509803920000002" green="0.76862745099999996" blue="0.035294117649999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.76862745098039209" blue="0.070588235294117646" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="ibJ-WB-dfN" firstAttribute="leading" secondItem="78g-BH-Wfi" secondAttribute="leading" constant="8" id="35x-Bt-cpT"/>
                                     <constraint firstItem="6tM-hR-gMC" firstAttribute="centerX" secondItem="78g-BH-Wfi" secondAttribute="centerX" id="Svx-9b-qNf"/>
@@ -689,7 +691,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZyG-aE-GoE">
                                         <rect key="frame" x="0.0" y="150" width="280" height="30"/>
-                                        <color key="backgroundColor" red="0.40392156862745099" green="0.79607843137254897" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.47450980392156861" green="0.81176470588235294" blue="0.24705882352941178" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="BOU-10-oIZ"/>
                                         </constraints>
@@ -829,12 +831,6 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="6"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
@@ -905,7 +901,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="0.73333333333333328" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.76862745098039209" blue="0.070588235294117646" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="SpF-4T-Oy0" firstAttribute="leading" secondItem="MEn-WK-Q3b" secondAttribute="leading" constant="8" id="9Ow-da-tr7"/>
                                     <constraint firstAttribute="bottom" secondItem="SpF-4T-Oy0" secondAttribute="bottom" constant="8" id="BYR-PY-WAt"/>
@@ -1153,11 +1149,11 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KVj-w9-tTI">
                                         <rect key="frame" x="0.0" y="158" width="304" height="42"/>
-                                        <color key="backgroundColor" red="0.81568627450980391" green="0.62745098039215685" blue="0.070588235294117646" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.47450980392156861" green="0.81176470588235294" blue="0.24705882352941178" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="42" id="8mc-Bi-MLh"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Skia-Regular_Light" family="Skia" pointSize="15"/>
+                                        <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="16"/>
                                         <state key="normal" title="Login">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -1536,7 +1532,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.94509803920000002" green="0.76862745099999996" blue="0.035294117649999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.76862745098039209" blue="0.070588235294117646" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="knM-FK-OYj" firstAttribute="top" secondItem="Jga-uq-mJ6" secondAttribute="top" constant="27" id="B83-Hs-SVx"/>
                                     <constraint firstItem="Nko-O5-L7D" firstAttribute="top" secondItem="Jga-uq-mJ6" secondAttribute="top" constant="26" id="Ge6-xu-6EW"/>
@@ -1775,7 +1771,7 @@
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZQ-72-egU">
                                 <rect key="frame" x="8" y="404" width="304" height="30"/>
-                                <color key="backgroundColor" red="0.4039215686" green="0.79607843140000001" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.47450980392156861" green="0.81176470588235294" blue="0.24705882352941178" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="INU-UI-jcF"/>
                                 </constraints>

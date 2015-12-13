@@ -99,6 +99,9 @@
 		E5E780311C16045600800B9C /* PDHCustomCircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E780301C16045600800B9C /* PDHCustomCircleButton.swift */; settings = {ASSET_TAGS = (); }; };
 		E5E780321C16045600800B9C /* PDHCustomCircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E780301C16045600800B9C /* PDHCustomCircleButton.swift */; settings = {ASSET_TAGS = (); }; };
 		E5E780331C16045600800B9C /* PDHCustomCircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E780301C16045600800B9C /* PDHCustomCircleButton.swift */; settings = {ASSET_TAGS = (); }; };
+		E5EF143D1C1D4C450097E70E /* PDHOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EF143C1C1D4C450097E70E /* PDHOverlayView.swift */; settings = {ASSET_TAGS = (); }; };
+		E5EF143E1C1D4C450097E70E /* PDHOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EF143C1C1D4C450097E70E /* PDHOverlayView.swift */; settings = {ASSET_TAGS = (); }; };
+		E5EF143F1C1D4C450097E70E /* PDHOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EF143C1C1D4C450097E70E /* PDHOverlayView.swift */; settings = {ASSET_TAGS = (); }; };
 		E5F08F921C12BF4E0017B703 /* PDHButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F08F911C12BF4E0017B703 /* PDHButton.swift */; settings = {ASSET_TAGS = (); }; };
 		E5F08F931C12BF4E0017B703 /* PDHButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F08F911C12BF4E0017B703 /* PDHButton.swift */; settings = {ASSET_TAGS = (); }; };
 		E5F08F941C12BF4E0017B703 /* PDHButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F08F911C12BF4E0017B703 /* PDHButton.swift */; settings = {ASSET_TAGS = (); }; };
@@ -163,6 +166,7 @@
 		E59B4F391C0CBA5400D1B6E7 /* SkiaRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SkiaRegular.ttf; sourceTree = "<group>"; };
 		E5E7802C1C15FD0300800B9C /* PDHCustomCurveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHCustomCurveView.swift; sourceTree = "<group>"; };
 		E5E780301C16045600800B9C /* PDHCustomCircleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHCustomCircleButton.swift; sourceTree = "<group>"; };
+		E5EF143C1C1D4C450097E70E /* PDHOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHOverlayView.swift; sourceTree = "<group>"; };
 		E5F08F911C12BF4E0017B703 /* PDHButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -330,6 +334,7 @@
 				E52F152F1C0815E80027DE10 /* PDHHelper.swift */,
 				E52F15331C081B430027DE10 /* PDHUtilityExtension.swift */,
 				E52F154F1C0884B70027DE10 /* PDHActionEnum.swift */,
+				E5EF143C1C1D4C450097E70E /* PDHOverlayView.swift */,
 				E52F154B1C0883510027DE10 /* PDHViewActionProtocol.swift */,
 			);
 			path = Helper;
@@ -694,6 +699,7 @@
 				E56B6D871C17286F003E8E26 /* PDHDishCustomCell.swift in Sources */,
 				E59825A51C1203850033F619 /* SlidingMenuCustomCell.swift in Sources */,
 				E505D0CC1C1345AA00571A4B /* MenuViewController.swift in Sources */,
+				E5EF143D1C1D4C450097E70E /* PDHOverlayView.swift in Sources */,
 				E5189DB51C0770DB008CC84C /* LoginView.swift in Sources */,
 				E52F15301C0815E80027DE10 /* PDHHelper.swift in Sources */,
 				E553E4A91C05F2D9007DD045 /* AppDelegate.swift in Sources */,
@@ -722,6 +728,7 @@
 				E534872D1C0F5C5C00203548 /* DishSearchTableView.swift in Sources */,
 				E5189DAE1C077036008CC84C /* LandingViewController.swift in Sources */,
 				E52F15431C0823440027DE10 /* RegistrationView.swift in Sources */,
+				E5EF143E1C1D4C450097E70E /* PDHOverlayView.swift in Sources */,
 				E5189DB61C0770DB008CC84C /* LoginView.swift in Sources */,
 				E5E7802E1C15FD0300800B9C /* PDHCustomCurveView.swift in Sources */,
 				E59825A61C12053B0033F619 /* SlidingMenuView.swift in Sources */,
@@ -757,6 +764,7 @@
 				E534872E1C0F5C5C00203548 /* DishSearchTableView.swift in Sources */,
 				E5189DAF1C077036008CC84C /* LandingViewController.swift in Sources */,
 				E52F15441C0823450027DE10 /* RegistrationView.swift in Sources */,
+				E5EF143F1C1D4C450097E70E /* PDHOverlayView.swift in Sources */,
 				E5189DB71C0770DB008CC84C /* LoginView.swift in Sources */,
 				E5E7802F1C15FD0300800B9C /* PDHCustomCurveView.swift in Sources */,
 				E59825A71C12053C0033F619 /* SlidingMenuView.swift in Sources */,
