@@ -9,15 +9,17 @@
 import Foundation
 import UIKit
 
+
 @IBDesignable
-class PDHCustomCircleButton: UIButton {
+public class PDHCustomCircleButton: UIButton {
     
-    override func drawRect(rect: CGRect) {
+    @IBInspectable public var borderWidth: CGFloat = 0
+        @IBInspectable public var layerColor: UIColor = UIColor.blackColor()
+    
+    
+    override public func drawRect(rect: CGRect) {
         self.layer.cornerRadius = (self.frame.size.width / 2)
-        self.layer.shadowOffset = CGSize(width: 0, height: 1)
-        self.layer.shadowColor = UIColor.whiteColor().CGColor
-        self.layer.shadowRadius = 2.0
-        self.layer.backgroundColor = UIColor.blackColor().CGColor
-        self.layer.borderWidth = 1.0
+        self.layer.borderColor = layerColor.CGColor
+        self.layer.borderWidth = borderWidth
     }
 }
