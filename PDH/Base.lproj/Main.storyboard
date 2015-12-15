@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="GwJ-Eo-jfy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="zez-mm-qrg">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
@@ -19,13 +19,10 @@
             <string>Skia-Regular</string>
             <string>Skia-Regular</string>
             <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
             <string>Skia-Regular_Light</string>
             <string>Skia-Regular</string>
-            <string>Skia-Regular</string>
-            <string>Skia-Regular</string>
-            <string>Skia-Regular_Light</string>
-            <string>Skia-Regular</string>
-            <string>Skia-Regular_Light</string>
             <string>Skia-Regular</string>
             <string>Skia-Regular</string>
             <string>Skia-Regular_Light</string>
@@ -33,6 +30,11 @@
             <string>Skia-Regular_Light</string>
             <string>Skia-Regular</string>
             <string>Skia-Regular</string>
+            <string>Skia-Regular_Light</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular_Light</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
             <string>Skia-Regular</string>
             <string>Skia-Regular_Light</string>
             <string>Skia-Regular_Light</string>
@@ -49,6 +51,7 @@
             <string>Skia-Regular_Light</string>
             <string>Skia-Regular_Light</string>
             <string>Skia-Regular_Light</string>
+            <string>Skia-Regular</string>
             <string>Skia-Regular</string>
             <string>Skia-Regular</string>
             <string>Skia-Regular</string>
@@ -556,7 +559,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="var-EI-jjl">
+                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="64" translatesAutoresizingMaskIntoConstraints="NO" id="var-EI-jjl">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank You" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P6w-3M-YU0">
@@ -576,21 +579,21 @@
                                     <constraint firstAttribute="bottom" secondItem="P6w-3M-YU0" secondAttribute="bottom" constant="18" id="m2V-MF-2l7"/>
                                 </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Thanks_BG" translatesAutoresizingMaskIntoConstraints="NO" id="qzi-g4-KU7">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="183" image="Thanks_BG" translatesAutoresizingMaskIntoConstraints="NO" id="qzi-g4-KU7">
                                 <rect key="frame" x="0.0" y="64" width="320" height="183"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="183" id="AiK-7a-uHS"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Thanks" translatesAutoresizingMaskIntoConstraints="NO" id="9V8-LA-Wcs">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="140" placeholderIntrinsicHeight="85" image="Thanks" translatesAutoresizingMaskIntoConstraints="NO" id="9V8-LA-Wcs">
                                 <rect key="frame" x="90" y="113" width="140" height="85"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="140" id="9uO-aI-CIj"/>
                                     <constraint firstAttribute="height" constant="85" id="mgX-xM-twi"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atb-BN-uLR">
-                                <rect key="frame" x="20" y="465" width="280" height="26"/>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atb-BN-uLR">
+                                <rect key="frame" x="20" y="436" width="280" height="26"/>
                                 <color key="backgroundColor" red="0.47450980392156861" green="0.81176470588235294" blue="0.24705882352941178" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="26" id="rBQ-0M-CzG"/>
@@ -600,20 +603,59 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="254" text="THANKS FOR PLACING AN ORDER WITH US" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xpw-dD-s1L">
+                                <rect key="frame" x="20" y="274" width="280" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="UFR-JA-cO3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="12"/>
+                                <color key="textColor" red="0.65098039215686276" green="0.87058823529411766" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="YOUR ORDER NUMBER IS PDH123." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IHu-Yq-B9A">
+                                <rect key="frame" x="20" y="296" width="280" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="FqU-O4-3QR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="12"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="253" verticalCompressionResistancePriority="751" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="srV-8D-JAG">
+                                <rect key="frame" x="16" y="334" width="288" height="70"/>
+                                <string key="text">Our chef is preparing your food and we're sure you'll love it.
+You can track your order by calling us on +91-999984772
+by telling us your order number.
+
+
+If you like ordering food on our app, please rate us on
+ App Store.</string>
+                                <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="10"/>
+                                <color key="textColor" red="0.47843137254901957" green="0.47843137254901957" blue="0.47843137254901957" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="8bz-Vt-mxO" firstAttribute="top" secondItem="atb-BN-uLR" secondAttribute="bottom" constant="77" id="36q-KN-Aeu"/>
+                            <constraint firstItem="xpw-dD-s1L" firstAttribute="top" secondItem="qzi-g4-KU7" secondAttribute="bottom" constant="27" id="5wN-bs-9h1"/>
                             <constraint firstItem="var-EI-jjl" firstAttribute="leading" secondItem="3rf-Wi-qCR" secondAttribute="leading" id="6D9-ED-p77"/>
+                            <constraint firstItem="IHu-Yq-B9A" firstAttribute="leading" secondItem="3rf-Wi-qCR" secondAttribute="leading" constant="20" id="8Bp-JT-uLH"/>
                             <constraint firstAttribute="trailing" secondItem="var-EI-jjl" secondAttribute="trailing" id="Agf-Ny-c1t"/>
                             <constraint firstAttribute="trailing" secondItem="qzi-g4-KU7" secondAttribute="trailing" id="DKY-kg-n14"/>
                             <constraint firstItem="9V8-LA-Wcs" firstAttribute="centerX" secondItem="qzi-g4-KU7" secondAttribute="centerX" id="F1O-4O-5Fs"/>
                             <constraint firstAttribute="trailing" secondItem="atb-BN-uLR" secondAttribute="trailing" constant="20" id="Icx-SD-1RH"/>
+                            <constraint firstAttribute="trailing" secondItem="srV-8D-JAG" secondAttribute="trailing" constant="16" id="JZX-du-cfw"/>
+                            <constraint firstItem="srV-8D-JAG" firstAttribute="top" secondItem="IHu-Yq-B9A" secondAttribute="bottom" constant="24" id="OLc-Ry-tCj"/>
+                            <constraint firstAttribute="trailing" secondItem="xpw-dD-s1L" secondAttribute="trailing" constant="20" id="VfC-C5-Zwa"/>
                             <constraint firstItem="qzi-g4-KU7" firstAttribute="leading" secondItem="3rf-Wi-qCR" secondAttribute="leading" id="XGn-gB-BCz"/>
+                            <constraint firstItem="atb-BN-uLR" firstAttribute="top" secondItem="srV-8D-JAG" secondAttribute="bottom" constant="32" id="XJQ-B9-hnc"/>
+                            <constraint firstItem="xpw-dD-s1L" firstAttribute="leading" secondItem="3rf-Wi-qCR" secondAttribute="leading" constant="20" id="eW0-Bj-zcJ"/>
                             <constraint firstItem="qzi-g4-KU7" firstAttribute="top" secondItem="var-EI-jjl" secondAttribute="bottom" id="eaG-wZ-cTb"/>
+                            <constraint firstItem="srV-8D-JAG" firstAttribute="leading" secondItem="3rf-Wi-qCR" secondAttribute="leading" constant="16" id="hSQ-Cg-s2w"/>
                             <constraint firstItem="atb-BN-uLR" firstAttribute="leading" secondItem="3rf-Wi-qCR" secondAttribute="leading" constant="20" id="jyE-lo-aaD"/>
                             <constraint firstItem="9V8-LA-Wcs" firstAttribute="centerY" secondItem="qzi-g4-KU7" secondAttribute="centerY" id="m9o-nh-LfP"/>
+                            <constraint firstAttribute="trailing" secondItem="IHu-Yq-B9A" secondAttribute="trailing" constant="20" id="t9l-Uy-4KZ"/>
                             <constraint firstItem="var-EI-jjl" firstAttribute="top" secondItem="3rf-Wi-qCR" secondAttribute="top" id="tkP-vF-lfk"/>
+                            <constraint firstItem="IHu-Yq-B9A" firstAttribute="top" secondItem="xpw-dD-s1L" secondAttribute="bottom" constant="8" id="ujj-Wm-D5X"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -938,7 +980,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AD4-hu-iPq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="885" y="982"/>
+            <point key="canvasLocation" x="1179" y="1045"/>
         </scene>
         <!--DelveryAddressViewController-->
         <scene sceneID="wOM-Ua-ohp">
