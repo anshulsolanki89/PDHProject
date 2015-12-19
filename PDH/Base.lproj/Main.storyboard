@@ -49,8 +49,8 @@
             <string>Skia-Regular</string>
             <string>Skia-Regular</string>
             <string>Skia-Regular</string>
-            <string>Skia-Regular_Light</string>
-            <string>Skia-Regular_Light</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
             <string>Skia-Regular_Light</string>
             <string>Skia-Regular_Light</string>
             <string>Skia-Regular_Light</string>
@@ -1563,12 +1563,12 @@ Mob No - 9999912345</string>
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOGIN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4sK-Et-frc">
-                                <rect key="frame" x="112" y="20" width="97" height="34"/>
+                                <rect key="frame" x="112" y="20" width="97" height="44"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="TX7-Pq-9XK"/>
+                                    <constraint firstAttribute="height" constant="44" id="TX7-Pq-9XK"/>
                                     <constraint firstAttribute="width" constant="97" id="eCv-mE-9vE"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1584,13 +1584,13 @@ Mob No - 9999912345</string>
                                 </connections>
                             </button>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2yT-jf-ve7" userLabel="LoginView">
-                                <rect key="frame" x="8" y="184" width="304" height="200"/>
+                                <rect key="frame" x="8" y="126" width="304" height="266"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KVj-w9-tTI">
-                                        <rect key="frame" x="0.0" y="158" width="304" height="42"/>
+                                        <rect key="frame" x="0.0" y="210" width="304" height="56"/>
                                         <color key="backgroundColor" red="0.81568627450980391" green="0.62745098039215685" blue="0.070588235294117646" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="42" id="8mc-Bi-MLh"/>
+                                            <constraint firstAttribute="height" constant="56" id="8mc-Bi-MLh"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="16"/>
                                         <state key="normal" title="Login">
@@ -1601,85 +1601,98 @@ Mob No - 9999912345</string>
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yYu-OZ-ztl" userLabel="FirstLine">
-                                        <rect key="frame" x="40" y="50" width="240" height="1"/>
+                                        <rect key="frame" x="40" y="60" width="240" height="1"/>
                                         <color key="backgroundColor" red="0.36078431372549019" green="0.35686274509803922" blue="0.3529411764705882" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="XYb-xX-sOa"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sSN-na-BTx" userLabel="SecondLine">
-                                        <rect key="frame" x="40" y="100" width="240" height="1"/>
+                                        <rect key="frame" x="40" y="130" width="240" height="1"/>
                                         <color key="backgroundColor" red="0.36078431370000003" green="0.35686274509999999" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="s13-Aq-N4I"/>
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rC7-cn-9FD">
-                                        <rect key="frame" x="68" y="109" width="169" height="30"/>
+                                        <rect key="frame" x="68" y="144" width="169" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="GIs-8o-aBF"/>
                                             <constraint firstAttribute="width" constant="169" id="dBf-uL-hhh"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="14"/>
+                                        <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="16"/>
                                         <state key="normal" title="Forget Password?">
                                             <color key="titleColor" red="0.83529411764705885" green="0.6470588235294118" blue="0.086274509803921567" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                     </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Login_mobile" translatesAutoresizingMaskIntoConstraints="NO" id="xst-vT-Ror">
-                                        <rect key="frame" x="13" y="24" width="12" height="28"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Login_mobile" translatesAutoresizingMaskIntoConstraints="NO" id="xst-vT-Ror">
+                                        <rect key="frame" x="13" y="31" width="12" height="28"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="28" id="Hou-eO-QR2"/>
+                                            <constraint firstAttribute="width" constant="12" id="MzY-N7-HJA"/>
+                                        </constraints>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Login_pass" translatesAutoresizingMaskIntoConstraints="NO" id="WGB-he-LC3">
-                                        <rect key="frame" x="13" y="71" width="18" height="28"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Login_pass" translatesAutoresizingMaskIntoConstraints="NO" id="WGB-he-LC3">
+                                        <rect key="frame" x="13" y="101" width="18" height="28"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="28" id="Yhy-Cn-4ty"/>
+                                            <constraint firstAttribute="width" constant="18" id="pBa-UJ-jio"/>
+                                        </constraints>
                                     </imageView>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Mobile No" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jTg-7f-HdQ">
-                                        <rect key="frame" x="40" y="20" width="240" height="30"/>
+                                        <rect key="frame" x="40" y="30" width="240" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="1LS-Fd-G6g"/>
                                         </constraints>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" name="Skia-Regular_Light" family="Skia" pointSize="14"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="0.75" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="16"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
-                                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="value" red="1" green="1" blue="1" alpha="0.75" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v90-Iy-k6b">
-                                        <rect key="frame" x="40" y="70" width="240" height="30"/>
+                                        <rect key="frame" x="40" y="100" width="240" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="VKP-KF-9I7"/>
                                         </constraints>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" name="Skia-Regular_Light" family="Skia" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="0.75" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="16"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
-                                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="value" red="1" green="1" blue="1" alpha="0.75" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                 </subviews>
-                                <color key="backgroundColor" red="0.062745098039215685" green="0.058823529411764705" blue="0.058823529411764705" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.75" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="yYu-OZ-ztl" secondAttribute="trailing" constant="24" id="1L0-I2-qmM"/>
                                     <constraint firstItem="jTg-7f-HdQ" firstAttribute="width" secondItem="yYu-OZ-ztl" secondAttribute="width" id="2Kd-Nm-hVT"/>
                                     <constraint firstItem="sSN-na-BTx" firstAttribute="leading" secondItem="2yT-jf-ve7" secondAttribute="leading" constant="40" id="5J4-f7-j9v"/>
                                     <constraint firstItem="v90-Iy-k6b" firstAttribute="leading" secondItem="2yT-jf-ve7" secondAttribute="leading" constant="40" id="8AM-kg-2Dd"/>
                                     <constraint firstItem="yYu-OZ-ztl" firstAttribute="top" secondItem="jTg-7f-HdQ" secondAttribute="bottom" id="AI5-de-pQh"/>
+                                    <constraint firstItem="jTg-7f-HdQ" firstAttribute="leading" secondItem="xst-vT-Ror" secondAttribute="trailing" constant="15" id="BRs-th-nD7"/>
                                     <constraint firstAttribute="bottom" secondItem="KVj-w9-tTI" secondAttribute="bottom" id="C5N-I9-c1V"/>
                                     <constraint firstItem="sSN-na-BTx" firstAttribute="top" secondItem="v90-Iy-k6b" secondAttribute="bottom" id="FNu-De-lck"/>
-                                    <constraint firstItem="KVj-w9-tTI" firstAttribute="top" secondItem="rC7-cn-9FD" secondAttribute="bottom" constant="19" id="GBf-pl-VfP"/>
                                     <constraint firstItem="jTg-7f-HdQ" firstAttribute="leading" secondItem="2yT-jf-ve7" secondAttribute="leading" constant="40" id="IMc-qr-Z3o"/>
-                                    <constraint firstItem="yYu-OZ-ztl" firstAttribute="top" secondItem="2yT-jf-ve7" secondAttribute="top" constant="50" id="KCl-96-1Ss"/>
+                                    <constraint firstItem="v90-Iy-k6b" firstAttribute="leading" secondItem="WGB-he-LC3" secondAttribute="trailing" constant="9" id="IwA-YR-sYv"/>
+                                    <constraint firstItem="yYu-OZ-ztl" firstAttribute="top" secondItem="2yT-jf-ve7" secondAttribute="top" constant="60" id="KCl-96-1Ss"/>
+                                    <constraint firstItem="xst-vT-Ror" firstAttribute="centerY" secondItem="jTg-7f-HdQ" secondAttribute="centerY" id="NHv-lb-Chn"/>
                                     <constraint firstAttribute="trailing" secondItem="sSN-na-BTx" secondAttribute="trailing" constant="24" id="PsQ-Kh-IGz"/>
-                                    <constraint firstItem="rC7-cn-9FD" firstAttribute="centerX" secondItem="2yT-jf-ve7" secondAttribute="centerX" id="Z2y-eB-nTr"/>
+                                    <constraint firstItem="WGB-he-LC3" firstAttribute="centerY" secondItem="v90-Iy-k6b" secondAttribute="centerY" id="STA-bW-LJ4"/>
                                     <constraint firstItem="yYu-OZ-ztl" firstAttribute="leading" secondItem="2yT-jf-ve7" secondAttribute="leading" constant="40" id="bHI-un-62B"/>
+                                    <constraint firstItem="KVj-w9-tTI" firstAttribute="top" secondItem="rC7-cn-9FD" secondAttribute="bottom" constant="36" id="fTj-8z-fis"/>
                                     <constraint firstItem="KVj-w9-tTI" firstAttribute="leading" secondItem="2yT-jf-ve7" secondAttribute="leading" id="gpa-Ad-d75"/>
+                                    <constraint firstItem="WGB-he-LC3" firstAttribute="leading" secondItem="2yT-jf-ve7" secondAttribute="leading" constant="13" id="lx5-t6-2Rr"/>
                                     <constraint firstAttribute="trailing" secondItem="KVj-w9-tTI" secondAttribute="trailing" id="nJu-07-Rqq"/>
                                     <constraint firstItem="v90-Iy-k6b" firstAttribute="width" secondItem="sSN-na-BTx" secondAttribute="width" id="pNj-Y4-XGs"/>
-                                    <constraint firstAttribute="height" constant="200" id="ss0-hX-u2t"/>
-                                    <constraint firstItem="sSN-na-BTx" firstAttribute="top" secondItem="yYu-OZ-ztl" secondAttribute="bottom" constant="49" id="yVN-N3-2uC"/>
+                                    <constraint firstItem="xst-vT-Ror" firstAttribute="leading" secondItem="2yT-jf-ve7" secondAttribute="leading" constant="13" id="pZt-r7-XRW"/>
+                                    <constraint firstAttribute="height" constant="266" id="ss0-hX-u2t"/>
+                                    <constraint firstItem="sSN-na-BTx" firstAttribute="top" secondItem="yYu-OZ-ztl" secondAttribute="bottom" constant="69" id="yVN-N3-2uC"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -1695,12 +1708,13 @@ Mob No - 9999912345</string>
                             <constraint firstItem="bb5-dE-c7e" firstAttribute="top" secondItem="bto-kR-d8F" secondAttribute="bottom" id="GUv-P6-Qke"/>
                             <constraint firstItem="M3y-7T-UVo" firstAttribute="top" secondItem="Uwq-GK-1lQ" secondAttribute="bottom" id="Vyx-yB-dfB"/>
                             <constraint firstItem="bto-kR-d8F" firstAttribute="leading" secondItem="0Ee-Ae-Hja" secondAttribute="leading" id="WIR-zp-VRM"/>
-                            <constraint firstItem="2yT-jf-ve7" firstAttribute="centerY" secondItem="0Ee-Ae-Hja" secondAttribute="centerY" id="WrN-xA-3Gk"/>
+                            <constraint firstItem="2yT-jf-ve7" firstAttribute="centerY" secondItem="0Ee-Ae-Hja" secondAttribute="centerY" constant="-25" id="WrN-xA-3Gk"/>
                             <constraint firstItem="4sK-Et-frc" firstAttribute="centerX" secondItem="0Ee-Ae-Hja" secondAttribute="centerX" id="cSN-in-wZy"/>
                             <constraint firstItem="2yT-jf-ve7" firstAttribute="leading" secondItem="0Ee-Ae-Hja" secondAttribute="leading" constant="8" id="d7h-dy-dVv"/>
                             <constraint firstItem="M3y-7T-UVo" firstAttribute="leading" secondItem="0Ee-Ae-Hja" secondAttribute="leading" constant="8" id="fLE-dU-RjL"/>
                             <constraint firstItem="bto-kR-d8F" firstAttribute="top" secondItem="0Ee-Ae-Hja" secondAttribute="top" id="fWw-Qh-dMl"/>
                             <constraint firstAttribute="trailing" secondItem="2yT-jf-ve7" secondAttribute="trailing" constant="8" id="xSB-zA-gah"/>
+                            <constraint firstItem="rC7-cn-9FD" firstAttribute="centerX" secondItem="bto-kR-d8F" secondAttribute="centerX" id="yfU-2H-4aB"/>
                         </constraints>
                         <connections>
                             <outlet property="backBtn" destination="M3y-7T-UVo" id="iZr-MY-pzy"/>
