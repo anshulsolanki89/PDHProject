@@ -47,9 +47,9 @@ class MenuViewController: UIViewController, UIPageViewControllerDataSource, PDHD
         }
         
         pageViewController.view.frame = CGRect(x: 0,
-            y: (64 + 44 + 44),
+            y: (84 + 44 + 44),
             width: self.view.frame.size.width,
-            height: (self.view.frame.size.height - 64 - 44 - 44))
+            height: (self.view.frame.size.height - 84 - 44 - 44))
         
         self.addChildViewController(pageViewController)
         self.view.addSubview(pageViewController.view)
