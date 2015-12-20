@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class MenuScreenView: PDHView, UICollectionViewDataSource, UISearchBarDelegate {
+class MenuScreenView: PDHView, UICollectionViewDataSource {
     
     private var isSliderVisible = false
     
@@ -28,12 +28,29 @@ class MenuScreenView: PDHView, UICollectionViewDataSource, UISearchBarDelegate {
         "Fast Food"]
     
     @IBAction func menuBtnClicked(sender: AnyObject) {
+        endSearching()
         delegate?.viewPerformedAction(ViewActions.MenuBtnClciked)
     }
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        NSNotificationCenter.defaultCenter().addObserver(self,
+        
+        createOverlayView()
+        searchBarUI()
+        addNotificationObserver()
+    }
+    
+    private func createOverlayView() {
+        overlayView = PDHOverlayView(frame: CGRect(
+            x: 0,
+            y: 108,
+            width: self.frame.size.width,
+            height: self.frame.size.height - 108))
+        overlayView.delegate = self
+    }
+    
+    private func addNotificationObserver() {
+         NSNotificationCenter.defaultCenter().addObserver(self,
             selector: "keyboardWillShow:",
             name: UIKeyboardWillShowNotification,
             object: nil)
@@ -45,12 +62,24 @@ class MenuScreenView: PDHView, UICollectionViewDataSource, UISearchBarDelegate {
             selector: "keyboardWillHide:",
             name: UIKeyboardWillHideNotification,
             object: nil)
- 
-        overlayView = PDHOverlayView(frame: CGRect(x: 0,
-            y: 108,
-            width: self.frame.size.width,
-            height: self.frame.size.height - 108))
-        overlayView.delegate = self
+    }
+    
+    private func searchBarUI() {
+        let cancelBtnAttributes =
+            [NSFontAttributeName: PDHHelper.getSkiaRegularFont(16),
+            NSForegroundColorAttributeName: PDHHelper.getCancelBtnColor()]
+        UIBarButtonItem.appearance().setTitleTextAttributes(
+            cancelBtnAttributes,
+            forState: UIControlState.Normal)
+        
+        if #available(iOS 9.0, *) {
+            UITextField.appearanceWhenContainedInInstancesOfClasses([UISearchBar.self]).font =
+                PDHHelper.getSkiaRegularFont(16)
+            UITextField.appearanceWhenContainedInInstancesOfClasses([UISearchBar.self]).textColor =
+                PDHHelper.getCancelBtnColor()
+        } else {
+            // Fallback on earlier versions
+        }
     }
     
     func keyboardWillShow(notification: NSNotification) {
@@ -64,6 +93,7 @@ class MenuScreenView: PDHView, UICollectionViewDataSource, UISearchBarDelegate {
     }
     
     func keyboardWillHide(notification: NSNotification) {
+        //TODO:- check whether this notification is required or not
     }
     
     func keyboardDidShow(notification: NSNotification) {
@@ -92,47 +122,75 @@ class MenuScreenView: PDHView, UICollectionViewDataSource, UISearchBarDelegate {
         return cell
     }
     
-    // MARK:- Search Bar Delegate
-    func searchBarShouldBeginEditing(searchBar: UISearchBar) -> Bool {
-        return true
-    }
-    
-    func searchBarSearchButtonClicked(searchBar: UISearchBar) {
-        
-    }
-    
-    func searchBarCancelButtonClicked(searchBar: UISearchBar) {
+    private func endSearching() {
+        dishSearchBar.text = ""
+        dishSearchBar.setShowsCancelButton(false, animated: true)
         overlayView.removeFromSuperview()
-        dishSearchTableView.hidden = true
-        searchBar.resignFirstResponder()
-        
-    }
-    
-    func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
-        print("change \(searchBar.text)")
-        if searchBar.text != "" {
-            overlayView.removeFromSuperview()
-            dishSearchTableView.hidden = false
-            self.bringSubviewToFront(dishSearchTableView)
-        } else {
-            self.addSubview(overlayView)
-            dishSearchTableView.hidden = true
+        if dishSearchBar.canResignFirstResponder() {
+            dishSearchBar.resignFirstResponder()
         }
+        dishSearchTableView.hidden = true
+        self.bringSubviewToFront(dishSearchTableView)
     }
     
-    deinit {
+    private func removeNotificationObserver() {
         NSNotificationCenter.defaultCenter().removeObserver(self,
             name: UIKeyboardWillShowNotification,
             object: nil)
         NSNotificationCenter.defaultCenter().removeObserver(self,
             name: UIKeyboardWillHideNotification,
             object: nil)
+    }
+    
+    deinit {
+        removeNotificationObserver()
         print("\(self) DEALLOCATED")
     }
 }
 
+// MARK:- Search Bar Delegate
+extension MenuScreenView: UISearchBarDelegate {
+    func searchBarShouldBeginEditing(searchBar: UISearchBar) -> Bool {
+        searchBar.setShowsCancelButton(true, animated: true)
+        return true
+    }
+    
+    func searchBarSearchButtonClicked(searchBar: UISearchBar) {
+        searchBarChangedState(searchBar)
+    }
+    
+    func searchBarCancelButtonClicked(searchBar: UISearchBar) {
+        endSearching()
+    }
+    
+    func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
+        print("change \(searchBar.text)")
+        searchBarChangedState(searchBar)
+    }
+    
+    func searchBarChangedState(searchBar: UISearchBar) {
+        if searchBar.text != "" {
+            hideOverlayView()
+        } else {
+            showOverlayView()
+        }
+    }
+    
+    private func hideOverlayView() {
+        overlayView.removeFromSuperview()
+        dishSearchTableView.hidden = false
+        self.bringSubviewToFront(dishSearchTableView)
+    }
+    
+    private func showOverlayView() {
+        self.addSubview(overlayView)
+        dishSearchTableView.hidden = true
+    }
+
+}
+
 extension MenuScreenView: PDHOverlayViewDelegate {
     func overlayViewClicked(overlayView: PDHOverlayView) {
-        
+        endSearching()
     }
 }

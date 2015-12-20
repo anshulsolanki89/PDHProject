@@ -476,15 +476,16 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KST-ef-myx">
-                                        <rect key="frame" x="8" y="26" width="20" height="22"/>
+                                        <rect key="frame" x="8" y="31" width="20" height="22"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="20" id="dG7-Qs-2cO"/>
+                                            <constraint firstAttribute="height" constant="22" id="l8s-6y-L1b"/>
                                         </constraints>
                                         <state key="normal" image="Back_Arrow"/>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="71" placeholderIntrinsicHeight="21" text="Chinese" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uQ6-zd-qOI">
-                                        <rect key="frame" x="125" y="26" width="71" height="21"/>
-                                        <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="16"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chinese" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uQ6-zd-qOI">
+                                        <rect key="frame" x="129" y="33" width="62" height="18"/>
+                                        <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="18"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -492,12 +493,10 @@
                                 <color key="backgroundColor" red="1" green="0.76862745098039209" blue="0.070588235294117646" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="uQ6-zd-qOI" firstAttribute="centerX" secondItem="SfG-0M-6zC" secondAttribute="centerX" id="6dI-ei-s7c"/>
-                                    <constraint firstAttribute="bottom" secondItem="KST-ef-myx" secondAttribute="bottom" constant="16" id="8KM-UI-R31"/>
                                     <constraint firstItem="KST-ef-myx" firstAttribute="leading" secondItem="SfG-0M-6zC" secondAttribute="leading" constant="8" id="Puy-3B-sKQ"/>
-                                    <constraint firstAttribute="bottom" secondItem="uQ6-zd-qOI" secondAttribute="bottom" constant="17" id="UIU-Ib-Ejy"/>
+                                    <constraint firstItem="KST-ef-myx" firstAttribute="centerY" secondItem="uQ6-zd-qOI" secondAttribute="centerY" id="do2-qx-3dn"/>
                                     <constraint firstAttribute="height" constant="64" id="f8b-Lr-Zg2"/>
-                                    <constraint firstItem="KST-ef-myx" firstAttribute="top" secondItem="SfG-0M-6zC" secondAttribute="top" constant="26" id="fE6-Ar-Ugg"/>
-                                    <constraint firstItem="uQ6-zd-qOI" firstAttribute="top" secondItem="SfG-0M-6zC" secondAttribute="top" constant="26" id="omH-la-Bc7"/>
+                                    <constraint firstItem="uQ6-zd-qOI" firstAttribute="top" secondItem="SfG-0M-6zC" secondAttribute="top" constant="33" id="omH-la-Bc7"/>
                                 </constraints>
                             </view>
                             <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mjl-ii-shh">
@@ -1002,7 +1001,7 @@ If you like ordering food on our app, please rate us on
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AD4-hu-iPq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1179" y="1045"/>
+            <point key="canvasLocation" x="878" y="1225"/>
         </scene>
         <!--DelveryAddressViewController-->
         <scene sceneID="wOM-Ua-ohp">
@@ -1341,7 +1340,7 @@ Mob No - 9999912345</string>
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SpF-4T-Oy0">
-                                        <rect key="frame" x="8" y="26" width="20" height="30"/>
+                                        <rect key="frame" x="8" y="27" width="20" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="20" id="4W4-6L-Huo"/>
                                             <constraint firstAttribute="height" constant="30" id="4ph-IQ-c1m"/>
@@ -1352,10 +1351,9 @@ Mob No - 9999912345</string>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PDH" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DhB-R1-ZO3">
-                                        <rect key="frame" x="139" y="33" width="41" height="16"/>
+                                        <rect key="frame" x="139" y="33" width="41" height="18"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="41" id="2zm-Uw-J7h"/>
-                                            <constraint firstAttribute="height" constant="16" id="ihk-WX-QzN"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="18"/>
                                         <color key="textColor" red="0.21568627450980393" green="0.17254901960784313" blue="0.062745098039215685" alpha="1" colorSpace="calibratedRGB"/>
@@ -1365,7 +1363,7 @@ Mob No - 9999912345</string>
                                 <color key="backgroundColor" red="1" green="0.76862745098039209" blue="0.070588235294117646" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="SpF-4T-Oy0" firstAttribute="leading" secondItem="MEn-WK-Q3b" secondAttribute="leading" constant="8" id="9Ow-da-tr7"/>
-                                    <constraint firstAttribute="bottom" secondItem="SpF-4T-Oy0" secondAttribute="bottom" constant="8" id="BYR-PY-WAt"/>
+                                    <constraint firstItem="SpF-4T-Oy0" firstAttribute="centerY" secondItem="DhB-R1-ZO3" secondAttribute="centerY" id="AUo-SR-goy"/>
                                     <constraint firstAttribute="height" constant="64" id="Idx-LM-bby"/>
                                     <constraint firstItem="DhB-R1-ZO3" firstAttribute="top" secondItem="MEn-WK-Q3b" secondAttribute="top" constant="33" id="oUj-bb-DgP"/>
                                     <constraint firstItem="DhB-R1-ZO3" firstAttribute="centerX" secondItem="MEn-WK-Q3b" secondAttribute="centerX" id="os0-vF-WZS"/>
@@ -1376,6 +1374,7 @@ Mob No - 9999912345</string>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="IwI-2f-BU6"/>
                                 </constraints>
+                                <color key="barTintColor" red="0.91764705882352937" green="0.90980392156862744" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <outlet property="delegate" destination="lh3-3D-ih3" id="NRl-yY-dGZ"/>
@@ -1515,7 +1514,7 @@ Mob No - 9999912345</string>
                                                     </userDefinedRuntimeAttributes>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chinese Order" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iPU-6U-OvR">
-                                                    <rect key="frame" x="8" y="27.5" width="67" height="28"/>
+                                                    <rect key="frame" x="8" y="27" width="67" height="28"/>
                                                     <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="14"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
