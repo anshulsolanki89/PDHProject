@@ -10,15 +10,19 @@ import UIKit
 
 @IBDesignable
 class PDHButton: UIButton {
+
+    @IBInspectable var borderWidth: CGFloat = 1.0
+    @IBInspectable var cornerRadius: CGFloat = 4.0
+    @IBInspectable var boderColor: CGColorRef = UIColor(
+        red: (121.0 / 255.0),
+        green:(207.0 / 255.0),
+        blue: (63.0 / 255.0),
+        alpha: 1.0).CGColor
     
     override func drawRect(rect: CGRect) {
         super.drawRect(rect)
-        self.layer.borderColor = UIColor(
-            red: (121.0 / 255.0),
-            green:(207.0 / 255.0),
-            blue: (63.0 / 255.0),
-            alpha: 1.0).CGColor
-        self.layer.borderWidth = 1.0
-        self.layer.cornerRadius = 4.0
+        self.layer.borderColor = boderColor
+        self.layer.borderWidth = borderWidth
+        self.layer.cornerRadius = cornerRadius
     }
 }
