@@ -14,12 +14,19 @@ class MenuScreenView: PDHView, UICollectionViewDataSource, UISearchBarDelegate {
     private var isSliderVisible = false
     
     @IBOutlet weak var collectionView: UICollectionView!
-    
     @IBOutlet weak var dishSearchTableView: UIView!
+    @IBOutlet weak var dishSearchBar: UISearchBar!
     
     var overlayView: PDHOverlayView!
    
-    @IBOutlet weak var dishSearchBar: UISearchBar!
+    private var dishNamesArray = [
+        "Chinese",
+        "Tandoori",
+        "Biryani",
+        "Main Course",
+        "Snacks Fish",
+        "Fast Food"]
+    
     @IBAction func menuBtnClicked(sender: AnyObject) {
         delegate?.viewPerformedAction(ViewActions.MenuBtnClciked)
     }
@@ -66,14 +73,22 @@ class MenuScreenView: PDHView, UICollectionViewDataSource, UISearchBarDelegate {
     // MARK:- CollectionView DataSource
     func collectionView(collectionView: UICollectionView,
         numberOfItemsInSection section: Int) -> Int {
-        return 9
+        return 40
     }
     
     func collectionView(collectionView: UICollectionView,
         cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell =
-            collectionView.dequeueReusableCellWithReuseIdentifier("PDHMenuOrderCell",
-                forIndexPath: indexPath)
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(
+            "PDHMenuOptionsCell",
+            forIndexPath: indexPath) as! PDHMenuOptionsCell
+     
+        cell.menuOptionImageView.image =
+            UIImage(named: "\(indexPath.row % dishNamesArray.count).png")
+        cell.menuOptionLabel.numberOfLines = 0
+        cell.menuOptionLabel.lineBreakMode = .ByWordWrapping
+        cell.menuOptionLabel.text =
+            dishNamesArray[indexPath.row % dishNamesArray.count]
+        
         return cell
     }
     

@@ -20,9 +20,11 @@ class PDHOverlayView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.backgroundColor = UIColor.blackColor()
-        self.alpha = 0.5
+        self.alpha = 0.8
         
-        let tapGesture = UITapGestureRecognizer(target: self, action: "overlayViewClicked:")
+        let tapGesture = UITapGestureRecognizer(
+            target: self,
+            action: "overlayViewClicked:")
         self.addGestureRecognizer(tapGesture)
     }
 

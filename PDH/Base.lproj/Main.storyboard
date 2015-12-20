@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="UvN-0V-hkL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Ing-aX-ho7">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
@@ -16,7 +16,6 @@
             <string>Skia-Regular</string>
             <string>Skia-Regular</string>
             <string>Skia-Regular</string>
-            <string>Skia-Regular_Light</string>
             <string>Skia-Regular</string>
             <string>Skia-Regular</string>
             <string>Skia-Regular</string>
@@ -26,15 +25,11 @@
             <string>Skia-Regular</string>
             <string>Skia-Regular</string>
             <string>Skia-Regular</string>
-            <string>Skia-Regular</string>
-            <string>Skia-Regular</string>
-            <string>Skia-Regular_Light</string>
             <string>Skia-Regular</string>
             <string>Skia-Regular</string>
             <string>Skia-Regular</string>
             <string>Skia-Regular_Light</string>
             <string>Skia-Regular</string>
-            <string>Skia-Regular_Light</string>
             <string>Skia-Regular</string>
             <string>Skia-Regular</string>
             <string>Skia-Regular_Light</string>
@@ -42,14 +37,21 @@
             <string>Skia-Regular_Light</string>
             <string>Skia-Regular</string>
             <string>Skia-Regular</string>
+            <string>Skia-Regular_Light</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular_Light</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
             <string>Skia-Regular</string>
             <string>Skia-Regular_Light</string>
             <string>Skia-Regular_Light</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
             <string>Skia-Regular_Light</string>
-            <string>Skia-Regular_Light</string>
-            <string>Skia-Regular_Light</string>
-            <string>Skia-Regular_Light</string>
-            <string>Skia-Regular_Light</string>
+            <string>Skia-Regular</string>
             <string>Skia-Regular</string>
             <string>Skia-Regular</string>
             <string>Skia-Regular</string>
@@ -482,7 +484,7 @@
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="71" placeholderIntrinsicHeight="21" text="Chinese" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uQ6-zd-qOI">
                                         <rect key="frame" x="125" y="26" width="71" height="21"/>
-                                        <fontDescription key="fontDescription" name="Skia-Regular_Light" family="Skia" pointSize="16"/>
+                                        <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="16"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1355,8 +1357,8 @@ Mob No - 9999912345</string>
                                             <constraint firstAttribute="width" constant="41" id="2zm-Uw-J7h"/>
                                             <constraint firstAttribute="height" constant="16" id="ihk-WX-QzN"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Skia-Regular_Light" family="Skia" pointSize="16"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="18"/>
+                                        <color key="textColor" red="0.21568627450980393" green="0.17254901960784313" blue="0.062745098039215685" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -1369,7 +1371,7 @@ Mob No - 9999912345</string>
                                     <constraint firstItem="DhB-R1-ZO3" firstAttribute="centerX" secondItem="MEn-WK-Q3b" secondAttribute="centerX" id="os0-vF-WZS"/>
                                 </constraints>
                             </view>
-                            <searchBar contentMode="redraw" placeholder="Search your dish" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tpD-wB-fRK">
+                            <searchBar contentMode="redraw" placeholder="Search your dish" translatesAutoresizingMaskIntoConstraints="NO" id="tpD-wB-fRK">
                                 <rect key="frame" x="0.0" y="64" width="320" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="IwI-2f-BU6"/>
@@ -1379,18 +1381,17 @@ Mob No - 9999912345</string>
                                     <outlet property="delegate" destination="lh3-3D-ih3" id="NRl-yY-dGZ"/>
                                 </connections>
                             </searchBar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iTx-PV-d8E">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MenuBg1.png" translatesAutoresizingMaskIntoConstraints="NO" id="iTx-PV-d8E">
                                 <rect key="frame" x="0.0" y="108" width="320" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="qda-gt-OHz"/>
                                 </constraints>
                             </imageView>
-                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dBs-Cn-n5p">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dBs-Cn-n5p">
                                 <rect key="frame" x="0.0" y="108" width="320" height="150"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7FA-6y-C7g">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Profile.png" translatesAutoresizingMaskIntoConstraints="NO" id="7FA-6y-C7g">
                                         <rect key="frame" x="8" y="8" width="75" height="75"/>
-                                        <color key="backgroundColor" red="1" green="0.73333333329999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="75" id="ES6-b0-mM5"/>
                                             <constraint firstAttribute="width" constant="75" id="p14-Uy-7WL"/>
@@ -1406,8 +1407,8 @@ Mob No - 9999912345</string>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="12" id="ISI-2Z-waL"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <color key="textColor" red="1" green="0.73333333329999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="12"/>
+                                        <color key="textColor" red="0.81568627450980391" green="0.62745098039215685" blue="0.070588235294117646" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What would you like to order today?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fwc-la-Ro3">
@@ -1415,7 +1416,7 @@ Mob No - 9999912345</string>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="12" id="19B-U4-7st"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="10"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1432,18 +1433,26 @@ Mob No - 9999912345</string>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="og5-RB-obd"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Skia-Regular_Light" family="Skia" pointSize="14"/>
+                                        <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="14"/>
                                         <state key="normal" title="Add to Order">
-                                            <color key="titleColor" red="1" green="0.73333333329999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleColor" red="0.81568627450980391" green="0.62745098039215685" blue="0.070588235294117646" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dish of the Week" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X0Z-bT-Ybh">
                                         <rect key="frame" x="16" y="104" width="128" height="14"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="14" id="6ZV-Ju-D1w"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Skia-Regular_Light" family="Skia" pointSize="12"/>
-                                        <color key="textColor" red="1" green="0.73333333333333328" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="12"/>
+                                        <color key="textColor" red="0.81568627450980391" green="0.62745098039215685" blue="0.070588235294117646" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fish Peri Peri" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G4U-4v-MZS">
@@ -1456,7 +1465,7 @@ Mob No - 9999912345</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.11764705882352941" green="0.10980392156862745" blue="0.098039215686274508" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.17254901960784313" green="0.16470588235294117" blue="0.15294117647058825" alpha="0.75" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="G4U-4v-MZS" firstAttribute="top" secondItem="X0Z-bT-Ybh" secondAttribute="bottom" constant="2" id="3lR-dp-REE"/>
                                     <constraint firstItem="X0Z-bT-Ybh" firstAttribute="leading" secondItem="dBs-Cn-n5p" secondAttribute="leading" constant="16" id="8bj-a2-9S1"/>
@@ -1490,16 +1499,24 @@ Mob No - 9999912345</string>
                                     <inset key="sectionInset" minX="16" minY="16" maxX="16" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PDHMenuOrderCell" id="AqA-NZ-dhe">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PDHMenuOptionsCell" id="AqA-NZ-dhe" customClass="PDHMenuOptionsCell" customModule="PDH" customModuleProvider="target">
                                         <rect key="frame" x="16" y="16" width="83" height="83"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="83" height="83"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="67" placeholderIntrinsicHeight="28" text="Chinese" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iPU-6U-OvR">
-                                                    <rect key="frame" x="8" y="28" width="67" height="28"/>
-                                                    <fontDescription key="fontDescription" name="Skia-Regular_Light" family="Skia" pointSize="12"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="709-eC-rtM" customClass="PDHCustomImageView" customModule="PDH" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="83" height="83"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="32"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chinese Order" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iPU-6U-OvR">
+                                                    <rect key="frame" x="8" y="27.5" width="67" height="28"/>
+                                                    <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="14"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -1511,6 +1528,11 @@ Mob No - 9999912345</string>
                                             <constraint firstItem="iPU-6U-OvR" firstAttribute="centerX" secondItem="AqA-NZ-dhe" secondAttribute="centerX" id="GW2-Pd-2iy"/>
                                             <constraint firstItem="iPU-6U-OvR" firstAttribute="centerY" secondItem="AqA-NZ-dhe" secondAttribute="centerY" id="HXj-RR-lb3"/>
                                             <constraint firstItem="iPU-6U-OvR" firstAttribute="leading" secondItem="AqA-NZ-dhe" secondAttribute="leading" constant="8" id="Mkl-mg-JTY"/>
+                                            <constraint firstAttribute="trailing" secondItem="709-eC-rtM" secondAttribute="trailing" id="caX-9v-Zxa"/>
+                                            <constraint firstItem="709-eC-rtM" firstAttribute="leading" secondItem="AqA-NZ-dhe" secondAttribute="leading" id="e2C-EJ-phT"/>
+                                            <constraint firstAttribute="trailing" secondItem="iPU-6U-OvR" secondAttribute="trailing" constant="8" id="mRO-Lv-DdC"/>
+                                            <constraint firstItem="709-eC-rtM" firstAttribute="top" secondItem="AqA-NZ-dhe" secondAttribute="top" id="r94-GC-gw9"/>
+                                            <constraint firstAttribute="bottom" secondItem="709-eC-rtM" secondAttribute="bottom" id="sQd-UB-gMk"/>
                                         </constraints>
                                         <size key="customSize" width="83" height="83"/>
                                         <userDefinedRuntimeAttributes>
@@ -1518,6 +1540,10 @@ Mob No - 9999912345</string>
                                                 <integer key="value" value="32"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="menuOptionImageView" destination="709-eC-rtM" id="eOu-Z3-QDb"/>
+                                            <outlet property="menuOptionLabel" destination="iPU-6U-OvR" id="Vli-5p-2OK"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
@@ -2308,9 +2334,11 @@ Mob No - 9999912345</string>
         <image name="Locality" width="16" height="16"/>
         <image name="Login_mobile" width="11" height="18"/>
         <image name="Login_pass" width="16" height="7"/>
+        <image name="MenuBg1.png" width="1242" height="1016"/>
         <image name="MyProfile" width="27" height="27"/>
         <image name="Name" width="14" height="14"/>
         <image name="PInCode" width="11" height="16"/>
+        <image name="Profile.png" width="292" height="292"/>
         <image name="Register_Name" width="36" height="34"/>
         <image name="Sliding_Bar" width="283" height="568"/>
         <image name="SubtractBtn" width="20" height="21"/>
