@@ -65,7 +65,7 @@ extension PDHDeliveryAddressView: UITableViewDelegate {
     }
     
     func tableView(tableView: UITableView, estimatedHeightForHeaderInSection section: Int) -> CGFloat {
-        return 50
+        return 60
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
@@ -73,7 +73,7 @@ extension PDHDeliveryAddressView: UITableViewDelegate {
     }
     
     func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 140
+        return 180
     }
 }
 
