@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="GZ3-nB-b57">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="zez-mm-qrg">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
@@ -50,6 +50,12 @@
             <string>Skia-Regular</string>
             <string>Skia-Regular_Light</string>
             <string>Skia-Regular_Light</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
             <string>Skia-Regular</string>
             <string>Skia-Regular</string>
             <string>Skia-Regular</string>
@@ -584,12 +590,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank You" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P6w-3M-YU0">
-                                        <rect key="frame" x="117.5" y="28" width="85.5" height="18"/>
+                                        <rect key="frame" x="117" y="28" width="85.5" height="18"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="18" id="cOo-8l-JMr"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="18"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.21568627450980393" green="0.17254901960784313" blue="0.062745098039215685" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -600,7 +606,7 @@
                                     <constraint firstAttribute="bottom" secondItem="P6w-3M-YU0" secondAttribute="bottom" constant="18" id="m2V-MF-2l7"/>
                                 </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="183" image="Thanks_BG" translatesAutoresizingMaskIntoConstraints="NO" id="qzi-g4-KU7">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="183" image="Thanks_BG" translatesAutoresizingMaskIntoConstraints="NO" id="qzi-g4-KU7">
                                 <rect key="frame" x="0.0" y="64" width="320" height="183"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="183" id="AiK-7a-uHS"/>
@@ -613,47 +619,54 @@
                                     <constraint firstAttribute="height" constant="85" id="mgX-xM-twi"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atb-BN-uLR">
-                                <rect key="frame" x="20" y="436" width="280" height="26"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="THANKS FOR PLACING AN ORDER WITH US" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xpw-dD-s1L">
+                                <rect key="frame" x="20" y="274" width="280" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="UFR-JA-cO3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="14"/>
+                                <color key="textColor" red="0.47450980392156861" green="0.81176470588235294" blue="0.24705882352941178" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="YOUR ORDER NUMBER IS PDH123." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IHu-Yq-B9A">
+                                <rect key="frame" x="20" y="296" width="280" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="FqU-O4-3QR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="14"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="srV-8D-JAG">
+                                <rect key="frame" x="8" y="334" width="304" height="66"/>
+                                <string key="text">Our chef is preparing your food and we're sure you'll love it. You can track your order by calling us on +91-999984772
+by telling us your order number.
+
+If you like ordering food on our app, please rate us on 
+App Store.</string>
+                                <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="11"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atb-BN-uLR" customClass="PDHButton" customModule="PDH" customModuleProvider="target">
+                                <rect key="frame" x="20" y="432" width="280" height="40"/>
                                 <color key="backgroundColor" red="0.47450980392156861" green="0.81176470588235294" blue="0.24705882352941178" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="26" id="rBQ-0M-CzG"/>
+                                    <constraint firstAttribute="height" constant="40" id="rBQ-0M-CzG"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="14"/>
                                 <state key="normal" title="Back to Home">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="254" text="THANKS FOR PLACING AN ORDER WITH US" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xpw-dD-s1L">
-                                <rect key="frame" x="20" y="274" width="280" height="14"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="14" id="UFR-JA-cO3"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="12"/>
-                                <color key="textColor" red="0.65098039215686276" green="0.87058823529411766" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="YOUR ORDER NUMBER IS PDH123." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IHu-Yq-B9A">
-                                <rect key="frame" x="20" y="296" width="280" height="14"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="14" id="FqU-O4-3QR"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="12"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="253" verticalCompressionResistancePriority="751" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="srV-8D-JAG">
-                                <rect key="frame" x="16" y="334" width="288" height="70"/>
-                                <string key="text">Our chef is preparing your food and we're sure you'll love it.
-You can track your order by calling us on +91-999984772
-by telling us your order number.
-
-
-If you like ordering food on our app, please rate us on
- App Store.</string>
-                                <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="10"/>
-                                <color key="textColor" red="0.47843137254901957" green="0.47843137254901957" blue="0.47843137254901957" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -664,14 +677,14 @@ If you like ordering food on our app, please rate us on
                             <constraint firstAttribute="trailing" secondItem="qzi-g4-KU7" secondAttribute="trailing" id="DKY-kg-n14"/>
                             <constraint firstItem="9V8-LA-Wcs" firstAttribute="centerX" secondItem="qzi-g4-KU7" secondAttribute="centerX" id="F1O-4O-5Fs"/>
                             <constraint firstAttribute="trailing" secondItem="atb-BN-uLR" secondAttribute="trailing" constant="20" id="Icx-SD-1RH"/>
-                            <constraint firstAttribute="trailing" secondItem="srV-8D-JAG" secondAttribute="trailing" constant="16" id="JZX-du-cfw"/>
+                            <constraint firstAttribute="trailing" secondItem="srV-8D-JAG" secondAttribute="trailing" constant="8" id="JZX-du-cfw"/>
                             <constraint firstItem="srV-8D-JAG" firstAttribute="top" secondItem="IHu-Yq-B9A" secondAttribute="bottom" constant="24" id="OLc-Ry-tCj"/>
                             <constraint firstAttribute="trailing" secondItem="xpw-dD-s1L" secondAttribute="trailing" constant="20" id="VfC-C5-Zwa"/>
                             <constraint firstItem="qzi-g4-KU7" firstAttribute="leading" secondItem="3rf-Wi-qCR" secondAttribute="leading" id="XGn-gB-BCz"/>
                             <constraint firstItem="atb-BN-uLR" firstAttribute="top" secondItem="srV-8D-JAG" secondAttribute="bottom" constant="32" id="XJQ-B9-hnc"/>
                             <constraint firstItem="xpw-dD-s1L" firstAttribute="leading" secondItem="3rf-Wi-qCR" secondAttribute="leading" constant="20" id="eW0-Bj-zcJ"/>
                             <constraint firstItem="qzi-g4-KU7" firstAttribute="top" secondItem="var-EI-jjl" secondAttribute="bottom" id="eaG-wZ-cTb"/>
-                            <constraint firstItem="srV-8D-JAG" firstAttribute="leading" secondItem="3rf-Wi-qCR" secondAttribute="leading" constant="16" id="hSQ-Cg-s2w"/>
+                            <constraint firstItem="srV-8D-JAG" firstAttribute="leading" secondItem="3rf-Wi-qCR" secondAttribute="leading" constant="8" id="hSQ-Cg-s2w"/>
                             <constraint firstItem="atb-BN-uLR" firstAttribute="leading" secondItem="3rf-Wi-qCR" secondAttribute="leading" constant="20" id="jyE-lo-aaD"/>
                             <constraint firstItem="9V8-LA-Wcs" firstAttribute="centerY" secondItem="qzi-g4-KU7" secondAttribute="centerY" id="m9o-nh-LfP"/>
                             <constraint firstAttribute="trailing" secondItem="IHu-Yq-B9A" secondAttribute="trailing" constant="20" id="t9l-Uy-4KZ"/>
@@ -1729,7 +1742,7 @@ If you like ordering food on our app, please rate us on
                                             <constraint firstAttribute="width" constant="105" id="NLU-Xe-iHi"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="16"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.21568627450980393" green="0.17254901960784313" blue="0.062745098039215685" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -1746,25 +1759,26 @@ If you like ordering food on our app, please rate us on
                                 <rect key="frame" x="0.0" y="64" width="320" height="50"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Name" translatesAutoresizingMaskIntoConstraints="NO" id="1oI-hw-RsS">
-                                        <rect key="frame" x="8" y="14" width="12" height="28"/>
+                                        <rect key="frame" x="8" y="14" width="16" height="28"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="28" id="MQx-V5-PJn"/>
-                                            <constraint firstAttribute="width" constant="12" id="aUk-FT-fUE"/>
+                                            <constraint firstAttribute="width" constant="16" id="aUk-FT-fUE"/>
                                         </constraints>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oaC-zS-bLA" userLabel="BottomLIne">
-                                        <rect key="frame" x="36" y="49" width="276" height="1"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <rect key="frame" x="40" y="49" width="272" height="1"/>
+                                        <color key="backgroundColor" red="0.34509803921568627" green="0.34509803921568627" blue="0.3529411764705882" alpha="0.5" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="hJ4-us-mS9"/>
                                         </constraints>
                                     </view>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5WA-dX-a3e">
-                                        <rect key="frame" x="36" y="14" width="276" height="30"/>
+                                        <rect key="frame" x="40" y="14" width="272" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="DNI-Xx-2Dt"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.34509803921568627" green="0.34509803921568627" blue="0.3529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="16"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
@@ -1772,10 +1786,10 @@ If you like ordering food on our app, please rate us on
                                     <constraint firstAttribute="trailing" secondItem="5WA-dX-a3e" secondAttribute="trailing" constant="8" id="0hm-Xe-Dpa"/>
                                     <constraint firstAttribute="height" constant="50" id="77N-Yk-so0"/>
                                     <constraint firstItem="1oI-hw-RsS" firstAttribute="top" secondItem="3KC-CT-4Cb" secondAttribute="top" constant="14" id="7aV-zh-4mY"/>
-                                    <constraint firstAttribute="trailing" secondItem="oaC-zS-bLA" secondAttribute="trailing" constant="8" id="8Xl-ff-RhQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="oaC-zS-bLA" secondAttribute="trailing" constant="8" id="AW4-rj-mSL"/>
                                     <constraint firstItem="5WA-dX-a3e" firstAttribute="leading" secondItem="1oI-hw-RsS" secondAttribute="trailing" constant="16" id="Cgq-Ln-Zj1"/>
-                                    <constraint firstItem="oaC-zS-bLA" firstAttribute="leading" secondItem="3KC-CT-4Cb" secondAttribute="leading" constant="36" id="EAx-tm-JAE"/>
                                     <constraint firstAttribute="bottom" secondItem="oaC-zS-bLA" secondAttribute="bottom" id="Sbe-1V-rWO"/>
+                                    <constraint firstItem="oaC-zS-bLA" firstAttribute="width" secondItem="5WA-dX-a3e" secondAttribute="width" id="clQ-Z0-3Ac"/>
                                     <constraint firstItem="5WA-dX-a3e" firstAttribute="top" secondItem="3KC-CT-4Cb" secondAttribute="top" constant="14" id="k6g-Os-V6E"/>
                                     <constraint firstItem="1oI-hw-RsS" firstAttribute="leading" secondItem="3KC-CT-4Cb" secondAttribute="leading" constant="8" id="qt2-js-5k4"/>
                                 </constraints>
@@ -1784,32 +1798,32 @@ If you like ordering food on our app, please rate us on
                                 <rect key="frame" x="0.0" y="114" width="320" height="50"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Address" translatesAutoresizingMaskIntoConstraints="NO" id="afs-8t-xsz">
-                                        <rect key="frame" x="8" y="14" width="12" height="28"/>
+                                        <rect key="frame" x="8" y="14" width="16" height="28"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="28" id="WZM-V1-ASM"/>
-                                            <constraint firstAttribute="width" constant="12" id="fpv-nn-LfX"/>
+                                            <constraint firstAttribute="width" constant="16" id="fpv-nn-LfX"/>
                                         </constraints>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tem-Wc-UnJ" userLabel="BottomLIne">
-                                        <rect key="frame" x="36" y="49" width="276" height="1"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <rect key="frame" x="40" y="49" width="272" height="1"/>
+                                        <color key="backgroundColor" red="0.34509803921568627" green="0.34509803921568627" blue="0.3529411764705882" alpha="0.5" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="7sg-Oo-7Tm"/>
                                         </constraints>
                                     </view>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="276" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rh9-qP-9jc">
-                                        <rect key="frame" x="36" y="14" width="276" height="30"/>
+                                        <rect key="frame" x="40" y="14" width="272" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="l0O-2t-pbv"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="16"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="Rh9-qP-9jc" firstAttribute="leading" secondItem="afs-8t-xsz" secondAttribute="trailing" constant="16" id="7ZE-bc-fJn"/>
                                     <constraint firstItem="afs-8t-xsz" firstAttribute="leading" secondItem="ggF-Ws-xov" secondAttribute="leading" constant="8" id="DEZ-A3-4pU"/>
-                                    <constraint firstItem="Tem-Wc-UnJ" firstAttribute="leading" secondItem="ggF-Ws-xov" secondAttribute="leading" constant="36" id="NRp-RJ-5Ia"/>
+                                    <constraint firstItem="Tem-Wc-UnJ" firstAttribute="width" secondItem="Rh9-qP-9jc" secondAttribute="width" id="MKl-R4-RIV"/>
                                     <constraint firstAttribute="trailing" secondItem="Rh9-qP-9jc" secondAttribute="trailing" constant="8" id="Oh9-YG-e8H"/>
                                     <constraint firstItem="afs-8t-xsz" firstAttribute="top" secondItem="ggF-Ws-xov" secondAttribute="top" constant="14" id="RVd-lc-ePP"/>
                                     <constraint firstAttribute="height" constant="50" id="gfv-p6-k9R"/>
@@ -1822,63 +1836,65 @@ If you like ordering food on our app, please rate us on
                                 <rect key="frame" x="0.0" y="164" width="320" height="50"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jLI-pP-djL">
-                                        <rect key="frame" x="8" y="14" width="12" height="28"/>
+                                        <rect key="frame" x="8" y="14" width="16" height="28"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="12" id="EQa-P8-woU"/>
+                                            <constraint firstAttribute="width" constant="16" id="EQa-P8-woU"/>
                                             <constraint firstAttribute="height" constant="28" id="WEz-nu-6hK"/>
                                         </constraints>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sgt-1V-yai" userLabel="BottomLIne">
                                         <rect key="frame" x="36" y="49" width="276" height="1"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.34509803921568627" green="0.34509803921568627" blue="0.3529411764705882" alpha="0.5" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="HKZ-O1-TkW"/>
                                         </constraints>
                                     </view>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="276" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L8W-pQ-Og0">
-                                        <rect key="frame" x="36" y="14" width="276" height="30"/>
+                                        <rect key="frame" x="40" y="14" width="276" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="GwH-ZW-04e"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.34509803921568627" green="0.34509803921568627" blue="0.3529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="16"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="jLI-pP-djL" firstAttribute="top" secondItem="L9W-ZD-Rgk" secondAttribute="top" constant="14" id="Cpi-8T-Dgf"/>
                                     <constraint firstAttribute="trailing" secondItem="Sgt-1V-yai" secondAttribute="trailing" constant="8" id="DQM-8C-zT0"/>
-                                    <constraint firstItem="Sgt-1V-yai" firstAttribute="leading" secondItem="L9W-ZD-Rgk" secondAttribute="leading" constant="36" id="EVN-Mh-DY7"/>
                                     <constraint firstItem="L8W-pQ-Og0" firstAttribute="leading" secondItem="jLI-pP-djL" secondAttribute="trailing" constant="16" id="GJD-j8-S9c"/>
+                                    <constraint firstItem="Sgt-1V-yai" firstAttribute="width" secondItem="L8W-pQ-Og0" secondAttribute="width" id="Grz-We-ZqW"/>
                                     <constraint firstItem="L8W-pQ-Og0" firstAttribute="top" secondItem="L9W-ZD-Rgk" secondAttribute="top" constant="14" id="PV8-pX-Dr8"/>
                                     <constraint firstAttribute="bottom" secondItem="Sgt-1V-yai" secondAttribute="bottom" id="XBC-8X-3WX"/>
                                     <constraint firstItem="jLI-pP-djL" firstAttribute="leading" secondItem="L9W-ZD-Rgk" secondAttribute="leading" constant="8" id="YYr-sg-271"/>
                                     <constraint firstAttribute="height" constant="50" id="aRo-fN-0aD"/>
-                                    <constraint firstAttribute="trailing" secondItem="L8W-pQ-Og0" secondAttribute="trailing" constant="8" id="fWs-UH-xl7"/>
+                                    <constraint firstAttribute="trailing" secondItem="L8W-pQ-Og0" secondAttribute="trailing" constant="4" id="fWs-UH-xl7"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WVX-8j-pqh">
                                 <rect key="frame" x="0.0" y="214" width="320" height="50"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Locality" translatesAutoresizingMaskIntoConstraints="NO" id="jVs-Eh-0uk">
-                                        <rect key="frame" x="8" y="14" width="12" height="28"/>
+                                        <rect key="frame" x="8" y="14" width="16" height="28"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="12" id="paO-eH-aUu"/>
+                                            <constraint firstAttribute="width" constant="16" id="paO-eH-aUu"/>
                                             <constraint firstAttribute="height" constant="28" id="yiQ-VC-hgp"/>
                                         </constraints>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CR0-jn-XFx" userLabel="BottomLIne">
-                                        <rect key="frame" x="36" y="49" width="276" height="1"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <rect key="frame" x="40" y="49" width="272" height="1"/>
+                                        <color key="backgroundColor" red="0.34509803921568627" green="0.34509803921568627" blue="0.3529411764705882" alpha="0.5" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="QQI-vG-rqd"/>
                                         </constraints>
                                     </view>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="276" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Locality" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IA5-gy-142">
-                                        <rect key="frame" x="36" y="14" width="276" height="30"/>
+                                        <rect key="frame" x="40" y="14" width="272" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="GbN-Pc-Cxx"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.34509803921568627" green="0.34509803921568627" blue="0.3529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="16"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
@@ -1887,44 +1903,45 @@ If you like ordering food on our app, please rate us on
                                     <constraint firstAttribute="bottom" secondItem="CR0-jn-XFx" secondAttribute="bottom" id="7y5-r1-9T5"/>
                                     <constraint firstItem="IA5-gy-142" firstAttribute="top" secondItem="WVX-8j-pqh" secondAttribute="top" constant="14" id="RHz-wo-T8a"/>
                                     <constraint firstAttribute="trailing" secondItem="IA5-gy-142" secondAttribute="trailing" constant="8" id="XFQ-Mt-uKe"/>
-                                    <constraint firstItem="CR0-jn-XFx" firstAttribute="leading" secondItem="WVX-8j-pqh" secondAttribute="leading" constant="36" id="Yeo-iW-KJL"/>
                                     <constraint firstItem="IA5-gy-142" firstAttribute="leading" secondItem="jVs-Eh-0uk" secondAttribute="trailing" constant="16" id="ZZw-c5-lTn"/>
                                     <constraint firstAttribute="height" constant="50" id="agV-N1-1be"/>
                                     <constraint firstAttribute="trailing" secondItem="CR0-jn-XFx" secondAttribute="trailing" constant="8" id="gqe-zD-ZRm"/>
                                     <constraint firstItem="jVs-Eh-0uk" firstAttribute="leading" secondItem="WVX-8j-pqh" secondAttribute="leading" constant="8" id="mXC-Gn-zEc"/>
+                                    <constraint firstItem="CR0-jn-XFx" firstAttribute="width" secondItem="IA5-gy-142" secondAttribute="width" id="mz3-ng-2Pg"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tqV-bR-jiJ">
                                 <rect key="frame" x="0.0" y="264" width="320" height="50"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PInCode" translatesAutoresizingMaskIntoConstraints="NO" id="cLg-5z-bR5">
-                                        <rect key="frame" x="8" y="14" width="12" height="28"/>
+                                        <rect key="frame" x="8" y="14" width="16" height="28"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="12" id="7HC-U9-7Dn"/>
+                                            <constraint firstAttribute="width" constant="16" id="7HC-U9-7Dn"/>
                                             <constraint firstAttribute="height" constant="28" id="Fhw-Ep-o4n"/>
                                         </constraints>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0ov-MA-39V" userLabel="BottomLIne">
-                                        <rect key="frame" x="36" y="49" width="276" height="1"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <rect key="frame" x="40" y="49" width="272" height="1"/>
+                                        <color key="backgroundColor" red="0.34509803921568627" green="0.34509803921568627" blue="0.3529411764705882" alpha="0.5" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="0TB-Bj-Ztn"/>
                                         </constraints>
                                     </view>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="276" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Pincode" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8mq-Ve-4fO">
-                                        <rect key="frame" x="36" y="14" width="276" height="30"/>
+                                        <rect key="frame" x="40" y="14" width="272" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="kU8-tr-Svy"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.34509803921568627" green="0.34509803921568627" blue="0.3529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="16"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="8a2-yL-C4O"/>
                                     <constraint firstAttribute="trailing" secondItem="8mq-Ve-4fO" secondAttribute="trailing" constant="8" id="AYF-2A-9v4"/>
+                                    <constraint firstItem="0ov-MA-39V" firstAttribute="width" secondItem="8mq-Ve-4fO" secondAttribute="width" id="L8V-Ap-4vX"/>
                                     <constraint firstAttribute="trailing" secondItem="0ov-MA-39V" secondAttribute="trailing" constant="8" id="NMx-Qr-541"/>
-                                    <constraint firstItem="0ov-MA-39V" firstAttribute="leading" secondItem="tqV-bR-jiJ" secondAttribute="leading" constant="36" id="Ouy-Zt-5Hm"/>
                                     <constraint firstItem="cLg-5z-bR5" firstAttribute="leading" secondItem="tqV-bR-jiJ" secondAttribute="leading" constant="8" id="Vgu-KT-5CX"/>
                                     <constraint firstItem="8mq-Ve-4fO" firstAttribute="top" secondItem="tqV-bR-jiJ" secondAttribute="top" constant="14" id="ch1-Vs-e0c"/>
                                     <constraint firstAttribute="bottom" secondItem="0ov-MA-39V" secondAttribute="bottom" id="dr6-rw-eli"/>
@@ -1944,7 +1961,7 @@ If you like ordering food on our app, please rate us on
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kdw-3L-jeC" userLabel="BottomLIne">
                                         <rect key="frame" x="36" y="49" width="276" height="1"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.34509803921568627" green="0.34509803921568627" blue="0.3529411764705882" alpha="0.5" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="TDA-Ou-W7T"/>
                                         </constraints>
@@ -1954,29 +1971,30 @@ If you like ordering food on our app, please rate us on
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="VGC-gj-rtw"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.34509803921568627" green="0.34509803921568627" blue="0.3529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="16"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="fTD-J7-TOA" firstAttribute="top" secondItem="hpi-5O-M4w" secondAttribute="top" constant="14" id="2MF-JN-1FX"/>
                                     <constraint firstAttribute="trailing" secondItem="fTD-J7-TOA" secondAttribute="trailing" constant="8" id="Hli-hQ-zGO"/>
-                                    <constraint firstItem="Kdw-3L-jeC" firstAttribute="leading" secondItem="hpi-5O-M4w" secondAttribute="leading" constant="36" id="T5U-Ef-P40"/>
                                     <constraint firstAttribute="bottom" secondItem="Kdw-3L-jeC" secondAttribute="bottom" id="Txe-3N-rXS"/>
                                     <constraint firstItem="4hF-li-ge4" firstAttribute="leading" secondItem="hpi-5O-M4w" secondAttribute="leading" constant="8" id="akE-Dd-jy7"/>
                                     <constraint firstAttribute="height" constant="50" id="g7S-Ke-XGC"/>
                                     <constraint firstItem="4hF-li-ge4" firstAttribute="top" secondItem="hpi-5O-M4w" secondAttribute="top" constant="14" id="ljk-Vt-c1n"/>
                                     <constraint firstItem="fTD-J7-TOA" firstAttribute="leading" secondItem="4hF-li-ge4" secondAttribute="trailing" constant="16" id="mxM-Pp-jo6"/>
+                                    <constraint firstItem="Kdw-3L-jeC" firstAttribute="width" secondItem="fTD-J7-TOA" secondAttribute="width" id="rJS-6y-EDO"/>
                                     <constraint firstAttribute="trailing" secondItem="Kdw-3L-jeC" secondAttribute="trailing" constant="8" id="tZM-qL-xHO"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZQ-72-egU">
-                                <rect key="frame" x="8" y="404" width="304" height="30"/>
+                                <rect key="frame" x="8" y="404" width="304" height="40"/>
                                 <color key="backgroundColor" red="0.47450980392156861" green="0.81176470588235294" blue="0.24705882352941178" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="INU-UI-jcF"/>
+                                    <constraint firstAttribute="height" constant="40" id="INU-UI-jcF"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="12"/>
+                                <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="16"/>
                                 <state key="normal" title="Save">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
