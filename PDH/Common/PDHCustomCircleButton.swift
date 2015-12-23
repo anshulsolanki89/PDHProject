@@ -18,6 +18,7 @@ public class PDHCustomCircleButton: UIButton {
     
     
     override public func drawRect(rect: CGRect) {
+        super.drawRect(rect)
         self.layer.cornerRadius = (self.frame.size.width / 2)
         self.layer.borderColor = layerColor.CGColor
         self.layer.borderWidth = borderWidth

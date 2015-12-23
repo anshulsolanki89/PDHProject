@@ -58,6 +58,7 @@
 		E5DE86DF1C1D9CFC0009EEAC /* PDHDeliveryAddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DE86DE1C1D9CFC0009EEAC /* PDHDeliveryAddressView.swift */; settings = {ASSET_TAGS = (); }; };
 		E5E7802D1C15FD0300800B9C /* PDHCustomCurveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E7802C1C15FD0300800B9C /* PDHCustomCurveView.swift */; settings = {ASSET_TAGS = (); }; };
 		E5E780311C16045600800B9C /* PDHCustomCircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E780301C16045600800B9C /* PDHCustomCircleButton.swift */; settings = {ASSET_TAGS = (); }; };
+		E5EB7ECF1C2B0BC90027F36B /* PDHCustomCircleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EB7ECE1C2B0BC90027F36B /* PDHCustomCircleLabel.swift */; settings = {ASSET_TAGS = (); }; };
 		E5EE2F4B1C26838000A1C92A /* PDHCustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EE2F4A1C26838000A1C92A /* PDHCustomImageView.swift */; settings = {ASSET_TAGS = (); }; };
 		E5EF143D1C1D4C450097E70E /* PDHOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EF143C1C1D4C450097E70E /* PDHOverlayView.swift */; settings = {ASSET_TAGS = (); }; };
 		E5F08F921C12BF4E0017B703 /* PDHButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F08F911C12BF4E0017B703 /* PDHButton.swift */; settings = {ASSET_TAGS = (); }; };
@@ -116,6 +117,7 @@
 		E5DE86DE1C1D9CFC0009EEAC /* PDHDeliveryAddressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHDeliveryAddressView.swift; sourceTree = "<group>"; };
 		E5E7802C1C15FD0300800B9C /* PDHCustomCurveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHCustomCurveView.swift; sourceTree = "<group>"; };
 		E5E780301C16045600800B9C /* PDHCustomCircleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHCustomCircleButton.swift; sourceTree = "<group>"; };
+		E5EB7ECE1C2B0BC90027F36B /* PDHCustomCircleLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHCustomCircleLabel.swift; sourceTree = "<group>"; };
 		E5EE2F4A1C26838000A1C92A /* PDHCustomImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHCustomImageView.swift; sourceTree = "<group>"; };
 		E5EF143C1C1D4C450097E70E /* PDHOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHOverlayView.swift; sourceTree = "<group>"; };
 		E5F08F911C12BF4E0017B703 /* PDHButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHButton.swift; sourceTree = "<group>"; };
@@ -366,6 +368,7 @@
 				E5F08F911C12BF4E0017B703 /* PDHButton.swift */,
 				E5E7802C1C15FD0300800B9C /* PDHCustomCurveView.swift */,
 				E5EE2F4A1C26838000A1C92A /* PDHCustomImageView.swift */,
+				E5EB7ECE1C2B0BC90027F36B /* PDHCustomCircleLabel.swift */,
 				E5E780301C16045600800B9C /* PDHCustomCircleButton.swift */,
 				E5368A851C16B5E600A487F1 /* PDHCustomStepper.swift */,
 				E5368A891C16B62500A487F1 /* PDHCustomStepper.xib */,
@@ -656,6 +659,7 @@
 				E505D0CC1C1345AA00571A4B /* MenuViewController.swift in Sources */,
 				E5EF143D1C1D4C450097E70E /* PDHOverlayView.swift in Sources */,
 				E5026B7E1C1F49B600B1839E /* PDHOrderConfirmationView.swift in Sources */,
+				E5EB7ECF1C2B0BC90027F36B /* PDHCustomCircleLabel.swift in Sources */,
 				E5189DB51C0770DB008CC84C /* LoginView.swift in Sources */,
 				E52F15301C0815E80027DE10 /* PDHHelper.swift in Sources */,
 				E5DE86DF1C1D9CFC0009EEAC /* PDHDeliveryAddressView.swift in Sources */,

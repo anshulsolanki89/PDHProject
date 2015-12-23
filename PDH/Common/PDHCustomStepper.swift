@@ -13,6 +13,8 @@ import UIKit
 class PDHCustomStepper: UIView {
 
     override func drawRect(rect: CGRect) {
+        super.drawRect(rect)
+        
         let stepperView = UINib(
             nibName: "PDHCustomStepper",
             bundle: NSBundle.mainBundle()
