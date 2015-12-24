@@ -7,11 +7,11 @@
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="SkiaRegular.ttf">
-            <string>Skia-Regular_Light</string>
-            <string>Skia-Regular_Light</string>
             <string>Skia-Regular</string>
             <string>Skia-Regular</string>
-            <string>Skia-Regular_Light</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
         </mutableArray>
     </customFonts>
     <objects>
@@ -21,9 +21,9 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cTi-wg-Kkj" userLabel="BlackTransparentView">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cTi-wg-Kkj" userLabel="BlackTransparentView">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.75" colorSpace="calibratedWhite"/>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HKm-tL-a9O" customClass="PDHCustomCurveView" customModule="PDH" customModuleProvider="target">
                     <rect key="frame" x="16" y="137" width="288" height="180"/>
@@ -34,7 +34,7 @@
                             <constraints>
                                 <constraint firstAttribute="height" constant="30" id="YNU-p0-fVM"/>
                             </constraints>
-                            <fontDescription key="fontDescription" name="Skia-Regular_Light" family="Skia" pointSize="14"/>
+                            <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="14"/>
                             <state key="normal" title="Done">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
@@ -49,7 +49,7 @@
                                 <constraint firstAttribute="height" constant="30" id="TPL-mL-nYp"/>
                             </constraints>
                             <color key="textColor" red="0.76862745098039209" green="0.76862745098039209" blue="0.76862745098039209" alpha="1" colorSpace="calibratedRGB"/>
-                            <fontDescription key="fontDescription" name="Skia-Regular_Light" family="Skia" pointSize="14"/>
+                            <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="12"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  MOBILE NO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3RA-5J-dgA">
@@ -58,7 +58,7 @@
                                 <constraint firstAttribute="height" constant="35" id="tHH-gw-hcT"/>
                             </constraints>
                             <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="16"/>
-                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  EDIT ADDRESS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q3T-hZ-6cU">
@@ -67,14 +67,14 @@
                                 <constraint firstAttribute="height" constant="35" id="GL5-F9-7MG"/>
                             </constraints>
                             <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="16"/>
-                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="FQP-VT-veZ">
                             <rect key="frame" x="0.0" y="35" width="288" height="50"/>
                             <color key="backgroundColor" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="calibratedRGB"/>
                             <color key="textColor" red="0.76862745098039209" green="0.76862745098039209" blue="0.76862745098039209" alpha="1" colorSpace="calibratedRGB"/>
-                            <fontDescription key="fontDescription" name="Skia-Regular_Light" family="Skia" pointSize="14"/>
+                            <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="12"/>
                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                         </textView>
                     </subviews>

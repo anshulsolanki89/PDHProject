@@ -56,6 +56,8 @@
 		E59B4F3E1C0CC39000D1B6E7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E553E4B41C05F2D9007DD045 /* Info.plist */; };
 		E5DE86DD1C1D9CB20009EEAC /* PDHDeliveryAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DE86DC1C1D9CB20009EEAC /* PDHDeliveryAddressViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		E5DE86DF1C1D9CFC0009EEAC /* PDHDeliveryAddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DE86DE1C1D9CFC0009EEAC /* PDHDeliveryAddressView.swift */; settings = {ASSET_TAGS = (); }; };
+		E5DF0ED81C2C53360042300F /* PDHAddressBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DF0ED71C2C53360042300F /* PDHAddressBookViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		E5DF0EDA1C2C53740042300F /* PDHAddressBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DF0ED91C2C53740042300F /* PDHAddressBookView.swift */; settings = {ASSET_TAGS = (); }; };
 		E5E7802D1C15FD0300800B9C /* PDHCustomCurveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E7802C1C15FD0300800B9C /* PDHCustomCurveView.swift */; settings = {ASSET_TAGS = (); }; };
 		E5E780311C16045600800B9C /* PDHCustomCircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E780301C16045600800B9C /* PDHCustomCircleButton.swift */; settings = {ASSET_TAGS = (); }; };
 		E5EB7ECF1C2B0BC90027F36B /* PDHCustomCircleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EB7ECE1C2B0BC90027F36B /* PDHCustomCircleLabel.swift */; settings = {ASSET_TAGS = (); }; };
@@ -115,6 +117,8 @@
 		E59B4F391C0CBA5400D1B6E7 /* SkiaRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SkiaRegular.ttf; sourceTree = "<group>"; };
 		E5DE86DC1C1D9CB20009EEAC /* PDHDeliveryAddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHDeliveryAddressViewController.swift; sourceTree = "<group>"; };
 		E5DE86DE1C1D9CFC0009EEAC /* PDHDeliveryAddressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHDeliveryAddressView.swift; sourceTree = "<group>"; };
+		E5DF0ED71C2C53360042300F /* PDHAddressBookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHAddressBookViewController.swift; sourceTree = "<group>"; };
+		E5DF0ED91C2C53740042300F /* PDHAddressBookView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHAddressBookView.swift; sourceTree = "<group>"; };
 		E5E7802C1C15FD0300800B9C /* PDHCustomCurveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHCustomCurveView.swift; sourceTree = "<group>"; };
 		E5E780301C16045600800B9C /* PDHCustomCircleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHCustomCircleButton.swift; sourceTree = "<group>"; };
 		E5EB7ECE1C2B0BC90027F36B /* PDHCustomCircleLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHCustomCircleLabel.swift; sourceTree = "<group>"; };
@@ -461,6 +465,7 @@
 				E59AB29D1C1485F1003A8F19 /* OrderHistory */,
 				E5DE86D81C1D9C760009EEAC /* DeliveryAddress */,
 				E5026B771C1F495200B1839E /* OrderConfirmation */,
+				E5DF0ED31C2C52FB0042300F /* AddressBook */,
 				E553E4AF1C05F2D9007DD045 /* Assets.xcassets */,
 				E53AB43B1C26C84C007494DA /* DishImages */,
 				E553E4AC1C05F2D9007DD045 /* Main.storyboard */,
@@ -544,6 +549,39 @@
 				E535E8D61C1DD7C200B4A9B7 /* PDHDeliveryAddressCustomCell.swift */,
 				E535E8D41C1DD6E100B4A9B7 /* PDHEditAddressView.swift */,
 				E535E8D21C1DD07D00B4A9B7 /* PDHEditAddressView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E5DF0ED31C2C52FB0042300F /* AddressBook */ = {
+			isa = PBXGroup;
+			children = (
+				E5DF0ED41C2C52FB0042300F /* Controller */,
+				E5DF0ED51C2C52FB0042300F /* Model */,
+				E5DF0ED61C2C52FB0042300F /* Views */,
+			);
+			path = AddressBook;
+			sourceTree = "<group>";
+		};
+		E5DF0ED41C2C52FB0042300F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E5DF0ED71C2C53360042300F /* PDHAddressBookViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E5DF0ED51C2C52FB0042300F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E5DF0ED61C2C52FB0042300F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E5DF0ED91C2C53740042300F /* PDHAddressBookView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -636,6 +674,7 @@
 				E52F154C1C0883510027DE10 /* PDHViewActionProtocol.swift in Sources */,
 				E5368A861C16B5E600A487F1 /* PDHCustomStepper.swift in Sources */,
 				E52F15501C0884B70027DE10 /* PDHActionEnum.swift in Sources */,
+				E5DF0EDA1C2C53740042300F /* PDHAddressBookView.swift in Sources */,
 				E5DE86DD1C1D9CB20009EEAC /* PDHDeliveryAddressViewController.swift in Sources */,
 				E5026B7C1C1F498000B1839E /* PDHOrderConfirmationViewController.swift in Sources */,
 				E5189DAD1C077036008CC84C /* LandingViewController.swift in Sources */,
@@ -670,6 +709,7 @@
 				E52F15341C081B430027DE10 /* PDHUtilityExtension.swift in Sources */,
 				E56B6D8D1C173F47003E8E26 /* PDHMenuView.swift in Sources */,
 				E5F08F921C12BF4E0017B703 /* PDHButton.swift in Sources */,
+				E5DF0ED81C2C53360042300F /* PDHAddressBookViewController.swift in Sources */,
 				E59825A31C1201200033F619 /* SlidingMenuView.swift in Sources */,
 				E52F153E1C0823250027DE10 /* RegistrationView.swift in Sources */,
 			);
