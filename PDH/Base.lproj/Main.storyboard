@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Ing-aX-ho7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="UvN-0V-hkL">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
@@ -1054,6 +1054,29 @@ App Store.</string>
             </objects>
             <point key="canvasLocation" x="878" y="1225"/>
         </scene>
+        <!--Reveal View Controller-->
+        <scene sceneID="40D-hz-Q52">
+            <objects>
+                <viewController id="4It-zn-29d" customClass="SWRevealViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4Tz-Fn-4fv"/>
+                        <viewControllerLayoutGuide type="bottom" id="c2l-1V-s22"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rb1-Jv-eW8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7CT-n8-P61"/>
+                    <connections>
+                        <segue destination="Ing-aX-ho7" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="fpA-g8-bLg"/>
+                        <segue destination="KZS-ui-tHv" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="3ab-pA-s3b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TaP-Sv-kmI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="220" y="-248"/>
+        </scene>
         <!--Menu Screen Controller-->
         <scene sceneID="qw5-m2-TCd">
             <objects>
@@ -1068,9 +1091,6 @@ App Store.</string>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u8C-x8-wQB">
                                 <rect key="frame" x="-288" y="0.0" width="288" height="568"/>
-                                <connections>
-                                    <segue destination="KZS-ui-tHv" kind="embed" id="Qzd-yf-bC8"/>
-                                </connections>
                             </containerView>
                             <containerView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xlf-Fm-bQI" userLabel="DishSearchView">
                                 <rect key="frame" x="0.0" y="108" width="320" height="460"/>
@@ -1327,13 +1347,10 @@ App Store.</string>
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" id="Y5t-GU-hrp"/>
-                    <connections>
-                        <outlet property="slidingView" destination="u8C-x8-wQB" id="qer-7U-zsZ"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZC7-79-gtX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="232" y="-255"/>
+            <point key="canvasLocation" x="579" y="-353"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="wR4-9N-zrq">
@@ -1385,7 +1402,7 @@ App Store.</string>
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="Ing-aX-ho7" kind="push" id="DPG-AE-FmN"/>
+                                            <segue destination="4It-zn-29d" kind="push" id="ch7-bs-v8S"/>
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yYu-OZ-ztl" userLabel="FirstLine">
@@ -1541,16 +1558,16 @@ App Store.</string>
                         <viewControllerLayoutGuide type="bottom" id="frN-3u-3eg"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="g7a-Pc-LYe" customClass="SlidingMenuView" customModule="PDH" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="288" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sliding_Bar" translatesAutoresizingMaskIntoConstraints="NO" id="guH-4V-o9w">
-                                <rect key="frame" x="0.0" y="0.0" width="288" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="q0D-1J-Whh">
-                                <rect key="frame" x="0.0" y="0.0" width="288" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <inset key="separatorInset" minX="41" minY="0.0" maxX="8" maxY="0.0"/>
@@ -1558,10 +1575,10 @@ App Store.</string>
                                 <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="PDHSlidingMenuCell" rowHeight="60" id="rQS-ga-yYc" customClass="SlidingMenuCustomCell" customModule="PDH" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="288" height="60"/>
+                                        <rect key="frame" x="0.0" y="28" width="320" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rQS-ga-yYc" id="ZQK-0y-yyh">
-                                            <rect key="frame" x="0.0" y="0.0" width="255" height="60"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MyProfile" translatesAutoresizingMaskIntoConstraints="NO" id="UcW-rf-BD4">
@@ -1570,13 +1587,13 @@ App Store.</string>
                                                         <constraint firstAttribute="width" constant="25" id="w1i-BK-bbN"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RxF-84-cSt">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="My Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RxF-84-cSt">
                                                     <rect key="frame" x="49" y="19" width="206" height="21"/>
                                                     <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="18"/>
                                                     <color key="textColor" red="0.21568627450980393" green="0.17254901960784313" blue="0.062745098039215685" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="239" translatesAutoresizingMaskIntoConstraints="NO" id="CZd-pJ-Qq1" userLabel="BottomLine">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="239" translatesAutoresizingMaskIntoConstraints="NO" id="CZd-pJ-Qq1" userLabel="BottomLine">
                                                     <rect key="frame" x="41" y="59" width="239" height="1"/>
                                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
@@ -1633,7 +1650,7 @@ App Store.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oaz-hR-WQi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="740" y="-890"/>
+            <point key="canvasLocation" x="617" y="-996"/>
         </scene>
         <!--DishMenuVC-->
         <scene sceneID="PZq-qj-Q1v">
@@ -1761,7 +1778,7 @@ App Store.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jZ0-5y-og0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="756" y="-222"/>
+            <point key="canvasLocation" x="1097" y="-225"/>
         </scene>
         <!--NewAddressVC-->
         <scene sceneID="Oek-e3-Sqz">

@@ -44,6 +44,7 @@
 		E553E4AE1C05F2D9007DD045 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E553E4AC1C05F2D9007DD045 /* Main.storyboard */; };
 		E553E4B01C05F2D9007DD045 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E553E4AF1C05F2D9007DD045 /* Assets.xcassets */; };
 		E553E4B31C05F2D9007DD045 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E553E4B11C05F2D9007DD045 /* LaunchScreen.storyboard */; };
+		E56AF4161C2E9AC400AC3FCD /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E56AF4151C2E9AC400AC3FCD /* SWRevealViewController.m */; settings = {ASSET_TAGS = (); }; };
 		E56B6D871C17286F003E8E26 /* PDHDishCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56B6D861C17286F003E8E26 /* PDHDishCustomCell.swift */; settings = {ASSET_TAGS = (); }; };
 		E56B6D8D1C173F47003E8E26 /* PDHMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56B6D8C1C173F47003E8E26 /* PDHMenuView.swift */; settings = {ASSET_TAGS = (); }; };
 		E56B6D911C1743D7003E8E26 /* PDHQuantitySelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56B6D901C1743D7003E8E26 /* PDHQuantitySelectorView.swift */; settings = {ASSET_TAGS = (); }; };
@@ -110,6 +111,9 @@
 		E553E4AF1C05F2D9007DD045 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E553E4B21C05F2D9007DD045 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E553E4B41C05F2D9007DD045 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E56AF4131C2E9AC300AC3FCD /* PDH-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PDH-Bridging-Header.h"; sourceTree = "<group>"; };
+		E56AF4141C2E9AC400AC3FCD /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		E56AF4151C2E9AC400AC3FCD /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		E56B6D861C17286F003E8E26 /* PDHDishCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHDishCustomCell.swift; sourceTree = "<group>"; };
 		E56B6D8C1C173F47003E8E26 /* PDHMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHMenuView.swift; sourceTree = "<group>"; };
 		E56B6D901C1743D7003E8E26 /* PDHQuantitySelectorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHQuantitySelectorView.swift; sourceTree = "<group>"; };
@@ -496,6 +500,7 @@
 			isa = PBXGroup;
 			children = (
 				E553E4A81C05F2D9007DD045 /* AppDelegate.swift */,
+				E56AF4111C2E9A7900AC3FCD /* ThirdParty */,
 				E52F15531C088A000027DE10 /* Common */,
 				E52F152E1C0815CE0027DE10 /* Helper */,
 				E5189DA01C077017008CC84C /* LandingPage */,
@@ -517,6 +522,24 @@
 				E553E4B41C05F2D9007DD045 /* Info.plist */,
 			);
 			path = PDH;
+			sourceTree = "<group>";
+		};
+		E56AF4111C2E9A7900AC3FCD /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				E56AF4121C2E9A7900AC3FCD /* SWRevealViewController */,
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		E56AF4121C2E9A7900AC3FCD /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E56AF4141C2E9AC400AC3FCD /* SWRevealViewController.h */,
+				E56AF4151C2E9AC400AC3FCD /* SWRevealViewController.m */,
+				E56AF4131C2E9AC300AC3FCD /* PDH-Bridging-Header.h */,
+			);
+			path = SWRevealViewController;
 			sourceTree = "<group>";
 		};
 		E59AB29D1C1485F1003A8F19 /* OrderHistory */ = {
@@ -750,6 +773,7 @@
 				E52F154C1C0883510027DE10 /* PDHViewActionProtocol.swift in Sources */,
 				E5368A861C16B5E600A487F1 /* PDHCustomStepper.swift in Sources */,
 				E52F15501C0884B70027DE10 /* PDHActionEnum.swift in Sources */,
+				E56AF4161C2E9AC400AC3FCD /* SWRevealViewController.m in Sources */,
 				E5DF0EDA1C2C53740042300F /* PDHAddressBookView.swift in Sources */,
 				E5DE86DD1C1D9CB20009EEAC /* PDHDeliveryAddressViewController.swift in Sources */,
 				E5026B7C1C1F498000B1839E /* PDHOrderConfirmationViewController.swift in Sources */,
@@ -902,11 +926,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = PDH/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pdh.PDH;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PDH/ThirdParty/SWRevealViewController/PDH-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -914,11 +941,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = PDH/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pdh.PDH;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PDH/ThirdParty/SWRevealViewController/PDH-Bridging-Header.h";
 			};
 			name = Release;
 		};
