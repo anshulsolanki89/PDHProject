@@ -29,7 +29,7 @@ class MenuScreenView: PDHView, UICollectionViewDataSource {
     
     @IBAction func menuBtnClicked(sender: AnyObject) {
         endSearching()
-        delegate?.viewPerformedAction(ViewActions.MenuBtnClciked)
+        delegate?.viewPerformedAction(ViewActions.MenuBtnClciked, data: nil)
     }
     
     override func awakeFromNib() {

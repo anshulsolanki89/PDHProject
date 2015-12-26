@@ -1,5 +1,5 @@
 //
-//  LoginViewController.swift
+//  PDHLoginViewController.swift
 //  PDH
 //
 //  Created by Anshul Solanki on 11/26/15.
@@ -9,18 +9,22 @@
 import Foundation
 import UIKit
 
-class LoginViewController: UIViewController {
+class PDHLoginViewController: UIViewController {
+    let loginDataManager = PDHLoginDataManager()
+
     override func awakeFromNib() {
         super.awakeFromNib()
-        (self.view as! LoginView).delegate = self
+        (self.view as! PDHLoginView).delegate = self
     }
 }
 
-extension LoginViewController: ViewActionDelegate {
-    func viewPerformedAction(action: ViewActions) {
+extension PDHLoginViewController: ViewActionDelegate {
+    func viewPerformedAction(action: ViewActions, data: [String: AnyObject]?) {
         switch action {
         case .Back:
             self.navigationController?.popViewControllerAnimated(true)
+        case .Login:
+            PDHLoginDataManager.loginWithData(data!)
         default:
             fatalError("Error")
         }

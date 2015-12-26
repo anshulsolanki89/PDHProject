@@ -24,7 +24,7 @@ class DishMenuController: UIViewController, ViewActionDelegate {
         dishListView.delegate = self
     }
     
-    func viewPerformedAction(action: ViewActions) {
+    func viewPerformedAction(action: ViewActions, data: [String: AnyObject]?) {
         switch action {
         case .AddToOrder:
             delegate?.dishClicked(self)

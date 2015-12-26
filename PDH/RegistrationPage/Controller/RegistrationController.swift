@@ -17,7 +17,7 @@ class RegistrationController: UIViewController {
 }
 
 extension RegistrationController: ViewActionDelegate {
-    func viewPerformedAction(action: ViewActions) {
+    func viewPerformedAction(action: ViewActions, data: [String: AnyObject]?) {
         switch action {
         case .Back:
             self.navigationController?.popViewControllerAnimated(true)

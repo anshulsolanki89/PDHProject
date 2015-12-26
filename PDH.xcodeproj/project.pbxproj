@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8CAD17E157FB8817A6E73F01 /* Pods_PDH.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4BA912FC5A57EC7D736722E /* Pods_PDH.framework */; };
 		E5026B7C1C1F498000B1839E /* PDHOrderConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5026B7B1C1F498000B1839E /* PDHOrderConfirmationViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		E5026B7E1C1F49B600B1839E /* PDHOrderConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5026B7D1C1F49B600B1839E /* PDHOrderConfirmationView.swift */; settings = {ASSET_TAGS = (); }; };
 		E505D0CC1C1345AA00571A4B /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E505D0CB1C1345AA00571A4B /* MenuViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		E505D0D01C1346C100571A4B /* DishMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E505D0CF1C1346C100571A4B /* DishMenuController.swift */; settings = {ASSET_TAGS = (); }; };
 		E5189DAD1C077036008CC84C /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5189DAC1C077036008CC84C /* LandingViewController.swift */; };
-		E5189DB11C07705E008CC84C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5189DB01C07705E008CC84C /* LoginViewController.swift */; };
-		E5189DB51C0770DB008CC84C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5189DB41C0770DB008CC84C /* LoginView.swift */; };
+		E5189DB11C07705E008CC84C /* PDHLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5189DB01C07705E008CC84C /* PDHLoginViewController.swift */; };
+		E5189DB51C0770DB008CC84C /* PDHLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5189DB41C0770DB008CC84C /* PDHLoginView.swift */; };
 		E5189DB91C0770E5008CC84C /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5189DB81C0770E5008CC84C /* LandingView.swift */; };
 		E52F15301C0815E80027DE10 /* PDHHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52F152F1C0815E80027DE10 /* PDHHelper.swift */; };
 		E52F15341C081B430027DE10 /* PDHUtilityExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52F15331C081B430027DE10 /* PDHUtilityExtension.swift */; };
@@ -61,6 +62,11 @@
 		E5DE86DF1C1D9CFC0009EEAC /* PDHDeliveryAddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DE86DE1C1D9CFC0009EEAC /* PDHDeliveryAddressView.swift */; settings = {ASSET_TAGS = (); }; };
 		E5DF0ED81C2C53360042300F /* PDHAddressBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DF0ED71C2C53360042300F /* PDHAddressBookViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		E5DF0EDA1C2C53740042300F /* PDHAddressBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DF0ED91C2C53740042300F /* PDHAddressBookView.swift */; settings = {ASSET_TAGS = (); }; };
+		E5E004431C2ECBF00082EED6 /* PDHCustomDishCartView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5E004421C2ECBF00082EED6 /* PDHCustomDishCartView.xib */; settings = {ASSET_TAGS = (); }; };
+		E5E004451C2EE3740082EED6 /* PDHCustomDishCartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E004441C2EE3740082EED6 /* PDHCustomDishCartView.swift */; settings = {ASSET_TAGS = (); }; };
+		E5E004491C2EF5530082EED6 /* PDHConstantURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E004481C2EF5530082EED6 /* PDHConstantURL.swift */; settings = {ASSET_TAGS = (); }; };
+		E5E0044B1C2EF7CF0082EED6 /* PDHNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E0044A1C2EF7CF0082EED6 /* PDHNetworkManager.swift */; settings = {ASSET_TAGS = (); }; };
+		E5E0044F1C2EFCE00082EED6 /* PDHLoginDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E0044E1C2EFCE00082EED6 /* PDHLoginDataManager.swift */; settings = {ASSET_TAGS = (); }; };
 		E5E4935D1C2D6CAF00469745 /* PDHMyOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E4935C1C2D6CAF00469745 /* PDHMyOrderViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		E5E4935F1C2D6CE300469745 /* PDHMyOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E4935E1C2D6CE300469745 /* PDHMyOrderView.swift */; settings = {ASSET_TAGS = (); }; };
 		E5E7802D1C15FD0300800B9C /* PDHCustomCurveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E7802C1C15FD0300800B9C /* PDHCustomCurveView.swift */; settings = {ASSET_TAGS = (); }; };
@@ -72,13 +78,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6E06ED873E7A19F8574FC0AE /* Pods-PDH.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDH.release.xcconfig"; path = "Pods/Target Support Files/Pods-PDH/Pods-PDH.release.xcconfig"; sourceTree = "<group>"; };
+		84D5D793061CFC3FD2A59C6B /* Pods-PDH.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDH.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PDH/Pods-PDH.debug.xcconfig"; sourceTree = "<group>"; };
+		B4BA912FC5A57EC7D736722E /* Pods_PDH.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PDH.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5026B7B1C1F498000B1839E /* PDHOrderConfirmationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHOrderConfirmationViewController.swift; sourceTree = "<group>"; };
 		E5026B7D1C1F49B600B1839E /* PDHOrderConfirmationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHOrderConfirmationView.swift; sourceTree = "<group>"; };
 		E505D0CB1C1345AA00571A4B /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		E505D0CF1C1346C100571A4B /* DishMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DishMenuController.swift; sourceTree = "<group>"; };
 		E5189DAC1C077036008CC84C /* LandingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
-		E5189DB01C07705E008CC84C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		E5189DB41C0770DB008CC84C /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		E5189DB01C07705E008CC84C /* PDHLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHLoginViewController.swift; sourceTree = "<group>"; };
+		E5189DB41C0770DB008CC84C /* PDHLoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHLoginView.swift; sourceTree = "<group>"; };
 		E5189DB81C0770E5008CC84C /* LandingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 		E52F152F1C0815E80027DE10 /* PDHHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHHelper.swift; sourceTree = "<group>"; };
 		E52F15331C081B430027DE10 /* PDHUtilityExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHUtilityExtension.swift; sourceTree = "<group>"; };
@@ -111,7 +120,6 @@
 		E553E4AF1C05F2D9007DD045 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E553E4B21C05F2D9007DD045 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E553E4B41C05F2D9007DD045 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E56AF4131C2E9AC300AC3FCD /* PDH-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PDH-Bridging-Header.h"; sourceTree = "<group>"; };
 		E56AF4141C2E9AC400AC3FCD /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		E56AF4151C2E9AC400AC3FCD /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		E56B6D861C17286F003E8E26 /* PDHDishCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHDishCustomCell.swift; sourceTree = "<group>"; };
@@ -129,6 +137,12 @@
 		E5DE86DE1C1D9CFC0009EEAC /* PDHDeliveryAddressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHDeliveryAddressView.swift; sourceTree = "<group>"; };
 		E5DF0ED71C2C53360042300F /* PDHAddressBookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHAddressBookViewController.swift; sourceTree = "<group>"; };
 		E5DF0ED91C2C53740042300F /* PDHAddressBookView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHAddressBookView.swift; sourceTree = "<group>"; };
+		E5E004421C2ECBF00082EED6 /* PDHCustomDishCartView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PDHCustomDishCartView.xib; sourceTree = "<group>"; };
+		E5E004441C2EE3740082EED6 /* PDHCustomDishCartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHCustomDishCartView.swift; sourceTree = "<group>"; };
+		E5E004481C2EF5530082EED6 /* PDHConstantURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHConstantURL.swift; sourceTree = "<group>"; };
+		E5E0044A1C2EF7CF0082EED6 /* PDHNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHNetworkManager.swift; sourceTree = "<group>"; };
+		E5E0044E1C2EFCE00082EED6 /* PDHLoginDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHLoginDataManager.swift; sourceTree = "<group>"; };
+		E5E004501C2F0C9F0082EED6 /* PDH-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PDH-Bridging-Header.h"; sourceTree = "<group>"; };
 		E5E4935C1C2D6CAF00469745 /* PDHMyOrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHMyOrderViewController.swift; sourceTree = "<group>"; };
 		E5E4935E1C2D6CE300469745 /* PDHMyOrderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHMyOrderView.swift; sourceTree = "<group>"; };
 		E5E7802C1C15FD0300800B9C /* PDHCustomCurveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHCustomCurveView.swift; sourceTree = "<group>"; };
@@ -144,12 +158,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CAD17E157FB8817A6E73F01 /* Pods_PDH.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		908CE1B968BE9862C9BD2EF0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B4BA912FC5A57EC7D736722E /* Pods_PDH.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D437A35588B2043F0C632536 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				84D5D793061CFC3FD2A59C6B /* Pods-PDH.debug.xcconfig */,
+				6E06ED873E7A19F8574FC0AE /* Pods-PDH.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E5026B771C1F495200B1839E /* OrderConfirmation */ = {
 			isa = PBXGroup;
 			children = (
@@ -282,7 +314,7 @@
 		E5189DA71C077017008CC84C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				E5189DB01C07705E008CC84C /* LoginViewController.swift */,
+				E5189DB01C07705E008CC84C /* PDHLoginViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -290,6 +322,7 @@
 		E5189DA81C077017008CC84C /* DataManager */ = {
 			isa = PBXGroup;
 			children = (
+				E5E0044E1C2EFCE00082EED6 /* PDHLoginDataManager.swift */,
 			);
 			path = DataManager;
 			sourceTree = "<group>";
@@ -311,7 +344,7 @@
 		E5189DAB1C077017008CC84C /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E5189DB41C0770DB008CC84C /* LoginView.swift */,
+				E5189DB41C0770DB008CC84C /* PDHLoginView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -420,7 +453,10 @@
 				E5EB7ECE1C2B0BC90027F36B /* PDHCustomCircleLabel.swift */,
 				E5E780301C16045600800B9C /* PDHCustomCircleButton.swift */,
 				E5368A851C16B5E600A487F1 /* PDHCustomStepper.swift */,
+				E5E004441C2EE3740082EED6 /* PDHCustomDishCartView.swift */,
+				E5E004421C2ECBF00082EED6 /* PDHCustomDishCartView.xib */,
 				E5368A891C16B62500A487F1 /* PDHCustomStepper.xib */,
+				E5E0044A1C2EF7CF0082EED6 /* PDHNetworkManager.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -485,6 +521,8 @@
 			children = (
 				E553E4A71C05F2D9007DD045 /* PDH */,
 				E553E4A61C05F2D9007DD045 /* Products */,
+				D437A35588B2043F0C632536 /* Pods */,
+				908CE1B968BE9862C9BD2EF0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -500,6 +538,8 @@
 			isa = PBXGroup;
 			children = (
 				E553E4A81C05F2D9007DD045 /* AppDelegate.swift */,
+				E5E004501C2F0C9F0082EED6 /* PDH-Bridging-Header.h */,
+				E5E004471C2EF5220082EED6 /* Global */,
 				E56AF4111C2E9A7900AC3FCD /* ThirdParty */,
 				E52F15531C088A000027DE10 /* Common */,
 				E52F152E1C0815CE0027DE10 /* Helper */,
@@ -537,7 +577,6 @@
 			children = (
 				E56AF4141C2E9AC400AC3FCD /* SWRevealViewController.h */,
 				E56AF4151C2E9AC400AC3FCD /* SWRevealViewController.m */,
-				E56AF4131C2E9AC300AC3FCD /* PDH-Bridging-Header.h */,
 			);
 			path = SWRevealViewController;
 			sourceTree = "<group>";
@@ -652,6 +691,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		E5E004471C2EF5220082EED6 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				E5E004481C2EF5530082EED6 /* PDHConstantURL.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
 		E5E493581C2D6C8500469745 /* MyOrder */ = {
 			isa = PBXGroup;
 			children = (
@@ -692,9 +739,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E553E4CD1C05F2D9007DD045 /* Build configuration list for PBXNativeTarget "PDH" */;
 			buildPhases = (
+				CB693F1E3D25E6D8BE0A9FD4 /* Check Pods Manifest.lock */,
 				E553E4A11C05F2D9007DD045 /* Sources */,
 				E553E4A21C05F2D9007DD045 /* Frameworks */,
 				E553E4A31C05F2D9007DD045 /* Resources */,
+				FB0809FFA3BCCB12454B67BE /* Embed Pods Frameworks */,
+				6136BB5257B2CC563401309A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -753,6 +803,7 @@
 				E59B4F3E1C0CC39000D1B6E7 /* Info.plist in Resources */,
 				E53AB4471C26C84C007494DA /* 5.png in Resources */,
 				E53AB4441C26C84C007494DA /* 2.png in Resources */,
+				E5E004431C2ECBF00082EED6 /* PDHCustomDishCartView.xib in Resources */,
 				E535E8D31C1DD07D00B4A9B7 /* PDHEditAddressView.xib in Resources */,
 				E53AB4431C26C84C007494DA /* 1.png in Resources */,
 				E53AB4461C26C84C007494DA /* 4.png in Resources */,
@@ -764,6 +815,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6136BB5257B2CC563401309A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PDH/Pods-PDH-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB693F1E3D25E6D8BE0A9FD4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FB0809FFA3BCCB12454B67BE /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PDH/Pods-PDH-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E553E4A11C05F2D9007DD045 /* Sources */ = {
@@ -791,10 +890,13 @@
 				E5189DB91C0770E5008CC84C /* LandingView.swift in Sources */,
 				E535E8D51C1DD6E100B4A9B7 /* PDHEditAddressView.swift in Sources */,
 				E56B6D911C1743D7003E8E26 /* PDHQuantitySelectorView.swift in Sources */,
-				E5189DB11C07705E008CC84C /* LoginViewController.swift in Sources */,
+				E5189DB11C07705E008CC84C /* PDHLoginViewController.swift in Sources */,
 				E5E7802D1C15FD0300800B9C /* PDHCustomCurveView.swift in Sources */,
 				E59825A11C1200D20033F619 /* SlidingMenuController.swift in Sources */,
+				E5E004491C2EF5530082EED6 /* PDHConstantURL.swift in Sources */,
+				E5E004451C2EE3740082EED6 /* PDHCustomDishCartView.swift in Sources */,
 				E56B6D871C17286F003E8E26 /* PDHDishCustomCell.swift in Sources */,
+				E5E0044B1C2EF7CF0082EED6 /* PDHNetworkManager.swift in Sources */,
 				E59825A51C1203850033F619 /* SlidingMenuCustomCell.swift in Sources */,
 				E505D0CC1C1345AA00571A4B /* MenuViewController.swift in Sources */,
 				E5EF143D1C1D4C450097E70E /* PDHOverlayView.swift in Sources */,
@@ -802,13 +904,14 @@
 				E5026B7E1C1F49B600B1839E /* PDHOrderConfirmationView.swift in Sources */,
 				E5EB7ECF1C2B0BC90027F36B /* PDHCustomCircleLabel.swift in Sources */,
 				E5C721FB1C2DB6E0005FAFD4 /* PDHCurrentOrderController.swift in Sources */,
-				E5189DB51C0770DB008CC84C /* LoginView.swift in Sources */,
+				E5189DB51C0770DB008CC84C /* PDHLoginView.swift in Sources */,
 				E5E4935F1C2D6CE300469745 /* PDHMyOrderView.swift in Sources */,
 				E52F15301C0815E80027DE10 /* PDHHelper.swift in Sources */,
 				E5DE86DF1C1D9CFC0009EEAC /* PDHDeliveryAddressView.swift in Sources */,
 				E553E4A91C05F2D9007DD045 /* AppDelegate.swift in Sources */,
 				E53AB4491C26C8A9007494DA /* PDHMenuOptionsCell.swift in Sources */,
 				E5EE2F4B1C26838000A1C92A /* PDHCustomImageView.swift in Sources */,
+				E5E0044F1C2EFCE00082EED6 /* PDHLoginDataManager.swift in Sources */,
 				E53487281C0F42D200203548 /* MenuScreenView.swift in Sources */,
 				E52F15341C081B430027DE10 /* PDHUtilityExtension.swift in Sources */,
 				E56B6D8D1C173F47003E8E26 /* PDHMenuView.swift in Sources */,
@@ -881,6 +984,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "PDH/PDH-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -918,36 +1022,53 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "PDH/PDH-Bridging-Header.h";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		E553E4CE1C05F2D9007DD045 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84D5D793061CFC3FD2A59C6B /* Pods-PDH.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)/**",
+					"\"${PODS_ROOT}/Headers/Public\"/**",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"/**",
+				);
 				INFOPLIST_FILE = PDH/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pdh.PDH;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "PDH/ThirdParty/SWRevealViewController/PDH-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "PDH/PDH-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
 		E553E4CF1C05F2D9007DD045 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E06ED873E7A19F8574FC0AE /* Pods-PDH.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)/**",
+					"\"${PODS_ROOT}/Headers/Public\"/**",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"/**",
+				);
 				INFOPLIST_FILE = PDH/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pdh.PDH;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "PDH/ThirdParty/SWRevealViewController/PDH-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "PDH/PDH-Bridging-Header.h";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};

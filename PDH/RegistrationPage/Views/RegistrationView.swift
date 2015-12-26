@@ -23,7 +23,7 @@ class RegistrationView: PDHView {
     }
     
     @IBAction func backBtnAction(sender: AnyObject) {
-        delegate?.viewPerformedAction(ViewActions.Back)
+        delegate?.viewPerformedAction(ViewActions.Back, data: nil)
     }
    
     deinit {

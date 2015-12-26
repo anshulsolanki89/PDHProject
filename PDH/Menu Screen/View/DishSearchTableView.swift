@@ -41,6 +41,6 @@ class DishSearchTableView: PDHView, UITableViewDataSource, UITableViewDelegate, 
     
     // MARK:- PDHCustomCellDelegate
     func addToOrderButtonClicked(btn: PDHDishCustomCell, atIndex index: Int) {
-        delegate?.viewPerformedAction(ViewActions.AddToOrder)
+        delegate?.viewPerformedAction(ViewActions.AddToOrder, data: nil)
     }
 }

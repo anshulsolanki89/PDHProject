@@ -16,10 +16,10 @@ class LandingView: PDHView {
     }
  
     @IBAction func registerBtnClicked(sender: AnyObject) {
-        delegate?.viewPerformedAction(ViewActions.Register)
+        delegate?.viewPerformedAction(ViewActions.Register, data: nil)
     }
  
     @IBAction func loginBtnClicked(sender: AnyObject) {
-        delegate?.viewPerformedAction(ViewActions.Login)
+        delegate?.viewPerformedAction(ViewActions.Login, data: nil)
     }
 }
