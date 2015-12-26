@@ -54,10 +54,14 @@
 		E59AB2A61C148632003A8F19 /* OrderHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59AB2A51C148632003A8F19 /* OrderHistoryView.swift */; settings = {ASSET_TAGS = (); }; };
 		E59B4F3A1C0CBA5400D1B6E7 /* SkiaRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E59B4F391C0CBA5400D1B6E7 /* SkiaRegular.ttf */; };
 		E59B4F3E1C0CC39000D1B6E7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E553E4B41C05F2D9007DD045 /* Info.plist */; };
+		E5C721FB1C2DB6E0005FAFD4 /* PDHCurrentOrderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C721FA1C2DB6E0005FAFD4 /* PDHCurrentOrderController.swift */; settings = {ASSET_TAGS = (); }; };
+		E5C721FD1C2DB6F2005FAFD4 /* PDHCurrentOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C721FC1C2DB6F2005FAFD4 /* PDHCurrentOrderView.swift */; settings = {ASSET_TAGS = (); }; };
 		E5DE86DD1C1D9CB20009EEAC /* PDHDeliveryAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DE86DC1C1D9CB20009EEAC /* PDHDeliveryAddressViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		E5DE86DF1C1D9CFC0009EEAC /* PDHDeliveryAddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DE86DE1C1D9CFC0009EEAC /* PDHDeliveryAddressView.swift */; settings = {ASSET_TAGS = (); }; };
 		E5DF0ED81C2C53360042300F /* PDHAddressBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DF0ED71C2C53360042300F /* PDHAddressBookViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		E5DF0EDA1C2C53740042300F /* PDHAddressBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DF0ED91C2C53740042300F /* PDHAddressBookView.swift */; settings = {ASSET_TAGS = (); }; };
+		E5E4935D1C2D6CAF00469745 /* PDHMyOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E4935C1C2D6CAF00469745 /* PDHMyOrderViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		E5E4935F1C2D6CE300469745 /* PDHMyOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E4935E1C2D6CE300469745 /* PDHMyOrderView.swift */; settings = {ASSET_TAGS = (); }; };
 		E5E7802D1C15FD0300800B9C /* PDHCustomCurveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E7802C1C15FD0300800B9C /* PDHCustomCurveView.swift */; settings = {ASSET_TAGS = (); }; };
 		E5E780311C16045600800B9C /* PDHCustomCircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E780301C16045600800B9C /* PDHCustomCircleButton.swift */; settings = {ASSET_TAGS = (); }; };
 		E5EB7ECF1C2B0BC90027F36B /* PDHCustomCircleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EB7ECE1C2B0BC90027F36B /* PDHCustomCircleLabel.swift */; settings = {ASSET_TAGS = (); }; };
@@ -115,10 +119,14 @@
 		E59AB2A11C148623003A8F19 /* OrderHistoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderHistoryController.swift; sourceTree = "<group>"; };
 		E59AB2A51C148632003A8F19 /* OrderHistoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderHistoryView.swift; sourceTree = "<group>"; };
 		E59B4F391C0CBA5400D1B6E7 /* SkiaRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SkiaRegular.ttf; sourceTree = "<group>"; };
+		E5C721FA1C2DB6E0005FAFD4 /* PDHCurrentOrderController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHCurrentOrderController.swift; sourceTree = "<group>"; };
+		E5C721FC1C2DB6F2005FAFD4 /* PDHCurrentOrderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHCurrentOrderView.swift; sourceTree = "<group>"; };
 		E5DE86DC1C1D9CB20009EEAC /* PDHDeliveryAddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHDeliveryAddressViewController.swift; sourceTree = "<group>"; };
 		E5DE86DE1C1D9CFC0009EEAC /* PDHDeliveryAddressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHDeliveryAddressView.swift; sourceTree = "<group>"; };
 		E5DF0ED71C2C53360042300F /* PDHAddressBookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHAddressBookViewController.swift; sourceTree = "<group>"; };
 		E5DF0ED91C2C53740042300F /* PDHAddressBookView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHAddressBookView.swift; sourceTree = "<group>"; };
+		E5E4935C1C2D6CAF00469745 /* PDHMyOrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHMyOrderViewController.swift; sourceTree = "<group>"; };
+		E5E4935E1C2D6CE300469745 /* PDHMyOrderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHMyOrderView.swift; sourceTree = "<group>"; };
 		E5E7802C1C15FD0300800B9C /* PDHCustomCurveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHCustomCurveView.swift; sourceTree = "<group>"; };
 		E5E780301C16045600800B9C /* PDHCustomCircleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHCustomCircleButton.swift; sourceTree = "<group>"; };
 		E5EB7ECE1C2B0BC90027F36B /* PDHCustomCircleLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHCustomCircleLabel.swift; sourceTree = "<group>"; };
@@ -304,6 +312,39 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		E521B8671C2DA9B8001253BC /* CurrentOrder */ = {
+			isa = PBXGroup;
+			children = (
+				E521B8681C2DA9B8001253BC /* Controller */,
+				E521B8691C2DA9B8001253BC /* Model */,
+				E521B86A1C2DA9B8001253BC /* Views */,
+			);
+			path = CurrentOrder;
+			sourceTree = "<group>";
+		};
+		E521B8681C2DA9B8001253BC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E5C721FA1C2DB6E0005FAFD4 /* PDHCurrentOrderController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E521B8691C2DA9B8001253BC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E521B86A1C2DA9B8001253BC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E5C721FC1C2DB6F2005FAFD4 /* PDHCurrentOrderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		E52F152E1C0815CE0027DE10 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
@@ -466,6 +507,8 @@
 				E5DE86D81C1D9C760009EEAC /* DeliveryAddress */,
 				E5026B771C1F495200B1839E /* OrderConfirmation */,
 				E5DF0ED31C2C52FB0042300F /* AddressBook */,
+				E5E493581C2D6C8500469745 /* MyOrder */,
+				E521B8671C2DA9B8001253BC /* CurrentOrder */,
 				E553E4AF1C05F2D9007DD045 /* Assets.xcassets */,
 				E53AB43B1C26C84C007494DA /* DishImages */,
 				E553E4AC1C05F2D9007DD045 /* Main.storyboard */,
@@ -586,6 +629,39 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		E5E493581C2D6C8500469745 /* MyOrder */ = {
+			isa = PBXGroup;
+			children = (
+				E5E493591C2D6C8500469745 /* Controller */,
+				E5E4935A1C2D6C8500469745 /* Model */,
+				E5E4935B1C2D6C8500469745 /* Views */,
+			);
+			path = MyOrder;
+			sourceTree = "<group>";
+		};
+		E5E493591C2D6C8500469745 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E5E4935C1C2D6CAF00469745 /* PDHMyOrderViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E5E4935A1C2D6C8500469745 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E5E4935B1C2D6C8500469745 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E5E4935E1C2D6CE300469745 /* PDHMyOrderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -679,6 +755,7 @@
 				E5026B7C1C1F498000B1839E /* PDHOrderConfirmationViewController.swift in Sources */,
 				E5189DAD1C077036008CC84C /* LandingViewController.swift in Sources */,
 				E52F15551C088A0D0027DE10 /* PDHView.swift in Sources */,
+				E5C721FD1C2DB6F2005FAFD4 /* PDHCurrentOrderView.swift in Sources */,
 				E535E8D71C1DD7C200B4A9B7 /* PDHDeliveryAddressCustomCell.swift in Sources */,
 				E505D0D01C1346C100571A4B /* DishMenuController.swift in Sources */,
 				E52F15401C08233E0027DE10 /* RegistrationController.swift in Sources */,
@@ -697,9 +774,12 @@
 				E59825A51C1203850033F619 /* SlidingMenuCustomCell.swift in Sources */,
 				E505D0CC1C1345AA00571A4B /* MenuViewController.swift in Sources */,
 				E5EF143D1C1D4C450097E70E /* PDHOverlayView.swift in Sources */,
+				E5E4935D1C2D6CAF00469745 /* PDHMyOrderViewController.swift in Sources */,
 				E5026B7E1C1F49B600B1839E /* PDHOrderConfirmationView.swift in Sources */,
 				E5EB7ECF1C2B0BC90027F36B /* PDHCustomCircleLabel.swift in Sources */,
+				E5C721FB1C2DB6E0005FAFD4 /* PDHCurrentOrderController.swift in Sources */,
 				E5189DB51C0770DB008CC84C /* LoginView.swift in Sources */,
+				E5E4935F1C2D6CE300469745 /* PDHMyOrderView.swift in Sources */,
 				E52F15301C0815E80027DE10 /* PDHHelper.swift in Sources */,
 				E5DE86DF1C1D9CFC0009EEAC /* PDHDeliveryAddressView.swift in Sources */,
 				E553E4A91C05F2D9007DD045 /* AppDelegate.swift in Sources */,
