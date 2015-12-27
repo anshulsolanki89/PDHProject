@@ -224,7 +224,7 @@
                     </navigationItem>
                     <connections>
                         <segue destination="DBO-dk-iZs" kind="push" identifier="pdhLogin" id="LpJ-ca-HdF"/>
-                        <segue destination="g1N-eQ-w6Z" kind="push" identifier="pdhRegister" id="cNo-Kt-1sZ"/>
+                        <segue destination="g1N-eQ-w6Z" kind="push" identifier="pdhRegister" id="YeQ-J3-ZSI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -234,12 +234,12 @@
         <!--Registration Controller-->
         <scene sceneID="Fki-ar-279">
             <objects>
-                <viewController id="g1N-eQ-w6Z" customClass="RegistrationController" customModule="PDH" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="g1N-eQ-w6Z" customClass="PDHRegistrationController" customModule="PDH" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jKL-qX-1RV"/>
                         <viewControllerLayoutGuide type="bottom" id="Vic-D7-dQS"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="cF6-Jb-lUZ" customClass="RegistrationView" customModule="PDH" customModuleProvider="target">
+                    <view key="view" contentMode="scaleToFill" id="cF6-Jb-lUZ" customClass="PDHRegistrationView" customModule="PDH" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -284,6 +284,9 @@
                                                 <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="RA7-M0-uZ2" id="8t2-pS-th2"/>
+                                        </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TgQ-fx-5P1" userLabel="Third LIne">
                                         <rect key="frame" x="48" y="270" width="232" height="1"/>
@@ -319,6 +322,9 @@
                                                 <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="RA7-M0-uZ2" id="6e3-pU-otK"/>
+                                        </connections>
                                     </textField>
                                     <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Register_Name" translatesAutoresizingMaskIntoConstraints="NO" id="5Nt-RG-1og" customClass="PDHCustomImageView" customModule="PDH" customModuleProvider="target">
                                         <rect key="frame" x="107" y="16" width="90" height="90"/>
@@ -350,7 +356,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="UNX-wD-aCl" kind="push" id="BDx-vj-iEQ"/>
+                                            <action selector="registerBtnClicked:" destination="cF6-Jb-lUZ" eventType="touchUpInside" id="A1I-u7-QEC"/>
                                         </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Email" translatesAutoresizingMaskIntoConstraints="NO" id="Qvy-sc-Hek">
@@ -373,6 +379,9 @@
                                                 <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="RA7-M0-uZ2" id="UsY-ug-BCK"/>
+                                        </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ZY-Vb-brf" userLabel="SecondLIne">
                                         <rect key="frame" x="48" y="220" width="232" height="1"/>
@@ -401,6 +410,9 @@
                                                 <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="RA7-M0-uZ2" id="Iqm-f3-oCS"/>
+                                        </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0F7-je-J8G" userLabel="FirstLine">
                                         <rect key="frame" x="48" y="170" width="232" height="1"/>
@@ -496,9 +508,16 @@
                         </constraints>
                         <connections>
                             <outlet property="backBtn" destination="8Q9-mP-gup" id="AkP-oJ-P2B"/>
+                            <outlet property="emailtextField" destination="pE5-pe-snX" id="TFL-wr-sq1"/>
+                            <outlet property="mobileNumberTextField" destination="jCd-cS-IRS" id="Ae5-Tj-loR"/>
+                            <outlet property="nameTextField" destination="Hus-kW-9k4" id="32v-0D-zeM"/>
+                            <outlet property="passwordTextField" destination="s0P-4k-Lyu" id="d4V-sG-jb0"/>
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" id="n8I-I4-erg"/>
+                    <connections>
+                        <segue destination="4It-zn-29d" kind="push" identifier="menuScreen" id="dVl-Mc-jdB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GD1-2o-8PR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -3787,4 +3806,7 @@ Amritsar, Punjab 143001
         <image name="Thanks_BG" width="320" height="183"/>
         <image name="menu_bar" width="20" height="15"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="dVl-Mc-jdB"/>
+    </inferredMetricsTieBreakers>
 </document>

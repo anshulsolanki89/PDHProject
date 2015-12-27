@@ -26,7 +26,7 @@ class MenuScreenController: UIViewController,  ViewActionDelegate {
         menuView.delegate = self
     }
     
-    func viewPerformedAction(action: ViewActions, data: [String: AnyObject]?) {
+    func viewDidPerformAction(action: ViewActions, data: [String: AnyObject]?) {
         switch action {
         case .MenuBtnClciked:
             self.revealViewController().revealToggle(nil)

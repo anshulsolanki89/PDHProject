@@ -1,62 +1,65 @@
 //
-//  PDHLoginViewController.swift
+//  PDHRegistrationController.swift
 //  PDH
 //
-//  Created by Anshul Solanki on 11/26/15.
+//  Created by Anshul Solanki on 11/27/15.
 //  Copyright © 2015 Anshul Solanki. All rights reserved.
 //
 
 import Foundation
 import UIKit
-import MBProgressHUD
 
-class PDHLoginViewController: PDHViewController {
-    var loginDataManager: PDHLoginDataManager!
-
+class PDHRegistrationController: PDHViewController {
+    var registrationDataManager: PDHRegistrationDataManager!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        (self.view as! PDHLoginView).delegate = self
+        (self.view as! PDHRegistrationView).delegate = self
     }
     
-    
-    private func login(data: [String: AnyObject]) {
+    private func registration(data: [String: AnyObject]) {
         PDHProgressIndicator.showLoadingIndicator(self.view)
-        loginDataManager.loginWithData(data)
+        registrationDataManager.registerWithData(data)
     }
     
     private func initaializeDataManager() {
-        loginDataManager = PDHLoginDataManager()
-        loginDataManager.delegate = self
+        registrationDataManager = PDHRegistrationDataManager()
+        registrationDataManager.delegate = self
     }
     
-    private func performLogin(data: [String: AnyObject]) {
+    private func performRegistration(data: [String: AnyObject]) {
         initaializeDataManager()
-        login(data)
+        registration(data)
+    }
+    
+    deinit {
+        print("\(self) DEALLOCATED")
     }
 }
 
 // MARK:- ViewAction Delegate
-extension PDHLoginViewController: ViewActionDelegate {
+extension PDHRegistrationController: ViewActionDelegate {
     func viewDidPerformAction(action: ViewActions, data: [String: AnyObject]?) {
         switch action {
         case .Back:
             self.navigationController?.popViewControllerAnimated(true)
-        case .Login:
-            performLogin(data!)
         case .FormFieldError:
             showFormFieldError()
+        case .Register:
+            performRegistration(data!)
         default:
-            fatalError("Error, casenot handled")
+            fatalError("Error")
         }
     }
 }
 
 // MARK:- DataManager Protocol
-extension PDHLoginViewController {
+extension PDHRegistrationController {
+   
     override func didReceiveDataWithSuccess(response: AnyObject) {
         PDHProgressIndicator.hideLoadingIndicator()
         if let response = response as? PDHLoginInfoDataObject {
-            loginDataManager.saveUserData(response)
+            registrationDataManager.saveUserData(response)
             self.performSegueWithIdentifier("menuScreen", sender: nil)
         }
     }

@@ -18,7 +18,7 @@ class LandingViewController: UIViewController {
 }
 
 extension LandingViewController: ViewActionDelegate {
-    func viewPerformedAction(action: ViewActions, data: [String: AnyObject]?) {
+    func viewDidPerformAction(action: ViewActions, data: [String: AnyObject]?) {
         switch action {
         case .Login:
             print("\(self) -> Login")

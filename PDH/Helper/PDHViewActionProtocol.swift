@@ -7,5 +7,5 @@
 //
 
 protocol ViewActionDelegate: class {
-    func viewPerformedAction(action: ViewActions, data: [String: AnyObject]?)
+    func viewDidPerformAction(action: ViewActions, data: [String: AnyObject]?)
 }

@@ -9,7 +9,6 @@
 //#ifndef PDH_Bridging_Header_h
 //#define PDH_Bridging_Header_h
 
-#import "AFNetworking.h"
 #import "SWRevealViewController.h"
 
 //#endif /* PDH_Bridging_Header_h */

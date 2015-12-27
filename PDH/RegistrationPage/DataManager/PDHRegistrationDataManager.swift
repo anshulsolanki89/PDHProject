@@ -1,27 +1,27 @@
 //
-//  PDHLoginDataManager.swift
+//  PDHRegistrationDataManager.swift
 //  PDH
 //
-//  Created by Anshul Solanki on 12/26/15.
+//  Created by Anshul Solanki on 12/27/15.
 //  Copyright © 2015 Anshul Solanki. All rights reserved.
 //
 
 import Foundation
 import SwiftyJSON
 
-class PDHLoginDataManager: PDHDataManager {
+class PDHRegistrationDataManager: PDHDataManager {
     
-    func loginWithData(data: [String: AnyObject]) {
+    func registerWithData(data: [String: AnyObject]) {
         PDHNetworkManager.postRequesForURLWith(
-            PDHConstantURL.LOGIN_URL,
+            PDHConstantURL.REGISTRATION_URL,
             params: data,
-            success: { (data) -> Void in
-                print("\(data)")
-                if let data = data {
-                    let jsonData = JSON(data)
+            success: { (response) -> Void in
+                print("\(response)")
+                if let response = response {
+                    let jsonData = JSON(response)
                     if jsonData["Result"]["ErrorCode"].numberValue == 0 {
                         self.delegate?.didReceiveDataWithSuccess?(
-                            PDHLoginDataParser.parseLoginObject(jsonData["Result"]))
+                            PDHRegistrationDataParser.parseRegistrationData(data))
                     } else {
                         self.delegate?.didReceiveDataWithError?(
                             PDHLoginDataParser.parseErrorObject(jsonData["Result"]))
@@ -33,6 +33,5 @@ class PDHLoginDataManager: PDHDataManager {
                 print("\(error)")
                 self.delegate?.didFailWithError?(error.localizedDescription)
         })
-        
     }
 }

@@ -12,4 +12,5 @@ enum ViewActions: Int {
     case Register
     case MenuBtnClciked
     case AddToOrder
+    case FormFieldError
 }
