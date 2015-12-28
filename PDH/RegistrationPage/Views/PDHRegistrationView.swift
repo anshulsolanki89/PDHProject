@@ -12,7 +12,7 @@ import UIKit
 class PDHRegistrationView: PDHView {
     
     @IBOutlet weak var backBtn: UIButton!
-    
+    @IBOutlet weak var selectedImageView: UIImageView!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var emailtextField: UITextField!
     @IBOutlet weak var mobileNumberTextField: UITextField!
@@ -31,6 +31,10 @@ class PDHRegistrationView: PDHView {
         delegate?.viewDidPerformAction(ViewActions.Back, data: nil)
     }
 
+    @IBAction func cameraBtnClicked(sender: AnyObject) {
+        delegate?.viewDidPerformAction(ViewActions.Camera, data: nil)
+    }
+
     @IBAction func registerBtnClicked(sender: AnyObject) {
         if !isFormFieldError() {
             delegate?.viewDidPerformAction(ViewActions.FormFieldError, data: nil)
@@ -44,6 +48,11 @@ class PDHRegistrationView: PDHView {
         ]
         
         delegate?.viewDidPerformAction(ViewActions.Register, data: data)
+    }
+    
+    func setImage(selectedImage: UIImage) {
+        selectedImageView.contentMode = UIViewContentMode.ScaleAspectFill
+        selectedImageView.image = selectedImage
     }
     
     private func isFormFieldError() -> Bool {

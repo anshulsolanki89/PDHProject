@@ -10,13 +10,22 @@ import Foundation
 import UIKit
 
 class PDHRegistrationController: PDHViewController {
-    var registrationDataManager: PDHRegistrationDataManager!
+    
+    private var registrationDataManager: PDHRegistrationDataManager!
+    private var imagePicker: UIImagePickerController!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         (self.view as! PDHRegistrationView).delegate = self
     }
     
+    deinit {
+        print("\(self) DEALLOCATED")
+    }
+}
+
+// MARK:- Private Methods
+extension PDHRegistrationController {
     private func registration(data: [String: AnyObject]) {
         PDHProgressIndicator.showLoadingIndicator(self.view)
         registrationDataManager.registerWithData(data)
@@ -32,13 +41,27 @@ class PDHRegistrationController: PDHViewController {
         registration(data)
     }
     
-    deinit {
-        print("\(self) DEALLOCATED")
+    
+    private func initializeImagePicker() {
+        imagePicker = UIImagePickerController()
+        imagePicker.delegate = self
+    }
+    
+    private func showImagePicker() {
+        initializeImagePicker()
+        imagePicker.allowsEditing = false
+        if UIImagePickerController.availableCaptureModesForCameraDevice(.Rear) != nil {
+            imagePicker.sourceType = UIImagePickerControllerSourceType.Camera
+            imagePicker.cameraCaptureMode = .Photo
+        } else {
+            imagePicker.sourceType = .PhotoLibrary
+        }
+        presentViewController(imagePicker, animated: true, completion: nil)
     }
 }
 
 // MARK:- ViewAction Delegate
-extension PDHRegistrationController: ViewActionDelegate {
+extension PDHRegistrationController: ViewActionDelegate{
     func viewDidPerformAction(action: ViewActions, data: [String: AnyObject]?) {
         switch action {
         case .Back:
@@ -47,6 +70,8 @@ extension PDHRegistrationController: ViewActionDelegate {
             showFormFieldError()
         case .Register:
             performRegistration(data!)
+        case .Camera:
+            showImagePicker()
         default:
             fatalError("Error")
         }
@@ -54,8 +79,7 @@ extension PDHRegistrationController: ViewActionDelegate {
 }
 
 // MARK:- DataManager Protocol
-extension PDHRegistrationController {
-   
+extension PDHRegistrationController{
     override func didReceiveDataWithSuccess(response: AnyObject) {
         PDHProgressIndicator.hideLoadingIndicator()
         if let response = response as? PDHLoginInfoDataObject {
@@ -63,5 +87,20 @@ extension PDHRegistrationController {
             self.performSegueWithIdentifier("menuScreen", sender: nil)
         }
     }
+}
+
+// MARK:- UIImagePicker Controller
+extension PDHRegistrationController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+   func imagePickerController(picker: UIImagePickerController,
+        didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        let selectedImage = info[UIImagePickerControllerOriginalImage] as! UIImage
     
+        dismissViewControllerAnimated(true) { [unowned self]() -> Void in
+            (self.view as! PDHRegistrationView).setImage(selectedImage)
+        }
+    }
+    
+    func imagePickerControllerDidCancel(picker: UIImagePickerController) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
 }

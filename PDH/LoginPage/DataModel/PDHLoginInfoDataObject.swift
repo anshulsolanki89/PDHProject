@@ -12,6 +12,7 @@ class PDHLoginInfoDataObject: NSObject, NSCoding {
     var name: String!
     var mobile: String!
     var email: String!
+//    var userImage: UIImage?
     
     override init() {
         super.init()
@@ -21,11 +22,13 @@ class PDHLoginInfoDataObject: NSObject, NSCoding {
         name = aDecoder.decodeObjectForKey("Name") as! String
         mobile = aDecoder.decodeObjectForKey("Mobile") as! String
         email = aDecoder.decodeObjectForKey("Email") as! String
+//        userImage = aDecoder.decodeObjectForKey("Image") as? UIImage
     }
     
     func encodeWithCoder(aCoder: NSCoder) {
         aCoder.encodeObject(name, forKey: "Name")
         aCoder.encodeObject(mobile, forKey: "Mobile")
-        aCoder.encodeObject(    email, forKey: "Email")
+        aCoder.encodeObject(email, forKey: "Email")
+//        aCoder.encodeObject(userImage, forKey: "Image")
     }
 }

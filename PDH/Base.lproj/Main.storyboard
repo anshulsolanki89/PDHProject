@@ -278,7 +278,7 @@
                                         </constraints>
                                         <color key="textColor" red="0.72941176470588232" green="0.72941176470588232" blue="0.72941176470588232" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
                                                 <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -326,7 +326,7 @@
                                             <outlet property="delegate" destination="RA7-M0-uZ2" id="6e3-pU-otK"/>
                                         </connections>
                                     </textField>
-                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Register_Name" translatesAutoresizingMaskIntoConstraints="NO" id="5Nt-RG-1og" customClass="PDHCustomImageView" customModule="PDH" customModuleProvider="target">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Register_Name" translatesAutoresizingMaskIntoConstraints="NO" id="5Nt-RG-1og" customClass="PDHCustomImageView" customModule="PDH" customModuleProvider="target">
                                         <rect key="frame" x="107" y="16" width="90" height="90"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -441,12 +441,23 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p3P-KM-Iyc" userLabel="CameraPicker">
+                                        <rect key="frame" x="172" y="76" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="5T5-62-DWX"/>
+                                            <constraint firstAttribute="height" constant="30" id="HtN-G0-dmI"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="cameraBtnClicked:" destination="cF6-Jb-lUZ" eventType="touchUpInside" id="Nty-W8-zzY"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.75" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="nP5-Eu-1mq" firstAttribute="leading" secondItem="RA7-M0-uZ2" secondAttribute="leading" constant="11" id="4Cl-iQ-uJg"/>
                                     <constraint firstItem="4ZY-Vb-brf" firstAttribute="leading" secondItem="RA7-M0-uZ2" secondAttribute="leading" constant="48" id="7qJ-eD-cBs"/>
                                     <constraint firstItem="5Nt-RG-1og" firstAttribute="centerX" secondItem="RA7-M0-uZ2" secondAttribute="centerX" id="8tS-DV-djT"/>
+                                    <constraint firstItem="p3P-KM-Iyc" firstAttribute="centerX" secondItem="5Nt-RG-1og" secondAttribute="trailing" constant="-10" id="A7t-zy-9lD"/>
                                     <constraint firstAttribute="trailing" secondItem="uz5-LZ-CdP" secondAttribute="trailing" id="Bxv-a9-L8K"/>
                                     <constraint firstItem="jCd-cS-IRS" firstAttribute="leading" secondItem="nP5-Eu-1mq" secondAttribute="trailing" constant="15" id="C5e-YQ-WRo"/>
                                     <constraint firstItem="Qvy-sc-Hek" firstAttribute="centerY" secondItem="pE5-pe-snX" secondAttribute="centerY" id="Ceo-9b-Ykv"/>
@@ -461,6 +472,7 @@
                                     <constraint firstItem="5Nt-RG-1og" firstAttribute="top" secondItem="RA7-M0-uZ2" secondAttribute="top" constant="16" id="Men-gp-FOR"/>
                                     <constraint firstItem="0F7-je-J8G" firstAttribute="top" secondItem="Hus-kW-9k4" secondAttribute="bottom" id="Mh6-zh-Mhx"/>
                                     <constraint firstItem="Hus-kW-9k4" firstAttribute="leading" secondItem="c1E-Bf-RiK" secondAttribute="trailing" constant="15" id="NCL-qM-8sr"/>
+                                    <constraint firstItem="p3P-KM-Iyc" firstAttribute="centerY" secondItem="5Nt-RG-1og" secondAttribute="bottom" constant="-15" id="O4b-cE-5jB"/>
                                     <constraint firstAttribute="height" constant="410" id="TMb-uM-eKg" userLabel="height = 390"/>
                                     <constraint firstAttribute="trailing" secondItem="Hus-kW-9k4" secondAttribute="trailing" constant="24" id="UAn-Gc-U9z"/>
                                     <constraint firstItem="84L-rx-aGe" firstAttribute="centerY" secondItem="5Nt-RG-1og" secondAttribute="bottom" constant="-15" id="Viw-3a-Jo0"/>
@@ -512,6 +524,7 @@
                             <outlet property="mobileNumberTextField" destination="jCd-cS-IRS" id="Ae5-Tj-loR"/>
                             <outlet property="nameTextField" destination="Hus-kW-9k4" id="32v-0D-zeM"/>
                             <outlet property="passwordTextField" destination="s0P-4k-Lyu" id="d4V-sG-jb0"/>
+                            <outlet property="selectedImageView" destination="5Nt-RG-1og" id="ZZm-Bi-mYH"/>
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" id="n8I-I4-erg"/>
