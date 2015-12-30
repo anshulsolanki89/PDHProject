@@ -13,12 +13,12 @@ class MenuViewController: UIViewController, UIPageViewControllerDataSource, PDHD
     
     let numberOfPages = 3
     
-    var vegDishVC: DishMenuController!
-    var nonVegDishVC: DishMenuController!
-    var mixDishVC: DishMenuController!
+    var vegDishVC: PDHDishMenuController!
+    var nonVegDishVC: PDHDishMenuController!
+    var mixDishVC: PDHDishMenuController!
    
     var pageViewController: UIPageViewController!
-    var pageViewContentArray :[DishMenuController]!
+    var pageViewContentArray :[PDHDishMenuController]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,8 +56,8 @@ class MenuViewController: UIViewController, UIPageViewControllerDataSource, PDHD
         pageViewController.didMoveToParentViewController(self)
     }
     
-    private func createDishMenuVC() -> DishMenuController {
-        return self.storyboard?.instantiateViewControllerWithIdentifier("PDHDishMenuVC") as! DishMenuController
+    private func createDishMenuVC() -> PDHDishMenuController {
+        return self.storyboard?.instantiateViewControllerWithIdentifier("PDHDishMenuVC") as! PDHDishMenuController
     }
     
     // MARK: - PageViewControllerDataSource
@@ -84,7 +84,7 @@ class MenuViewController: UIViewController, UIPageViewControllerDataSource, PDHD
     }
     
     // MARK:- DishControllerDelegate
-    func dishClicked(dishController: DishMenuController) {
+    func dishClicked(dishController: PDHDishMenuController) {
         let quantityVC = self.storyboard?.instantiateViewControllerWithIdentifier("PDHQuantiySelectVC")
         self.addChildViewController(quantityVC!)
         self.view.addSubview(quantityVC!.view)

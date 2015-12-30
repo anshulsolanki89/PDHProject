@@ -12,10 +12,19 @@ import AFNetworking
 class PDHDataManager {
     weak var delegate: PDHDataManagerProtocol?
     
-    func saveUserData(data: PDHLoginInfoDataObject) {
+    class func saveUserData(data: PDHLoginInfoDataObject) {
         NSUserDefaults.standardUserDefaults().setObject(
             NSKeyedArchiver.archivedDataWithRootObject(data),
             forKey: "LoginInfo")
         NSUserDefaults.standardUserDefaults().synchronize()
+    }
+    
+    class func getUserData() -> PDHLoginInfoDataObject {
+        var loginInfoDataObject: PDHLoginInfoDataObject!
+        if let data = NSUserDefaults.standardUserDefaults().objectForKey("LoginInfo") as? NSData {
+            loginInfoDataObject = NSKeyedUnarchiver.unarchiveObjectWithData(data) as! PDHLoginInfoDataObject
+        }
+        
+        return loginInfoDataObject
     }
 }

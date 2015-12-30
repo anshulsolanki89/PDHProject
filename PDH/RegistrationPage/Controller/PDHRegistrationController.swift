@@ -17,6 +17,7 @@ class PDHRegistrationController: PDHViewController {
     override func awakeFromNib() {
         super.awakeFromNib()
         (self.view as! PDHRegistrationView).delegate = self
+        
     }
     
     deinit {
@@ -83,7 +84,7 @@ extension PDHRegistrationController{
     override func didReceiveDataWithSuccess(response: AnyObject) {
         PDHProgressIndicator.hideLoadingIndicator()
         if let response = response as? PDHLoginInfoDataObject {
-            registrationDataManager.saveUserData(response)
+            PDHRegistrationDataManager.saveUserData(response)
             self.performSegueWithIdentifier("menuScreen", sender: nil)
         }
     }

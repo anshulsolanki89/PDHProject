@@ -1,5 +1,5 @@
 //
-//  SlidingMenuCustomCell.swift
+//  PDHSlidingMenuCustomCell.swift
 //  PDH
 //
 //  Created by Anshul Solanki on 12/4/15.
@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class SlidingMenuCustomCell: UITableViewCell {
+class PDHSlidingMenuCustomCell: UITableViewCell {
     @IBOutlet weak var leftImageView: UIImageView!
     @IBOutlet weak var menuLabel: UILabel!
 }

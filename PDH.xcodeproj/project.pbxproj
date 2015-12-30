@@ -11,7 +11,7 @@
 		E5026B7C1C1F498000B1839E /* PDHOrderConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5026B7B1C1F498000B1839E /* PDHOrderConfirmationViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		E5026B7E1C1F49B600B1839E /* PDHOrderConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5026B7D1C1F49B600B1839E /* PDHOrderConfirmationView.swift */; settings = {ASSET_TAGS = (); }; };
 		E505D0CC1C1345AA00571A4B /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E505D0CB1C1345AA00571A4B /* MenuViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		E505D0D01C1346C100571A4B /* DishMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E505D0CF1C1346C100571A4B /* DishMenuController.swift */; settings = {ASSET_TAGS = (); }; };
+		E505D0D01C1346C100571A4B /* PDHDishMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E505D0CF1C1346C100571A4B /* PDHDishMenuController.swift */; settings = {ASSET_TAGS = (); }; };
 		E5189DAD1C077036008CC84C /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5189DAC1C077036008CC84C /* LandingViewController.swift */; };
 		E5189DB11C07705E008CC84C /* PDHLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5189DB01C07705E008CC84C /* PDHLoginViewController.swift */; };
 		E5189DB51C0770DB008CC84C /* PDHLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5189DB41C0770DB008CC84C /* PDHLoginView.swift */; };
@@ -22,9 +22,9 @@
 		E52F15401C08233E0027DE10 /* PDHRegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52F153F1C08233E0027DE10 /* PDHRegistrationController.swift */; };
 		E52F154C1C0883510027DE10 /* PDHViewActionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52F154B1C0883510027DE10 /* PDHViewActionProtocol.swift */; };
 		E52F15501C0884B70027DE10 /* PDHActionEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52F154F1C0884B70027DE10 /* PDHActionEnum.swift */; };
-		E53487241C0F426C00203548 /* MenuScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53487231C0F426C00203548 /* MenuScreenController.swift */; };
-		E53487281C0F42D200203548 /* MenuScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53487271C0F42D200203548 /* MenuScreenView.swift */; };
-		E534872C1C0F5C5C00203548 /* DishSearchTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E534872B1C0F5C5C00203548 /* DishSearchTableView.swift */; };
+		E53487241C0F426C00203548 /* PDHMenuScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53487231C0F426C00203548 /* PDHMenuScreenController.swift */; };
+		E53487281C0F42D200203548 /* PDHMenuScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53487271C0F42D200203548 /* PDHMenuScreenView.swift */; };
+		E534872C1C0F5C5C00203548 /* PDHDishSearchTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E534872B1C0F5C5C00203548 /* PDHDishSearchTableView.swift */; };
 		E535E8D31C1DD07D00B4A9B7 /* PDHEditAddressView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E535E8D21C1DD07D00B4A9B7 /* PDHEditAddressView.xib */; settings = {ASSET_TAGS = (); }; };
 		E535E8D51C1DD6E100B4A9B7 /* PDHEditAddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E535E8D41C1DD6E100B4A9B7 /* PDHEditAddressView.swift */; settings = {ASSET_TAGS = (); }; };
 		E535E8D71C1DD7C200B4A9B7 /* PDHDeliveryAddressCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E535E8D61C1DD7C200B4A9B7 /* PDHDeliveryAddressCustomCell.swift */; settings = {ASSET_TAGS = (); }; };
@@ -69,9 +69,9 @@
 		E56B6D871C17286F003E8E26 /* PDHDishCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56B6D861C17286F003E8E26 /* PDHDishCustomCell.swift */; settings = {ASSET_TAGS = (); }; };
 		E56B6D8D1C173F47003E8E26 /* PDHMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56B6D8C1C173F47003E8E26 /* PDHMenuView.swift */; settings = {ASSET_TAGS = (); }; };
 		E56B6D911C1743D7003E8E26 /* PDHQuantitySelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56B6D901C1743D7003E8E26 /* PDHQuantitySelectorView.swift */; settings = {ASSET_TAGS = (); }; };
-		E59825A11C1200D20033F619 /* SlidingMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59825A01C1200D20033F619 /* SlidingMenuController.swift */; settings = {ASSET_TAGS = (); }; };
-		E59825A31C1201200033F619 /* SlidingMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59825A21C1201200033F619 /* SlidingMenuView.swift */; settings = {ASSET_TAGS = (); }; };
-		E59825A51C1203850033F619 /* SlidingMenuCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59825A41C1203850033F619 /* SlidingMenuCustomCell.swift */; settings = {ASSET_TAGS = (); }; };
+		E59825A11C1200D20033F619 /* PDHSlidingMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59825A01C1200D20033F619 /* PDHSlidingMenuController.swift */; settings = {ASSET_TAGS = (); }; };
+		E59825A31C1201200033F619 /* PDHSlidingMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59825A21C1201200033F619 /* PDHSlidingMenuView.swift */; settings = {ASSET_TAGS = (); }; };
+		E59825A51C1203850033F619 /* PDHSlidingMenuCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59825A41C1203850033F619 /* PDHSlidingMenuCustomCell.swift */; settings = {ASSET_TAGS = (); }; };
 		E59AB2A21C148623003A8F19 /* OrderHistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59AB2A11C148623003A8F19 /* OrderHistoryController.swift */; settings = {ASSET_TAGS = (); }; };
 		E59AB2A61C148632003A8F19 /* OrderHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59AB2A51C148632003A8F19 /* OrderHistoryView.swift */; settings = {ASSET_TAGS = (); }; };
 		E59B4F3A1C0CBA5400D1B6E7 /* SkiaRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E59B4F391C0CBA5400D1B6E7 /* SkiaRegular.ttf */; };
@@ -87,6 +87,10 @@
 		E5E4935D1C2D6CAF00469745 /* PDHMyOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E4935C1C2D6CAF00469745 /* PDHMyOrderViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		E5E4935F1C2D6CE300469745 /* PDHMyOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E4935E1C2D6CE300469745 /* PDHMyOrderView.swift */; settings = {ASSET_TAGS = (); }; };
 		E5EF143D1C1D4C450097E70E /* PDHOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EF143C1C1D4C450097E70E /* PDHOverlayView.swift */; settings = {ASSET_TAGS = (); }; };
+		E5F44F361C32F1A20047B18D /* PDHMenuDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F44F351C32F1A20047B18D /* PDHMenuDataManager.swift */; settings = {ASSET_TAGS = (); }; };
+		E5F44F3D1C32F4280047B18D /* PDHDishOfWeekDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F44F3C1C32F4280047B18D /* PDHDishOfWeekDataModel.swift */; settings = {ASSET_TAGS = (); }; };
+		E5F44F3F1C32F7BD0047B18D /* PDHMenuDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F44F3E1C32F7BD0047B18D /* PDHMenuDataParser.swift */; settings = {ASSET_TAGS = (); }; };
+		E5F44F411C32F8D20047B18D /* PDHDishDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F44F401C32F8D20047B18D /* PDHDishDataModel.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,7 +100,7 @@
 		E5026B7B1C1F498000B1839E /* PDHOrderConfirmationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHOrderConfirmationViewController.swift; sourceTree = "<group>"; };
 		E5026B7D1C1F49B600B1839E /* PDHOrderConfirmationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHOrderConfirmationView.swift; sourceTree = "<group>"; };
 		E505D0CB1C1345AA00571A4B /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
-		E505D0CF1C1346C100571A4B /* DishMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DishMenuController.swift; sourceTree = "<group>"; };
+		E505D0CF1C1346C100571A4B /* PDHDishMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHDishMenuController.swift; sourceTree = "<group>"; };
 		E5189DAC1C077036008CC84C /* LandingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		E5189DB01C07705E008CC84C /* PDHLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHLoginViewController.swift; sourceTree = "<group>"; };
 		E5189DB41C0770DB008CC84C /* PDHLoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHLoginView.swift; sourceTree = "<group>"; };
@@ -107,9 +111,9 @@
 		E52F153F1C08233E0027DE10 /* PDHRegistrationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHRegistrationController.swift; sourceTree = "<group>"; };
 		E52F154B1C0883510027DE10 /* PDHViewActionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHViewActionProtocol.swift; sourceTree = "<group>"; };
 		E52F154F1C0884B70027DE10 /* PDHActionEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHActionEnum.swift; sourceTree = "<group>"; };
-		E53487231C0F426C00203548 /* MenuScreenController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuScreenController.swift; sourceTree = "<group>"; };
-		E53487271C0F42D200203548 /* MenuScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuScreenView.swift; sourceTree = "<group>"; };
-		E534872B1C0F5C5C00203548 /* DishSearchTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DishSearchTableView.swift; sourceTree = "<group>"; };
+		E53487231C0F426C00203548 /* PDHMenuScreenController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHMenuScreenController.swift; sourceTree = "<group>"; };
+		E53487271C0F42D200203548 /* PDHMenuScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHMenuScreenView.swift; sourceTree = "<group>"; };
+		E534872B1C0F5C5C00203548 /* PDHDishSearchTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHDishSearchTableView.swift; sourceTree = "<group>"; };
 		E535E8D21C1DD07D00B4A9B7 /* PDHEditAddressView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PDHEditAddressView.xib; sourceTree = "<group>"; };
 		E535E8D41C1DD6E100B4A9B7 /* PDHEditAddressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHEditAddressView.swift; sourceTree = "<group>"; };
 		E535E8D61C1DD7C200B4A9B7 /* PDHDeliveryAddressCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHDeliveryAddressCustomCell.swift; sourceTree = "<group>"; };
@@ -157,9 +161,9 @@
 		E56B6D861C17286F003E8E26 /* PDHDishCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHDishCustomCell.swift; sourceTree = "<group>"; };
 		E56B6D8C1C173F47003E8E26 /* PDHMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHMenuView.swift; sourceTree = "<group>"; };
 		E56B6D901C1743D7003E8E26 /* PDHQuantitySelectorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHQuantitySelectorView.swift; sourceTree = "<group>"; };
-		E59825A01C1200D20033F619 /* SlidingMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlidingMenuController.swift; sourceTree = "<group>"; };
-		E59825A21C1201200033F619 /* SlidingMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlidingMenuView.swift; sourceTree = "<group>"; };
-		E59825A41C1203850033F619 /* SlidingMenuCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlidingMenuCustomCell.swift; sourceTree = "<group>"; };
+		E59825A01C1200D20033F619 /* PDHSlidingMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHSlidingMenuController.swift; sourceTree = "<group>"; };
+		E59825A21C1201200033F619 /* PDHSlidingMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHSlidingMenuView.swift; sourceTree = "<group>"; };
+		E59825A41C1203850033F619 /* PDHSlidingMenuCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHSlidingMenuCustomCell.swift; sourceTree = "<group>"; };
 		E59AB2A11C148623003A8F19 /* OrderHistoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderHistoryController.swift; sourceTree = "<group>"; };
 		E59AB2A51C148632003A8F19 /* OrderHistoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderHistoryView.swift; sourceTree = "<group>"; };
 		E59B4F391C0CBA5400D1B6E7 /* SkiaRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SkiaRegular.ttf; sourceTree = "<group>"; };
@@ -175,6 +179,10 @@
 		E5E4935C1C2D6CAF00469745 /* PDHMyOrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHMyOrderViewController.swift; sourceTree = "<group>"; };
 		E5E4935E1C2D6CE300469745 /* PDHMyOrderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHMyOrderView.swift; sourceTree = "<group>"; };
 		E5EF143C1C1D4C450097E70E /* PDHOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHOverlayView.swift; sourceTree = "<group>"; };
+		E5F44F351C32F1A20047B18D /* PDHMenuDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHMenuDataManager.swift; sourceTree = "<group>"; };
+		E5F44F3C1C32F4280047B18D /* PDHDishOfWeekDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHDishOfWeekDataModel.swift; sourceTree = "<group>"; };
+		E5F44F3E1C32F7BD0047B18D /* PDHMenuDataParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHMenuDataParser.swift; sourceTree = "<group>"; };
+		E5F44F401C32F8D20047B18D /* PDHDishDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHDishDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -253,7 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				E505D0CB1C1345AA00571A4B /* MenuViewController.swift */,
-				E505D0CF1C1346C100571A4B /* DishMenuController.swift */,
+				E505D0CF1C1346C100571A4B /* PDHDishMenuController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -453,8 +461,9 @@
 		E534871F1C0F424700203548 /* Menu Screen */ = {
 			isa = PBXGroup;
 			children = (
+				E5F44F391C32F4090047B18D /* Model */,
+				E5F44F341C32F1790047B18D /* DataManager */,
 				E53487201C0F424700203548 /* Controller */,
-				E53487211C0F424700203548 /* Model */,
 				E53487221C0F424700203548 /* View */,
 			);
 			path = "Menu Screen";
@@ -463,26 +472,19 @@
 		E53487201C0F424700203548 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				E53487231C0F426C00203548 /* MenuScreenController.swift */,
-				E59825A01C1200D20033F619 /* SlidingMenuController.swift */,
+				E53487231C0F426C00203548 /* PDHMenuScreenController.swift */,
+				E59825A01C1200D20033F619 /* PDHSlidingMenuController.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		E53487211C0F424700203548 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		E53487221C0F424700203548 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E53487271C0F42D200203548 /* MenuScreenView.swift */,
-				E534872B1C0F5C5C00203548 /* DishSearchTableView.swift */,
-				E59825A21C1201200033F619 /* SlidingMenuView.swift */,
-				E59825A41C1203850033F619 /* SlidingMenuCustomCell.swift */,
+				E53487271C0F42D200203548 /* PDHMenuScreenView.swift */,
+				E534872B1C0F5C5C00203548 /* PDHDishSearchTableView.swift */,
+				E59825A21C1201200033F619 /* PDHSlidingMenuView.swift */,
+				E59825A41C1203850033F619 /* PDHSlidingMenuCustomCell.swift */,
 				E56B6D861C17286F003E8E26 /* PDHDishCustomCell.swift */,
 				E53AB4481C26C8A9007494DA /* PDHMenuOptionsCell.swift */,
 			);
@@ -776,6 +778,24 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		E5F44F341C32F1790047B18D /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				E5F44F351C32F1A20047B18D /* PDHMenuDataManager.swift */,
+				E5F44F3E1C32F7BD0047B18D /* PDHMenuDataParser.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		E5F44F391C32F4090047B18D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E5F44F3C1C32F4280047B18D /* PDHDishOfWeekDataModel.swift */,
+				E5F44F401C32F8D20047B18D /* PDHDishDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -922,26 +942,29 @@
 				E5026B7C1C1F498000B1839E /* PDHOrderConfirmationViewController.swift in Sources */,
 				E5189DAD1C077036008CC84C /* LandingViewController.swift in Sources */,
 				E53AB4FE1C3052B7000E6F07 /* PDHRegistrationDataManager.swift in Sources */,
+				E5F44F3D1C32F4280047B18D /* PDHDishOfWeekDataModel.swift in Sources */,
 				E5C721FD1C2DB6F2005FAFD4 /* PDHCurrentOrderView.swift in Sources */,
 				E535E8D71C1DD7C200B4A9B7 /* PDHDeliveryAddressCustomCell.swift in Sources */,
-				E505D0D01C1346C100571A4B /* DishMenuController.swift in Sources */,
+				E505D0D01C1346C100571A4B /* PDHDishMenuController.swift in Sources */,
 				E52F15401C08233E0027DE10 /* PDHRegistrationController.swift in Sources */,
 				E53AB5021C30542C000E6F07 /* PDHRegistrationObject.swift in Sources */,
 				E53AB4E31C2FD7FC000E6F07 /* PDHView.swift in Sources */,
 				E53AB4F91C2FDDD3000E6F07 /* PDHLoginDataParser.swift in Sources */,
-				E53487241C0F426C00203548 /* MenuScreenController.swift in Sources */,
+				E53487241C0F426C00203548 /* PDHMenuScreenController.swift in Sources */,
+				E5F44F411C32F8D20047B18D /* PDHDishDataModel.swift in Sources */,
 				E59AB2A61C148632003A8F19 /* OrderHistoryView.swift in Sources */,
 				E59AB2A21C148623003A8F19 /* OrderHistoryController.swift in Sources */,
-				E534872C1C0F5C5C00203548 /* DishSearchTableView.swift in Sources */,
+				E534872C1C0F5C5C00203548 /* PDHDishSearchTableView.swift in Sources */,
 				E5189DB91C0770E5008CC84C /* LandingView.swift in Sources */,
 				E53AB4E21C2FD7FC000E6F07 /* PDHDataManager.swift in Sources */,
 				E535E8D51C1DD6E100B4A9B7 /* PDHEditAddressView.swift in Sources */,
 				E56B6D911C1743D7003E8E26 /* PDHQuantitySelectorView.swift in Sources */,
 				E5189DB11C07705E008CC84C /* PDHLoginViewController.swift in Sources */,
-				E59825A11C1200D20033F619 /* SlidingMenuController.swift in Sources */,
+				E5F44F361C32F1A20047B18D /* PDHMenuDataManager.swift in Sources */,
+				E59825A11C1200D20033F619 /* PDHSlidingMenuController.swift in Sources */,
 				E5E004491C2EF5530082EED6 /* PDHConstantURL.swift in Sources */,
 				E56B6D871C17286F003E8E26 /* PDHDishCustomCell.swift in Sources */,
-				E59825A51C1203850033F619 /* SlidingMenuCustomCell.swift in Sources */,
+				E59825A51C1203850033F619 /* PDHSlidingMenuCustomCell.swift in Sources */,
 				E53AB4E81C2FD7FC000E6F07 /* PDHCustomCurveView.swift in Sources */,
 				E53AB4E61C2FD7FC000E6F07 /* PDHCustomCircleButton.swift in Sources */,
 				E53AB4E41C2FD7FC000E6F07 /* PDHViewController.swift in Sources */,
@@ -966,13 +989,14 @@
 				E53AB4F51C2FDCB4000E6F07 /* PDHErrorObject.swift in Sources */,
 				E53AB4491C26C8A9007494DA /* PDHMenuOptionsCell.swift in Sources */,
 				E5E0044F1C2EFCE00082EED6 /* PDHLoginDataManager.swift in Sources */,
-				E53487281C0F42D200203548 /* MenuScreenView.swift in Sources */,
+				E53487281C0F42D200203548 /* PDHMenuScreenView.swift in Sources */,
 				E53AB4EB1C2FD7FC000E6F07 /* PDHCustomImageView.swift in Sources */,
 				E52F15341C081B430027DE10 /* PDHUtilityExtension.swift in Sources */,
+				E5F44F3F1C32F7BD0047B18D /* PDHMenuDataParser.swift in Sources */,
 				E56B6D8D1C173F47003E8E26 /* PDHMenuView.swift in Sources */,
 				E5DF0ED81C2C53360042300F /* PDHAddressBookViewController.swift in Sources */,
 				E53AB4F01C2FD7FC000E6F07 /* PDHProgressIndicator.swift in Sources */,
-				E59825A31C1201200033F619 /* SlidingMenuView.swift in Sources */,
+				E59825A31C1201200033F619 /* PDHSlidingMenuView.swift in Sources */,
 				E53AB4F31C2FD8BD000E6F07 /* PDHErrorAlert.swift in Sources */,
 				E52F153E1C0823250027DE10 /* PDHRegistrationView.swift in Sources */,
 			);

@@ -1,5 +1,5 @@
 //
-//  SlidingMenuView.swift
+//  PDHSlidingMenuView.swift
 //  PDH
 //
 //  Created by Anshul Solanki on 12/4/15.
@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class SlidingMenuView: UIView, UITableViewDataSource, UITableViewDelegate {
+class PDHSlidingMenuView: UIView, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -41,7 +41,7 @@ class SlidingMenuView: UIView, UITableViewDataSource, UITableViewDelegate {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell =
             tableView.dequeueReusableCellWithIdentifier("PDHSlidingMenuCell",
-                forIndexPath: indexPath) as! SlidingMenuCustomCell
+                forIndexPath: indexPath) as! PDHSlidingMenuCustomCell
         cell.leftImageView.image = PDHHelper.imageNamed(imageArray[indexPath.row])
         cell.menuLabel.text = nameArray[indexPath.row]
         

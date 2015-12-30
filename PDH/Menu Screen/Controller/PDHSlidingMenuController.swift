@@ -1,5 +1,5 @@
 //
-//  SlidingMenuController.swift
+//  PDHSlidingMenuController.swift
 //  PDH
 //
 //  Created by Anshul Solanki on 12/4/15.
@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class SlidingMenuController: UIViewController {
+class PDHSlidingMenuController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

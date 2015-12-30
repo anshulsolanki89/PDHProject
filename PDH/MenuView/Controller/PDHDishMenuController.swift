@@ -1,5 +1,5 @@
 //
-//  DishMenuController.swift
+//  PDHDishMenuController.swift
 //  PDH
 //
 //  Created by Anshul Solanki on 12/5/15.
@@ -10,17 +10,17 @@ import Foundation
 import UIKit
 
 protocol PDHDishMenuControllerDelegate: class {
-    func dishClicked(dishController: DishMenuController)
+    func dishClicked(dishController: PDHDishMenuController)
 }
 
-class DishMenuController: UIViewController, ViewActionDelegate {
+class PDHDishMenuController: UIViewController, ViewActionDelegate {
     
-    var dishListView: DishSearchTableView!
+    var dishListView: PDHDishSearchTableView!
     weak var delegate: PDHDishMenuControllerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        dishListView = self.view as! DishSearchTableView
+        dishListView = self.view as! PDHDishSearchTableView
         dishListView.delegate = self
     }
     

@@ -56,7 +56,7 @@ extension PDHLoginViewController {
     override func didReceiveDataWithSuccess(response: AnyObject) {
         PDHProgressIndicator.hideLoadingIndicator()
         if let response = response as? PDHLoginInfoDataObject {
-            loginDataManager.saveUserData(response)
+            PDHLoginDataManager.saveUserData(response)
             self.performSegueWithIdentifier("menuScreen", sender: nil)
         }
     }

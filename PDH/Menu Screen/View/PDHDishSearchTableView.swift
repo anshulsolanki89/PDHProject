@@ -1,5 +1,5 @@
 //
-//  DishSearchTableView.swift
+//  PDHDishSearchTableView.swift
 //  PDH
 //
 //  Created by Anshul Solanki on 12/2/15.
@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class DishSearchTableView: PDHView, UITableViewDataSource, UITableViewDelegate, PDHCustomCellDelegate {
+class PDHDishSearchTableView: PDHView, UITableViewDataSource, UITableViewDelegate, PDHCustomCellDelegate {
 
     override func awakeFromNib() {
         super.awakeFromNib()

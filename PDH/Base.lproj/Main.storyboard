@@ -1112,12 +1112,12 @@ App Store.</string>
         <!--Menu Screen Controller-->
         <scene sceneID="qw5-m2-TCd">
             <objects>
-                <viewController id="Ing-aX-ho7" customClass="MenuScreenController" customModule="PDH" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Ing-aX-ho7" customClass="PDHMenuScreenController" customModule="PDH" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kAt-Ff-Mwi"/>
                         <viewControllerLayoutGuide type="bottom" id="8fF-Je-NCT"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="lh3-3D-ih3" customClass="MenuScreenView" customModule="PDH" customModuleProvider="target">
+                    <view key="view" contentMode="scaleToFill" id="lh3-3D-ih3" customClass="PDHMenuScreenView" customModule="PDH" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -1239,6 +1239,9 @@ App Store.</string>
                                                 <real key="value" value="1"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="addToOrderBtnClciked:" destination="lh3-3D-ih3" eventType="touchUpInside" id="PmK-fP-Xi1"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dish of the Week" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X0Z-bT-Ybh">
                                         <rect key="frame" x="16" y="104" width="128" height="14"/>
@@ -1249,7 +1252,7 @@ App Store.</string>
                                         <color key="textColor" red="1" green="0.76862745098039209" blue="0.070588235294117646" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fish Peri Peri" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G4U-4v-MZS">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fish Peri Peri" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="G4U-4v-MZS">
                                         <rect key="frame" x="16" y="120" width="128" height="14"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="14" id="HKs-Ow-HDw"/>
@@ -1374,8 +1377,12 @@ App Store.</string>
                         </constraints>
                         <connections>
                             <outlet property="collectionView" destination="wyG-jA-gDi" id="qbo-Op-qSB"/>
+                            <outlet property="dishOfWeekLabel" destination="G4U-4v-MZS" id="vN1-nr-4EA"/>
                             <outlet property="dishSearchBar" destination="tpD-wB-fRK" id="ZtH-if-kXO"/>
                             <outlet property="dishSearchTableView" destination="Xlf-Fm-bQI" id="uca-YZ-U5z"/>
+                            <outlet property="userBGImageView" destination="7FA-6y-C7g" id="qhC-TE-Kc8"/>
+                            <outlet property="userImageView" destination="7FA-6y-C7g" id="Ggp-7O-01g"/>
+                            <outlet property="userNameLabel" destination="v9Z-V6-fH6" id="Lv6-G3-DJq"/>
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" id="Y5t-GU-hrp"/>
@@ -1561,6 +1568,7 @@ App Store.</string>
                         </constraints>
                         <connections>
                             <outlet property="backBtn" destination="M3y-7T-UVo" id="iZr-MY-pzy"/>
+                            <outlet property="bottomConstraint" destination="FNu-De-lck" id="Otq-H5-ZBy"/>
                             <outlet property="passwordTextField" destination="v90-Iy-k6b" id="y7q-q3-UTR"/>
                             <outlet property="userNameTextField" destination="jTg-7f-HdQ" id="hrg-NR-3L4"/>
                         </connections>
@@ -1595,12 +1603,12 @@ App Store.</string>
         <!--Sliding Menu Controller-->
         <scene sceneID="uLJ-aG-gnt">
             <objects>
-                <viewController id="KZS-ui-tHv" customClass="SlidingMenuController" customModule="PDH" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="KZS-ui-tHv" customClass="PDHSlidingMenuController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tyD-SN-cuT"/>
                         <viewControllerLayoutGuide type="bottom" id="frN-3u-3eg"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="g7a-Pc-LYe" customClass="SlidingMenuView" customModule="PDH" customModuleProvider="target">
+                    <view key="view" contentMode="scaleToFill" id="g7a-Pc-LYe" customClass="PDHSlidingMenuView" customModule="PDH" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -1617,7 +1625,7 @@ App Store.</string>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="PDHSlidingMenuCell" rowHeight="60" id="rQS-ga-yYc" customClass="SlidingMenuCustomCell" customModule="PDH" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="PDHSlidingMenuCell" rowHeight="60" id="rQS-ga-yYc" customClass="PDHSlidingMenuCustomCell" customModule="PDH" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rQS-ga-yYc" id="ZQK-0y-yyh">
@@ -1703,7 +1711,7 @@ App Store.</string>
                         <viewControllerLayoutGuide type="top" id="erz-ar-qD9"/>
                         <viewControllerLayoutGuide type="bottom" id="E5B-xG-DNN"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="LTe-Rl-cFX" customClass="DishSearchTableView" customModule="PDH" customModuleProvider="target">
+                    <view key="view" contentMode="scaleToFill" id="LTe-Rl-cFX" customClass="PDHDishSearchTableView" customModule="PDH" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -1821,7 +1829,7 @@ App Store.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jZ0-5y-og0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1097" y="-225"/>
+            <point key="canvasLocation" x="1004" y="-238"/>
         </scene>
         <!--NewAddressVC-->
         <scene sceneID="Oek-e3-Sqz">

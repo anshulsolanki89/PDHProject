@@ -14,10 +14,11 @@ class PDHLoginView: PDHView {
     @IBOutlet weak var backBtn: UIButton!
     @IBOutlet weak var userNameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    
-    var anshul = 10
+    @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
+
     override func awakeFromNib() {
         super.awakeFromNib()
+        addNotificationObserver()
         changeBackBtnImage()
     }
     
@@ -43,20 +44,65 @@ class PDHLoginView: PDHView {
         delegate?.viewDidPerformAction(ViewActions.Login, data: dataDict)
     }
 
+    func keyboardWillShow(notification:NSNotification) {
+        
+    }
+    
+    func keyboardWillHide(notification:NSNotification) {
+        
+    }
+    
+    func adjustingHeight(show:Bool, notification:NSNotification) {
+        var userInfo = notification.userInfo!
+        let keyboardFrame:CGRect = (userInfo[UIKeyboardFrameBeginUserInfoKey] as! NSValue).CGRectValue()
+        let animationDurarion = userInfo[UIKeyboardAnimationDurationUserInfoKey] as! NSTimeInterval
+        let changeInHeight = (CGRectGetHeight(keyboardFrame) + 40) * (show ? 1 : -1)
+        UIView.animateWithDuration(animationDurarion, animations: { () -> Void in
+            self.bottomConstraint.constant += changeInHeight
+        })
+        
+    }
+    
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        self.endEditing(true)
+    }
+    
+    deinit {
+        print("\(self) -> deallocated")
+        removeNotificationObserver()
+    }
+}
+
+// MARK:- Private
+extension PDHLoginView {
+    private func addNotificationObserver() {
+        NSNotificationCenter.defaultCenter().addObserver(self,
+            selector: "keyboardWillShow:",
+            name: UIKeyboardWillShowNotification,
+            object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self,
+            selector: "keyboardWillHide:",
+            name: UIKeyboardWillHideNotification, object: nil)
+    }
+    
     private func isFormFieldError() -> Bool {
         if userNameTextField.text! == "" {
             return false
         }
-        
         if passwordTextField.text! == "" {
             return false
         }
         
         return true
     }
-    
-    deinit {
-        print("\(self) -> deallocated")
+
+    private func removeNotificationObserver() {
+        NSNotificationCenter.defaultCenter().removeObserver(self,
+            name: UIKeyboardWillShowNotification,
+            object: nil)
+        NSNotificationCenter.defaultCenter().removeObserver(self,
+            name: UIKeyboardWillHideNotification,
+            object: nil)
     }
 }
 
