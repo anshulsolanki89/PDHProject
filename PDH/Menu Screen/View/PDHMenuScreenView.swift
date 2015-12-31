@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import AFNetworking
 
 class PDHMenuScreenView: PDHView {
     
@@ -24,6 +25,7 @@ class PDHMenuScreenView: PDHView {
     @IBOutlet weak var userNameLabel: UILabel!
    
     private var overlayView: PDHOverlayView!
+    private var dataArray = [PDHDishcategoryMenu]()
    
     private var dishNamesArray = [
         "Chinese",
@@ -51,10 +53,13 @@ class PDHMenuScreenView: PDHView {
     }
    
     func updateData(data: AnyObject) {
-        if let data = data as? PDHDishOfWeekDataModel {
+        if let data = data as? PDHDishDataObject {
             dishOfWeekLabel.text = data.title
-        } else if let userData = data as? PDHLoginInfoDataObject {
-            userNameLabel.text = "Hello " + "\(userData.name)"
+        } else if let data = data as? PDHLoginInfoDataObject {
+            userNameLabel.text = "Hello " + "\(data.name)"
+        } else if let data = data as? [PDHDishcategoryMenu] {
+            dataArray = data
+            collectionView.reloadData()
         }
     }
     
@@ -87,7 +92,7 @@ extension PDHMenuScreenView: UICollectionViewDataSource {
 
     func collectionView(collectionView: UICollectionView,
         numberOfItemsInSection section: Int) -> Int {
-            return 40
+            return dataArray.count
     }
     
     func collectionView(collectionView: UICollectionView,
@@ -96,12 +101,9 @@ extension PDHMenuScreenView: UICollectionViewDataSource {
                 "PDHMenuOptionsCell",
                 forIndexPath: indexPath) as! PDHMenuOptionsCell
             
-            cell.menuOptionImageView.image =
-                UIImage(named: "\(indexPath.row % dishNamesArray.count).png")
-            cell.menuOptionLabel.numberOfLines = 0
-            cell.menuOptionLabel.lineBreakMode = .ByWordWrapping
-            cell.menuOptionLabel.text =
-                dishNamesArray[indexPath.row % dishNamesArray.count]
+            cell.menuOptionImageView.setImageWithURL(NSURL(
+                string: dataArray[indexPath.row].categoryImageURL)!)
+            cell.menuOptionLabel.text = dataArray[indexPath.row].dishCategory
             
             return cell
     }

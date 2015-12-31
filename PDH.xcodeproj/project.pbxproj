@@ -12,6 +12,7 @@
 		E5026B7E1C1F49B600B1839E /* PDHOrderConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5026B7D1C1F49B600B1839E /* PDHOrderConfirmationView.swift */; settings = {ASSET_TAGS = (); }; };
 		E505D0CC1C1345AA00571A4B /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E505D0CB1C1345AA00571A4B /* MenuViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		E505D0D01C1346C100571A4B /* PDHDishMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E505D0CF1C1346C100571A4B /* PDHDishMenuController.swift */; settings = {ASSET_TAGS = (); }; };
+		E50A07041C35932D001F76C9 /* PDHDishcategoryMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50A07031C35932D001F76C9 /* PDHDishcategoryMenu.swift */; settings = {ASSET_TAGS = (); }; };
 		E5189DAD1C077036008CC84C /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5189DAC1C077036008CC84C /* LandingViewController.swift */; };
 		E5189DB11C07705E008CC84C /* PDHLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5189DB01C07705E008CC84C /* PDHLoginViewController.swift */; };
 		E5189DB51C0770DB008CC84C /* PDHLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5189DB41C0770DB008CC84C /* PDHLoginView.swift */; };
@@ -88,9 +89,8 @@
 		E5E4935F1C2D6CE300469745 /* PDHMyOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E4935E1C2D6CE300469745 /* PDHMyOrderView.swift */; settings = {ASSET_TAGS = (); }; };
 		E5EF143D1C1D4C450097E70E /* PDHOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EF143C1C1D4C450097E70E /* PDHOverlayView.swift */; settings = {ASSET_TAGS = (); }; };
 		E5F44F361C32F1A20047B18D /* PDHMenuDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F44F351C32F1A20047B18D /* PDHMenuDataManager.swift */; settings = {ASSET_TAGS = (); }; };
-		E5F44F3D1C32F4280047B18D /* PDHDishOfWeekDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F44F3C1C32F4280047B18D /* PDHDishOfWeekDataModel.swift */; settings = {ASSET_TAGS = (); }; };
+		E5F44F3D1C32F4280047B18D /* PDHDishDataObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F44F3C1C32F4280047B18D /* PDHDishDataObject.swift */; settings = {ASSET_TAGS = (); }; };
 		E5F44F3F1C32F7BD0047B18D /* PDHMenuDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F44F3E1C32F7BD0047B18D /* PDHMenuDataParser.swift */; settings = {ASSET_TAGS = (); }; };
-		E5F44F411C32F8D20047B18D /* PDHDishDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F44F401C32F8D20047B18D /* PDHDishDataModel.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -101,6 +101,7 @@
 		E5026B7D1C1F49B600B1839E /* PDHOrderConfirmationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHOrderConfirmationView.swift; sourceTree = "<group>"; };
 		E505D0CB1C1345AA00571A4B /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		E505D0CF1C1346C100571A4B /* PDHDishMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHDishMenuController.swift; sourceTree = "<group>"; };
+		E50A07031C35932D001F76C9 /* PDHDishcategoryMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHDishcategoryMenu.swift; sourceTree = "<group>"; };
 		E5189DAC1C077036008CC84C /* LandingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		E5189DB01C07705E008CC84C /* PDHLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHLoginViewController.swift; sourceTree = "<group>"; };
 		E5189DB41C0770DB008CC84C /* PDHLoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHLoginView.swift; sourceTree = "<group>"; };
@@ -180,9 +181,8 @@
 		E5E4935E1C2D6CE300469745 /* PDHMyOrderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHMyOrderView.swift; sourceTree = "<group>"; };
 		E5EF143C1C1D4C450097E70E /* PDHOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHOverlayView.swift; sourceTree = "<group>"; };
 		E5F44F351C32F1A20047B18D /* PDHMenuDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHMenuDataManager.swift; sourceTree = "<group>"; };
-		E5F44F3C1C32F4280047B18D /* PDHDishOfWeekDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHDishOfWeekDataModel.swift; sourceTree = "<group>"; };
+		E5F44F3C1C32F4280047B18D /* PDHDishDataObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHDishDataObject.swift; sourceTree = "<group>"; };
 		E5F44F3E1C32F7BD0047B18D /* PDHMenuDataParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHMenuDataParser.swift; sourceTree = "<group>"; };
-		E5F44F401C32F8D20047B18D /* PDHDishDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHDishDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -790,8 +790,8 @@
 		E5F44F391C32F4090047B18D /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				E5F44F3C1C32F4280047B18D /* PDHDishOfWeekDataModel.swift */,
-				E5F44F401C32F8D20047B18D /* PDHDishDataModel.swift */,
+				E5F44F3C1C32F4280047B18D /* PDHDishDataObject.swift */,
+				E50A07031C35932D001F76C9 /* PDHDishcategoryMenu.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -934,6 +934,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E52F154C1C0883510027DE10 /* PDHViewActionProtocol.swift in Sources */,
+				E50A07041C35932D001F76C9 /* PDHDishcategoryMenu.swift in Sources */,
 				E52F15501C0884B70027DE10 /* PDHActionEnum.swift in Sources */,
 				E56AF4161C2E9AC400AC3FCD /* SWRevealViewController.m in Sources */,
 				E53AB4E71C2FD7FC000E6F07 /* PDHCustomCircleLabel.swift in Sources */,
@@ -942,7 +943,7 @@
 				E5026B7C1C1F498000B1839E /* PDHOrderConfirmationViewController.swift in Sources */,
 				E5189DAD1C077036008CC84C /* LandingViewController.swift in Sources */,
 				E53AB4FE1C3052B7000E6F07 /* PDHRegistrationDataManager.swift in Sources */,
-				E5F44F3D1C32F4280047B18D /* PDHDishOfWeekDataModel.swift in Sources */,
+				E5F44F3D1C32F4280047B18D /* PDHDishDataObject.swift in Sources */,
 				E5C721FD1C2DB6F2005FAFD4 /* PDHCurrentOrderView.swift in Sources */,
 				E535E8D71C1DD7C200B4A9B7 /* PDHDeliveryAddressCustomCell.swift in Sources */,
 				E505D0D01C1346C100571A4B /* PDHDishMenuController.swift in Sources */,
@@ -951,7 +952,6 @@
 				E53AB4E31C2FD7FC000E6F07 /* PDHView.swift in Sources */,
 				E53AB4F91C2FDDD3000E6F07 /* PDHLoginDataParser.swift in Sources */,
 				E53487241C0F426C00203548 /* PDHMenuScreenController.swift in Sources */,
-				E5F44F411C32F8D20047B18D /* PDHDishDataModel.swift in Sources */,
 				E59AB2A61C148632003A8F19 /* OrderHistoryView.swift in Sources */,
 				E59AB2A21C148623003A8F19 /* OrderHistoryController.swift in Sources */,
 				E534872C1C0F5C5C00203548 /* PDHDishSearchTableView.swift in Sources */,

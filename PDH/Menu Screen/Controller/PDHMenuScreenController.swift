@@ -12,22 +12,28 @@ import UIKit
 class PDHMenuScreenController: PDHViewController {
     
     private var menuDataManager: PDHMenuDataManager!
+    private var numberOfOperations = 3
     
     var menuView: PDHMenuScreenView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         if self.revealViewController() != nil {
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
         
         menuView = self.view as! PDHMenuScreenView
         menuView.delegate = self
-        
+
+        PDHProgressIndicator.showLoadingIndicator(self.view)
+
         initializeDataManager()
+        
         menuView.updateData(PDHMenuDataManager.getUserData())
         menuDataManager.getDishOfWeek()
-        
+        menuDataManager.getRestaurantMenu()
+        menuDataManager.getDishMenu()
     }
     
     deinit {
@@ -62,11 +68,27 @@ extension PDHMenuScreenController: ViewActionDelegate {
         }
     }
 
+    func hideLoadingIndicator() {
+        if --numberOfOperations == 0 {
+            PDHProgressIndicator.hideLoadingIndicator()
+        }
+    }
 }
 
 // MARK:- DataManager Protocol
 extension PDHMenuScreenController {
     override func didReceiveDataWithSuccess(response: AnyObject) {
         menuView.updateData(response)
+        hideLoadingIndicator()
+    }
+    
+    override func didReceiveDataWithError(response: AnyObject?) {
+        super.didReceiveDataWithError(response)
+        hideLoadingIndicator()
+    }
+    
+    override func didFailWithError(error: String) {
+        super.didFailWithError(error)
+        hideLoadingIndicator()
     }
 }

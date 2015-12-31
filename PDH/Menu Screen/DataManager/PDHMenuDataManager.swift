@@ -38,14 +38,36 @@ class PDHMenuDataManager: PDHDataManager {
             success: { (response) -> Void in
                 print("\(response)")
                 if let response = response {
-//                    let jsonData = JSON(response)
-//                    if jsonData["Result"]["ErrorCode"].numberValue == 0 {
-//                        self.delegate?.didReceiveDataWithSuccess?(
-//                            PDHLoginDataParser.parseLoginObject(jsonData["Result"]))
-//                    } else {
-//                        self.delegate?.didReceiveDataWithError?(
-//                            PDHLoginDataParser.parseErrorObject(jsonData["Result"]))
-//                    }
+                    let jsonData = JSON(response)
+                    if jsonData["Result"]["ErrorCode"].numberValue == 0 {
+                        self.delegate?.didReceiveDataWithSuccess?(
+                            PDHMenuDataParser.getRetstaurantMenu(jsonData["Result"]["Record"]))
+                    } else {
+                        self.delegate?.didReceiveDataWithError?(
+                            PDHLoginDataParser.parseErrorObject(jsonData["Result"]))
+                    }
+                } else {
+                    self.delegate?.didReceiveDataWithError?(nil)
+                }
+            }, failure: { (error) -> Void in
+                print("\(error)")
+                self.delegate?.didFailWithError?(error.localizedDescription)
+        })
+    }
+    
+    func getDishMenu() {
+        PDHNetworkManager.getRequestForURL(PDHConstantURL.MENU_LIST_URL,
+            success: { (response) -> Void in
+                print("\(response)")
+                if let response = response {
+                    let jsonData = JSON(response)
+                    if jsonData["Result"]["ErrorCode"].numberValue == 0 {
+                        self.delegate?.didReceiveDataWithSuccess?(
+                            PDHMenuDataParser.getDishMenu(jsonData["Result"]["Record"]))
+                    } else {
+                        self.delegate?.didReceiveDataWithError?(
+                            PDHLoginDataParser.parseErrorObject(jsonData["Result"]))
+                    }
                 } else {
                     self.delegate?.didReceiveDataWithError?(nil)
                 }
