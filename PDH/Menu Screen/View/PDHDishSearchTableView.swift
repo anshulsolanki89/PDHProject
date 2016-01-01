@@ -9,38 +9,48 @@
 import Foundation
 import UIKit
 
-class PDHDishSearchTableView: PDHView, UITableViewDataSource, UITableViewDelegate, PDHCustomCellDelegate {
+class PDHDishSearchTableView: PDHView, PDHCustomCellDelegate {
 
+    private var dataArray = [PDHDishDataObject]()
+    private let ROW_HEIGHT: CGFloat  = 70
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
     
-    // MARK:- TableViewDataSource
+
+    // MARK:- PDHCustomCellDelegate
+    func addToOrderButtonClicked(btn: PDHDishCustomCell, atIndex index: Int) {
+        delegate?.viewDidPerformAction(ViewActions.AddToOrder, data: nil)
+    }
+}
+
+// MARK:- TableViewDataSource
+extension PDHDishSearchTableView: UITableViewDataSource {
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 70
+        return ROW_HEIGHT
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return dataArray.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-       let cell = tableView.dequeueReusableCellWithIdentifier(
+        let cell = tableView.dequeueReusableCellWithIdentifier(
             "PDHDishSearchCell",
-        forIndexPath: indexPath) as! PDHDishCustomCell
+            forIndexPath: indexPath) as! PDHDishCustomCell
+        cell
         cell.delegate = self
         cell.tag = indexPath.row
         return cell
     }
-    
-    // MARK:- TableViewDelegate
+}
+
+
+// MARK:- TableViewDelegate
+extension PDHDishSearchTableView: UITableViewDelegate {
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
-    }
-    
-    // MARK:- PDHCustomCellDelegate
-    func addToOrderButtonClicked(btn: PDHDishCustomCell, atIndex index: Int) {
-        delegate?.viewDidPerformAction(ViewActions.AddToOrder, data: nil)
     }
 }

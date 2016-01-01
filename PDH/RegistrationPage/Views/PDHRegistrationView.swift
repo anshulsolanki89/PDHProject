@@ -58,11 +58,11 @@ class PDHRegistrationView: PDHView {
     }
     
     func keyboardWillShow(notification:NSNotification) {
-        adjustingHeight(true, notification: notification)
+        //adjustingHeight(true, notification: notification)
     }
     
     func keyboardWillHide(notification:NSNotification) {
-        adjustingHeight(false, notification: notification)
+        //adjustingHeight(false, notification: notification)
     }
     
     

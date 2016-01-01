@@ -25,6 +25,10 @@ class PDHMenuScreenView: PDHView {
     @IBOutlet weak var userNameLabel: UILabel!
    
     private var overlayView: PDHOverlayView!
+    private var addToOrderView: PDHQuantitySelectorView!
+    
+    private var dishOfWeek: PDHDishDataObject!
+    
     private var dataArray = [PDHDishcategoryMenu]()
    
     private var dishNamesArray = [
@@ -49,11 +53,14 @@ class PDHMenuScreenView: PDHView {
     }
     
     @IBAction func addToOrderBtnClciked(sender: AnyObject) {
-
+        // TODO:- This View should be added by view controller
+        createAddToOrderView()
+        showAddToOrderView()
     }
-   
+    
     func updateData(data: AnyObject) {
         if let data = data as? PDHDishDataObject {
+            dishOfWeek = data
             dishOfWeekLabel.text = data.title
         } else if let data = data as? PDHLoginInfoDataObject {
             userNameLabel.text = "Hello " + "\(data.name)"
@@ -71,10 +78,6 @@ class PDHMenuScreenView: PDHView {
                 width: self.frame.size.width,
                 height: (self.frame.size.height - keyboardSize.height - 108))
         }
-    }
-    
-    func keyboardWillHide(notification: NSNotification) {
-        //TODO:- check whether this notification is required or not
     }
     
     func keyboardDidShow(notification: NSNotification) {
@@ -149,6 +152,18 @@ extension PDHMenuScreenView {
         overlayView.delegate = self
     }
     
+    private func createAddToOrderView() {
+        let sb = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
+        let quantitySelectorVC = sb.instantiateViewControllerWithIdentifier("PDHQuantiySelectVC")
+        addToOrderView = (quantitySelectorVC.view as! PDHQuantitySelectorView)
+        addToOrderView.delegate = self
+    }
+    
+    private func showAddToOrderView() {
+        addToOrderView.updateDishQuantity(dishOfWeek)
+        self.addSubview(addToOrderView!)
+    }
+    
     private func addNotificationObserver() {
         NSNotificationCenter.defaultCenter().addObserver(self,
             selector: "keyboardWillShow:",
@@ -158,28 +173,20 @@ extension PDHMenuScreenView {
             selector: "keyboardDidShow:",
             name: UIKeyboardDidShowNotification,
             object: nil)
-        NSNotificationCenter.defaultCenter().addObserver(self,
-            selector: "keyboardWillHide:",
-            name: UIKeyboardWillHideNotification,
-            object: nil)
     }
     
     private func searchBarUI() {
         let cancelBtnAttributes =
-        [NSFontAttributeName: PDHHelper.getSkiaRegularFont(16),
-            NSForegroundColorAttributeName: PDHHelper.getCancelBtnColor()]
+            [NSFontAttributeName: PDHHelper.getSkiaRegularFont(16),
+                NSForegroundColorAttributeName: PDHHelper.getCancelBtnColor()]
         UIBarButtonItem.appearance().setTitleTextAttributes(
             cancelBtnAttributes,
             forState: UIControlState.Normal)
         
-        if #available(iOS 9.0, *) {
-            UITextField.appearanceWhenContainedInInstancesOfClasses([UISearchBar.self]).font =
-                PDHHelper.getSkiaRegularFont(16)
-            UITextField.appearanceWhenContainedInInstancesOfClasses([UISearchBar.self]).textColor =
-                PDHHelper.getCancelBtnColor()
-        } else {
-            // Fallback on earlier versions
-        }
+        UITextField.appearanceWhenContainedInInstancesOfClasses([UISearchBar.self]).font =
+            PDHHelper.getSkiaRegularFont(16)
+        UITextField.appearanceWhenContainedInInstancesOfClasses([UISearchBar.self]).textColor =
+            PDHHelper.getCancelBtnColor()
     }
 
     private func hideOverlayView() {
@@ -215,6 +222,14 @@ extension PDHMenuScreenView {
     }
 }
 
+// MARK: PDHQuantitySelectorViewDelegate
+extension PDHMenuScreenView: PDHQuantitySelectorViewDelegate {
+    func quantitySelectorViewClicked() {
+        addToOrderView!.removeFromSuperview()
+    }
+}
+
+// MARK: PDHOverlayViewDelegate
 extension PDHMenuScreenView: PDHOverlayViewDelegate {
     func overlayViewClicked(overlayView: PDHOverlayView) {
         endSearching()

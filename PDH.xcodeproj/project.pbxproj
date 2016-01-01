@@ -69,7 +69,6 @@
 		E56AF4161C2E9AC400AC3FCD /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E56AF4151C2E9AC400AC3FCD /* SWRevealViewController.m */; settings = {ASSET_TAGS = (); }; };
 		E56B6D871C17286F003E8E26 /* PDHDishCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56B6D861C17286F003E8E26 /* PDHDishCustomCell.swift */; settings = {ASSET_TAGS = (); }; };
 		E56B6D8D1C173F47003E8E26 /* PDHMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56B6D8C1C173F47003E8E26 /* PDHMenuView.swift */; settings = {ASSET_TAGS = (); }; };
-		E56B6D911C1743D7003E8E26 /* PDHQuantitySelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56B6D901C1743D7003E8E26 /* PDHQuantitySelectorView.swift */; settings = {ASSET_TAGS = (); }; };
 		E59825A11C1200D20033F619 /* PDHSlidingMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59825A01C1200D20033F619 /* PDHSlidingMenuController.swift */; settings = {ASSET_TAGS = (); }; };
 		E59825A31C1201200033F619 /* PDHSlidingMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59825A21C1201200033F619 /* PDHSlidingMenuView.swift */; settings = {ASSET_TAGS = (); }; };
 		E59825A51C1203850033F619 /* PDHSlidingMenuCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59825A41C1203850033F619 /* PDHSlidingMenuCustomCell.swift */; settings = {ASSET_TAGS = (); }; };
@@ -77,6 +76,9 @@
 		E59AB2A61C148632003A8F19 /* OrderHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59AB2A51C148632003A8F19 /* OrderHistoryView.swift */; settings = {ASSET_TAGS = (); }; };
 		E59B4F3A1C0CBA5400D1B6E7 /* SkiaRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E59B4F391C0CBA5400D1B6E7 /* SkiaRegular.ttf */; };
 		E59B4F3E1C0CC39000D1B6E7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E553E4B41C05F2D9007DD045 /* Info.plist */; };
+		E59E71991C36BCBF00BAF731 /* PDHOrderBasket.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59E71981C36BCBF00BAF731 /* PDHOrderBasket.swift */; settings = {ASSET_TAGS = (); }; };
+		E59E719B1C36C40A00BAF731 /* PDHQuantitySelectorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59E719A1C36C40A00BAF731 /* PDHQuantitySelectorCell.swift */; settings = {ASSET_TAGS = (); }; };
+		E59E719D1C36C43C00BAF731 /* PDHQuantitySelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59E719C1C36C43C00BAF731 /* PDHQuantitySelectorView.swift */; settings = {ASSET_TAGS = (); }; };
 		E5C721FB1C2DB6E0005FAFD4 /* PDHCurrentOrderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C721FA1C2DB6E0005FAFD4 /* PDHCurrentOrderController.swift */; settings = {ASSET_TAGS = (); }; };
 		E5C721FD1C2DB6F2005FAFD4 /* PDHCurrentOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C721FC1C2DB6F2005FAFD4 /* PDHCurrentOrderView.swift */; settings = {ASSET_TAGS = (); }; };
 		E5DE86DD1C1D9CB20009EEAC /* PDHDeliveryAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DE86DC1C1D9CB20009EEAC /* PDHDeliveryAddressViewController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -161,13 +163,15 @@
 		E56AF4151C2E9AC400AC3FCD /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		E56B6D861C17286F003E8E26 /* PDHDishCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHDishCustomCell.swift; sourceTree = "<group>"; };
 		E56B6D8C1C173F47003E8E26 /* PDHMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHMenuView.swift; sourceTree = "<group>"; };
-		E56B6D901C1743D7003E8E26 /* PDHQuantitySelectorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHQuantitySelectorView.swift; sourceTree = "<group>"; };
 		E59825A01C1200D20033F619 /* PDHSlidingMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHSlidingMenuController.swift; sourceTree = "<group>"; };
 		E59825A21C1201200033F619 /* PDHSlidingMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHSlidingMenuView.swift; sourceTree = "<group>"; };
 		E59825A41C1203850033F619 /* PDHSlidingMenuCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHSlidingMenuCustomCell.swift; sourceTree = "<group>"; };
 		E59AB2A11C148623003A8F19 /* OrderHistoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderHistoryController.swift; sourceTree = "<group>"; };
 		E59AB2A51C148632003A8F19 /* OrderHistoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderHistoryView.swift; sourceTree = "<group>"; };
 		E59B4F391C0CBA5400D1B6E7 /* SkiaRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SkiaRegular.ttf; sourceTree = "<group>"; };
+		E59E71981C36BCBF00BAF731 /* PDHOrderBasket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHOrderBasket.swift; sourceTree = "<group>"; };
+		E59E719A1C36C40A00BAF731 /* PDHQuantitySelectorCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHQuantitySelectorCell.swift; sourceTree = "<group>"; };
+		E59E719C1C36C43C00BAF731 /* PDHQuantitySelectorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHQuantitySelectorView.swift; sourceTree = "<group>"; };
 		E5C721FA1C2DB6E0005FAFD4 /* PDHCurrentOrderController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHCurrentOrderController.swift; sourceTree = "<group>"; };
 		E5C721FC1C2DB6F2005FAFD4 /* PDHCurrentOrderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHCurrentOrderView.swift; sourceTree = "<group>"; };
 		E5DE86DC1C1D9CB20009EEAC /* PDHDeliveryAddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHDeliveryAddressViewController.swift; sourceTree = "<group>"; };
@@ -277,7 +281,6 @@
 			isa = PBXGroup;
 			children = (
 				E56B6D8C1C173F47003E8E26 /* PDHMenuView.swift */,
-				E56B6D901C1743D7003E8E26 /* PDHQuantitySelectorView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -487,6 +490,8 @@
 				E59825A41C1203850033F619 /* PDHSlidingMenuCustomCell.swift */,
 				E56B6D861C17286F003E8E26 /* PDHDishCustomCell.swift */,
 				E53AB4481C26C8A9007494DA /* PDHMenuOptionsCell.swift */,
+				E59E719A1C36C40A00BAF731 /* PDHQuantitySelectorCell.swift */,
+				E59E719C1C36C43C00BAF731 /* PDHQuantitySelectorView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -741,6 +746,7 @@
 			isa = PBXGroup;
 			children = (
 				E5E004481C2EF5530082EED6 /* PDHConstantURL.swift */,
+				E59E71981C36BCBF00BAF731 /* PDHOrderBasket.swift */,
 			);
 			path = Global;
 			sourceTree = "<group>";
@@ -958,7 +964,6 @@
 				E5189DB91C0770E5008CC84C /* LandingView.swift in Sources */,
 				E53AB4E21C2FD7FC000E6F07 /* PDHDataManager.swift in Sources */,
 				E535E8D51C1DD6E100B4A9B7 /* PDHEditAddressView.swift in Sources */,
-				E56B6D911C1743D7003E8E26 /* PDHQuantitySelectorView.swift in Sources */,
 				E5189DB11C07705E008CC84C /* PDHLoginViewController.swift in Sources */,
 				E5F44F361C32F1A20047B18D /* PDHMenuDataManager.swift in Sources */,
 				E59825A11C1200D20033F619 /* PDHSlidingMenuController.swift in Sources */,
@@ -969,9 +974,11 @@
 				E53AB4E61C2FD7FC000E6F07 /* PDHCustomCircleButton.swift in Sources */,
 				E53AB4E41C2FD7FC000E6F07 /* PDHViewController.swift in Sources */,
 				E505D0CC1C1345AA00571A4B /* MenuViewController.swift in Sources */,
+				E59E719B1C36C40A00BAF731 /* PDHQuantitySelectorCell.swift in Sources */,
 				E53AB5001C3053B7000E6F07 /* PDHRegistrationDataParser.swift in Sources */,
 				E53AB4E51C2FD7FC000E6F07 /* PDHButton.swift in Sources */,
 				E53AB4EC1C2FD7FC000E6F07 /* PDHCustomStepper.swift in Sources */,
+				E59E719D1C36C43C00BAF731 /* PDHQuantitySelectorView.swift in Sources */,
 				E5EF143D1C1D4C450097E70E /* PDHOverlayView.swift in Sources */,
 				E53AB5041C30546F000E6F07 /* PDHDataParser.swift in Sources */,
 				E53AB4E91C2FD7FC000E6F07 /* PDHCustomDishCartView.swift in Sources */,
@@ -992,6 +999,7 @@
 				E53487281C0F42D200203548 /* PDHMenuScreenView.swift in Sources */,
 				E53AB4EB1C2FD7FC000E6F07 /* PDHCustomImageView.swift in Sources */,
 				E52F15341C081B430027DE10 /* PDHUtilityExtension.swift in Sources */,
+				E59E71991C36BCBF00BAF731 /* PDHOrderBasket.swift in Sources */,
 				E5F44F3F1C32F7BD0047B18D /* PDHMenuDataParser.swift in Sources */,
 				E56B6D8D1C173F47003E8E26 /* PDHMenuView.swift in Sources */,
 				E5DF0ED81C2C53360042300F /* PDHAddressBookViewController.swift in Sources */,
@@ -1041,6 +1049,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Michael Ayers (2H8DP7VDNN)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -1060,9 +1069,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "06d5e7c9-b3c9-4c96-8fca-d59381df7c3f";
 				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "PDH/PDH-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1086,6 +1096,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Michael Ayers (2H8DP7VDNN)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -1099,8 +1110,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "06d5e7c9-b3c9-4c96-8fca-d59381df7c3f";
 				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "PDH/PDH-Bridging-Header.h";
 				VALIDATE_PRODUCT = YES;
@@ -1122,7 +1134,7 @@
 				INFOPLIST_FILE = PDH/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pdh.PDH;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sapientnitro.inhouse.mcd.Arch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "PDH/PDH-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1145,7 +1157,7 @@
 				INFOPLIST_FILE = PDH/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pdh.PDH;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sapientnitro.inhouse.mcd.Arch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "PDH/PDH-Bridging-Header.h";
 				USER_HEADER_SEARCH_PATHS = "";

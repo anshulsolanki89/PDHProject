@@ -13,4 +13,6 @@ class PDHDishDataObject {
     var dishType: String!
     var dishImageURL: String!
     var dishOfWeek: String!
+    var halfQuantity = 0
+    var fullQuantity = 0
 }

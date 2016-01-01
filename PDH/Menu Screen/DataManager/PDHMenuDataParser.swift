@@ -15,8 +15,8 @@ class PDHMenuDataParser: PDHDataParser {
         let dishOfWeekModel = PDHDishDataObject()
         dishOfWeekModel.title = data[0]["Title"].string
         dishOfWeekModel.dishType = data[0]["DishType"].string
-        dishOfWeekModel.fullPrice = String(data[0]["FullPrice"].number)
-        dishOfWeekModel.halfPrice = String(data[0]["HalfPrice"].number)
+        dishOfWeekModel.fullPrice = String(data[0]["FullPrice"].number!)
+        dishOfWeekModel.halfPrice = String(data[0]["HalfPrice"].number!)
         dishOfWeekModel.dishImageURL = data[0]["Image"].string
         return dishOfWeekModel
     }

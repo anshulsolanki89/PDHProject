@@ -13,7 +13,6 @@ class PDHMenuScreenController: PDHViewController {
     
     private var menuDataManager: PDHMenuDataManager!
     private var numberOfOperations = 3
-    
     var menuView: PDHMenuScreenView!
     
     override func viewDidLoad() {
@@ -52,7 +51,7 @@ extension PDHMenuScreenController {
         menuDataManager.delegate = self
     }
     
-    private func receivedData(data: AnyObject) {
+    private func showAddToOrderView() {
         
     }
 }
@@ -63,6 +62,8 @@ extension PDHMenuScreenController: ViewActionDelegate {
         switch action {
         case .MenuBtnClciked:
             self.revealViewController().revealToggle(nil)
+        case .AddToOrder: break
+            
         default:
             print("Default Implementation")
         }
