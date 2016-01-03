@@ -9,10 +9,11 @@
 import Foundation
 import UIKit
 
-class PDHOrderConfirmationViewController: UIViewController {
+class PDHOrderConfirmationViewController: PDHViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        (self.view as! PDHOrderConfirmationView).delegate = self
     }
     
     override func didReceiveMemoryWarning() {
@@ -21,5 +22,17 @@ class PDHOrderConfirmationViewController: UIViewController {
     
     deinit {
         print("\(self) DEALLOCATED")
+    }
+}
+
+extension PDHOrderConfirmationViewController: ViewActionDelegate {
+    
+    func viewDidPerformAction(action: ViewActions, data: [String : AnyObject]?) {
+        switch action {
+        case .Back:
+            navigationController?.popViewControllerAnimated(true)
+        default:
+            fatalError("\(self) Please handle switch case")
+        }
     }
 }

@@ -81,7 +81,7 @@ extension PDHRegistrationController: ViewActionDelegate{
 
 // MARK:- DataManager Protocol
 extension PDHRegistrationController{
-    override func didReceiveDataWithSuccess(response: AnyObject) {
+    func didReceiveDataWithSuccess(response: AnyObject) {
         PDHProgressIndicator.hideLoadingIndicator()
         if let response = response as? PDHLoginInfoDataObject {
             PDHRegistrationDataManager.saveUserData(response)

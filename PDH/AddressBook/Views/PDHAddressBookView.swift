@@ -28,6 +28,10 @@ class PDHAddressBookView: PDHView {
         editAddressView.frame = self.bounds
     }
     
+    @IBAction func backBtnClicked() {
+        delegate?.viewDidPerformAction(.Back, data: nil)
+    }
+    
     deinit {
         print("\(self) DEALLOCATED")
     }

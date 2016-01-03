@@ -9,10 +9,12 @@
 import Foundation
 import UIKit
 
-class PDHAddressBookViewController: UIViewController {
+class PDHAddressBookViewController: PDHViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        (self.view as! PDHAddressBookView).delegate = self
+
     }
     
     override func didReceiveMemoryWarning() {
@@ -22,4 +24,16 @@ class PDHAddressBookViewController: UIViewController {
     deinit {
         print("\(self) DEALLOCATED")
     }
+}
+
+extension PDHAddressBookViewController: ViewActionDelegate {
+    func viewDidPerformAction(action: ViewActions, data: [String : AnyObject]?) {
+        switch action {
+        case .Back:
+            navigationController!.popViewControllerAnimated(true)
+        default:
+            fatalError("\(self) Please handle switch case")
+        }
+    }
+    
 }

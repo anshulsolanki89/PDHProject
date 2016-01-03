@@ -9,19 +9,22 @@
 import Foundation
 import UIKit
 
+@objc
+protocol PDHMenuScreenControllerDelegate {
+    optional func toggleLeftPanel()
+}
+
 class PDHMenuScreenController: PDHViewController {
     
     private var menuDataManager: PDHMenuDataManager!
     private var numberOfOperations = 3
     var menuView: PDHMenuScreenView!
     
+    weak var delegate: PDHMenuScreenControllerDelegate?
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        if self.revealViewController() != nil {
-            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-        }
-        
+
         menuView = self.view as! PDHMenuScreenView
         menuView.delegate = self
 
@@ -29,7 +32,7 @@ class PDHMenuScreenController: PDHViewController {
 
         initializeDataManager()
         
-        menuView.updateData(PDHMenuDataManager.getUserData())
+        menuView.updateData(PDHMenuDataManager.getUserData()!)
         menuDataManager.getDishOfWeek()
         menuDataManager.getRestaurantMenu()
         menuDataManager.getDishMenu()
@@ -61,7 +64,7 @@ extension PDHMenuScreenController: ViewActionDelegate {
     func viewDidPerformAction(action: ViewActions, data: [String: AnyObject]?) {
         switch action {
         case .MenuBtnClciked:
-            self.revealViewController().revealToggle(nil)
+            delegate?.toggleLeftPanel?()
         case .AddToOrder: break
             
         default:
@@ -78,7 +81,7 @@ extension PDHMenuScreenController: ViewActionDelegate {
 
 // MARK:- DataManager Protocol
 extension PDHMenuScreenController {
-    override func didReceiveDataWithSuccess(response: AnyObject) {
+    func didReceiveDataWithSuccess(response: AnyObject) {
         menuView.updateData(response)
         hideLoadingIndicator()
     }

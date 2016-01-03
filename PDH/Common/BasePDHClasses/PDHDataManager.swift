@@ -19,12 +19,14 @@ class PDHDataManager {
         NSUserDefaults.standardUserDefaults().synchronize()
     }
     
-    class func getUserData() -> PDHLoginInfoDataObject {
-        var loginInfoDataObject: PDHLoginInfoDataObject!
+    class func getUserData() -> PDHLoginInfoDataObject? {
         if let data = NSUserDefaults.standardUserDefaults().objectForKey("LoginInfo") as? NSData {
+            var loginInfoDataObject: PDHLoginInfoDataObject!
             loginInfoDataObject = NSKeyedUnarchiver.unarchiveObjectWithData(data) as! PDHLoginInfoDataObject
+            
+            return loginInfoDataObject
         }
         
-        return loginInfoDataObject
+        return nil
     }
 }

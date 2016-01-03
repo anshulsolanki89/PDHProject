@@ -9,10 +9,11 @@
 import Foundation
 import UIKit
 
-class PDHDeliveryAddressViewController: UIViewController {
+class PDHDeliveryAddressViewController: PDHViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        (self.view as! PDHDeliveryAddressView).delegate = self
     }
     
     override func didReceiveMemoryWarning() {
@@ -21,5 +22,17 @@ class PDHDeliveryAddressViewController: UIViewController {
     
     deinit {
         print("\(self) DEALLOCATED")
+    }
+}
+
+extension PDHDeliveryAddressViewController: ViewActionDelegate {
+    
+    func viewDidPerformAction(action: ViewActions, data: [String : AnyObject]?) {
+        switch action {
+        case .Back:
+            navigationController?.popViewControllerAnimated(true)
+        default:
+            fatalError("\(self) Please handle switch case")
+        }
     }
 }

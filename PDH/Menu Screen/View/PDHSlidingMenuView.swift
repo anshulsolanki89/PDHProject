@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class PDHSlidingMenuView: UIView, UITableViewDataSource, UITableViewDelegate {
+class PDHSlidingMenuView: PDHView, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -46,6 +46,27 @@ class PDHSlidingMenuView: UIView, UITableViewDataSource, UITableViewDelegate {
         cell.menuLabel.text = nameArray[indexPath.row]
         
         return cell
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        switch indexPath.row {
+        case 0:
+            delegate?.viewDidPerformAction(ViewActions.MyProfile, data: nil)
+        case 1:
+            delegate?.viewDidPerformAction(ViewActions.AddressBook, data: nil)
+        case 2:
+            delegate?.viewDidPerformAction(ViewActions.OrderHistory, data: nil)
+        case 3:
+            delegate?.viewDidPerformAction(ViewActions.RateApp, data: nil)
+        case 4:
+            delegate?.viewDidPerformAction(ViewActions.ShareApp, data: nil)
+        case 5:
+            delegate?.viewDidPerformAction(ViewActions.AboutUs, data: nil)
+        case 6:
+            delegate?.viewDidPerformAction(ViewActions.ContactUs, data: nil)
+        default:
+            fatalError(" \(self) - Please handle the switch case")
+        }
     }
     
     deinit {

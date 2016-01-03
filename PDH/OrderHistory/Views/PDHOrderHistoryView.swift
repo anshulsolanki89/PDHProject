@@ -1,5 +1,5 @@
 //
-//  OrderHistoryView.swift
+//  PDHOrderHistoryView.swift
 //  PDH
 //
 //  Created by Anshul Solanki on 12/6/15.
@@ -9,11 +9,16 @@
 import Foundation
 import UIKit
 
-class OrderHistoryView: UIView, UITableViewDataSource, UITableViewDelegate {
+class PDHOrderHistoryView: PDHView, UITableViewDataSource, UITableViewDelegate {
     
     let rowHeight: CGFloat = 65.0
+    
     override func awakeFromNib() {
         super.awakeFromNib()
+    }
+    
+    @IBAction func backBtnClicked() {
+        delegate?.viewDidPerformAction(.Back, data: nil)
     }
     
     // MARK:- TableViewDataSource

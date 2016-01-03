@@ -6,6 +6,8 @@
 //  Copyright © 2015 Anshul Solanki. All rights reserved.
 //
 
+import Foundation
+
 @objc protocol PDHDataManagerProtocol {
     optional func didReceiveDataWithSuccess(response: AnyObject)
     // TODO:- Make project specific error and error codes

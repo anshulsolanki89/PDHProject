@@ -23,6 +23,10 @@ class PDHDeliveryAddressView: PDHView {
         editAddressView.delegate = self
     }
     
+    @IBAction func backBtnClicked() {
+        delegate?.viewDidPerformAction(.Back, data: nil)
+    }
+
     override func layoutSubviews() {
         editAddressView.frame = self.bounds
     }

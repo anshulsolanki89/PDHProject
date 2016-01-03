@@ -1,19 +1,18 @@
 //
-//  PDHMyOrderViewController.swift
+//  PDHOrderHistoryController.swift
 //  PDH
 //
-//  Created by Anshul Solanki on 12/25/15.
+//  Created by Anshul Solanki on 12/6/15.
 //  Copyright © 2015 Anshul Solanki. All rights reserved.
 //
 
 import Foundation
 import UIKit
 
-class PDHMyOrderViewController: PDHViewController {
+class PDHOrderHistoryController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        (self.view as! PDHMyOrderView).delegate = self
     }
     
     override func didReceiveMemoryWarning() {
@@ -25,11 +24,12 @@ class PDHMyOrderViewController: PDHViewController {
     }
 }
 
-extension PDHMyOrderViewController: ViewActionDelegate {
+extension PDHOrderHistoryController: ViewActionDelegate {
+    
     func viewDidPerformAction(action: ViewActions, data: [String : AnyObject]?) {
         switch action {
         case .Back:
-            navigationController!.popViewControllerAnimated(true)
+            navigationController?.popViewControllerAnimated(true)
         default:
             fatalError("\(self) Please handle switch case")
         }

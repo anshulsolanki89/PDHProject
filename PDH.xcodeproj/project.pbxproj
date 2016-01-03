@@ -10,7 +10,7 @@
 		8CAD17E157FB8817A6E73F01 /* Pods_PDH.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4BA912FC5A57EC7D736722E /* Pods_PDH.framework */; };
 		E5026B7C1C1F498000B1839E /* PDHOrderConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5026B7B1C1F498000B1839E /* PDHOrderConfirmationViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		E5026B7E1C1F49B600B1839E /* PDHOrderConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5026B7D1C1F49B600B1839E /* PDHOrderConfirmationView.swift */; settings = {ASSET_TAGS = (); }; };
-		E505D0CC1C1345AA00571A4B /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E505D0CB1C1345AA00571A4B /* MenuViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		E505D0CC1C1345AA00571A4B /* PDHMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E505D0CB1C1345AA00571A4B /* PDHMenuViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		E505D0D01C1346C100571A4B /* PDHDishMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E505D0CF1C1346C100571A4B /* PDHDishMenuController.swift */; settings = {ASSET_TAGS = (); }; };
 		E50A07041C35932D001F76C9 /* PDHDishcategoryMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50A07031C35932D001F76C9 /* PDHDishcategoryMenu.swift */; settings = {ASSET_TAGS = (); }; };
 		E5189DAD1C077036008CC84C /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5189DAC1C077036008CC84C /* LandingViewController.swift */; };
@@ -60,20 +60,22 @@
 		E53AB4F91C2FDDD3000E6F07 /* PDHLoginDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53AB4F81C2FDDD3000E6F07 /* PDHLoginDataParser.swift */; settings = {ASSET_TAGS = (); }; };
 		E53AB4FE1C3052B7000E6F07 /* PDHRegistrationDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53AB4FD1C3052B7000E6F07 /* PDHRegistrationDataManager.swift */; settings = {ASSET_TAGS = (); }; };
 		E53AB5001C3053B7000E6F07 /* PDHRegistrationDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53AB4FF1C3053B7000E6F07 /* PDHRegistrationDataParser.swift */; settings = {ASSET_TAGS = (); }; };
-		E53AB5021C30542C000E6F07 /* PDHRegistrationObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53AB5011C30542C000E6F07 /* PDHRegistrationObject.swift */; settings = {ASSET_TAGS = (); }; };
 		E53AB5041C30546F000E6F07 /* PDHDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53AB5031C30546F000E6F07 /* PDHDataParser.swift */; settings = {ASSET_TAGS = (); }; };
+		E53C0D1B1C38EF1400DA776E /* PDHMenuContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53C0D1A1C38EF1400DA776E /* PDHMenuContainerViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		E53C0D221C38F5A400DA776E /* PDHMyProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53C0D211C38F5A400DA776E /* PDHMyProfileController.swift */; settings = {ASSET_TAGS = (); }; };
+		E53C0D241C38F5B200DA776E /* PDHMyProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53C0D231C38F5B200DA776E /* PDHMyProfileView.swift */; settings = {ASSET_TAGS = (); }; };
+		E53C0D2A1C391C0200DA776E /* PDHRegistrationObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53C0D291C391C0200DA776E /* PDHRegistrationObject.swift */; settings = {ASSET_TAGS = (); }; };
 		E553E4A91C05F2D9007DD045 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E553E4A81C05F2D9007DD045 /* AppDelegate.swift */; };
 		E553E4AE1C05F2D9007DD045 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E553E4AC1C05F2D9007DD045 /* Main.storyboard */; };
 		E553E4B01C05F2D9007DD045 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E553E4AF1C05F2D9007DD045 /* Assets.xcassets */; };
 		E553E4B31C05F2D9007DD045 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E553E4B11C05F2D9007DD045 /* LaunchScreen.storyboard */; };
-		E56AF4161C2E9AC400AC3FCD /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E56AF4151C2E9AC400AC3FCD /* SWRevealViewController.m */; settings = {ASSET_TAGS = (); }; };
 		E56B6D871C17286F003E8E26 /* PDHDishCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56B6D861C17286F003E8E26 /* PDHDishCustomCell.swift */; settings = {ASSET_TAGS = (); }; };
 		E56B6D8D1C173F47003E8E26 /* PDHMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56B6D8C1C173F47003E8E26 /* PDHMenuView.swift */; settings = {ASSET_TAGS = (); }; };
 		E59825A11C1200D20033F619 /* PDHSlidingMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59825A01C1200D20033F619 /* PDHSlidingMenuController.swift */; settings = {ASSET_TAGS = (); }; };
 		E59825A31C1201200033F619 /* PDHSlidingMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59825A21C1201200033F619 /* PDHSlidingMenuView.swift */; settings = {ASSET_TAGS = (); }; };
 		E59825A51C1203850033F619 /* PDHSlidingMenuCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59825A41C1203850033F619 /* PDHSlidingMenuCustomCell.swift */; settings = {ASSET_TAGS = (); }; };
-		E59AB2A21C148623003A8F19 /* OrderHistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59AB2A11C148623003A8F19 /* OrderHistoryController.swift */; settings = {ASSET_TAGS = (); }; };
-		E59AB2A61C148632003A8F19 /* OrderHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59AB2A51C148632003A8F19 /* OrderHistoryView.swift */; settings = {ASSET_TAGS = (); }; };
+		E59AB2A21C148623003A8F19 /* PDHOrderHistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59AB2A11C148623003A8F19 /* PDHOrderHistoryController.swift */; settings = {ASSET_TAGS = (); }; };
+		E59AB2A61C148632003A8F19 /* PDHOrderHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59AB2A51C148632003A8F19 /* PDHOrderHistoryView.swift */; settings = {ASSET_TAGS = (); }; };
 		E59B4F3A1C0CBA5400D1B6E7 /* SkiaRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E59B4F391C0CBA5400D1B6E7 /* SkiaRegular.ttf */; };
 		E59B4F3E1C0CC39000D1B6E7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E553E4B41C05F2D9007DD045 /* Info.plist */; };
 		E59E71991C36BCBF00BAF731 /* PDHOrderBasket.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59E71981C36BCBF00BAF731 /* PDHOrderBasket.swift */; settings = {ASSET_TAGS = (); }; };
@@ -101,7 +103,7 @@
 		B4BA912FC5A57EC7D736722E /* Pods_PDH.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PDH.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5026B7B1C1F498000B1839E /* PDHOrderConfirmationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHOrderConfirmationViewController.swift; sourceTree = "<group>"; };
 		E5026B7D1C1F49B600B1839E /* PDHOrderConfirmationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHOrderConfirmationView.swift; sourceTree = "<group>"; };
-		E505D0CB1C1345AA00571A4B /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		E505D0CB1C1345AA00571A4B /* PDHMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHMenuViewController.swift; sourceTree = "<group>"; };
 		E505D0CF1C1346C100571A4B /* PDHDishMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHDishMenuController.swift; sourceTree = "<group>"; };
 		E50A07031C35932D001F76C9 /* PDHDishcategoryMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHDishcategoryMenu.swift; sourceTree = "<group>"; };
 		E5189DAC1C077036008CC84C /* LandingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
@@ -151,23 +153,24 @@
 		E53AB4F81C2FDDD3000E6F07 /* PDHLoginDataParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHLoginDataParser.swift; sourceTree = "<group>"; };
 		E53AB4FD1C3052B7000E6F07 /* PDHRegistrationDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHRegistrationDataManager.swift; sourceTree = "<group>"; };
 		E53AB4FF1C3053B7000E6F07 /* PDHRegistrationDataParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHRegistrationDataParser.swift; sourceTree = "<group>"; };
-		E53AB5011C30542C000E6F07 /* PDHRegistrationObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PDHRegistrationObject.swift; path = DataModel/PDHRegistrationObject.swift; sourceTree = "<group>"; };
 		E53AB5031C30546F000E6F07 /* PDHDataParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHDataParser.swift; sourceTree = "<group>"; };
+		E53C0D1A1C38EF1400DA776E /* PDHMenuContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHMenuContainerViewController.swift; sourceTree = "<group>"; };
+		E53C0D211C38F5A400DA776E /* PDHMyProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHMyProfileController.swift; sourceTree = "<group>"; };
+		E53C0D231C38F5B200DA776E /* PDHMyProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHMyProfileView.swift; sourceTree = "<group>"; };
+		E53C0D291C391C0200DA776E /* PDHRegistrationObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHRegistrationObject.swift; sourceTree = "<group>"; };
 		E553E4A51C05F2D9007DD045 /* PDH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDH.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E553E4A81C05F2D9007DD045 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E553E4AD1C05F2D9007DD045 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E553E4AF1C05F2D9007DD045 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E553E4B21C05F2D9007DD045 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E553E4B41C05F2D9007DD045 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E56AF4141C2E9AC400AC3FCD /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
-		E56AF4151C2E9AC400AC3FCD /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		E56B6D861C17286F003E8E26 /* PDHDishCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHDishCustomCell.swift; sourceTree = "<group>"; };
 		E56B6D8C1C173F47003E8E26 /* PDHMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHMenuView.swift; sourceTree = "<group>"; };
 		E59825A01C1200D20033F619 /* PDHSlidingMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHSlidingMenuController.swift; sourceTree = "<group>"; };
 		E59825A21C1201200033F619 /* PDHSlidingMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHSlidingMenuView.swift; sourceTree = "<group>"; };
 		E59825A41C1203850033F619 /* PDHSlidingMenuCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHSlidingMenuCustomCell.swift; sourceTree = "<group>"; };
-		E59AB2A11C148623003A8F19 /* OrderHistoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderHistoryController.swift; sourceTree = "<group>"; };
-		E59AB2A51C148632003A8F19 /* OrderHistoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderHistoryView.swift; sourceTree = "<group>"; };
+		E59AB2A11C148623003A8F19 /* PDHOrderHistoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHOrderHistoryController.swift; sourceTree = "<group>"; };
+		E59AB2A51C148632003A8F19 /* PDHOrderHistoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHOrderHistoryView.swift; sourceTree = "<group>"; };
 		E59B4F391C0CBA5400D1B6E7 /* SkiaRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SkiaRegular.ttf; sourceTree = "<group>"; };
 		E59E71981C36BCBF00BAF731 /* PDHOrderBasket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHOrderBasket.swift; sourceTree = "<group>"; };
 		E59E719A1C36C40A00BAF731 /* PDHQuantitySelectorCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHQuantitySelectorCell.swift; sourceTree = "<group>"; };
@@ -264,8 +267,9 @@
 		E505D0C81C13458400571A4B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				E505D0CB1C1345AA00571A4B /* MenuViewController.swift */,
+				E505D0CB1C1345AA00571A4B /* PDHMenuViewController.swift */,
 				E505D0CF1C1346C100571A4B /* PDHDishMenuController.swift */,
+				E53C0D1A1C38EF1400DA776E /* PDHMenuContainerViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -426,10 +430,10 @@
 		E52F15371C081DE00027DE10 /* RegistrationPage */ = {
 			isa = PBXGroup;
 			children = (
+				E53C0D281C391C0200DA776E /* DataModel */,
 				E53AB4FC1C3052B7000E6F07 /* DataManager */,
 				E52F15381C081DE00027DE10 /* Controller */,
 				E52F153C1C081DE00027DE10 /* Views */,
-				E53AB5011C30542C000E6F07 /* PDHRegistrationObject.swift */,
 			);
 			path = RegistrationPage;
 			sourceTree = "<group>";
@@ -567,6 +571,55 @@
 			path = DataManager;
 			sourceTree = "<group>";
 		};
+		E53C0D1C1C38F58D00DA776E /* MyProfile */ = {
+			isa = PBXGroup;
+			children = (
+				E53C0D1D1C38F58D00DA776E /* Controller */,
+				E53C0D1E1C38F58D00DA776E /* DataManager */,
+				E53C0D1F1C38F58D00DA776E /* DataObjects */,
+				E53C0D201C38F58D00DA776E /* Views */,
+			);
+			path = MyProfile;
+			sourceTree = "<group>";
+		};
+		E53C0D1D1C38F58D00DA776E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E53C0D211C38F5A400DA776E /* PDHMyProfileController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E53C0D1E1C38F58D00DA776E /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		E53C0D1F1C38F58D00DA776E /* DataObjects */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataObjects;
+			sourceTree = "<group>";
+		};
+		E53C0D201C38F58D00DA776E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E53C0D231C38F5B200DA776E /* PDHMyProfileView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E53C0D281C391C0200DA776E /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				E53C0D291C391C0200DA776E /* PDHRegistrationObject.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
 		E553E49C1C05F2D9007DD045 = {
 			isa = PBXGroup;
 			children = (
@@ -605,6 +658,7 @@
 				E5DF0ED31C2C52FB0042300F /* AddressBook */,
 				E5E493581C2D6C8500469745 /* MyOrder */,
 				E521B8671C2DA9B8001253BC /* CurrentOrder */,
+				E53C0D1C1C38F58D00DA776E /* MyProfile */,
 				E553E4AF1C05F2D9007DD045 /* Assets.xcassets */,
 				E53AB43B1C26C84C007494DA /* DishImages */,
 				E553E4AC1C05F2D9007DD045 /* Main.storyboard */,
@@ -618,18 +672,8 @@
 		E56AF4111C2E9A7900AC3FCD /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
-				E56AF4121C2E9A7900AC3FCD /* SWRevealViewController */,
 			);
 			path = ThirdParty;
-			sourceTree = "<group>";
-		};
-		E56AF4121C2E9A7900AC3FCD /* SWRevealViewController */ = {
-			isa = PBXGroup;
-			children = (
-				E56AF4141C2E9AC400AC3FCD /* SWRevealViewController.h */,
-				E56AF4151C2E9AC400AC3FCD /* SWRevealViewController.m */,
-			);
-			path = SWRevealViewController;
 			sourceTree = "<group>";
 		};
 		E59AB29D1C1485F1003A8F19 /* OrderHistory */ = {
@@ -645,7 +689,7 @@
 		E59AB29E1C1485F1003A8F19 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				E59AB2A11C148623003A8F19 /* OrderHistoryController.swift */,
+				E59AB2A11C148623003A8F19 /* PDHOrderHistoryController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -660,7 +704,7 @@
 		E59AB2A01C1485F1003A8F19 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E59AB2A51C148632003A8F19 /* OrderHistoryView.swift */,
+				E59AB2A51C148632003A8F19 /* PDHOrderHistoryView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -942,7 +986,6 @@
 				E52F154C1C0883510027DE10 /* PDHViewActionProtocol.swift in Sources */,
 				E50A07041C35932D001F76C9 /* PDHDishcategoryMenu.swift in Sources */,
 				E52F15501C0884B70027DE10 /* PDHActionEnum.swift in Sources */,
-				E56AF4161C2E9AC400AC3FCD /* SWRevealViewController.m in Sources */,
 				E53AB4E71C2FD7FC000E6F07 /* PDHCustomCircleLabel.swift in Sources */,
 				E5DF0EDA1C2C53740042300F /* PDHAddressBookView.swift in Sources */,
 				E5DE86DD1C1D9CB20009EEAC /* PDHDeliveryAddressViewController.swift in Sources */,
@@ -954,26 +997,29 @@
 				E535E8D71C1DD7C200B4A9B7 /* PDHDeliveryAddressCustomCell.swift in Sources */,
 				E505D0D01C1346C100571A4B /* PDHDishMenuController.swift in Sources */,
 				E52F15401C08233E0027DE10 /* PDHRegistrationController.swift in Sources */,
-				E53AB5021C30542C000E6F07 /* PDHRegistrationObject.swift in Sources */,
 				E53AB4E31C2FD7FC000E6F07 /* PDHView.swift in Sources */,
 				E53AB4F91C2FDDD3000E6F07 /* PDHLoginDataParser.swift in Sources */,
 				E53487241C0F426C00203548 /* PDHMenuScreenController.swift in Sources */,
-				E59AB2A61C148632003A8F19 /* OrderHistoryView.swift in Sources */,
-				E59AB2A21C148623003A8F19 /* OrderHistoryController.swift in Sources */,
+				E59AB2A61C148632003A8F19 /* PDHOrderHistoryView.swift in Sources */,
+				E53C0D221C38F5A400DA776E /* PDHMyProfileController.swift in Sources */,
+				E59AB2A21C148623003A8F19 /* PDHOrderHistoryController.swift in Sources */,
 				E534872C1C0F5C5C00203548 /* PDHDishSearchTableView.swift in Sources */,
 				E5189DB91C0770E5008CC84C /* LandingView.swift in Sources */,
 				E53AB4E21C2FD7FC000E6F07 /* PDHDataManager.swift in Sources */,
 				E535E8D51C1DD6E100B4A9B7 /* PDHEditAddressView.swift in Sources */,
 				E5189DB11C07705E008CC84C /* PDHLoginViewController.swift in Sources */,
+				E53C0D241C38F5B200DA776E /* PDHMyProfileView.swift in Sources */,
 				E5F44F361C32F1A20047B18D /* PDHMenuDataManager.swift in Sources */,
 				E59825A11C1200D20033F619 /* PDHSlidingMenuController.swift in Sources */,
+				E53C0D2A1C391C0200DA776E /* PDHRegistrationObject.swift in Sources */,
 				E5E004491C2EF5530082EED6 /* PDHConstantURL.swift in Sources */,
 				E56B6D871C17286F003E8E26 /* PDHDishCustomCell.swift in Sources */,
 				E59825A51C1203850033F619 /* PDHSlidingMenuCustomCell.swift in Sources */,
 				E53AB4E81C2FD7FC000E6F07 /* PDHCustomCurveView.swift in Sources */,
+				E53C0D1B1C38EF1400DA776E /* PDHMenuContainerViewController.swift in Sources */,
 				E53AB4E61C2FD7FC000E6F07 /* PDHCustomCircleButton.swift in Sources */,
 				E53AB4E41C2FD7FC000E6F07 /* PDHViewController.swift in Sources */,
-				E505D0CC1C1345AA00571A4B /* MenuViewController.swift in Sources */,
+				E505D0CC1C1345AA00571A4B /* PDHMenuViewController.swift in Sources */,
 				E59E719B1C36C40A00BAF731 /* PDHQuantitySelectorCell.swift in Sources */,
 				E53AB5001C3053B7000E6F07 /* PDHRegistrationDataParser.swift in Sources */,
 				E53AB4E51C2FD7FC000E6F07 /* PDHButton.swift in Sources */,

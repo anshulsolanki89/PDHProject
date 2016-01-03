@@ -14,4 +14,11 @@ enum ViewActions: Int {
     case AddToOrder
     case FormFieldError
     case Camera
+    case MyProfile
+    case AddressBook
+    case OrderHistory
+    case RateApp
+    case ShareApp
+    case AboutUs
+    case ContactUs
 }

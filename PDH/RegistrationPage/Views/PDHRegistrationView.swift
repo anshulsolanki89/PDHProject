@@ -12,13 +12,19 @@ import UIKit
 class PDHRegistrationView: PDHView {
     
     @IBOutlet weak var backBtn: UIButton!
+    
+    @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var selectedImageView: UIImageView!
+
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var emailtextField: UITextField!
     @IBOutlet weak var mobileNumberTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
+    
+    @IBOutlet weak var registrationViewCentreConstraint: NSLayoutConstraint!
 
+    private var currentTextField: UITextField!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         addNotificationObserver()
@@ -58,23 +64,38 @@ class PDHRegistrationView: PDHView {
     }
     
     func keyboardWillShow(notification:NSNotification) {
-        //adjustingHeight(true, notification: notification)
+        adjustingHeight(notification)
     }
     
     func keyboardWillHide(notification:NSNotification) {
-        //adjustingHeight(false, notification: notification)
+        resetViewPotision()
     }
     
     
-    func adjustingHeight(show:Bool, notification:NSNotification) {
+    func adjustingHeight(notification:NSNotification) {
         var userInfo = notification.userInfo!
-        let keyboardFrame:CGRect = (userInfo[UIKeyboardFrameBeginUserInfoKey] as! NSValue).CGRectValue()
+        let keyboardFrame = (userInfo[UIKeyboardFrameBeginUserInfoKey] as! NSValue).CGRectValue()
+        let currentTextFieldFrame = self.convertRect(currentTextField.frame, fromView: contentView)
+        var contentHeight: CGFloat = 0
+        if (currentTextFieldFrame.origin.y + currentTextFieldFrame.size.height)
+            > (self.frame.size.height - keyboardFrame.size.height - 10 ) {
+            contentHeight = (currentTextFieldFrame.origin.y + currentTextFieldFrame.size.height)
+                - (self.frame.size.height - keyboardFrame.size.height - 10)
+        }
+        
         let animationDurarion = userInfo[UIKeyboardAnimationDurationUserInfoKey] as! NSTimeInterval
-        let changeInHeight = (CGRectGetHeight(keyboardFrame) + 40) * (show ? 1 : -1)
         UIView.animateWithDuration(animationDurarion, animations: { () -> Void in
-            self.bottomConstraint.constant += changeInHeight
+            self.registrationViewCentreConstraint.constant -= contentHeight
         })
         
+    }
+    
+    func resetViewPotision() {
+        registrationViewCentreConstraint.constant = 0
+    }
+
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        self.endEditing(true)
     }
 
     deinit {
@@ -125,6 +146,11 @@ extension PDHRegistrationView {
 }
 
 extension PDHRegistrationView: UITextFieldDelegate {
+    func textFieldShouldBeginEditing(textField: UITextField) -> Bool {
+        currentTextField = textField
+        return true
+    }
+    
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true

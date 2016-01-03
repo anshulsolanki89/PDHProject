@@ -14,4 +14,8 @@ class PDHOrderConfirmationView: PDHView {
     override func awakeFromNib() {
         super.awakeFromNib()
     }
+    
+    @IBAction func backBtnClicked() {
+        delegate?.viewDidPerformAction(.Back, data: nil)
+    }
 }

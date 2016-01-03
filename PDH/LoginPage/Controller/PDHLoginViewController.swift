@@ -53,7 +53,7 @@ extension PDHLoginViewController: ViewActionDelegate {
 
 // MARK:- DataManager Protocol
 extension PDHLoginViewController {
-    override func didReceiveDataWithSuccess(response: AnyObject) {
+    func didReceiveDataWithSuccess(response: AnyObject) {
         PDHProgressIndicator.hideLoadingIndicator()
         if let response = response as? PDHLoginInfoDataObject {
             PDHLoginDataManager.saveUserData(response)

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="4It-zn-29d">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="UvN-0V-hkL">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
@@ -27,57 +27,16 @@
             <string>Skia-Regular</string>
             <string>Skia-Regular</string>
             <string>Skia-Regular</string>
-            <string>Skia-Regular_Light</string>
-            <string>Skia-Regular</string>
-            <string>Skia-Regular</string>
-            <string>Skia-Regular</string>
-            <string>Skia-Regular</string>
             <string>Skia-Regular</string>
             <string>Skia-Regular_Light</string>
             <string>Skia-Regular</string>
             <string>Skia-Regular</string>
             <string>Skia-Regular</string>
-            <string>Skia-Regular</string>
-            <string>Skia-Regular</string>
-            <string>Skia-Regular</string>
-            <string>Skia-Regular</string>
-            <string>Skia-Regular_Light</string>
             <string>Skia-Regular_Light</string>
             <string>Skia-Regular</string>
+            <string>Skia-Regular_Light</string>
             <string>Skia-Regular</string>
-            <string>Skia-Regular</string>
-            <string>Skia-Regular</string>
-            <string>Skia-Regular</string>
-            <string>Skia-Regular</string>
-            <string>Skia-Regular</string>
-            <string>Skia-Regular</string>
-            <string>Skia-Regular</string>
-            <string>Skia-Regular</string>
-            <string>Skia-Regular</string>
-            <string>Skia-Regular</string>
-            <string>Skia-Regular</string>
-            <string>Skia-Regular</string>
-            <string>Skia-Regular</string>
-            <string>Skia-Regular</string>
-            <string>Skia-Regular</string>
-            <string>Skia-Regular</string>
-            <string>Skia-Regular</string>
-            <string>Skia-Regular</string>
-            <string>Skia-Regular</string>
-            <string>Skia-Regular</string>
-            <string>Skia-Regular</string>
-            <string>Skia-Regular</string>
-            <string>Skia-Regular</string>
-            <string>Skia-Regular</string>
-            <string>Skia-Regular</string>
-            <string>Skia-Regular</string>
-            <string>Skia-Regular</string>
-            <string>Skia-Regular</string>
-            <string>Skia-Regular</string>
-            <string>Skia-Regular</string>
-            <string>Skia-Regular</string>
-            <string>Skia-Regular</string>
-            <string>Skia-Regular</string>
+            <string>Skia-Regular_Light</string>
             <string>Skia-Regular</string>
             <string>Skia-Regular</string>
             <string>Skia-Regular</string>
@@ -101,12 +60,54 @@
             <string>Skia-Regular</string>
             <string>Skia-Regular</string>
             <string>Skia-Regular</string>
-            <string>Skia-Regular_Light</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
             <string>Skia-Regular</string>
             <string>Skia-Regular</string>
             <string>Skia-Regular_Light</string>
             <string>Skia-Regular</string>
-            <string>Skia-Regular_Light</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
             <string>Skia-Regular</string>
         </mutableArray>
     </customFonts>
@@ -255,7 +256,7 @@
                                     <constraint firstAttribute="height" constant="34" id="OLs-NK-Ya5"/>
                                     <constraint firstAttribute="width" constant="127" id="a6d-R4-l0C"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -287,7 +288,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <outlet property="delegate" destination="RA7-M0-uZ2" id="8t2-pS-th2"/>
+                                            <outlet property="delegate" destination="cF6-Jb-lUZ" id="yKb-as-0nc"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TgQ-fx-5P1" userLabel="Third LIne">
@@ -325,7 +326,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <outlet property="delegate" destination="RA7-M0-uZ2" id="6e3-pU-otK"/>
+                                            <outlet property="delegate" destination="cF6-Jb-lUZ" id="7vA-Sb-hOc"/>
                                         </connections>
                                     </textField>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Register_Name" translatesAutoresizingMaskIntoConstraints="NO" id="5Nt-RG-1og" customClass="PDHCustomImageView" customModule="PDH" customModuleProvider="target">
@@ -382,7 +383,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <outlet property="delegate" destination="RA7-M0-uZ2" id="UsY-ug-BCK"/>
+                                            <outlet property="delegate" destination="cF6-Jb-lUZ" id="ujS-Wz-nJS"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ZY-Vb-brf" userLabel="SecondLIne">
@@ -413,7 +414,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <outlet property="delegate" destination="RA7-M0-uZ2" id="Iqm-f3-oCS"/>
+                                            <outlet property="delegate" destination="cF6-Jb-lUZ" id="9pG-Gc-sh4"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0F7-je-J8G" userLabel="FirstLine">
@@ -522,16 +523,18 @@
                         </constraints>
                         <connections>
                             <outlet property="backBtn" destination="8Q9-mP-gup" id="AkP-oJ-P2B"/>
+                            <outlet property="contentView" destination="RA7-M0-uZ2" id="QsO-IW-Sck"/>
                             <outlet property="emailtextField" destination="pE5-pe-snX" id="TFL-wr-sq1"/>
                             <outlet property="mobileNumberTextField" destination="jCd-cS-IRS" id="Ae5-Tj-loR"/>
                             <outlet property="nameTextField" destination="Hus-kW-9k4" id="32v-0D-zeM"/>
                             <outlet property="passwordTextField" destination="s0P-4k-Lyu" id="d4V-sG-jb0"/>
+                            <outlet property="registrationViewCentreConstraint" destination="dUF-oZ-Onm" id="t6U-J8-5LQ"/>
                             <outlet property="selectedImageView" destination="5Nt-RG-1og" id="ZZm-Bi-mYH"/>
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" id="n8I-I4-erg"/>
                     <connections>
-                        <segue destination="4It-zn-29d" kind="push" identifier="menuScreen" id="dVl-Mc-jdB"/>
+                        <segue destination="Pge-9Z-LBo" kind="push" identifier="menuScreen" id="TD7-a9-tGW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GD1-2o-8PR" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -541,12 +544,12 @@
         <!--MenuViewConroller-->
         <scene sceneID="TGK-OH-75M">
             <objects>
-                <viewController id="UNX-wD-aCl" userLabel="MenuViewConroller" customClass="MenuViewController" customModule="PDH" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="UNX-wD-aCl" userLabel="MenuViewConroller" customClass="PDHMenuViewController" customModule="PDH" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dYr-oT-7Ti"/>
                         <viewControllerLayoutGuide type="bottom" id="mYc-CI-NDG"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="F96-lK-oRl">
+                    <view key="view" contentMode="scaleToFill" id="F96-lK-oRl" customClass="PDHMenuView" customModule="PDH" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -560,6 +563,9 @@
                                             <constraint firstAttribute="height" constant="22" id="l8s-6y-L1b"/>
                                         </constraints>
                                         <state key="normal" image="Back_Arrow"/>
+                                        <connections>
+                                            <action selector="backBtnClicked:" destination="F96-lK-oRl" eventType="touchUpInside" id="rjn-6L-3f4"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chinese" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uQ6-zd-qOI">
                                         <rect key="frame" x="129" y="33" width="62" height="18"/>
@@ -577,32 +583,39 @@
                                     <constraint firstItem="uQ6-zd-qOI" firstAttribute="top" secondItem="SfG-0M-6zC" secondAttribute="top" constant="33" id="omH-la-Bc7"/>
                                 </constraints>
                             </view>
-                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mjl-ii-shh">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mjl-ii-shh">
                                 <rect key="frame" x="0.0" y="108" width="320" height="44"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="107" placeholderIntrinsicHeight="44" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nen-Bh-joO">
                                         <rect key="frame" x="0.0" y="0.0" width="107" height="44"/>
                                         <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="14"/>
                                         <state key="normal" title="All">
-                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="107" placeholderIntrinsicHeight="44" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HzP-bb-oo0">
                                         <rect key="frame" x="213" y="0.0" width="107" height="44"/>
                                         <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="14"/>
                                         <state key="normal" title="Non-Veg">
-                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="107" placeholderIntrinsicHeight="44" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gbl-8L-5jb">
                                         <rect key="frame" x="106" y="0.0" width="107" height="44"/>
                                         <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="14"/>
                                         <state key="normal" title="Veg">
-                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                     </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OAP-ay-mR5" userLabel="BottomView">
+                                        <rect key="frame" x="0.0" y="42" width="107" height="2"/>
+                                        <color key="backgroundColor" red="1" green="0.76862745098039209" blue="0.070588235294117646" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="2" id="ieN-rO-4hy"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="nen-Bh-joO" firstAttribute="top" secondItem="Mjl-ii-shh" secondAttribute="top" id="0fK-uN-gCA"/>
                                     <constraint firstItem="HzP-bb-oo0" firstAttribute="top" secondItem="Mjl-ii-shh" secondAttribute="top" id="12a-ql-XNx"/>
@@ -610,51 +623,74 @@
                                     <constraint firstAttribute="trailing" secondItem="HzP-bb-oo0" secondAttribute="trailing" id="CIo-Fi-W5R"/>
                                     <constraint firstAttribute="bottom" secondItem="gbl-8L-5jb" secondAttribute="bottom" id="Ey6-CW-Kkx"/>
                                     <constraint firstItem="gbl-8L-5jb" firstAttribute="leading" secondItem="nen-Bh-joO" secondAttribute="trailing" constant="-1" id="FZC-zb-vw4"/>
+                                    <constraint firstAttribute="bottom" secondItem="OAP-ay-mR5" secondAttribute="bottom" id="Fat-aE-bDL"/>
                                     <constraint firstItem="gbl-8L-5jb" firstAttribute="top" secondItem="Mjl-ii-shh" secondAttribute="top" id="Qg0-eE-lA2"/>
                                     <constraint firstItem="nen-Bh-joO" firstAttribute="width" secondItem="Mjl-ii-shh" secondAttribute="width" multiplier="1/3" id="TWe-Sr-Hbn"/>
                                     <constraint firstAttribute="bottom" secondItem="HzP-bb-oo0" secondAttribute="bottom" id="VJQ-FH-04z"/>
+                                    <constraint firstItem="OAP-ay-mR5" firstAttribute="leading" secondItem="Mjl-ii-shh" secondAttribute="leading" id="dGa-PX-0gw"/>
+                                    <constraint firstItem="OAP-ay-mR5" firstAttribute="width" secondItem="nen-Bh-joO" secondAttribute="width" id="gnL-Av-ao4"/>
                                     <constraint firstItem="nen-Bh-joO" firstAttribute="leading" secondItem="Mjl-ii-shh" secondAttribute="leading" id="lho-bI-4EN"/>
                                     <constraint firstItem="HzP-bb-oo0" firstAttribute="width" secondItem="nen-Bh-joO" secondAttribute="width" id="oot-6d-jq7"/>
                                     <constraint firstAttribute="height" constant="44" id="rxU-m1-dbb"/>
                                     <constraint firstItem="gbl-8L-5jb" firstAttribute="width" secondItem="nen-Bh-joO" secondAttribute="width" id="vys-PH-Vas"/>
                                 </constraints>
                             </view>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="g7M-vU-g0q">
+                            <searchBar contentMode="redraw" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="g7M-vU-g0q">
                                 <rect key="frame" x="0.0" y="64" width="320" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="p5w-1y-ski"/>
                                 </constraints>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="F96-lK-oRl" id="rjU-kc-wpX"/>
+                                </connections>
                             </searchBar>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C2q-Vd-zTo">
+                                <rect key="frame" x="0.0" y="152" width="320" height="416"/>
+                                <connections>
+                                    <outlet property="delegate" destination="UNX-wD-aCl" id="uFk-gZ-eDx"/>
+                                </connections>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="C2q-Vd-zTo" firstAttribute="top" secondItem="Mjl-ii-shh" secondAttribute="bottom" id="2mQ-5n-r6v"/>
                             <constraint firstItem="SfG-0M-6zC" firstAttribute="leading" secondItem="F96-lK-oRl" secondAttribute="leading" id="6CR-6m-wjZ"/>
                             <constraint firstItem="g7M-vU-g0q" firstAttribute="top" secondItem="SfG-0M-6zC" secondAttribute="bottom" id="ACw-fh-nRy"/>
+                            <constraint firstItem="mYc-CI-NDG" firstAttribute="top" secondItem="C2q-Vd-zTo" secondAttribute="bottom" id="BUj-pj-yMd"/>
                             <constraint firstItem="Mjl-ii-shh" firstAttribute="top" secondItem="g7M-vU-g0q" secondAttribute="bottom" id="GMl-QF-085"/>
                             <constraint firstAttribute="trailing" secondItem="SfG-0M-6zC" secondAttribute="trailing" id="MoK-cZ-hsT"/>
                             <constraint firstAttribute="trailing" secondItem="Mjl-ii-shh" secondAttribute="trailing" id="SuL-C6-wVx"/>
+                            <constraint firstItem="C2q-Vd-zTo" firstAttribute="leading" secondItem="F96-lK-oRl" secondAttribute="leading" id="U4P-6A-et5"/>
                             <constraint firstItem="g7M-vU-g0q" firstAttribute="leading" secondItem="F96-lK-oRl" secondAttribute="leading" id="mFi-UF-kRK"/>
                             <constraint firstItem="Mjl-ii-shh" firstAttribute="leading" secondItem="F96-lK-oRl" secondAttribute="leading" id="nit-mo-lHE"/>
+                            <constraint firstAttribute="trailing" secondItem="C2q-Vd-zTo" secondAttribute="trailing" id="vbD-Ix-kN4"/>
                             <constraint firstAttribute="trailing" secondItem="g7M-vU-g0q" secondAttribute="trailing" id="x9O-0C-8tU"/>
                             <constraint firstItem="SfG-0M-6zC" firstAttribute="top" secondItem="F96-lK-oRl" secondAttribute="top" id="yAQ-Jx-Tkf"/>
                         </constraints>
+                        <connections>
+                            <outlet property="dishSearchBar" destination="g7M-vU-g0q" id="bxj-J5-opI"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="oA8-8u-qOm"/>
+                    <connections>
+                        <outlet property="bottomView" destination="OAP-ay-mR5" id="0d0-Zz-B8y"/>
+                        <outlet property="menuDishScrollView" destination="C2q-Vd-zTo" id="GNb-GE-lYS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SAC-06-7Fz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="200" y="477"/>
+            <point key="canvasLocation" x="179" y="901"/>
         </scene>
         <!--OrderConfirmationViewController-->
         <scene sceneID="U8S-NS-Aet">
             <objects>
-                <viewController id="zez-mm-qrg" userLabel="OrderConfirmationViewController" sceneMemberID="viewController">
+                <viewController id="zez-mm-qrg" userLabel="OrderConfirmationViewController" customClass="PDHOrderConfirmationViewController" customModule="PDH" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wBb-3t-psV"/>
                         <viewControllerLayoutGuide type="bottom" id="8bz-Vt-mxO"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="3rf-Wi-qCR">
+                    <view key="view" contentMode="scaleToFill" id="3rf-Wi-qCR" customClass="PDHOrderConfirmationView" customModule="PDH" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -738,6 +774,9 @@ App Store.</string>
                                         <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="backBtnClicked" destination="3rf-Wi-qCR" eventType="touchUpInside" id="NOy-bR-f6v"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -767,15 +806,7 @@ App Store.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y6f-7x-uLW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="669" y="483"/>
-        </scene>
-        <!--Page View Controller-->
-        <scene sceneID="Mws-dq-tho">
-            <objects>
-                <pageViewController storyboardIdentifier="PDHPageViewController" autoresizesArchivedViewToFullSize="NO" automaticallyAdjustsScrollViewInsets="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="jiN-4F-PHP" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eDu-o3-Ghf" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="335" y="1225"/>
+            <point key="canvasLocation" x="588" y="1095"/>
         </scene>
         <!--OrderHistoryVC-->
         <scene sceneID="zTi-DV-UGH">
@@ -785,7 +816,7 @@ App Store.</string>
                         <viewControllerLayoutGuide type="top" id="SaM-Z3-CYc"/>
                         <viewControllerLayoutGuide type="bottom" id="ggu-Vk-JvQ"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Oja-Ry-R1p" customClass="OrderHistoryView" customModule="PDH" customModuleProvider="target">
+                    <view key="view" contentMode="scaleToFill" id="Oja-Ry-R1p" customClass="PDHOrderHistoryView" customModule="PDH" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -799,6 +830,9 @@ App Store.</string>
                                             <constraint firstAttribute="width" constant="20" id="WO0-Yo-i89"/>
                                         </constraints>
                                         <state key="normal" image="Back_Arrow"/>
+                                        <connections>
+                                            <action selector="backBtnClicked" destination="Oja-Ry-R1p" eventType="touchUpInside" id="mg7-Wg-aeM"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="71" placeholderIntrinsicHeight="21" text="Order History" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6tM-hR-gMC">
                                         <rect key="frame" x="99" y="27" width="122" height="21"/>
@@ -905,7 +939,7 @@ App Store.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FbG-kR-S3l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1196" y="483"/>
+            <point key="canvasLocation" x="1113" y="483"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="BeO-ji-Ept">
@@ -920,13 +954,13 @@ App Store.</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rw6-4p-9tH" customClass="PDHCustomCurveView" customModule="PDH" customModuleProvider="target">
-                                <rect key="frame" x="20" y="194" width="280" height="180"/>
+                                <rect key="frame" x="20" y="189" width="280" height="190"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mvX-ST-382">
-                                        <rect key="frame" x="0.0" y="150" width="280" height="30"/>
+                                        <rect key="frame" x="0.0" y="150" width="280" height="40"/>
                                         <color key="backgroundColor" red="0.47450980390000003" green="0.81176470590000005" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="gkF-ht-7AS"/>
+                                            <constraint firstAttribute="height" constant="40" id="gkF-ht-7AS"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="14"/>
                                         <state key="normal" title="Add to Order">
@@ -941,11 +975,11 @@ App Store.</string>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="fjk-BF-QgY"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="14"/>
-                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="16"/>
+                                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VXq-Qu-Dk1">
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VXq-Qu-Dk1">
                                         <rect key="frame" x="0.0" y="30" width="280" height="120"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <prototypes>
@@ -953,7 +987,7 @@ App Store.</string>
                                                 <rect key="frame" x="0.0" y="28" width="280" height="60"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="60" tableViewCell="a37-kA-lP3" id="32s-ft-EIa">
-                                                    <rect key="frame" x="0.0" y="0.0" width="280" height="59.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="280" height="60"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Veg Salad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mGY-7k-4Si">
@@ -961,7 +995,7 @@ App Store.</string>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="14" id="I27-KM-EfT"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="12"/>
+                                                            <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="14"/>
                                                             <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -1041,17 +1075,18 @@ App Store.</string>
                                                     </constraints>
                                                 </tableViewCellContentView>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <inset key="separatorInset" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
                                             </tableViewCell>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PDHQuantitySelectCell" id="Cd9-bl-zAl" customClass="PDHQuantitySelectorCell" customModule="PDH" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PDHQuantitySelectCell" id="Cd9-bl-zAl" customClass="PDHQuantitySelectorCell" customModule="PDH" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="88" width="280" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Cd9-bl-zAl" id="dov-mx-bYD">
-                                                    <rect key="frame" x="0.0" y="0.0" width="280" height="43.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="280" height="44"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Half Rs 260/-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZGh-El-Ws0">
-                                                            <rect key="frame" x="8" y="15" width="156" height="14"/>
-                                                            <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="14"/>
+                                                            <rect key="frame" x="8" y="14" width="156" height="16"/>
+                                                            <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="16"/>
                                                             <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -1116,16 +1151,25 @@ App Store.</string>
                                                                 <constraint firstItem="uSF-SM-hbk" firstAttribute="leading" secondItem="ut2-Es-CS6" secondAttribute="leading" id="zvH-i7-IVa"/>
                                                             </constraints>
                                                         </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q6N-if-4D9" userLabel="BottomLine">
+                                                            <rect key="frame" x="8" y="43" width="264" height="1"/>
+                                                            <color key="backgroundColor" red="0.8666666666666667" green="0.86274509803921573" blue="0.86274509803921573" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="1" id="y9w-RW-4qJ"/>
+                                                            </constraints>
+                                                        </view>
                                                     </subviews>
                                                     <constraints>
                                                         <constraint firstItem="ut2-Es-CS6" firstAttribute="centerY" secondItem="dov-mx-bYD" secondAttribute="centerY" id="K9d-Po-hvn"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Q6N-if-4D9" secondAttribute="trailing" constant="8" id="P2A-WY-Zkw"/>
                                                         <constraint firstItem="ZGh-El-Ws0" firstAttribute="leading" secondItem="dov-mx-bYD" secondAttribute="leading" constant="8" id="UGG-9F-Jrf"/>
                                                         <constraint firstItem="ut2-Es-CS6" firstAttribute="leading" secondItem="ZGh-El-Ws0" secondAttribute="trailing" constant="8" id="X04-aM-jQl"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Q6N-if-4D9" secondAttribute="bottom" id="bda-r3-CPD"/>
                                                         <constraint firstItem="ZGh-El-Ws0" firstAttribute="centerY" secondItem="dov-mx-bYD" secondAttribute="centerY" id="lnu-Bv-YxX"/>
+                                                        <constraint firstItem="Q6N-if-4D9" firstAttribute="leading" secondItem="dov-mx-bYD" secondAttribute="leading" constant="8" id="nwA-Mp-52f"/>
                                                         <constraint firstAttribute="trailing" secondItem="ut2-Es-CS6" secondAttribute="trailing" constant="8" id="unb-Mn-HdA"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
-                                                <inset key="separatorInset" minX="8" minY="0.0" maxX="8" maxY="0.0"/>
                                                 <connections>
                                                     <outlet property="addBtn" destination="5hu-6c-MOi" id="a7I-hc-Zy6"/>
                                                     <outlet property="quantityLabel" destination="ZGh-El-Ws0" id="fmP-mZ-eDH"/>
@@ -1146,7 +1190,7 @@ App Store.</string>
                                     <constraint firstAttribute="trailing" secondItem="VXq-Qu-Dk1" secondAttribute="trailing" id="GzA-rF-jAc"/>
                                     <constraint firstAttribute="trailing" secondItem="CCO-L7-Zfy" secondAttribute="trailing" id="Jeq-2S-U7F"/>
                                     <constraint firstItem="CCO-L7-Zfy" firstAttribute="top" secondItem="rw6-4p-9tH" secondAttribute="top" id="M0j-XH-QtH"/>
-                                    <constraint firstAttribute="height" constant="180" id="VvE-Pm-GyG"/>
+                                    <constraint firstAttribute="height" constant="190" id="VvE-Pm-GyG"/>
                                     <constraint firstAttribute="trailing" secondItem="mvX-ST-382" secondAttribute="trailing" id="YtB-8u-vKI"/>
                                     <constraint firstItem="CCO-L7-Zfy" firstAttribute="leading" secondItem="rw6-4p-9tH" secondAttribute="leading" id="hak-Zg-GXM"/>
                                     <constraint firstItem="VXq-Qu-Dk1" firstAttribute="top" secondItem="rw6-4p-9tH" secondAttribute="top" constant="30" id="hqA-xw-Og1"/>
@@ -1176,35 +1220,12 @@ App Store.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AD4-hu-iPq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="878" y="1225"/>
-        </scene>
-        <!--Reveal View Controller-->
-        <scene sceneID="40D-hz-Q52">
-            <objects>
-                <viewController id="4It-zn-29d" customClass="SWRevealViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="4Tz-Fn-4fv"/>
-                        <viewControllerLayoutGuide type="bottom" id="c2l-1V-s22"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="rb1-Jv-eW8">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="7CT-n8-P61"/>
-                    <connections>
-                        <segue destination="Ing-aX-ho7" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="fpA-g8-bLg"/>
-                        <segue destination="KZS-ui-tHv" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="3ab-pA-s3b"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TaP-Sv-kmI" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="220" y="-248"/>
+            <point key="canvasLocation" x="1054" y="1220"/>
         </scene>
         <!--Menu Screen Controller-->
         <scene sceneID="qw5-m2-TCd">
             <objects>
-                <viewController id="Ing-aX-ho7" customClass="PDHMenuScreenController" customModule="PDH" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PDHMenuScreenController" id="Ing-aX-ho7" customClass="PDHMenuScreenController" customModule="PDH" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kAt-Ff-Mwi"/>
                         <viewControllerLayoutGuide type="bottom" id="8fF-Je-NCT"/>
@@ -1481,7 +1502,7 @@ App Store.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZC7-79-gtX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="579" y="-353"/>
+            <point key="canvasLocation" x="669" y="408"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="wR4-9N-zrq">
@@ -1667,12 +1688,31 @@ App Store.</string>
                     </view>
                     <navigationItem key="navigationItem" id="9ty-kO-PGi"/>
                     <connections>
-                        <segue destination="4It-zn-29d" kind="push" identifier="menuScreen" id="Wvv-vk-AMW"/>
+                        <segue destination="Pge-9Z-LBo" kind="push" identifier="menuScreen" id="YW8-Xj-DdB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oHl-QF-9dh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-246" y="-248"/>
+        </scene>
+        <!--Menu Container View Controller-->
+        <scene sceneID="vL5-Ih-bSu">
+            <objects>
+                <viewController id="Pge-9Z-LBo" customClass="PDHMenuContainerViewController" customModule="PDH" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mBz-Nd-fQG"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZAz-rx-tfn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1P5-BL-haJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="iyZ-qp-k8z"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fna-GW-0U2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="240" y="104"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="oWj-Pb-NyC">
@@ -1695,7 +1735,7 @@ App Store.</string>
         <!--Sliding Menu Controller-->
         <scene sceneID="uLJ-aG-gnt">
             <objects>
-                <viewController id="KZS-ui-tHv" customClass="PDHSlidingMenuController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PDHSlidingMenuController" id="KZS-ui-tHv" customClass="PDHSlidingMenuController" customModule="PDH" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tyD-SN-cuT"/>
                         <viewControllerLayoutGuide type="bottom" id="frN-3u-3eg"/>
@@ -1730,14 +1770,14 @@ App Store.</string>
                                                         <constraint firstAttribute="width" constant="25" id="w1i-BK-bbN"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="My Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RxF-84-cSt">
-                                                    <rect key="frame" x="49" y="19" width="206" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RxF-84-cSt">
+                                                    <rect key="frame" x="49" y="19" width="238" height="21"/>
                                                     <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="18"/>
-                                                    <color key="textColor" red="0.21568627450980393" green="0.17254901960784313" blue="0.062745098039215685" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="239" translatesAutoresizingMaskIntoConstraints="NO" id="CZd-pJ-Qq1" userLabel="BottomLine">
-                                                    <rect key="frame" x="41" y="59" width="239" height="1"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="239" translatesAutoresizingMaskIntoConstraints="NO" id="CZd-pJ-Qq1" userLabel="BottomLine">
+                                                    <rect key="frame" x="41" y="59" width="271" height="1"/>
                                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="1" id="qPc-Af-Rvv"/>
@@ -1793,12 +1833,12 @@ App Store.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oaz-hR-WQi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="617" y="-996"/>
+            <point key="canvasLocation" x="669" y="-256"/>
         </scene>
         <!--DishMenuVC-->
         <scene sceneID="PZq-qj-Q1v">
             <objects>
-                <viewController storyboardIdentifier="PDHDishMenuVC" id="K15-lh-7gD" userLabel="DishMenuVC" customClass="DishMenuController" customModule="PDH" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PDHDishMenuVC" id="K15-lh-7gD" userLabel="DishMenuVC" customClass="PDHDishMenuController" customModule="PDH" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="erz-ar-qD9"/>
                         <viewControllerLayoutGuide type="bottom" id="E5B-xG-DNN"/>
@@ -1807,7 +1847,7 @@ App Store.</string>
                         <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3kl-M1-tNC" userLabel="TableView">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3kl-M1-tNC" userLabel="TableView">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -1847,7 +1887,8 @@ App Store.</string>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="16" id="aDo-GH-2mv"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="Skia-Regular_Light" family="Skia" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="14"/>
+                                                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="203" placeholderIntrinsicHeight="14" text="Half Rs 250/Full Rs 480" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z96-Be-AUT">
@@ -1855,17 +1896,18 @@ App Store.</string>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="14" id="1N7-Ir-STr"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="Skia-Regular_Light" family="Skia" pointSize="12"/>
+                                                    <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="12"/>
+                                                    <color key="textColor" red="0.47450980392156861" green="0.47450980392156861" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="312" placeholderIntrinsicHeight="1" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="11P-aB-yrM" userLabel="HorizontalLine">
-                                                    <rect key="frame" x="8" y="69" width="312" height="1"/>
-                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <rect key="frame" x="8" y="69" width="304" height="1"/>
+                                                    <color key="backgroundColor" red="0.8666666666666667" green="0.86274509803921573" blue="0.86274509803921573" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="1" id="DZf-cF-SJb"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" red="0.8666666666666667" green="0.86274509803921573" blue="0.86274509803921573" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XmX-M6-ehI" customClass="PDHCustomCircleLabel" customModule="PDH" customModuleProvider="target">
@@ -1892,7 +1934,7 @@ App Store.</string>
                                                 <constraint firstItem="DEP-j4-oU4" firstAttribute="leading" secondItem="z96-Be-AUT" secondAttribute="trailing" constant="8" id="Exl-ck-Fsj"/>
                                                 <constraint firstItem="IX0-p5-2JQ" firstAttribute="leading" secondItem="hbJ-04-2Ho" secondAttribute="leading" constant="8" id="Icj-aF-ssp"/>
                                                 <constraint firstItem="z96-Be-AUT" firstAttribute="leading" secondItem="hbJ-04-2Ho" secondAttribute="leading" constant="8" id="T0M-rw-TQ8"/>
-                                                <constraint firstAttribute="trailing" secondItem="11P-aB-yrM" secondAttribute="trailing" id="TL2-2l-bhC"/>
+                                                <constraint firstAttribute="trailing" secondItem="11P-aB-yrM" secondAttribute="trailing" constant="8" id="VrF-kJ-MkJ"/>
                                                 <constraint firstItem="DEP-j4-oU4" firstAttribute="top" secondItem="hbJ-04-2Ho" secondAttribute="topMargin" constant="15" id="aIy-H5-P2M"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="DEP-j4-oU4" secondAttribute="bottom" constant="14.5" id="jq4-La-3sd"/>
                                             </constraints>
@@ -1921,7 +1963,7 @@ App Store.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jZ0-5y-og0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1004" y="-238"/>
+            <point key="canvasLocation" x="1092" y="-242"/>
         </scene>
         <!--NewAddressVC-->
         <scene sceneID="Oek-e3-Sqz">
@@ -2271,6 +2313,9 @@ App Store.</string>
                                             <constraint firstAttribute="height" constant="22" id="om1-VJ-aTy"/>
                                         </constraints>
                                         <state key="normal" image="Back_Arrow"/>
+                                        <connections>
+                                            <action selector="backBtnClicked" destination="v5s-TC-g3k" eventType="touchUpInside" id="KSf-MV-cgJ"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Delivery Address" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ya0-PC-ggP">
                                         <rect key="frame" x="73" y="27" width="175" height="21"/>
@@ -2560,7 +2605,7 @@ Mob No - 9999912345</string>
         <!--AddressBookViewController-->
         <scene sceneID="XaW-vI-Ldr">
             <objects>
-                <viewController id="Sv6-CG-QHa" userLabel="AddressBookViewController" customClass="PDHAddressBookViewController" customModule="PDH" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PDHAddressBookVC" id="Sv6-CG-QHa" userLabel="AddressBookViewController" customClass="PDHAddressBookViewController" customModule="PDH" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="15O-s9-ffw"/>
                         <viewControllerLayoutGuide type="bottom" id="NFe-6l-mQ9"/>
@@ -2579,6 +2624,9 @@ Mob No - 9999912345</string>
                                             <constraint firstAttribute="height" constant="22" id="yIi-FR-yqv"/>
                                         </constraints>
                                         <state key="normal" image="Back_Arrow"/>
+                                        <connections>
+                                            <action selector="backBtnClicked" destination="Cdw-5W-ksb" eventType="touchUpInside" id="j9r-0y-Jo4"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADDRESS BOOK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yD1-jV-Zgl">
                                         <rect key="frame" x="101.5" y="27" width="118.5" height="21"/>
@@ -2806,15 +2854,15 @@ Amritsar, Punjab 143001
             </objects>
             <point key="canvasLocation" x="1948" y="1241"/>
         </scene>
-        <!--My Order View Controller-->
+        <!--Order History Controller-->
         <scene sceneID="PeH-ma-cZE">
             <objects>
-                <viewController id="hix-G7-9WW" customClass="PDHMyOrderViewController" customModule="PDH" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PDHOrderHostoryVC" id="hix-G7-9WW" customClass="PDHOrderHistoryController" customModule="PDH" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ndk-yn-3jZ"/>
                         <viewControllerLayoutGuide type="bottom" id="LXj-8x-dQU"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="gbq-RP-xHi" customClass="PDHMyOrderView" customModule="PDH" customModuleProvider="target">
+                    <view key="view" contentMode="scaleToFill" id="gbq-RP-xHi" customClass="PDHOrderHistoryView" customModule="PDH" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -2828,6 +2876,9 @@ Amritsar, Punjab 143001
                                             <constraint firstAttribute="height" constant="22" id="u6x-VD-Yr6"/>
                                         </constraints>
                                         <state key="normal" image="Back_Arrow"/>
+                                        <connections>
+                                            <action selector="backBtnClicked" destination="gbq-RP-xHi" eventType="touchUpInside" id="h5F-uq-cPU"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Order" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DHK-Io-eZg">
                                         <rect key="frame" x="126" y="27" width="69.5" height="21"/>
@@ -3023,6 +3074,9 @@ Amritsar, Punjab 143001
                                             <constraint firstAttribute="width" constant="20" id="ck3-cG-UCD"/>
                                         </constraints>
                                         <state key="normal" image="Back_Arrow"/>
+                                        <connections>
+                                            <action selector="backBtnClicked" destination="XlT-DI-SNE" eventType="touchUpInside" id="ywv-EV-qty"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Order" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Nz-uv-VTp">
                                         <rect key="frame" x="126" y="27" width="69.5" height="21"/>
@@ -3397,12 +3451,12 @@ Amritsar, Punjab 143001
         <!--ProfileViewController-->
         <scene sceneID="756-il-XDR">
             <objects>
-                <viewController id="bAY-Mw-uYK" userLabel="ProfileViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PDHMyProfileVC" id="bAY-Mw-uYK" userLabel="ProfileViewController" customClass="PDHMyProfileController" customModule="PDH" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="W5K-oY-5t8"/>
                         <viewControllerLayoutGuide type="bottom" id="BRf-gP-aKY"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="3tk-gx-F76" userLabel="ProfileView" customClass="PDHAddressBookView" customModule="PDH" customModuleProvider="target">
+                    <view key="view" contentMode="scaleToFill" id="3tk-gx-F76" userLabel="ProfileView" customClass="PDHMyProfileView" customModule="PDH" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -3422,6 +3476,9 @@ Amritsar, Punjab 143001
                                             <constraint firstAttribute="height" constant="22" id="Bcy-di-gML"/>
                                         </constraints>
                                         <state key="normal" image="Back_Arrow"/>
+                                        <connections>
+                                            <action selector="backBtnClicked:" destination="3tk-gx-F76" eventType="touchUpInside" id="0S8-fy-xz1"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MY PROFILE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ovs-Jd-Cix">
                                         <rect key="frame" x="114" y="27" width="92.5" height="21"/>
@@ -3920,6 +3977,6 @@ Amritsar, Punjab 143001
         <image name="menu_bar" width="20" height="15"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="dVl-Mc-jdB"/>
+        <segue reference="TD7-a9-tGW"/>
     </inferredMetricsTieBreakers>
 </document>

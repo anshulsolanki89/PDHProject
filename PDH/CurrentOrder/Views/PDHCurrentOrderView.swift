@@ -19,6 +19,10 @@ class PDHCurrentOrderView: PDHView {
     override func awakeFromNib() {
         super.awakeFromNib()
     }
+    
+    @IBAction func backBtnClicked() {
+        delegate?.viewDidPerformAction(.Back, data: nil)
+    }
 }
 
 extension PDHCurrentOrderView: UITableViewDataSource {

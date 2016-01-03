@@ -25,11 +25,7 @@ class PDHViewController: UIViewController {
 }
 
 // MARK:- DataManager Protocol
-extension PDHViewController: PDHDataManagerProtocol {
-    func didReceiveDataWithSuccess(response: AnyObject) {
-        // Classes should override this method
-    }
-    
+extension PDHViewController: PDHDataManagerProtocol {    
     func didReceiveDataWithError(response: AnyObject?) {
         PDHProgressIndicator.hideLoadingIndicator()
         if let response = response as? PDHErrorObject {
