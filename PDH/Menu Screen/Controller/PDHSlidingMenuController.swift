@@ -42,7 +42,7 @@ extension PDHSlidingMenuController: ViewActionDelegate {
         case .AddressBook:
             showViewController("PDHAddressBookVC")
         case .OrderHistory:
-            showViewController("PDHOrderHostoryVC")
+            showViewController("PDHOrderHistoryVC")
         case .RateApp:
             print("Rate App has not been implement yet")
 //            showViewController("")

@@ -183,10 +183,18 @@ extension PDHMenuScreenView {
             cancelBtnAttributes,
             forState: UIControlState.Normal)
         
-        UITextField.appearanceWhenContainedInInstancesOfClasses([UISearchBar.self]).font =
-            PDHHelper.getSkiaRegularFont(16)
-        UITextField.appearanceWhenContainedInInstancesOfClasses([UISearchBar.self]).textColor =
-            PDHHelper.getCancelBtnColor()
+        if #available(iOS 9.0, *) {
+            UITextField.appearanceWhenContainedInInstancesOfClasses([UISearchBar.self]).font =
+                PDHHelper.getSkiaRegularFont(16)
+        } else {
+            // Fallback on earlier versions
+        }
+        if #available(iOS 9.0, *) {
+            UITextField.appearanceWhenContainedInInstancesOfClasses([UISearchBar.self]).textColor =
+                PDHHelper.getCancelBtnColor()
+        } else {
+            // Fallback on earlier versions
+        }
     }
 
     private func hideOverlayView() {
