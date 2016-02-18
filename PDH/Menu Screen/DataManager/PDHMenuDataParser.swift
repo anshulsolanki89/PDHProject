@@ -18,6 +18,8 @@ class PDHMenuDataParser: PDHDataParser {
         dishOfWeekModel.fullPrice = String(data[0]["FullPrice"].number!)
         dishOfWeekModel.halfPrice = String(data[0]["HalfPrice"].number!)
         dishOfWeekModel.dishImageURL = data[0]["Image"].string
+        dishOfWeekModel.id = String(data[0]["Id"].number!)
+
         return dishOfWeekModel
     }
     
@@ -28,7 +30,7 @@ class PDHMenuDataParser: PDHDataParser {
             let dishMenu = PDHDishcategoryMenu()
             dishMenu.dishCategory = data[i]["Name"].string
             dishMenu.categoryImageURL =  data[i]["Image"].string
-            
+            dishMenu.menuId = data[i]["Id"].string
             dishMenuArray.append(dishMenu)
         }
         
@@ -42,10 +44,10 @@ class PDHMenuDataParser: PDHDataParser {
             let dish = PDHDishDataObject()
             dish.title = data[i]["Title"].string
             dish.dishType = data[i]["DishType"].string
-            dish.fullPrice = String(data[i]["FullPrice"].number)
-            dish.halfPrice = String(data[i]["HalfPrice"].number)
+            dish.fullPrice = String(data[i]["FullPrice"].number!)
+            dish.halfPrice = String(data[i]["HalfPrice"].number!)
             dish.dishImageURL = data[i]["Image"].string
-            
+            dish.id = String(data[i]["Id"].number!)
             dishesArray.append(dish)
         }
         

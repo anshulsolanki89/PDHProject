@@ -15,4 +15,21 @@ struct PDHConstantURL {
     static let CATEGORY_LIST_URL = "http://bemisaal.in/restAppNew/api/category/get.json"
     static let MENU_LIST_URL = "http://bemisaal.in/restAppNew/api/menu/get.json"
     static let DISH_OF_WEEK_URL = "http://bemisaal.in/restAppNew/api/menu/get.json?is_week_dish=1"
+    
+    static let ADD_CART_ITEM = "http://bemisaal.in/cakephp3/api/cart/add.json"
+    /*
+    {"uid":"user_id","menu_id":"menu id", "quantity":"dish quantity","size":"1|2","price":"unit price"}
+    */
+    static let EDIT_CART_ITEM = "http://bemisaal.in/cakephp3/api/cart/edit.json"
+    /*
+    {"uid":"user_id","menu_id":"menu id","":"cart id", "quantity":"dish quantity","size":"1|2","price":"unit price"}
+    */
+    static let GET_CART_ITEM = "http://bemisaal.in/cakephp3/api/cart/get.json"
+    /*
+    {"uid":"user_id"}
+    */
+    static let PLACE_ORDER = "http://bemisaal.in/cakephp3/api/orders/add.json"
+    /*
+    {"uid":"user_id","total_price": "totalprice", "discount":"discounted Ammount","comment": "comment", "orders": [{"cart_id":"cart id","menu_id":"menu id", "quantity":"dish quantity","size":"1|2","price":"unit price"}]}
+    */
 }

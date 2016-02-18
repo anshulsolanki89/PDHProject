@@ -10,6 +10,25 @@ import Foundation
 import UIKit
 
 class LandingViewController: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+//        dataLayer.push(["event": "OpenScreen", "screenName": "PDH LandingView Controller"])
+//        var tracker = GAI.sharedInstance().defaultTracker
+//        tracker.set("screenName", value: "LandingView Controler")
+//
+//        var builder = GAIDictionaryBuilder.createScreenView()
+//        tracker.send(builder.build() as [NSObject : AnyObject])
+    }
+
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+
+
+        print("asdasdas")
+    }
+
     override func awakeFromNib() {
         super.awakeFromNib()
         (self.view as! LandingView).delegate = self

@@ -11,6 +11,7 @@ import UIKit
 
 @objc protocol PDHQuantitySelectorViewDelegate {
     func quantitySelectorViewClicked()
+    func dismissQuantitySelectorView()
 }
 
 class PDHQuantitySelectorView: UIView, UITableViewDataSource, UITableViewDelegate {
@@ -24,8 +25,16 @@ class PDHQuantitySelectorView: UIView, UITableViewDataSource, UITableViewDelegat
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        let tapGesture = UITapGestureRecognizer(
+            target: self,
+            action: "dismissQuantitySelectorView:")
+        self.addGestureRecognizer(tapGesture)
     }
-    
+
+    func dismissQuantitySelectorView(tapGesture: UITapGestureRecognizer) {
+        delegate?.dismissQuantitySelectorView()
+    }
+
     func updateDishQuantity(dish: PDHDishDataObject) {
         selectedDish = dish
         dataArray.append(dish)

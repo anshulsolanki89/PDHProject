@@ -11,4 +11,5 @@ import Foundation
 class PDHDishcategoryMenu {
     var dishCategory: String!
     var categoryImageURL: String!
+    var menuId: String!
 }

@@ -233,6 +233,11 @@ extension PDHMenuScreenView {
 // MARK: PDHQuantitySelectorViewDelegate
 extension PDHMenuScreenView: PDHQuantitySelectorViewDelegate {
     func quantitySelectorViewClicked() {
+        delegate?.viewDidPerformAction(ViewActions.AddToOrder, data:["dish" : dishOfWeek])
+        addToOrderView!.removeFromSuperview()
+    }
+    
+    func dismissQuantitySelectorView() {
         addToOrderView!.removeFromSuperview()
     }
 }
