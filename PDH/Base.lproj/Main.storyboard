@@ -1628,7 +1628,7 @@ App Store.</string>
                                         </constraints>
                                         <color key="textColor" red="0.72941176470588232" green="0.72941176470588232" blue="0.72941176470588232" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
                                                 <color key="value" red="1" green="1" blue="1" alpha="0.75" colorSpace="calibratedRGB"/>
@@ -3982,6 +3982,6 @@ Amritsar, Punjab 143001
         <image name="menu_bar" width="20" height="15"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="iCq-fi-znT"/>
+        <segue reference="0vK-HD-yRN"/>
     </inferredMetricsTieBreakers>
 </document>
