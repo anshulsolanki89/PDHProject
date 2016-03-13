@@ -819,7 +819,7 @@ App Store.</string>
         <!--OrderHistoryVC-->
         <scene sceneID="zTi-DV-UGH">
             <objects>
-                <viewController id="fex-VO-C8x" userLabel="OrderHistoryVC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PDHOrderHistoryVC" id="fex-VO-C8x" userLabel="OrderHistoryVC" customClass="PDHOrderHistoryController" customModule="PDH" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SaM-Z3-CYc"/>
                         <viewControllerLayoutGuide type="bottom" id="ggu-Vk-JvQ"/>
@@ -2863,7 +2863,7 @@ Amritsar, Punjab 143001
         <!--Order History Controller-->
         <scene sceneID="PeH-ma-cZE">
             <objects>
-                <viewController storyboardIdentifier="PDHOrderHistoryVC" id="hix-G7-9WW" customClass="PDHOrderHistoryController" customModule="PDH" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="hix-G7-9WW" customClass="PDHOrderHistoryController" customModule="PDH" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ndk-yn-3jZ"/>
                         <viewControllerLayoutGuide type="bottom" id="LXj-8x-dQU"/>

@@ -13,6 +13,7 @@ class PDHOrderHistoryController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        (self.view as! PDHOrderHistoryView).delegate = self
     }
     
     override func didReceiveMemoryWarning() {
