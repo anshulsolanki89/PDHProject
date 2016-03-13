@@ -8,11 +8,15 @@
 
 import Foundation
 import UIKit
+import FBSDKLoginKit
 
 class LandingView: PDHView {
 
+    @IBOutlet internal weak var fbLoginButton: FBSDKLoginButton!
+
     override func awakeFromNib() {
         super.awakeFromNib()
+//        fbLoginButton = FBSDKLoginButton()
     }
  
     @IBAction func registerBtnClicked(sender: AnyObject) {
@@ -22,4 +26,9 @@ class LandingView: PDHView {
     @IBAction func loginBtnClicked(sender: AnyObject) {
         delegate?.viewDidPerformAction(ViewActions.Login, data: nil)
     }
+
+    @IBAction func fbLoginBtnCLicked(sender: AnyObject) {
+        delegate?.viewDidPerformAction(ViewActions.FBLogin, data: nil)
+    }
+
 }

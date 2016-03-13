@@ -9,6 +9,7 @@
 enum ViewActions: Int {
     case Back
     case Login
+    case FBLogin
     case Register
     case MenuBtnClciked
     case AddToOrder

@@ -44,10 +44,10 @@ class PDHNetworkManager: NSObject {
     {
         let manager = AFHTTPSessionManager()
         manager.requestSerializer = AFJSONRequestSerializer()
-        manager.requestSerializer.setValue("text/html", forHTTPHeaderField: "Content-Type")
-        manager.requestSerializer.setValue("text/html", forHTTPHeaderField:"Accept");
-        manager.responseSerializer = AFJSONResponseSerializer(readingOptions: NSJSONReadingOptions.AllowFragments)
-        manager.responseSerializer.acceptableContentTypes = Set(arrayLiteral: "text/html")
+//        manager.requestSerializer.setValue("text/html", forHTTPHeaderField: "Content-Type")
+//        manager.requestSerializer.setValue("text/html", forHTTPHeaderField:"Accept");
+//        manager.responseSerializer = AFJSONResponseSerializer(readingOptions: NSJSONReadingOptions.AllowFragments)
+//        manager.responseSerializer.acceptableContentTypes = Set(arrayLiteral: "text/html")
         manager.POST(url,
             parameters: params,
             progress: nil,

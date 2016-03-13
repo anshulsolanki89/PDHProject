@@ -8,23 +8,18 @@
 
 import Foundation
 import UIKit
+import FBSDKCoreKit
+import FBSDKLoginKit
 
 class LandingViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        dataLayer.push(["event": "OpenScreen", "screenName": "PDH LandingView Controller"])
-//        var tracker = GAI.sharedInstance().defaultTracker
-//        tracker.set("screenName", value: "LandingView Controler")
-//
-//        var builder = GAIDictionaryBuilder.createScreenView()
-//        tracker.send(builder.build() as [NSObject : AnyObject])
     }
 
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-
 
         print("asdasdas")
     }
@@ -33,7 +28,35 @@ class LandingViewController: UIViewController {
         super.awakeFromNib()
         (self.view as! LandingView).delegate = self
     }
-    
+
+    func performFacebookLogin() {
+        (self.view as! LandingView).fbLoginButton.readPermissions = ["email", "public_profile"]
+        if FBSDKAccessToken.currentAccessToken().hasGranted("email") && FBSDKAccessToken.currentAccessToken().hasGranted("public_profile") {
+
+        }
+    }
+
+    func askFacebookPermmissions() {
+        
+    }
+}
+
+extension LandingViewController: FBSDKLoginButtonDelegate {
+    func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {
+
+    }
+
+    func loginButtonDidLogOut(loginButton: FBSDKLoginButton!) {
+        
+    }
+
+    func loginButtonWillLogin(loginButton: FBSDKLoginButton!) -> Bool {
+        if FBSDKAccessToken.currentAccessToken().hasGranted("email") && FBSDKAccessToken.currentAccessToken().hasGranted("public_profile") {
+            
+        }
+
+        return true
+    }
 }
 
 extension LandingViewController: ViewActionDelegate {
@@ -45,6 +68,8 @@ extension LandingViewController: ViewActionDelegate {
         case .Register:
             print("\(self) -> Register")
             self.performSegueWithIdentifier("pdhRegister", sender: nil)
+        case .FBLogin:
+            debugPrint("\(self) -> FBLogin")
         default:
             fatalError("Error")
         }

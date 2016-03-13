@@ -29,6 +29,7 @@
             <string>Skia-Regular</string>
             <string>Skia-Regular</string>
             <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
             <string>Skia-Regular_Light</string>
             <string>Skia-Regular</string>
             <string>Skia-Regular</string>
@@ -184,17 +185,20 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="u5Y-fd-Lxm"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="16"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Facebook" translatesAutoresizingMaskIntoConstraints="NO" id="MrM-PF-Fr0">
-                                <rect key="frame" x="40" y="458" width="240" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Puj-Iv-y4V" customClass="FBSDKLoginButton">
+                                <rect key="frame" x="40" y="460" width="240" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="0yQ-t7-nnk"/>
-                                    <constraint firstAttribute="width" constant="240" id="28d-n5-XC6"/>
+                                    <constraint firstAttribute="width" constant="240" id="OJQ-8k-dmX" userLabel="width = 40"/>
+                                    <constraint firstAttribute="height" constant="40" id="lfn-Gh-ds6" userLabel="height = 240"/>
                                 </constraints>
-                            </imageView>
+                                <connections>
+                                    <action selector="fbLoginBtnCLicked:" destination="8bC-Xf-vdC" eventType="touchUpInside" id="3ow-MV-dbe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -202,12 +206,13 @@
                             <constraint firstAttribute="trailing" secondItem="jDk-qw-hko" secondAttribute="trailing" id="28s-1v-czL"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="emk-87-b9r" secondAttribute="bottom" id="3jd-MA-mSD"/>
                             <constraint firstItem="emk-87-b9r" firstAttribute="width" secondItem="rpN-yh-0CI" secondAttribute="width" id="46C-dG-t7s"/>
-                            <constraint firstItem="MrM-PF-Fr0" firstAttribute="top" secondItem="jDk-qw-hko" secondAttribute="bottom" constant="8" symbolic="YES" id="4aN-eV-QP9"/>
                             <constraint firstItem="MTf-C0-px8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="7yb-qI-oru"/>
                             <constraint firstAttribute="trailing" secondItem="emk-87-b9r" secondAttribute="trailing" id="8yN-gJ-c9k"/>
                             <constraint firstItem="HsD-j3-XUQ" firstAttribute="bottom" secondItem="jDk-qw-hko" secondAttribute="top" multiplier="0.65" id="Cbr-C6-J7F"/>
+                            <constraint firstItem="Puj-Iv-y4V" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DfR-J7-we9"/>
                             <constraint firstItem="rpN-yh-0CI" firstAttribute="width" secondItem="MTf-C0-px8" secondAttribute="width" multiplier="0.5" id="Jh1-MD-8oB"/>
                             <constraint firstAttribute="trailing" secondItem="u3G-AD-F4l" secondAttribute="trailing" id="Jo7-gz-kns"/>
+                            <constraint firstItem="Puj-Iv-y4V" firstAttribute="top" secondItem="jDk-qw-hko" secondAttribute="bottom" constant="10" id="Jvq-sH-4nq"/>
                             <constraint firstItem="rpN-yh-0CI" firstAttribute="top" secondItem="u3G-AD-F4l" secondAttribute="bottom" id="QDd-VG-QWM"/>
                             <constraint firstAttribute="bottom" secondItem="G24-jO-5De" secondAttribute="bottom" id="Tqh-Am-S6j"/>
                             <constraint firstItem="G24-jO-5De" firstAttribute="top" secondItem="u3G-AD-F4l" secondAttribute="bottom" id="Uhn-7r-NY3"/>
@@ -216,12 +221,14 @@
                             <constraint firstItem="u3G-AD-F4l" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="XNu-lc-vVW"/>
                             <constraint firstItem="MTf-C0-px8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="YEw-aU-Co1"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="MTf-C0-px8" secondAttribute="bottom" id="dDR-P8-gzI"/>
-                            <constraint firstItem="MrM-PF-Fr0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fRC-se-arR"/>
                             <constraint firstItem="HsD-j3-XUQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jGo-Y5-VQp"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rpN-yh-0CI" secondAttribute="bottom" id="xjT-Kh-2UA"/>
                             <constraint firstItem="jDk-qw-hko" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zBb-Qw-bzM"/>
                             <constraint firstItem="rpN-yh-0CI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zmF-Fb-FPt"/>
                         </constraints>
+                        <connections>
+                            <outlet property="fbLoginButton" destination="Puj-Iv-y4V" id="DJu-JW-q25"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="Do8-A2-eCG">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Rct-rA-dE4"/>
@@ -320,7 +327,7 @@
                                         </constraints>
                                         <color key="textColor" red="0.72941176470588232" green="0.72941176470588232" blue="0.72941176470588232" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
                                                 <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -3954,7 +3961,6 @@ Amritsar, Punjab 143001
         <image name="Delete" width="13" height="16"/>
         <image name="EditAddress" width="11" height="15"/>
         <image name="Email" width="19" height="12"/>
-        <image name="Facebook" width="245" height="37"/>
         <image name="Landing_Image" width="320" height="568"/>
         <image name="Landing_Logo" width="90" height="155"/>
         <image name="Locality" width="16" height="16"/>

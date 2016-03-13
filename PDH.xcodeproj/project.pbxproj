@@ -16,6 +16,9 @@
 		E507407A1C70E00400793AD4 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E50740771C70E00400793AD4 /* FBSDKLoginKit.framework */; settings = {ASSET_TAGS = (); }; };
 		E507407B1C70E00400793AD4 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E50740781C70E00400793AD4 /* FBSDKShareKit.framework */; settings = {ASSET_TAGS = (); }; };
 		E50A07041C35932D001F76C9 /* PDHDishcategoryMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50A07031C35932D001F76C9 /* PDHDishcategoryMenu.swift */; };
+		E50B9B1A1C8B1EA400F4E0E3 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E50B9B171C8B1EA400F4E0E3 /* FBSDKCoreKit.framework */; settings = {ASSET_TAGS = (); }; };
+		E50B9B1B1C8B1EA400F4E0E3 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E50B9B181C8B1EA400F4E0E3 /* FBSDKLoginKit.framework */; settings = {ASSET_TAGS = (); }; };
+		E50B9B1C1C8B1EA400F4E0E3 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E50B9B191C8B1EA400F4E0E3 /* FBSDKShareKit.framework */; settings = {ASSET_TAGS = (); }; };
 		E5189DAD1C077036008CC84C /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5189DAC1C077036008CC84C /* LandingViewController.swift */; };
 		E5189DB11C07705E008CC84C /* PDHLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5189DB01C07705E008CC84C /* PDHLoginViewController.swift */; };
 		E5189DB51C0770DB008CC84C /* PDHLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5189DB41C0770DB008CC84C /* PDHLoginView.swift */; };
@@ -116,6 +119,9 @@
 		E50740771C70E00400793AD4 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		E50740781C70E00400793AD4 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
 		E50A07031C35932D001F76C9 /* PDHDishcategoryMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHDishcategoryMenu.swift; sourceTree = "<group>"; };
+		E50B9B171C8B1EA400F4E0E3 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		E50B9B181C8B1EA400F4E0E3 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		E50B9B191C8B1EA400F4E0E3 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
 		E5189DAC1C077036008CC84C /* LandingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		E5189DB01C07705E008CC84C /* PDHLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHLoginViewController.swift; sourceTree = "<group>"; };
 		E5189DB41C0770DB008CC84C /* PDHLoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHLoginView.swift; sourceTree = "<group>"; };
@@ -212,11 +218,14 @@
 			files = (
 				E507407B1C70E00400793AD4 /* FBSDKShareKit.framework in Frameworks */,
 				E555AB371C64678C004468D7 /* libz.tbd in Frameworks */,
+				E50B9B1B1C8B1EA400F4E0E3 /* FBSDKLoginKit.framework in Frameworks */,
 				E50740791C70E00400793AD4 /* FBSDKCoreKit.framework in Frameworks */,
 				E555AB351C646784004468D7 /* libsqlite3.tbd in Frameworks */,
 				E555AB331C6466BB004468D7 /* SystemConfiguration.framework in Frameworks */,
+				E50B9B1C1C8B1EA400F4E0E3 /* FBSDKShareKit.framework in Frameworks */,
 				E507407A1C70E00400793AD4 /* FBSDKLoginKit.framework in Frameworks */,
 				E555AB311C6466B2004468D7 /* CoreData.framework in Frameworks */,
+				E50B9B1A1C8B1EA400F4E0E3 /* FBSDKCoreKit.framework in Frameworks */,
 				8CAD17E157FB8817A6E73F01 /* Pods_PDH.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -314,6 +323,16 @@
 				E56B6D8C1C173F47003E8E26 /* PDHMenuView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		E50B9B161C8B1EA400F4E0E3 /* ThirdPartyApps */ = {
+			isa = PBXGroup;
+			children = (
+				E50B9B171C8B1EA400F4E0E3 /* FBSDKCoreKit.framework */,
+				E50B9B181C8B1EA400F4E0E3 /* FBSDKLoginKit.framework */,
+				E50B9B191C8B1EA400F4E0E3 /* FBSDKShareKit.framework */,
+			);
+			path = ThirdPartyApps;
 			sourceTree = "<group>";
 		};
 		E5189DA01C077017008CC84C /* LandingPage */ = {
@@ -738,6 +757,7 @@
 		E59B4F381C0CBA2B00D1B6E7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E50B9B161C8B1EA400F4E0E3 /* ThirdPartyApps */,
 				E59B4F391C0CBA5400D1B6E7 /* SkiaRegular.ttf */,
 			);
 			path = Resources;
@@ -1208,6 +1228,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/PDH/Resources/ThirdPartyApps",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1242,6 +1263,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/PDH/Resources/ThirdPartyApps",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
