@@ -552,7 +552,7 @@
         <!--MenuViewConroller-->
         <scene sceneID="TGK-OH-75M">
             <objects>
-                <viewController id="UNX-wD-aCl" userLabel="MenuViewConroller" customClass="PDHMenuViewController" customModule="PDH" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PDHMenuViewController" id="UNX-wD-aCl" userLabel="MenuViewConroller" customClass="PDHMenuViewController" customModule="PDH" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dYr-oT-7Ti"/>
                         <viewControllerLayoutGuide type="bottom" id="mYc-CI-NDG"/>
@@ -648,6 +648,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="p5w-1y-ski"/>
                                 </constraints>
+                                <color key="barTintColor" red="0.91764705879999997" green="0.90980392160000001" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <outlet property="delegate" destination="F96-lK-oRl" id="rjU-kc-wpX"/>
@@ -688,7 +689,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SAC-06-7Fz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="179" y="901"/>
+            <point key="canvasLocation" x="1201" y="1139"/>
         </scene>
         <!--OrderConfirmationViewController-->
         <scene sceneID="U8S-NS-Aet">
@@ -814,7 +815,7 @@ App Store.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y6f-7x-uLW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="588" y="1095"/>
+            <point key="canvasLocation" x="772" y="1492"/>
         </scene>
         <!--OrderHistoryVC-->
         <scene sceneID="zTi-DV-UGH">
@@ -1228,7 +1229,7 @@ App Store.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AD4-hu-iPq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1054" y="1220"/>
+            <point key="canvasLocation" x="1201" y="1814"/>
         </scene>
         <!--Menu Screen Controller-->
         <scene sceneID="qw5-m2-TCd">
@@ -1466,6 +1467,7 @@ App Store.</string>
                                 </cells>
                                 <connections>
                                     <outlet property="dataSource" destination="lh3-3D-ih3" id="W4x-R1-4if"/>
+                                    <outlet property="delegate" destination="lh3-3D-ih3" id="wef-4Z-CcS"/>
                                 </connections>
                             </collectionView>
                         </subviews>
@@ -1507,6 +1509,9 @@ App Store.</string>
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" id="Y5t-GU-hrp"/>
+                    <connections>
+                        <segue destination="UNX-wD-aCl" kind="push" identifier="PDHMenuViewController" id="jCc-Jd-Lz8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZC7-79-gtX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2606,7 +2611,7 @@ Mob No - 9999912345</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3DE-z6-UZw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1424" y="1225"/>
+            <point key="canvasLocation" x="1598" y="1077"/>
         </scene>
         <!--AddressBookViewController-->
         <scene sceneID="XaW-vI-Ldr">

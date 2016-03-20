@@ -11,8 +11,8 @@ import SwiftyJSON
 
 class PDHMenuDataParser: PDHDataParser {
   
-    class func getDishOfWeekModel(data: JSON) -> PDHDishDataObject {
-        let dishOfWeekModel = PDHDishDataObject()
+    class func getDishOfWeekModel(data: JSON) -> PDHDishOfWeekDataObject {
+        let dishOfWeekModel = PDHDishOfWeekDataObject()
         dishOfWeekModel.title = data[0]["Title"].string
         dishOfWeekModel.dishType = data[0]["DishType"].string
         dishOfWeekModel.fullPrice = String(data[0]["FullPrice"].number!)
@@ -37,11 +37,11 @@ class PDHMenuDataParser: PDHDataParser {
         return dishMenuArray
     }
     
-    class func getDishMenu(data: JSON) -> [PDHDishDataObject] {
-        var dishesArray = [PDHDishDataObject]()
+    class func getVegDishMenu(data: JSON) -> [PDHVegDishDataObject] {
+        var dishesArray = [PDHVegDishDataObject]()
         
         for var i = 0; i < data.count; i++ {
-            let dish = PDHDishDataObject()
+            let dish = PDHVegDishDataObject()
             dish.title = data[i]["Title"].string
             dish.dishType = data[i]["DishType"].string
             dish.fullPrice = String(data[i]["FullPrice"].number!)
@@ -53,4 +53,22 @@ class PDHMenuDataParser: PDHDataParser {
         
         return dishesArray
     }
+
+    class func getNonVegDishMenu(data: JSON) -> [PDHNonVegDishDataObject] {
+        var dishesArray = [PDHNonVegDishDataObject]()
+
+        for var i = 0; i < data.count; i++ {
+            let dish = PDHNonVegDishDataObject()
+            dish.title = data[i]["Title"].string
+            dish.dishType = data[i]["DishType"].string
+            dish.fullPrice = String(data[i]["FullPrice"].number!)
+            dish.halfPrice = String(data[i]["HalfPrice"].number!)
+            dish.dishImageURL = data[i]["Image"].string
+            dish.id = String(data[i]["Id"].number!)
+            dishesArray.append(dish)
+        }
+
+        return dishesArray
+    }
+
 }

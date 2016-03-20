@@ -9,10 +9,11 @@
 import Foundation
 import UIKit
 
-class PDHMenuViewController: PDHViewController, PDHDishMenuControllerDelegate {
+class PDHMenuViewController: PDHViewController {
     
     @IBOutlet weak var bottomView: UIView!
     @IBOutlet weak var menuDishScrollView: UIScrollView!
+    private var menuDataManager: PDHMenuDataManager!
 
     var currentPage: CGFloat = 1 {
         didSet {
@@ -38,6 +39,10 @@ class PDHMenuViewController: PDHViewController, PDHDishMenuControllerDelegate {
         (self.view as! PDHMenuView).delegate = self
         createPageViewController()
 
+        PDHProgressIndicator.showLoadingIndicator(self.view)
+
+        initializeDataManager()
+        menuDataManager.getDishMenu()
     }
     
     
@@ -68,30 +73,7 @@ class PDHMenuViewController: PDHViewController, PDHDishMenuControllerDelegate {
         
         menuDishScrollView.addSubview(nonVegDishVC.view)
     }
-    private func createPageViewController() {
-        vegDishVC = createDishMenuVC()
-        vegDishVC.delegate = self
-        nonVegDishVC = createDishMenuVC()
-        nonVegDishVC.delegate = self
-        mixDishVC = createDishMenuVC()
-        mixDishVC.delegate = self
-    }
-    
-    
-    
-    private func createDishMenuVC() -> PDHDishMenuController {
-        return self.storyboard?.instantiateViewControllerWithIdentifier("PDHDishMenuVC") as! PDHDishMenuController
-    }
-    
 
-    // MARK:- DishControllerDelegate
-    func dishClicked(dishController: PDHDishMenuController) {
-        let quantityVC = self.storyboard?.instantiateViewControllerWithIdentifier("PDHQuantiySelectVC")
-        self.addChildViewController(quantityVC!)
-        self.view.addSubview(quantityVC!.view)
-        self.didMoveToParentViewController(quantityVC)        
-    }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -101,6 +83,57 @@ class PDHMenuViewController: PDHViewController, PDHDishMenuControllerDelegate {
     }
 }
 
+// Mark:- Private methods
+extension PDHMenuViewController {
+    private func initializeDataManager() {
+        menuDataManager = PDHMenuDataManager()
+        menuDataManager.delegate = self
+    }
+
+    private func createPageViewController() {
+        vegDishVC = createDishMenuVC()
+        vegDishVC.delegate = self
+        nonVegDishVC = createDishMenuVC()
+        nonVegDishVC.delegate = self
+        mixDishVC = createDishMenuVC()
+        mixDishVC.delegate = self
+    }
+
+    private func createDishMenuVC() -> PDHDishMenuController {
+        return self.storyboard?.instantiateViewControllerWithIdentifier("PDHDishMenuVC") as! PDHDishMenuController
+    }
+}
+
+// Mark:- PDHDataManagerProtocol
+extension PDHMenuViewController {
+    func didReceiveDataWithSuccess(response: AnyObject) {
+//        menuView.updateData(response)
+        PDHProgressIndicator.hideLoadingIndicator()
+    }
+
+    override func didReceiveDataWithError(response: AnyObject?) {
+        super.didReceiveDataWithError(response)
+        PDHProgressIndicator.hideLoadingIndicator()
+    }
+
+    override func didFailWithError(error: String) {
+        super.didFailWithError(error)
+        PDHProgressIndicator.hideLoadingIndicator()
+    }
+
+}
+
+// MARK:- DishControllerDelegate
+extension PDHMenuViewController: PDHDishMenuControllerDelegate {
+    func dishClicked(dishController: PDHDishMenuController) {
+        let quantityVC = self.storyboard?.instantiateViewControllerWithIdentifier("PDHQuantiySelectVC")
+        self.addChildViewController(quantityVC!)
+        self.view.addSubview(quantityVC!.view)
+        self.didMoveToParentViewController(quantityVC)
+    }
+}
+
+//Mark:- View Action Delegate
 extension PDHMenuViewController: ViewActionDelegate {
     func viewDidPerformAction(action: ViewActions, data: [String : AnyObject]?) {
         switch action {
@@ -112,6 +145,7 @@ extension PDHMenuViewController: ViewActionDelegate {
     }
 }
 
+//Mark:- ScrollViewDelegate
 extension PDHMenuViewController: UIScrollViewDelegate {
     func scrollViewWillEndDragging(scrollView: UIScrollView,
         withVelocity velocity: CGPoint,

@@ -62,8 +62,10 @@ class PDHMenuDataManager: PDHDataManager {
                 if let response = response {
                     let jsonData = JSON(response)
                     if jsonData["Result"]["ErrorCode"].numberValue == 0 {
-                        self.delegate?.didReceiveDataWithSuccess?(
-                            PDHMenuDataParser.getDishMenu(jsonData["Result"]["Record"]))
+                        let vegData: [PDHDishDataObject] = PDHMenuDataParser.getVegDishMenu(jsonData["Result"]["Record"])
+                        let nonVegData: [PDHDishDataObject] = PDHMenuDataParser.getNonVegDishMenu(jsonData["Result"]["Record"])
+                        let dishData = vegData + nonVegData
+                        self.delegate?.didReceiveDataWithSuccess?(dishData)
                     } else {
                         self.delegate?.didReceiveDataWithError?(
                             PDHLoginDataParser.parseErrorObject(jsonData["Result"]))

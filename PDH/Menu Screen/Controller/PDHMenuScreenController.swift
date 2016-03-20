@@ -71,6 +71,8 @@ extension PDHMenuScreenController: ViewActionDelegate {
             delegate?.toggleLeftPanel?()
         case .AddToOrder:
             addDishToOrderCart(data!["dish"] as! PDHDishDataObject)
+        case .CategoryClicked:
+            self.performSegueWithIdentifier("PDHMenuViewController", sender: nil)
         default:
             print("Default Implementation")
         }

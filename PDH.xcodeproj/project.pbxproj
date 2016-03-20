@@ -71,6 +71,9 @@
 		E53C0D221C38F5A400DA776E /* PDHMyProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53C0D211C38F5A400DA776E /* PDHMyProfileController.swift */; };
 		E53C0D241C38F5B200DA776E /* PDHMyProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53C0D231C38F5B200DA776E /* PDHMyProfileView.swift */; };
 		E53C0D2A1C391C0200DA776E /* PDHRegistrationObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53C0D291C391C0200DA776E /* PDHRegistrationObject.swift */; };
+		E54D314D1C9D9D4E00CD4D11 /* PDHDishOfWeekDataObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54D314C1C9D9D4E00CD4D11 /* PDHDishOfWeekDataObject.swift */; settings = {ASSET_TAGS = (); }; };
+		E54D314F1C9D9D8500CD4D11 /* PDHVegDishDataObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54D314E1C9D9D8500CD4D11 /* PDHVegDishDataObject.swift */; settings = {ASSET_TAGS = (); }; };
+		E54D31511C9D9DAF00CD4D11 /* PDHNonVegDishDataObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54D31501C9D9DAF00CD4D11 /* PDHNonVegDishDataObject.swift */; settings = {ASSET_TAGS = (); }; };
 		E553E4A91C05F2D9007DD045 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E553E4A81C05F2D9007DD045 /* AppDelegate.swift */; };
 		E553E4AE1C05F2D9007DD045 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E553E4AC1C05F2D9007DD045 /* Main.storyboard */; };
 		E553E4B01C05F2D9007DD045 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E553E4AF1C05F2D9007DD045 /* Assets.xcassets */; };
@@ -174,6 +177,9 @@
 		E53C0D211C38F5A400DA776E /* PDHMyProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHMyProfileController.swift; sourceTree = "<group>"; };
 		E53C0D231C38F5B200DA776E /* PDHMyProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHMyProfileView.swift; sourceTree = "<group>"; };
 		E53C0D291C391C0200DA776E /* PDHRegistrationObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHRegistrationObject.swift; sourceTree = "<group>"; };
+		E54D314C1C9D9D4E00CD4D11 /* PDHDishOfWeekDataObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHDishOfWeekDataObject.swift; sourceTree = "<group>"; };
+		E54D314E1C9D9D8500CD4D11 /* PDHVegDishDataObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHVegDishDataObject.swift; sourceTree = "<group>"; };
+		E54D31501C9D9DAF00CD4D11 /* PDHNonVegDishDataObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHNonVegDishDataObject.swift; sourceTree = "<group>"; };
 		E553E4A51C05F2D9007DD045 /* PDH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDH.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E553E4A81C05F2D9007DD045 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E553E4AD1C05F2D9007DD045 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -888,6 +894,9 @@
 			children = (
 				E5F44F3C1C32F4280047B18D /* PDHDishDataObject.swift */,
 				E50A07031C35932D001F76C9 /* PDHDishcategoryMenu.swift */,
+				E54D314C1C9D9D4E00CD4D11 /* PDHDishOfWeekDataObject.swift */,
+				E54D314E1C9D9D8500CD4D11 /* PDHVegDishDataObject.swift */,
+				E54D31501C9D9DAF00CD4D11 /* PDHNonVegDishDataObject.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1037,6 +1046,7 @@
 				E5DF0EDA1C2C53740042300F /* PDHAddressBookView.swift in Sources */,
 				E5DE86DD1C1D9CB20009EEAC /* PDHDeliveryAddressViewController.swift in Sources */,
 				E5026B7C1C1F498000B1839E /* PDHOrderConfirmationViewController.swift in Sources */,
+				E54D31511C9D9DAF00CD4D11 /* PDHNonVegDishDataObject.swift in Sources */,
 				E5189DAD1C077036008CC84C /* LandingViewController.swift in Sources */,
 				E53AB4FE1C3052B7000E6F07 /* PDHRegistrationDataManager.swift in Sources */,
 				E5F44F3D1C32F4280047B18D /* PDHDishDataObject.swift in Sources */,
@@ -1074,7 +1084,9 @@
 				E59E719D1C36C43C00BAF731 /* PDHQuantitySelectorView.swift in Sources */,
 				E5EF143D1C1D4C450097E70E /* PDHOverlayView.swift in Sources */,
 				E53AB5041C30546F000E6F07 /* PDHDataParser.swift in Sources */,
+				E54D314F1C9D9D8500CD4D11 /* PDHVegDishDataObject.swift in Sources */,
 				E53AB4E91C2FD7FC000E6F07 /* PDHCustomDishCartView.swift in Sources */,
+				E54D314D1C9D9D4E00CD4D11 /* PDHDishOfWeekDataObject.swift in Sources */,
 				E5E4935D1C2D6CAF00469745 /* PDHMyOrderViewController.swift in Sources */,
 				E53AB4EF1C2FD7FC000E6F07 /* PDHNetworkManager.swift in Sources */,
 				E5026B7E1C1F49B600B1839E /* PDHOrderConfirmationView.swift in Sources */,

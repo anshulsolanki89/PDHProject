@@ -9,17 +9,36 @@
 import Foundation
 import UIKit
 
-class PDHDishSearchTableView: PDHView, PDHCustomCellDelegate {
+class PDHDishSearchTableView: PDHView {
 
     private var dataArray = [PDHDishDataObject]()
     private let ROW_HEIGHT: CGFloat  = 70
     
+    private var vegData = [PDHVegDishDataObject]()
+    private var nonVegData = [PDHNonVegDishDataObject]()
+    private var dishData = [PDHDishDataObject]()
+
     override func awakeFromNib() {
         super.awakeFromNib()
     }
-    
 
-    // MARK:- PDHCustomCellDelegate
+    func updateData(data: AnyObject) {
+        if let data = data as? [PDHDishDataObject] {
+            dishData = data
+            for eachDish in dishData {
+                if NSComparisonResult.OrderedSame
+                    == eachDish.dishType.caseInsensitiveCompare("veg") {
+                        vegData.append(eachDish as! PDHVegDishDataObject)
+                } else {
+                    nonVegData.append(eachDish as! PDHNonVegDishDataObject)
+                }
+            }
+        }
+    }
+}
+
+// MARK:- PDHCustomCellDelegate
+extension PDHDishSearchTableView: PDHCustomCellDelegate {
     func addToOrderButtonClicked(btn: PDHDishCustomCell, atIndex index: Int) {
         delegate?.viewDidPerformAction(ViewActions.AddToOrder, data: nil)
     }

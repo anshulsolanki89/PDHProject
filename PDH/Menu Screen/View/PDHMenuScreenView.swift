@@ -112,6 +112,14 @@ extension PDHMenuScreenView: UICollectionViewDataSource {
     }
 }
 
+// MARK:- CollectionView Delegate
+extension PDHMenuScreenView: UICollectionViewDelegate {
+    func collectionView(collectionView: UICollectionView,
+        didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        self.delegate?.viewDidPerformAction(ViewActions.CategoryClicked, data: nil)
+    }
+}
+
 // MARK:- Search Bar Delegate
 extension PDHMenuScreenView: UISearchBarDelegate {
     func searchBarShouldBeginEditing(searchBar: UISearchBar) -> Bool {

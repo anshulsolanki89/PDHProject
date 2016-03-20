@@ -22,4 +22,5 @@ enum ViewActions: Int {
     case ShareApp
     case AboutUs
     case ContactUs
+    case CategoryClicked
 }
