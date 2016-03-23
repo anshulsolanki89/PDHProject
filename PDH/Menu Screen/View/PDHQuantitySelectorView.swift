@@ -20,7 +20,7 @@ class PDHQuantitySelectorView: UIView, UITableViewDataSource, UITableViewDelegat
     
     @IBOutlet weak var addToOrderTableView: UITableView!
     
-    private var dataArray = [AnyObject]()
+    private var dataArray = [PDHDishDataObject]()
     private var selectedDish: PDHDishDataObject!
     
     override func awakeFromNib() {
@@ -37,7 +37,9 @@ class PDHQuantitySelectorView: UIView, UITableViewDataSource, UITableViewDelegat
 
     func updateDishQuantity(dish: PDHDishDataObject) {
         selectedDish = dish
-        dataArray.append(dish)
+        if !dataArray.contains(selectedDish) {
+            dataArray.append(selectedDish)
+        }
         addToOrderTableView.reloadData()
     }
     
@@ -57,18 +59,18 @@ class PDHQuantitySelectorView: UIView, UITableViewDataSource, UITableViewDelegat
         if (indexPath.row % 2) == 0 {
             cell.quantityLabel.text =
                 "Half Rs "
-                + (dataArray[indexPath.row] as! PDHDishDataObject).halfPrice!
+                + dataArray[indexPath.row].halfPrice!
                 + "/-"
-            cell.quantityNumberLabel.text = String((dataArray[indexPath.row] as! PDHDishDataObject).halfQuantity)
+            cell.quantityNumberLabel.text = String(dataArray[indexPath.row].halfQuantity)
             cell.addBtn.tag = indexPath.row
             cell.subtractBtn.tag = indexPath.row
         } else {
             cell.quantityLabel.text =
                 "Full Rs "
-                + (dataArray[(indexPath.row / 2)] as! PDHDishDataObject).fullPrice!
+                + dataArray[(indexPath.row / 2)].fullPrice!
                 + "/-"
             cell.quantityNumberLabel.text =
-                String((dataArray[(indexPath.row / 2)] as! PDHDishDataObject).fullQuantity)
+                String(dataArray[(indexPath.row / 2)].fullQuantity)
             cell.addBtn.tag = indexPath.row
             cell.subtractBtn.tag = indexPath.row
         }

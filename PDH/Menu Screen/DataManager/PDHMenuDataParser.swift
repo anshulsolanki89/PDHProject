@@ -41,14 +41,16 @@ class PDHMenuDataParser: PDHDataParser {
         var dishesArray = [PDHVegDishDataObject]()
         
         for var i = 0; i < data.count; i++ {
-            let dish = PDHVegDishDataObject()
-            dish.title = data[i]["Title"].string
-            dish.dishType = data[i]["DishType"].string
-            dish.fullPrice = String(data[i]["FullPrice"].number!)
-            dish.halfPrice = String(data[i]["HalfPrice"].number!)
-            dish.dishImageURL = data[i]["Image"].string
-            dish.id = String(data[i]["Id"].number!)
-            dishesArray.append(dish)
+            if NSComparisonResult.OrderedSame == data[i]["DishType"].string!.caseInsensitiveCompare("veg") {
+                let dish = PDHVegDishDataObject()
+                dish.title = data[i]["Title"].string
+                    dish.dishType = data[i]["DishType"].string
+                dish.fullPrice = String(data[i]["FullPrice"].number!)
+                dish.halfPrice = String(data[i]["HalfPrice"].number!)
+                dish.dishImageURL = data[i]["Image"].string
+                dish.id = String(data[i]["Id"].number!)
+                dishesArray.append(dish)
+            }
         }
         
         return dishesArray
@@ -58,14 +60,16 @@ class PDHMenuDataParser: PDHDataParser {
         var dishesArray = [PDHNonVegDishDataObject]()
 
         for var i = 0; i < data.count; i++ {
-            let dish = PDHNonVegDishDataObject()
-            dish.title = data[i]["Title"].string
-            dish.dishType = data[i]["DishType"].string
-            dish.fullPrice = String(data[i]["FullPrice"].number!)
-            dish.halfPrice = String(data[i]["HalfPrice"].number!)
-            dish.dishImageURL = data[i]["Image"].string
-            dish.id = String(data[i]["Id"].number!)
-            dishesArray.append(dish)
+            if NSComparisonResult.OrderedSame != data[i]["DishType"].string!.caseInsensitiveCompare("veg") {
+                let dish = PDHNonVegDishDataObject()
+                dish.title = data[i]["Title"].string
+                dish.dishType = data[i]["DishType"].string
+                dish.fullPrice = String(data[i]["FullPrice"].number!)
+                dish.halfPrice = String(data[i]["HalfPrice"].number!)
+                dish.dishImageURL = data[i]["Image"].string
+                dish.id = String(data[i]["Id"].number!)
+                dishesArray.append(dish)
+            }
         }
 
         return dishesArray

@@ -17,7 +17,7 @@ protocol PDHMenuScreenControllerDelegate {
 class PDHMenuScreenController: PDHViewController {
     
     private var menuDataManager: PDHMenuDataManager!
-    private var numberOfOperations = 3
+    private var numberOfOperations = 2
     var menuView: PDHMenuScreenView!
     
     weak var delegate: PDHMenuScreenControllerDelegate?
@@ -35,7 +35,6 @@ class PDHMenuScreenController: PDHViewController {
         menuView.updateData(PDHMenuDataManager.getUserData()!)
         menuDataManager.getDishOfWeek()
         menuDataManager.getRestaurantMenu()
-        menuDataManager.getDishMenu()
     }
     
     deinit {

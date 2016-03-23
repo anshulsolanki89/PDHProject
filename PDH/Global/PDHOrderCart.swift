@@ -9,7 +9,7 @@
 import Foundation
 
 class PDHOrderCart {
-    static let singleOrderBasket = PDHOrderCart()
+    static let pdhCart = PDHOrderCart()
     
     var orderedDishes = [PDHDishDataObject]()
     
@@ -24,9 +24,31 @@ class PDHOrderCart {
         
         return false
     }
-    
+
     func addDishToOrder(dish: PDHDishDataObject) {
-        orderedDishes.append(dish)
+        if !orderedDishes.contains(dish) && ((dish.halfQuantity + dish.fullQuantity) > 0) {
+            orderedDishes.append(dish)
+        } else if orderedDishes.contains(dish) && ((dish.halfQuantity + dish.fullQuantity) == 0){
+            orderedDishes.removeAtIndex(orderedDishes.indexOf(dish)!)
+        }
     }
-    
+
+    func totalPrice() -> Int {
+        var totalPrice = 0
+        for eachDish in orderedDishes {
+            totalPrice += (eachDish.halfQuantity * Int(eachDish.halfPrice)!)
+            totalPrice += (eachDish.fullQuantity * Int(eachDish.fullPrice)!)
+        }
+        return totalPrice
+    }
+
+    func totalDishes() -> Int {
+        var totalDishes = 0
+        for eachDish in orderedDishes {
+            totalDishes += totalDishes + eachDish.halfQuantity
+            totalDishes += totalDishes + eachDish.fullQuantity
+        }
+        return totalDishes
+    }
+
 }

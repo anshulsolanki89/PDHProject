@@ -111,6 +111,7 @@
             <string>Skia-Regular</string>
             <string>Skia-Regular</string>
             <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -189,7 +190,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Puj-Iv-y4V" customClass="FBSDKLoginButton">
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Puj-Iv-y4V" customClass="FBSDKLoginButton">
                                 <rect key="frame" x="40" y="460" width="240" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="OJQ-8k-dmX" userLabel="width = 40"/>
@@ -1365,6 +1366,17 @@ App Store.</string>
                                             <action selector="addToOrderBtnClciked:" destination="lh3-3D-ih3" eventType="touchUpInside" id="PmK-fP-Xi1"/>
                                         </connections>
                                     </button>
+                                    <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p2m-Dn-B21" customClass="PDHCustomCircleLabel" customModule="PDH" customModuleProvider="target">
+                                        <rect key="frame" x="177" y="97" width="16" height="16"/>
+                                        <color key="backgroundColor" red="1" green="0.76862745099999996" blue="0.070588235289999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="16" id="Miy-w0-Y0F"/>
+                                            <constraint firstAttribute="width" constant="16" id="nGg-Id-2bG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="10"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dish of the Week" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X0Z-bT-Ybh">
                                         <rect key="frame" x="16" y="104" width="128" height="14"/>
                                         <constraints>
@@ -1395,6 +1407,7 @@ App Store.</string>
                                     <constraint firstItem="v9Z-V6-fH6" firstAttribute="leading" secondItem="7FA-6y-C7g" secondAttribute="trailing" constant="8" id="LIo-Qv-1AH"/>
                                     <constraint firstItem="v9Z-V6-fH6" firstAttribute="top" secondItem="dBs-Cn-n5p" secondAttribute="top" constant="29" id="OJI-Wk-xcY"/>
                                     <constraint firstAttribute="trailing" secondItem="v9Z-V6-fH6" secondAttribute="trailing" constant="8" id="Obl-We-nM0"/>
+                                    <constraint firstItem="USe-NQ-zDK" firstAttribute="leading" secondItem="p2m-Dn-B21" secondAttribute="trailing" constant="-9" id="QCS-oq-KaR"/>
                                     <constraint firstItem="7FA-6y-C7g" firstAttribute="leading" secondItem="dBs-Cn-n5p" secondAttribute="leading" constant="8" id="SG9-m4-1nf"/>
                                     <constraint firstItem="G4U-4v-MZS" firstAttribute="leading" secondItem="dBs-Cn-n5p" secondAttribute="leading" constant="16" id="bzJ-n2-auX"/>
                                     <constraint firstAttribute="trailing" secondItem="fwc-la-Ro3" secondAttribute="trailing" constant="8" id="cYe-wu-4d7"/>
@@ -1404,6 +1417,7 @@ App Store.</string>
                                     <constraint firstAttribute="trailing" secondItem="USe-NQ-zDK" secondAttribute="trailing" constant="24" id="oEX-S7-jBJ"/>
                                     <constraint firstItem="fwc-la-Ro3" firstAttribute="top" secondItem="v9Z-V6-fH6" secondAttribute="bottom" constant="4" id="pIX-iQ-FIO"/>
                                     <constraint firstItem="fbN-56-Dnm" firstAttribute="centerX" secondItem="dBs-Cn-n5p" secondAttribute="centerX" id="q0b-0Q-GXB"/>
+                                    <constraint firstItem="USe-NQ-zDK" firstAttribute="top" secondItem="p2m-Dn-B21" secondAttribute="bottom" constant="-9" id="tlN-pW-YhG"/>
                                     <constraint firstAttribute="height" constant="150" id="uay-vn-Elp"/>
                                     <constraint firstItem="fbN-56-Dnm" firstAttribute="leading" secondItem="G4U-4v-MZS" secondAttribute="trailing" constant="15" id="x79-r8-C90"/>
                                 </constraints>
@@ -1499,8 +1513,10 @@ App Store.</string>
                             <constraint firstItem="wyG-jA-gDi" firstAttribute="top" secondItem="dBs-Cn-n5p" secondAttribute="bottom" id="vN2-O9-KZd"/>
                         </constraints>
                         <connections>
+                            <outlet property="addToOrderButton" destination="USe-NQ-zDK" id="2lO-GA-WsU"/>
                             <outlet property="collectionView" destination="wyG-jA-gDi" id="qbo-Op-qSB"/>
                             <outlet property="dishOfWeekLabel" destination="G4U-4v-MZS" id="vN1-nr-4EA"/>
+                            <outlet property="dishQuantityLabel" destination="p2m-Dn-B21" id="AtQ-Lr-uvQ"/>
                             <outlet property="dishSearchBar" destination="tpD-wB-fRK" id="ZtH-if-kXO"/>
                             <outlet property="dishSearchTableView" destination="Xlf-Fm-bQI" id="uca-YZ-U5z"/>
                             <outlet property="userBGImageView" destination="7FA-6y-C7g" id="qhC-TE-Kc8"/>
@@ -1970,6 +1986,9 @@ App Store.</string>
                             <constraint firstAttribute="trailing" secondItem="3kl-M1-tNC" secondAttribute="trailing" id="owZ-S3-djx"/>
                             <constraint firstItem="3kl-M1-tNC" firstAttribute="leading" secondItem="LTe-Rl-cFX" secondAttribute="leading" id="p3n-Du-5nu"/>
                         </constraints>
+                        <connections>
+                            <outlet property="dishTableView" destination="3kl-M1-tNC" id="66D-Tw-luu"/>
+                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jZ0-5y-og0" userLabel="First Responder" sceneMemberID="firstResponder"/>

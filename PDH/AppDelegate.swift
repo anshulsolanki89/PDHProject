@@ -9,11 +9,14 @@
 import UIKit
 import FBSDKCoreKit
 
+let DISH_QUANTITY_CHANGED_NOTIFICATION = "pdh.dish.quantity.changed"
+let SELECTED_DISH = "pdh.dish.selectedDish"
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    private var customDishCartView: PDHCustomDishCartView?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
@@ -26,9 +29,34 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //    window!.rootViewController = rootViewController
         //    window!.makeKeyAndVisible()
         //}
+
+        customDishCartView = PDHCustomDishCartView.instanceFromNib() as? PDHCustomDishCartView
+        customDishCartView!.frame =
+            CGRect(x: 0,
+                y: (window!.frame.size.height - 73),
+                width: window!.frame.size.width,
+                height: 73)
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
 
+        NSNotificationCenter.defaultCenter().addObserver(
+            self,
+            selector: "dishQuantityChanged:",
+            name: DISH_QUANTITY_CHANGED_NOTIFICATION,
+            object: nil)
+
         return true
+    }
+
+    func dishQuantityChanged(notification: NSNotification) {
+        let selectedDish = notification.object![SELECTED_DISH] as! PDHDishDataObject
+        PDHOrderCart.pdhCart.addDishToOrder(selectedDish)
+        if PDHOrderCart.pdhCart.totalDishes() > 0 {
+            self.customDishCartView!.changeQuantity(PDHOrderCart.pdhCart.totalDishes())
+            self.customDishCartView!.changeTotalPrice(PDHOrderCart.pdhCart.totalPrice())
+            self.window!.addSubview(self.customDishCartView!)
+        } else {
+            self.customDishCartView!.removeFromSuperview()
+        }
     }
 
     func applicationWillResignActive(application: UIApplication) {

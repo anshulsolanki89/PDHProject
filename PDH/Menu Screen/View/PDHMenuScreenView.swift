@@ -24,6 +24,9 @@ class PDHMenuScreenView: PDHView {
     @IBOutlet weak var dishOfWeekLabel: UILabel!
     @IBOutlet weak var userNameLabel: UILabel!
    
+    @IBOutlet weak var addToOrderButton: PDHButton!
+    @IBOutlet weak var dishQuantityLabel: PDHCustomCircleLabel!
+
     private var overlayView: PDHOverlayView!
     private var addToOrderView: PDHQuantitySelectorView!
     
@@ -61,6 +64,7 @@ class PDHMenuScreenView: PDHView {
     func updateData(data: AnyObject) {
         if let data = data as? PDHDishDataObject {
             dishOfWeek = data
+            updateDishOfWeekQuantity(dishOfWeek)
             dishOfWeekLabel.text = data.title
         } else if let data = data as? PDHLoginInfoDataObject {
             userNameLabel.text = "Hello " + "\(data.name)"
@@ -182,7 +186,31 @@ extension PDHMenuScreenView {
             name: UIKeyboardDidShowNotification,
             object: nil)
     }
-    
+
+    private func updateDishOfWeekQuantity(dishOfWeek: PDHDishDataObject) {
+        if (dishOfWeek.fullQuantity + dishOfWeek.halfQuantity) == 0 {
+            dishQuantityLabel.hidden = true
+            addToOrderButton.backgroundColor = UIColor.clearColor()
+            addToOrderButton.layer.borderColor = UIColor.rgb(121, g: 207, b: 63, α: 1).CGColor
+            addToOrderButton.setTitleColor(UIColor.rgb(255, g: 196, b: 18, α: 1),
+                forState: .Normal)
+            addToOrderButton.setTitle("Add to order", forState: .Normal)
+        } else {
+            dishQuantityLabel.hidden = false
+            addToOrderButton.backgroundColor = UIColor.rgb(121, g: 207, b: 63, α: 1)
+            addToOrderButton.layer.borderColor = UIColor.rgb(121, g: 207, b: 63, α: 1).CGColor
+            addToOrderButton.clipsToBounds = true
+            addToOrderButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+            addToOrderButton.setTitle("Modify", forState: .Normal)
+            dishQuantityLabel.text =
+                String(dishOfWeek.fullQuantity + dishOfWeek.halfQuantity)
+        }
+
+        NSNotificationCenter.defaultCenter().postNotificationName(
+            DISH_QUANTITY_CHANGED_NOTIFICATION,
+            object: [SELECTED_DISH: dishOfWeek])
+    }
+
     private func searchBarUI() {
         let cancelBtnAttributes =
             [NSFontAttributeName: PDHHelper.getSkiaRegularFont(16),
@@ -242,6 +270,7 @@ extension PDHMenuScreenView {
 extension PDHMenuScreenView: PDHQuantitySelectorViewDelegate {
     func quantitySelectorViewClicked() {
         delegate?.viewDidPerformAction(ViewActions.AddToOrder, data:["dish" : dishOfWeek])
+        updateDishOfWeekQuantity(dishOfWeek)
         addToOrderView!.removeFromSuperview()
     }
     

@@ -17,7 +17,7 @@ class PDHDishMenuController: UIViewController, ViewActionDelegate {
     
     var dishListView: PDHDishSearchTableView!
     weak var delegate: PDHDishMenuControllerDelegate?
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         dishListView = self.view as! PDHDishSearchTableView
@@ -32,7 +32,11 @@ class PDHDishMenuController: UIViewController, ViewActionDelegate {
             fatalError("Switch case not handled properly!")
         }
     }
-        
+
+    func setDishData(data: [PDHDishDataObject]) {
+        dishListView.updateData(data)
+    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }

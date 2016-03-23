@@ -42,3 +42,13 @@ class PDHHelper {
         return rgb(55, g: 44, b: 16, α: 1)
     }
 }
+
+extension UIColor {
+    class func rgb(r: CGFloat, g: CGFloat, b: CGFloat, α: CGFloat) -> UIColor{
+        return UIColor(
+            red: (r / 255.0),
+            green: (g / 255.0),
+            blue: (b / 255.0),
+            alpha: α)
+    }
+}
