@@ -190,7 +190,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Puj-Iv-y4V" customClass="FBSDKLoginButton">
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Puj-Iv-y4V" customClass="FBSDKLoginButton">
                                 <rect key="frame" x="40" y="460" width="240" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="OJQ-8k-dmX" userLabel="width = 40"/>
@@ -229,6 +229,8 @@
                         </constraints>
                         <connections>
                             <outlet property="fbLoginButton" destination="Puj-Iv-y4V" id="DJu-JW-q25"/>
+                            <outlet property="horizontalLine" destination="u3G-AD-F4l" id="52O-bY-wpa"/>
+                            <outlet property="loginLabel" destination="jDk-qw-hko" id="FpQ-fX-dnh"/>
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" id="Do8-A2-eCG">

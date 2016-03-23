@@ -45,8 +45,8 @@ class PDHOrderCart {
     func totalDishes() -> Int {
         var totalDishes = 0
         for eachDish in orderedDishes {
-            totalDishes += totalDishes + eachDish.halfQuantity
-            totalDishes += totalDishes + eachDish.fullQuantity
+            totalDishes += eachDish.halfQuantity
+            totalDishes += eachDish.fullQuantity
         }
         return totalDishes
     }
