@@ -20,7 +20,7 @@ class PDHViewController: UIViewController {
     }
 
     func showFormFieldError() {
-        showErrorAlert("Please check the data enetered by you, text field cannot be empty.")
+        showErrorAlert("Please check the data entered by you, text field cannot be empty.")
     }
 }
 
