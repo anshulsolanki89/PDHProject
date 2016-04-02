@@ -2,8 +2,8 @@
 //  PDHCurrentOrderView.swift
 //  PDH
 //
-//  Created by Anshul Solanki on 12/25/15.
-//  Copyright © 2015 Anshul Solanki. All rights reserved.
+//  Created by Ellan Jesse on 12/25/15.
+//  Copyright © 2015 Ellan Jesse. All rights reserved.
 //
 
 import Foundation

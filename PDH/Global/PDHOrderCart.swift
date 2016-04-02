@@ -2,8 +2,8 @@
 //  PDHOrderCart.swift
 //  PDH
 //
-//  Created by Anshul Solanki on 1/1/16.
-//  Copyright © 2016 Anshul Solanki. All rights reserved.
+//  Created by Ellan Jesse on 1/1/16.
+//  Copyright © 2016 Ellan Jesse. All rights reserved.
 //
 
 import Foundation

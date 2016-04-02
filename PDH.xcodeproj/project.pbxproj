@@ -937,7 +937,7 @@
 				TargetAttributes = {
 					E553E4A41C05F2D9007DD045 = {
 						CreatedOnToolsVersion = 7.1.1;
-						DevelopmentTeam = 2ZS73R28BY;
+						DevelopmentTeam = 5N4QD5MNPN;
 					};
 				};
 			};
@@ -1254,7 +1254,7 @@
 					"$(PROJECT_DIR)/PDH/Resources",
 				);
 				OTHER_LDFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.test.PDH;
+				PRODUCT_BUNDLE_IDENTIFIER = com.PDH;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
@@ -1289,7 +1289,7 @@
 					"$(PROJECT_DIR)/PDH/Resources",
 				);
 				OTHER_LDFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.test.PDH;
+				PRODUCT_BUNDLE_IDENTIFIER = com.PDH;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "";

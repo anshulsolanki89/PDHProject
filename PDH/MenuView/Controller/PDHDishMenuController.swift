@@ -2,8 +2,8 @@
 //  PDHDishMenuController.swift
 //  PDH
 //
-//  Created by Anshul Solanki on 12/5/15.
-//  Copyright © 2015 Anshul Solanki. All rights reserved.
+//  Created by Ellan Jesse on 12/5/15.
+//  Copyright © 2015 Ellan Jesse. All rights reserved.
 //
 
 import Foundation
@@ -27,7 +27,8 @@ class PDHDishMenuController: UIViewController, ViewActionDelegate {
     func viewDidPerformAction(action: ViewActions, data: [String: AnyObject]?) {
         switch action {
         case .AddToOrder:
-            delegate?.dishClicked(self)
+            break
+            //delegate?.dishClicked(self)
         default:
             fatalError("Switch case not handled properly!")
         }
