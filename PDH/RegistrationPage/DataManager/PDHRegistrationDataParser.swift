@@ -9,6 +9,7 @@
 import Foundation
 
 class PDHRegistrationDataParser: PDHDataParser {
+    
     class func parseRegistrationData(data: [String: AnyObject]) -> PDHLoginInfoDataObject {
         let loginInfoDataObject = PDHLoginInfoDataObject()
         loginInfoDataObject.name =  data["name"] as! String

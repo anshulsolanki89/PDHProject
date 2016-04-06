@@ -30,7 +30,7 @@ class PDHHelper {
         return UIFont(name: "Skia-Regular", size: size)!
     }
     
-    class func rgb(r: CGFloat, g: CGFloat, b: CGFloat, α: CGFloat) -> UIColor{
+    class func rgb(r: CGFloat, g: CGFloat, b: CGFloat, α: CGFloat) -> UIColor {
         return UIColor(
             red: (r / 255.0),
             green: (g / 255.0),
@@ -44,7 +44,7 @@ class PDHHelper {
 }
 
 extension UIColor {
-    class func rgb(r: CGFloat, g: CGFloat, b: CGFloat, α: CGFloat) -> UIColor{
+    class func rgb(r: CGFloat, g: CGFloat, b: CGFloat, α: CGFloat) -> UIColor {
         return UIColor(
             red: (r / 255.0),
             green: (g / 255.0),

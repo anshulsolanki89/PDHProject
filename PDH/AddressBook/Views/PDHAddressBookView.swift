@@ -10,9 +10,13 @@ import Foundation
 import UIKit
 
 class PDHAddressBookView: PDHView {
+
+    @IBOutlet weak var userAddressTableView: UITableView!
     
     var editAddressView: PDHEditAddressView!
-    
+    private var userAddresses = [PDHUserAddressDataObject]()
+    private var editIndexPath: NSIndexPath!
+
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -27,11 +31,22 @@ class PDHAddressBookView: PDHView {
     override func layoutSubviews() {
         editAddressView.frame = self.bounds
     }
-    
+
+    func updateData(data: AnyObject) {
+        if let userData = data as? [PDHUserAddressDataObject] {
+            userAddresses = userData
+            userAddressTableView.reloadData()
+        }
+    }
+
     @IBAction func backBtnClicked() {
         delegate?.viewDidPerformAction(.Back, data: nil)
     }
     
+    @IBAction func addNewAddressAction(sender: UIButton) {
+        delegate?.viewDidPerformAction(.AddAddress, data: nil)
+    }
+
     deinit {
         print("\(self) DEALLOCATED")
     }
@@ -44,16 +59,26 @@ extension PDHAddressBookView: UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return userAddresses.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(
-            "PDHAddressIdentifier",
+            "PDHDeliveryAddressCustomCell",
             forIndexPath: indexPath) as! PDHDeliveryAddressCustomCell
+        cell.userName.text = userAddresses[indexPath.row].name
+        cell.userAddress.text = getUserAddressFormattedString(userAddresses[indexPath.row])
         cell.delegate = self
         cell.indexPath = indexPath
         return cell
+    }
+
+    private func getUserAddressFormattedString(userAddress: PDHUserAddressDataObject) -> String {
+        var addressString = ""
+        addressString = userAddress.address
+        addressString = (addressString + "\n" + userAddress.locality + " " + userAddress.pincode)
+        addressString = addressString + "\n" + "Mob No - " + userAddress.mobile
+        return addressString
     }
 }
 
@@ -84,9 +109,16 @@ extension PDHAddressBookView: UITableViewDelegate {
 
 extension PDHAddressBookView: PDHDeliveryAddressCustomCellDelegate {
     func editAddressBtnClicked(cell: PDHDeliveryAddressCustomCell, indexPath: NSIndexPath) {
+        editIndexPath = indexPath
+        editAddressView.addressTextView.text = userAddresses[indexPath.row].address
+            + ", "
+            + userAddresses[indexPath.row].locality
+            + " - "
+            + userAddresses[indexPath.row].pincode
+        editAddressView.mobileTextFIeld.text = userAddresses[indexPath.row].mobile
         self.addSubview(editAddressView)
     }
-    
+
     func selectAddressBtnClicked(cell: PDHDeliveryAddressCustomCell, indexPath: NSIndexPath) {
         
     }
@@ -94,6 +126,18 @@ extension PDHAddressBookView: PDHDeliveryAddressCustomCellDelegate {
 
 extension PDHAddressBookView: PDHEditAddressViewDelegate {
     func editAddressViewBtnClicked(view: PDHEditAddressView) {
+        var addressDict = [String: String]()
+        addressDict["uid"] = PDHDataManager.getUserData()!.email
+        addressDict["id"] = "3"
+        addressDict["address"] = view.addressTextView.text!
+        addressDict["locality"] = userAddresses[editIndexPath.row].locality
+        addressDict["pincode"] = userAddresses[editIndexPath.row].pincode
+        addressDict["mobile"] = view.mobileTextFIeld.text!
+        delegate?.viewDidPerformAction(ViewActions.EditAddress, data: <#T##[String : AnyObject]?#>)
         editAddressView.removeFromSuperview()
+    }
+
+    func overlayViewClicked(overlayView: PDHEditAddressView) {
+        overlayView.removeFromSuperview()
     }
 }

@@ -35,4 +35,42 @@ struct PDHConstantURL {
     /*
     {"uid":"user_id","total_price": "totalprice", "discount":"discounted Ammount","comment": "comment", "orders": [{"cart_id":"cart id","menu_id":"menu id", "quantity":"dish quantity","size":"1|2","price":"unit price"}]}
     */
+    static let GET_USER_ADDRESS = "http://bemisaal.in/restAppNew/api/address/get.json"
+    /*{"uid":"user_id"}
+    "{
+    ""Result"": {
+    ""ErrorCode"": 0,
+    ""ErrorMsg"": ""success"",
+    ""Record"": [
+    {
+    ""Id"": 1,
+    ""Name"": ""test user1"",
+    ""Address"": ""Gurgaon"",
+    ""Locality"": ""sector 1"",
+    ""Pincode"": ""274079"",
+    ""Mobile"": 2147483647
+    }
+    ]
+    }
+    }"
+    */
+    static let ADD_NEW_ADDRESS = "http://bemisaal.in/restAppNew/api/address/add.json"
+    /*{"uid":"user_id","name":"user name", "address":"address","locality":"locality","pincode":"pincode","mobile":"mobile"}*/
+    static let EDIT_ADDRESS = "http://bemisaal.in/restAppNew/api/address/edit.json"
+    /*{"id":"id","uid":"user_id","name":"user name", "address":"address","locality":"locality","pincode":"pincode","mobile":"mobile"}
+    {
+    "Result": {
+    "ErrorCode": 0,
+    "ErrorMsg": "Edit Successfully"
+    }
+    }
+    */
+    static let DELETE_ADDRESS = "http://bemisaal.in/restAppNew/api/address/delete.json"
+    /*{"uid":"user_id","id":"id"}
+    {
+    "Result": {
+    "ErrorCode": 0,
+    "ErrorMsg": "Deleted Successfully"
+    }
+    */
 }

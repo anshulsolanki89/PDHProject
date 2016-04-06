@@ -60,5 +60,13 @@ extension PDHLoginViewController {
             self.performSegueWithIdentifier("menuScreen", sender: nil)
         }
     }
-    
+
+    override func didReceiveDataWithError(response: AnyObject?) {
+        PDHProgressIndicator.hideLoadingIndicator()
+        if let _ = response as? PDHErrorObject {
+            showAlert("Please login again.\nEmail and Password provided by you doesn't match.")
+        } else {
+            showAlert("Something wrong happened, Please try after some time.")
+        }
+    }
 }

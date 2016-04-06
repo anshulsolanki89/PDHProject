@@ -23,4 +23,8 @@ enum ViewActions: Int {
     case AboutUs
     case ContactUs
     case CategoryClicked
+    case SaveAddress
+    case AddAddress
+    case EditAddress
+    case DeleteAddress
 }

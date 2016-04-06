@@ -95,4 +95,8 @@ extension PDHDeliveryAddressView: PDHEditAddressViewDelegate {
     func editAddressViewBtnClicked(view: PDHEditAddressView) {
         editAddressView.removeFromSuperview()
     }
+
+    func overlayViewClicked(overlayView: PDHEditAddressView) {
+        overlayView.removeFromSuperview()
+    }
 }

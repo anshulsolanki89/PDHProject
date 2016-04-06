@@ -13,14 +13,14 @@ class PDHViewController: UIViewController {
         super.awakeFromNib()
     }
 
-    func showErrorAlert(message: String) {
+    func showAlert(message: String) {
         let alert = PDHErrorAlert.showErrorAlert(message)
         self.presentViewController(alert, animated: true) { () -> Void in
         }
     }
 
     func showFormFieldError() {
-        showErrorAlert("Please check the data entered by you, text field cannot be empty.")
+        showAlert("Please check the data entered by you, text field cannot be empty.")
     }
 }
 
@@ -29,14 +29,14 @@ extension PDHViewController: PDHDataManagerProtocol {
     func didReceiveDataWithError(response: AnyObject?) {
         PDHProgressIndicator.hideLoadingIndicator()
         if let response = response as? PDHErrorObject {
-            showErrorAlert(response.errorMessage)
+            showAlert(response.errorMessage)
         } else {
-            showErrorAlert("Something wrong happened, Please try after some time.")
+            showAlert("Something wrong happened, Please try after some time.")
         }
     }
     
     func didFailWithError(error: String) {
         PDHProgressIndicator.hideLoadingIndicator()
-        showErrorAlert(error)
+        showAlert(error)
     }
 }

@@ -11,17 +11,30 @@ import UIKit
 
 protocol PDHEditAddressViewDelegate: class {
     func editAddressViewBtnClicked(view: PDHEditAddressView)
+    func overlayViewClicked(overlayView: PDHEditAddressView)
 }
 
 class PDHEditAddressView: UIView {
     
     weak var delegate: PDHEditAddressViewDelegate?
     
+    @IBOutlet weak var mobileTextFIeld: PDHCustomTextField!
+    @IBOutlet weak var addressTextView: UITextView!
+
     override func awakeFromNib() {
         super.awakeFromNib()
+        let tapGesture = UITapGestureRecognizer(
+            target: self,
+            action: "overlayViewClicked:")
+        self.addGestureRecognizer(tapGesture)
     }
-    
+
+    func overlayViewClicked(tapGesture: UITapGestureRecognizer) {
+        delegate?.overlayViewClicked(self)
+    }
+
     @IBAction func doneBtnClicked(sender: UIButton) {
         delegate?.editAddressViewBtnClicked(self)
     }
+    
 }

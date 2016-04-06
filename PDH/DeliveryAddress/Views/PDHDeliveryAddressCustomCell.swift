@@ -16,14 +16,21 @@ protocol PDHDeliveryAddressCustomCellDelegate: class {
 }
 
 class PDHDeliveryAddressCustomCell: UITableViewCell {
-    
+
+    @IBOutlet weak var userName: UILabel!
+    @IBOutlet weak var userAddress: UILabel!
+
     weak var delegate: PDHDeliveryAddressCustomCellDelegate?
     var indexPath: NSIndexPath!
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
     }
-    
+
+    func setData(data: PDHUserAddressDataObject) {
+        
+    }
+
     @IBAction func selectAddressBtnClicked(sender: AnyObject) {
         delegate?.selectAddressBtnClicked(self, indexPath: indexPath)
     }
