@@ -27,4 +27,5 @@ enum ViewActions: Int {
     case AddAddress
     case EditAddress
     case DeleteAddress
+    case ChangeMenu
 }

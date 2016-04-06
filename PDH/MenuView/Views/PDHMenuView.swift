@@ -21,6 +21,10 @@ class PDHMenuView: PDHView {
     @IBAction func backBtnClicked(sender: AnyObject) {
         delegate?.viewDidPerformAction(ViewActions.Back, data: nil)
     }
+
+    @IBAction func chnageMenuAction(sender: UIButton) {
+        delegate?.viewDidPerformAction(.ChangeMenu, data: ["menu": sender.tag])
+    }
 }
 
 // MARK:- Private methods

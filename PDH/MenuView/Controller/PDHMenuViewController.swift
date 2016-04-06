@@ -131,6 +131,18 @@ extension PDHMenuViewController {
     private func createDishMenuVC() -> PDHDishMenuController {
         return self.storyboard?.instantiateViewControllerWithIdentifier("PDHDishMenuVC") as! PDHDishMenuController
     }
+
+    private func changeMenu(menuPos: Int) {
+        if menuPos != Int(currentPage) {
+            menuDishScrollView.scrollRectToVisible(CGRect(
+                x: (CGFloat(menuPos) * self.view.frame.size.width),
+                y: 0,
+                width: self.view.frame.size.width,
+                height: menuDishScrollView.frame.size.height),
+                animated: true)
+            currentPage += 1
+        }
+    }
 }
 
 // Mark:- PDHDataManagerProtocol
@@ -171,6 +183,8 @@ extension PDHMenuViewController: ViewActionDelegate {
         switch action {
         case .Back:
             navigationController!.popViewControllerAnimated(true)
+        case .ChangeMenu:
+            changeMenu(data!["menu"] as! Int)
         default:
             fatalError("\(self) Please handle switch case")
         }
