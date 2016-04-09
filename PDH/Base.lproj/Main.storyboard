@@ -34,11 +34,11 @@
             <string>Skia-Regular</string>
             <string>Skia-Regular</string>
             <string>Skia-Regular</string>
-            <string>Skia-Regular_Light</string>
+            <string>Skia-Regular</string>
             <string>Skia-Regular</string>
             <string>Skia-Regular_Light</string>
             <string>Skia-Regular</string>
-            <string>Skia-Regular_Light</string>
+            <string>Skia-Regular</string>
             <string>Skia-Regular</string>
             <string>Skia-Regular</string>
             <string>Skia-Regular</string>
@@ -975,10 +975,10 @@ App Store.</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rw6-4p-9tH" customClass="PDHCustomCurveView" customModule="PDH" customModuleProvider="target">
-                                <rect key="frame" x="20" y="189" width="280" height="190"/>
+                                <rect key="frame" x="20" y="184" width="280" height="200"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mvX-ST-382">
-                                        <rect key="frame" x="0.0" y="150" width="280" height="40"/>
+                                        <rect key="frame" x="0.0" y="160" width="280" height="40"/>
                                         <color key="backgroundColor" red="0.47450980390000003" green="0.81176470590000005" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="gkF-ht-7AS"/>
@@ -992,7 +992,7 @@ App Store.</string>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  SELECT QUANTITY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CCO-L7-Zfy">
-                                        <rect key="frame" x="0.0" y="0.0" width="280" height="30"/>
+                                        <rect key="frame" x="0.0" y="10" width="280" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="fjk-BF-QgY"/>
                                         </constraints>
@@ -1000,15 +1000,15 @@ App Store.</string>
                                         <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VXq-Qu-Dk1">
-                                        <rect key="frame" x="0.0" y="30" width="280" height="120"/>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VXq-Qu-Dk1">
+                                        <rect key="frame" x="0.0" y="40" width="280" height="120"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="44" selectionStyle="default" indentationWidth="10" reuseIdentifier="PDHSidesSelectCell" rowHeight="60" id="a37-kA-lP3">
                                                 <rect key="frame" x="0.0" y="28" width="280" height="60"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="60" tableViewCell="a37-kA-lP3" id="32s-ft-EIa">
-                                                    <rect key="frame" x="0.0" y="0.0" width="280" height="60"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="280" height="59.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Veg Salad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mGY-7k-4Si">
@@ -1028,7 +1028,7 @@ App Store.</string>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="30" id="twx-HD-hqf"/>
                                                                     </constraints>
-                                                                    <fontDescription key="fontDescription" name="Skia-Regular_Light" family="Skia" pointSize="14"/>
+                                                                    <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="12"/>
                                                                     <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
@@ -1102,12 +1102,12 @@ App Store.</string>
                                                 <rect key="frame" x="0.0" y="88" width="280" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Cd9-bl-zAl" id="dov-mx-bYD">
-                                                    <rect key="frame" x="0.0" y="0.0" width="280" height="44"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="280" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Half Rs 260/-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZGh-El-Ws0">
-                                                            <rect key="frame" x="8" y="14" width="156" height="16"/>
-                                                            <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="16"/>
+                                                            <rect key="frame" x="8" y="15" width="156" height="14"/>
+                                                            <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="14"/>
                                                             <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -1119,7 +1119,7 @@ App Store.</string>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="30" id="AOF-pU-EIE"/>
                                                                     </constraints>
-                                                                    <fontDescription key="fontDescription" name="Skia-Regular_Light" family="Skia" pointSize="14"/>
+                                                                    <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="12"/>
                                                                     <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
@@ -1210,11 +1210,11 @@ App Store.</string>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="VXq-Qu-Dk1" secondAttribute="trailing" id="GzA-rF-jAc"/>
                                     <constraint firstAttribute="trailing" secondItem="CCO-L7-Zfy" secondAttribute="trailing" id="Jeq-2S-U7F"/>
-                                    <constraint firstItem="CCO-L7-Zfy" firstAttribute="top" secondItem="rw6-4p-9tH" secondAttribute="top" id="M0j-XH-QtH"/>
-                                    <constraint firstAttribute="height" constant="190" id="VvE-Pm-GyG"/>
+                                    <constraint firstItem="CCO-L7-Zfy" firstAttribute="top" secondItem="rw6-4p-9tH" secondAttribute="top" constant="10" id="M0j-XH-QtH"/>
+                                    <constraint firstAttribute="height" constant="200" id="VvE-Pm-GyG"/>
                                     <constraint firstAttribute="trailing" secondItem="mvX-ST-382" secondAttribute="trailing" id="YtB-8u-vKI"/>
                                     <constraint firstItem="CCO-L7-Zfy" firstAttribute="leading" secondItem="rw6-4p-9tH" secondAttribute="leading" id="hak-Zg-GXM"/>
-                                    <constraint firstItem="VXq-Qu-Dk1" firstAttribute="top" secondItem="rw6-4p-9tH" secondAttribute="top" constant="30" id="hqA-xw-Og1"/>
+                                    <constraint firstItem="VXq-Qu-Dk1" firstAttribute="top" secondItem="rw6-4p-9tH" secondAttribute="top" constant="40" id="hqA-xw-Og1"/>
                                     <constraint firstAttribute="bottom" secondItem="mvX-ST-382" secondAttribute="bottom" id="hve-gt-czS"/>
                                     <constraint firstItem="mvX-ST-382" firstAttribute="top" secondItem="VXq-Qu-Dk1" secondAttribute="bottom" id="kxs-kE-pHx"/>
                                     <constraint firstItem="VXq-Qu-Dk1" firstAttribute="leading" secondItem="rw6-4p-9tH" secondAttribute="leading" id="rCK-Uq-iwX"/>
@@ -1239,6 +1239,13 @@ App Store.</string>
                         </connections>
                     </view>
                 </viewController>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Orq-b6-EcL" userLabel="BottomLine">
+                    <rect key="frame" x="0.0" y="0.0" width="264" height="1"/>
+                    <color key="backgroundColor" red="0.86666666670000003" green="0.86274509799999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Ebn-I2-6NR"/>
+                    </constraints>
+                </view>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AD4-hu-iPq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1201" y="1814"/>
