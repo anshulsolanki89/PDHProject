@@ -57,9 +57,9 @@ extension PDHMenuScreenController {
         
     }
     
-    private func addDishToOrderCart(dish: PDHDishDataObject) {
-        PDHDataManager.addDishToOrderCart(dish)
-    }
+    //private func addDishToOrderCart(dish: PDHDishDataObject) {
+    //    PDHDataManager.addDishToOrderCart(dish)
+    //}
 }
 
 // MARK:- ViewAction Protocol
@@ -69,7 +69,8 @@ extension PDHMenuScreenController: ViewActionDelegate {
         case .MenuBtnClciked:
             delegate?.toggleLeftPanel?()
         case .AddToOrder:
-            addDishToOrderCart(data!["dish"] as! PDHDishDataObject)
+            //addDishToOrderCart(data!["dish"] as! PDHDishDataObject)
+            break
         case .CategoryClicked:
             self.performSegueWithIdentifier("PDHMenuViewController", sender: nil)
         default:

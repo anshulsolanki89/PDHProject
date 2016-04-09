@@ -17,12 +17,12 @@ struct PDHConstantURL {
     static let DISH_OF_WEEK_URL = "http://bemisaal.in/restAppNew/api/menu/get.json?is_week_dish=1"
     
     //static let ADD_CART_ITEM = "http://bemisaal.in/cakephp3/api/cart/add.json"
-    static let ADD_CART_ITEM = "http://bemisaal.in/restAppNew/api/cart/add.json"
+    static let ADD_CART_ITEM_URL = "http://bemisaal.in/restAppNew/api/cart/add.json"
     /*
     {"uid":"user_id","menu_id":"menu id", "quantity":"dish quantity","size":"1|2","price":"unit price"}
     */
     //static let EDIT_CART_ITEM = "http://bemisaal.in/cakephp3/api/cart/edit.json"
-    static let EDIT_CART_ITEM = "http://bemisaal.in/restAppNew/api/cart/edit.json"
+    static let EDIT_CART_ITEM_URL = "http://bemisaal.in/restAppNew/api/cart/edit.json"
     /*
     {"uid":"user_id","menu_id":"menu id","":"cart id", "quantity":"dish quantity","size":"1|2","price":"unit price"}
     */

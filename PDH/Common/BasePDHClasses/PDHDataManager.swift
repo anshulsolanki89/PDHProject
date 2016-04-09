@@ -29,24 +29,4 @@ class PDHDataManager {
         
         return nil
     }
-    /*
-    {"uid":"user_id","menu_id":"menu id", "quantity":"dish quantity","size":"1|2","price":"unit price"}
-    */
-   
-    class func addDishToOrderCart(dish: PDHDishDataObject) {
-        let paramsDict: [String: AnyObject] =
-            ["uid": getUserData()!.email,
-            "menu_id": dish.id,
-            "quantity": dish.halfQuantity,
-            "size": "\(dish.halfQuantity)",
-            "price": dish.halfPrice]
-   
-        PDHNetworkManager.postRequesForURLWithJSON(PDHConstantURL.ADD_CART_ITEM,
-            params: paramsDict,
-            success: { (response) -> Void in
-                print("Response is \(response)")
-            }, failure: { (error) -> Void in
-                print("Error is \(error)")
-        })
-    }
 }

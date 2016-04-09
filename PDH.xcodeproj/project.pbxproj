@@ -100,6 +100,7 @@
 		E59E71991C36BCBF00BAF731 /* PDHOrderCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59E71981C36BCBF00BAF731 /* PDHOrderCart.swift */; };
 		E59E719B1C36C40A00BAF731 /* PDHQuantitySelectorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59E719A1C36C40A00BAF731 /* PDHQuantitySelectorCell.swift */; };
 		E59E719D1C36C43C00BAF731 /* PDHQuantitySelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59E719C1C36C43C00BAF731 /* PDHQuantitySelectorView.swift */; };
+		E5A4F7FA1CB92452000A0566 /* PDHOrderCartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A4F7F91CB92452000A0566 /* PDHOrderCartManager.swift */; settings = {ASSET_TAGS = (); }; };
 		E5B4D40A1CB3FDC100A6BC8F /* PDHCustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B4D4091CB3FDC100A6BC8F /* PDHCustomTextField.swift */; settings = {ASSET_TAGS = (); }; };
 		E5C721FB1C2DB6E0005FAFD4 /* PDHCurrentOrderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C721FA1C2DB6E0005FAFD4 /* PDHCurrentOrderController.swift */; };
 		E5C721FD1C2DB6F2005FAFD4 /* PDHCurrentOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C721FC1C2DB6F2005FAFD4 /* PDHCurrentOrderView.swift */; };
@@ -214,6 +215,7 @@
 		E59E71981C36BCBF00BAF731 /* PDHOrderCart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHOrderCart.swift; sourceTree = "<group>"; };
 		E59E719A1C36C40A00BAF731 /* PDHQuantitySelectorCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHQuantitySelectorCell.swift; sourceTree = "<group>"; };
 		E59E719C1C36C43C00BAF731 /* PDHQuantitySelectorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHQuantitySelectorView.swift; sourceTree = "<group>"; };
+		E5A4F7F91CB92452000A0566 /* PDHOrderCartManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHOrderCartManager.swift; sourceTree = "<group>"; };
 		E5B4D4091CB3FDC100A6BC8F /* PDHCustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHCustomTextField.swift; sourceTree = "<group>"; };
 		E5C721FA1C2DB6E0005FAFD4 /* PDHCurrentOrderController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHCurrentOrderController.swift; sourceTree = "<group>"; };
 		E5C721FC1C2DB6F2005FAFD4 /* PDHCurrentOrderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHCurrentOrderView.swift; sourceTree = "<group>"; };
@@ -880,6 +882,7 @@
 			children = (
 				E5E004481C2EF5530082EED6 /* PDHConstantURL.swift */,
 				E59E71981C36BCBF00BAF731 /* PDHOrderCart.swift */,
+				E5A4F7F91CB92452000A0566 /* PDHOrderCartManager.swift */,
 			);
 			path = Global;
 			sourceTree = "<group>";
@@ -1150,6 +1153,7 @@
 				E57C3F2A1CB0F457009615B4 /* PDHAddressDataManager.swift in Sources */,
 				E59E71991C36BCBF00BAF731 /* PDHOrderCart.swift in Sources */,
 				E5F44F3F1C32F7BD0047B18D /* PDHMenuDataParser.swift in Sources */,
+				E5A4F7FA1CB92452000A0566 /* PDHOrderCartManager.swift in Sources */,
 				E56B6D8D1C173F47003E8E26 /* PDHMenuView.swift in Sources */,
 				E5DF0ED81C2C53360042300F /* PDHAddressBookViewController.swift in Sources */,
 				E53AB4F01C2FD7FC000E6F07 /* PDHProgressIndicator.swift in Sources */,

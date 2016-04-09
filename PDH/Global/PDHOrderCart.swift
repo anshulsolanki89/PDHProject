@@ -11,8 +11,9 @@ import Foundation
 class PDHOrderCart {
     static let pdhCart = PDHOrderCart()
     
-    var orderedDishes = [PDHDishDataObject]()
-    
+    private var orderedDishes = [PDHDishDataObject]()
+    private var orderCartManager = PDHOrderCartManager()
+
     private init() {}
     
     func checkDishExists(dishTitle: String) -> Bool {
@@ -28,8 +29,10 @@ class PDHOrderCart {
     func addDishToOrder(dish: PDHDishDataObject) {
         if !orderedDishes.contains(dish) && ((dish.halfQuantity + dish.fullQuantity) > 0) {
             orderedDishes.append(dish)
+            addDishToCart(dish)
         } else if orderedDishes.contains(dish) && ((dish.halfQuantity + dish.fullQuantity) == 0){
             orderedDishes.removeAtIndex(orderedDishes.indexOf(dish)!)
+            editDishFromCart(dish)
         }
     }
 
@@ -50,5 +53,47 @@ class PDHOrderCart {
         }
         return totalDishes
     }
+}
 
+// MARK:- Private
+extension PDHOrderCart {
+    private func addDishToCart(dish: PDHDishDataObject) {
+        if dish.fullQuantity > 0 {
+            let dish =
+                ["uid" : PDHDataManager.getUserData()!.email,
+                "menu_id" : dish.id,
+                "quantity" : dish.fullQuantity,
+                "size" : "1",
+                "price" : dish.fullPrice]
+            orderCartManager.addItemToCart(dish as! [String : AnyObject])
+        }
+
+        if dish.halfQuantity > 0 {
+            let dish =
+                ["uid" : PDHDataManager.getUserData()!.email,
+                "menu_id" : dish.id,
+                "quantity" : dish.halfQuantity,
+                "size" : "1",
+                "price" : dish.halfPrice]
+            orderCartManager.addItemToCart(dish as! [String : AnyObject])
+        }
+    }
+
+    private func editDishFromCart(dish: PDHDishDataObject) {
+        let fullDish =
+            ["uid" : PDHDataManager.getUserData()!.email,
+            "menu_id" : dish.id,
+            "quantity" : dish.fullQuantity,
+            "size" : "1",
+            "price" : dish.fullPrice]
+        orderCartManager.editItemInCart(fullDish as! [String : AnyObject])
+
+        let halfDish =
+            ["uid" : PDHDataManager.getUserData()!.email,
+            "menu_id" : dish.id,
+            "quantity" : dish.halfQuantity,
+            "size" : "1",
+            "price" : dish.halfPrice]
+        orderCartManager.editItemInCart(halfDish as! [String : AnyObject])
+    }
 }

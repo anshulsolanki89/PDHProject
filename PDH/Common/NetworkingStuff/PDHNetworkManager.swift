@@ -23,15 +23,12 @@ class PDHNetworkManager: NSObject {
             parameters: params,
             progress: nil,
             success: { (sessionDataTask, responseObj) -> Void in
-                print("\(responseObj)")
                 if let responseObj = responseObj {
                     success(response: responseObj)
                 } else {
                     success(response: nil)
                 }
             }, failure: { (sessionDataTask, error) -> Void in
-                print("\(error)")
-                
                 failure(error: error)
         })
     }
@@ -52,14 +49,12 @@ class PDHNetworkManager: NSObject {
             parameters: params,
             progress: nil,
             success: { (sessionDataTask, responseObj) -> Void in
-                print("\(responseObj)")
                 if let responseObj = responseObj {
                     success(response: responseObj)
                 } else {
                     success(response: nil)
                 }
             }, failure: { (sessionDataTask, error) -> Void in
-                print("\(sessionDataTask?.response)")
                 failure(error: error)
         })
     }
