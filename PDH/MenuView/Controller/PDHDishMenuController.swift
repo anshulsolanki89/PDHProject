@@ -23,7 +23,12 @@ class PDHDishMenuController: UIViewController, ViewActionDelegate {
         dishListView = self.view as! PDHDishSearchTableView
         dishListView.delegate = self
     }
-    
+
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+
+    }
+
     func viewDidPerformAction(action: ViewActions, data: [String: AnyObject]?) {
         switch action {
         case .AddToOrder:

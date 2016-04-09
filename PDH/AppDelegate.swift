@@ -21,14 +21,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
 
-        //if PDHDataManager.getUserData() != nil {
-        //    let menuViewController =
-        //        UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("menuScreen")
-        //    let rootViewController = UINavigationController(rootViewController: menuViewController)
-        //    rootViewController.navigationBarHidden = false
-        //    window!.rootViewController = rootViewController
-        //    window!.makeKeyAndVisible()
-        //}
+        if PDHDataManager.getUserData() != nil {
+            let menuViewController =
+                UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("menuScreen")
+            let rootViewController = UINavigationController(rootViewController: menuViewController)
+            rootViewController.navigationBarHidden = true
+            window!.rootViewController = rootViewController
+            window!.makeKeyAndVisible()
+        }
 
         customDishCartView = PDHCustomDishCartView.instanceFromNib() as? PDHCustomDishCartView
         customDishCartView!.frame =

@@ -133,7 +133,7 @@ extension PDHAddressBookView: PDHEditAddressViewDelegate {
         addressDict["locality"] = userAddresses[editIndexPath.row].locality
         addressDict["pincode"] = userAddresses[editIndexPath.row].pincode
         addressDict["mobile"] = view.mobileTextFIeld.text!
-        delegate?.viewDidPerformAction(ViewActions.EditAddress, data: <#T##[String : AnyObject]?#>)
+//        delegate?.viewDidPerformAction(ViewActions.EditAddress, data: <#T##[String : AnyObject]?#>)
         editAddressView.removeFromSuperview()
     }
 

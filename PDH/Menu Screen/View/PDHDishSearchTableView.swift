@@ -9,6 +9,9 @@
 import Foundation
 import UIKit
 
+let ADD_TO_ORDER_VIEW = "addToOrderView"
+let REMOVE_ORDER_VIEW = "removeOrderView"
+
 class PDHDishSearchTableView: PDHView {
 
     @IBOutlet weak var dishTableView: UITableView!
@@ -20,20 +23,93 @@ class PDHDishSearchTableView: PDHView {
     private var nonVegData = [PDHNonVegDishDataObject]()
 
     private var dishData = [PDHDishDataObject]()
+    private var addToOrderView: PDHQuantitySelectorView!
+    private var dishSelected: PDHDishDataObject!
+    private var selectedDishIndexPath: NSIndexPath!
+
     override func awakeFromNib() {
         super.awakeFromNib()
     }
 
     func updateData(data: [PDHDishDataObject]) {
         dishData = data
+        refreshData()
+    }
+
+    func refreshData() {
         dishTableView.reloadData()
+    }
+}
+
+// MARK:- Private
+extension PDHDishSearchTableView {
+    private func createAddToOrderView() {
+        let sb = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
+        let quantitySelectorVC = sb.instantiateViewControllerWithIdentifier("PDHQuantiySelectVC")
+        addToOrderView = (quantitySelectorVC.view as! PDHQuantitySelectorView)
+        addToOrderView.delegate = self
+    }
+
+    private func showAddToOrderView() {
+        addToOrderView.updateDishQuantity(dishSelected)
+        NSNotificationCenter.defaultCenter().postNotificationName(
+            ADD_TO_ORDER_VIEW,
+            object: [ADD_TO_ORDER_VIEW : addToOrderView])
+    }
+
+    private func updateSelectedDishQuantity(cell: PDHDishCustomCell, selectedDish: PDHDishDataObject! ) {
+        guard nil != selectedDish else {
+            return
+        }
+
+        if (selectedDish.fullQuantity + selectedDish.halfQuantity) == 0 {
+            cell.dishQuantityLabel.hidden = true
+            cell.addToOrderBtn.backgroundColor = UIColor.clearColor()
+            cell.addToOrderBtn.layer.borderColor = UIColor.rgb(121, g: 207, b: 63, α: 1).CGColor
+            cell.addToOrderBtn.setTitleColor(UIColor.rgb(255, g: 196, b: 18, α: 1),
+                forState: .Normal)
+            cell.addToOrderBtn.setTitle("Add to order", forState: .Normal)
+        } else {
+            cell.dishQuantityLabel.hidden = false
+            cell.addToOrderBtn.backgroundColor = UIColor.rgb(121, g: 207, b: 63, α: 1)
+            cell.addToOrderBtn.layer.borderColor = UIColor.rgb(121, g: 207, b: 63, α: 1).CGColor
+            cell.addToOrderBtn.clipsToBounds = true
+            cell.addToOrderBtn.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+            cell.addToOrderBtn.setTitle("Modify", forState: .Normal)
+            cell.dishQuantityLabel.text =
+                String(selectedDish.fullQuantity + selectedDish.halfQuantity)
+        }
+    }
+
+}
+
+// MARK: PDHQuantitySelectorViewDelegate
+extension PDHDishSearchTableView: PDHQuantitySelectorViewDelegate {
+    func quantitySelectorViewClicked() {
+        delegate?.viewDidPerformAction(ViewActions.AddToOrder, data:["dish" : dishSelected])
+        NSNotificationCenter.defaultCenter().postNotificationName(
+            DISH_QUANTITY_CHANGED_NOTIFICATION,
+            object: [SELECTED_DISH : dishSelected])
+        refreshData()
+        NSNotificationCenter.defaultCenter().postNotificationName(
+            REMOVE_ORDER_VIEW,
+            object: [REMOVE_ORDER_VIEW : addToOrderView])
+    }
+
+    func dismissQuantitySelectorView() {
+        NSNotificationCenter.defaultCenter().postNotificationName(
+            REMOVE_ORDER_VIEW,
+            object: [REMOVE_ORDER_VIEW : addToOrderView])
     }
 }
 
 // MARK:- PDHCustomCellDelegate
 extension PDHDishSearchTableView: PDHCustomCellDelegate {
     func addToOrderButtonClicked(btn: PDHDishCustomCell, atIndex index: Int) {
-        delegate?.viewDidPerformAction(ViewActions.AddToOrder, data: nil)
+        selectedDishIndexPath = NSIndexPath(forItem: index, inSection: 0)
+        dishSelected = dishData[index]
+        createAddToOrderView()
+        showAddToOrderView()
     }
 }
 
@@ -59,6 +135,8 @@ extension PDHDishSearchTableView: UITableViewDataSource {
             + "Full Rs " + dishData[indexPath.row].fullPrice
         cell.delegate = self
         cell.tag = indexPath.row
+        updateSelectedDishQuantity(cell, selectedDish: dishData[indexPath.row])
+
         return cell
     }
 }

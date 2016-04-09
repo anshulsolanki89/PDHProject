@@ -45,9 +45,18 @@ class PDHMenuViewController: PDHViewController {
         menuDataManager.getDishMenu()
         menuDishScrollView.showsHorizontalScrollIndicator = false
         menuDishScrollView.showsVerticalScrollIndicator = false
+
+        NSNotificationCenter.defaultCenter().addObserver(self,
+            selector: "addOrderView:",
+            name: ADD_TO_ORDER_VIEW,
+            object: nil)
+
+        NSNotificationCenter.defaultCenter().addObserver(self,
+            selector: "removeOrderView:",
+            name: REMOVE_ORDER_VIEW,
+            object: nil)
     }
-    
-    
+
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         menuDishScrollView.contentSize = CGSize(
@@ -87,6 +96,18 @@ class PDHMenuViewController: PDHViewController {
     
     deinit {
         print("\(self) DEALLOCATED")
+        NSNotificationCenter.defaultCenter().removeObserver(self, name: ADD_TO_ORDER_VIEW, object: nil)
+        NSNotificationCenter.defaultCenter().removeObserver(self, name: REMOVE_ORDER_VIEW, object: nil)
+    }
+
+    func addOrderView(notification: NSNotification) {
+        let orderView = notification.object![ADD_TO_ORDER_VIEW]
+        self.view.addSubview(orderView as! UIView)
+    }
+
+    func removeOrderView(notification: NSNotification) {
+        let orderView = notification.object![REMOVE_ORDER_VIEW]
+        (orderView as! UIView).removeFromSuperview()
     }
 }
 
@@ -132,15 +153,29 @@ extension PDHMenuViewController {
         return self.storyboard?.instantiateViewControllerWithIdentifier("PDHDishMenuVC") as! PDHDishMenuController
     }
 
+    private func refreshPageData(page: Int) {
+        switch page {
+        case 1:
+            (mixDishVC!.view as! PDHDishSearchTableView).refreshData()
+        case 2:
+            (vegDishVC!.view as! PDHDishSearchTableView).refreshData()
+        case 3:
+            (nonVegDishVC!.view as! PDHDishSearchTableView).refreshData()
+        default:
+            break
+        }
+    }
+
     private func changeMenu(menuPos: Int) {
         if menuPos != Int(currentPage) {
             menuDishScrollView.scrollRectToVisible(CGRect(
-                x: (CGFloat(menuPos) * self.view.frame.size.width),
+                x: (CGFloat(menuPos - 1) * self.view.frame.size.width),
                 y: 0,
                 width: self.view.frame.size.width,
                 height: menuDishScrollView.frame.size.height),
                 animated: true)
             currentPage += 1
+            refreshPageData(menuPos)
         }
     }
 }
@@ -198,6 +233,7 @@ extension PDHMenuViewController: UIScrollViewDelegate {
         targetContentOffset: UnsafeMutablePointer<CGPoint>) {
         let currentOffset = floor(targetContentOffset.memory.x / menuDishScrollView.frame.size.width)
         currentPage = (currentOffset + 1)
+        refreshPageData(Int(currentPage))
     }
     
     func scrollViewDidScroll(scrollView: UIScrollView) {

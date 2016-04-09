@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 protocol PDHCustomCellDelegate: class {
-    func addToOrderButtonClicked(btn: PDHDishCustomCell, atIndex index: Int)
+    func addToOrderButtonClicked(cell: PDHDishCustomCell, atIndex index: Int)
 }
 
 class PDHDishCustomCell: UITableViewCell {
@@ -18,6 +18,8 @@ class PDHDishCustomCell: UITableViewCell {
     
     @IBOutlet weak var dishNameLabel: UILabel!
     @IBOutlet weak var quantityPriceLabel: UILabel!
+    @IBOutlet weak var dishQuantityLabel: UILabel!
+    @IBOutlet weak var addToOrderBtn: UIButton!
 
     @IBAction func addToOrderBtnClicked(sender: AnyObject) {
         delegate?.addToOrderButtonClicked(self, atIndex: self.tag)

@@ -597,7 +597,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mjl-ii-shh">
                                 <rect key="frame" x="0.0" y="108" width="320" height="44"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="107" placeholderIntrinsicHeight="44" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nen-Bh-joO">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" placeholderIntrinsicWidth="107" placeholderIntrinsicHeight="44" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nen-Bh-joO">
                                         <rect key="frame" x="0.0" y="0.0" width="107" height="44"/>
                                         <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="14"/>
                                         <state key="normal" title="All">
@@ -607,7 +607,7 @@
                                             <action selector="chnageMenuAction:" destination="F96-lK-oRl" eventType="touchUpInside" id="ifh-vd-jgS"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="2" contentMode="scaleToFill" placeholderIntrinsicWidth="107" placeholderIntrinsicHeight="44" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HzP-bb-oo0">
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" placeholderIntrinsicWidth="107" placeholderIntrinsicHeight="44" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HzP-bb-oo0">
                                         <rect key="frame" x="213" y="0.0" width="107" height="44"/>
                                         <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="14"/>
                                         <state key="normal" title="Non-Veg">
@@ -617,7 +617,7 @@
                                             <action selector="chnageMenuAction:" destination="F96-lK-oRl" eventType="touchUpInside" id="2nW-Vf-MpU"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="1" contentMode="scaleToFill" placeholderIntrinsicWidth="107" placeholderIntrinsicHeight="44" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gbl-8L-5jb">
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" placeholderIntrinsicWidth="107" placeholderIntrinsicHeight="44" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gbl-8L-5jb">
                                         <rect key="frame" x="106" y="0.0" width="107" height="44"/>
                                         <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="14"/>
                                         <state key="normal" title="Veg">
@@ -1979,7 +1979,9 @@ App Store.</string>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
+                                            <outlet property="addToOrderBtn" destination="DEP-j4-oU4" id="793-SQ-1jw"/>
                                             <outlet property="dishNameLabel" destination="IX0-p5-2JQ" id="xfK-Y1-55y"/>
+                                            <outlet property="dishQuantityLabel" destination="XmX-M6-ehI" id="Gps-fh-80C"/>
                                             <outlet property="quantityPriceLabel" destination="z96-Be-AUT" id="dY6-XE-7v3"/>
                                         </connections>
                                     </tableViewCell>
