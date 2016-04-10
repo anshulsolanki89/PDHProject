@@ -28,7 +28,7 @@ class PDHMenuScreenView: PDHView {
     @IBOutlet weak var dishQuantityLabel: PDHCustomCircleLabel!
 
     private var overlayView: PDHOverlayView!
-    private var addToOrderView: PDHQuantitySelectorView!
+    var addToOrderView: PDHQuantitySelectorView!
     
     private var dishOfWeek: PDHDishDataObject!
     
@@ -120,7 +120,7 @@ extension PDHMenuScreenView: UICollectionViewDataSource {
 extension PDHMenuScreenView: UICollectionViewDelegate {
     func collectionView(collectionView: UICollectionView,
         didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        self.delegate?.viewDidPerformAction(ViewActions.CategoryClicked, data: nil)
+            self.delegate?.viewDidPerformAction(ViewActions.CategoryClicked, data: ["categoryName" : dataArray[indexPath.row].dishCategory])
     }
 }
 
@@ -164,15 +164,17 @@ extension PDHMenuScreenView {
         overlayView.delegate = self
     }
     
-    private func createAddToOrderView() {
+    func createAddToOrderView() {
         let sb = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
         let quantitySelectorVC = sb.instantiateViewControllerWithIdentifier("PDHQuantiySelectVC")
         addToOrderView = (quantitySelectorVC.view as! PDHQuantitySelectorView)
+        addToOrderView.layoutSubviews()
         addToOrderView.delegate = self
     }
     
     private func showAddToOrderView() {
         addToOrderView.updateDishQuantity(dishOfWeek)
+        self.delegate?.viewDidPerformAction(ViewActions.AddToOrder, data: nil)
         self.addSubview(addToOrderView!)
     }
     

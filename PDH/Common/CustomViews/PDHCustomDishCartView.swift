@@ -22,13 +22,11 @@ class PDHCustomDishCartView: UIView {
         super.awakeFromNib()
     }
 
-//    override init(frame: CGRect) {
-//        super.init(frame: frame)
-//    }
-//
-//    required init?(coder aDecoder: NSCoder) {
-//        super.init(coder: aDecoder)
-//    }
+    @IBAction func cartButtonClicked(sender: AnyObject) {
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let topMostViewController = appDelegate.window?.rootViewController?.childViewControllers[0]
+        topMostViewController?.performSegueWithIdentifier("PDHCurrentOrderController", sender: nil)
+    }
 
     func changeQuantity(quantity: Int) {
         dishCount.text = String(quantity) + " dishes in your order"

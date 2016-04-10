@@ -30,12 +30,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             window!.makeKeyAndVisible()
         }
 
-        customDishCartView = PDHCustomDishCartView.instanceFromNib() as? PDHCustomDishCartView
-        customDishCartView!.frame =
-            CGRect(x: 0,
-                y: (window!.frame.size.height - 73),
-                width: window!.frame.size.width,
-                height: 73)
+        createCustomDishCartView()
+
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
 
         NSNotificationCenter.defaultCenter().addObserver(
@@ -47,13 +43,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 
+    private func createCustomDishCartView() {
+        customDishCartView = PDHCustomDishCartView.instanceFromNib() as? PDHCustomDishCartView
+        customDishCartView!.frame =
+            CGRect(x: 0,
+                y: (window!.rootViewController!.view.frame.size.height - 73),
+                width: window!.rootViewController!.view.frame.size.width,
+                height: 73)
+    }
+
     func dishQuantityChanged(notification: NSNotification) {
         let selectedDish = notification.object![SELECTED_DISH] as! PDHDishDataObject
         PDHOrderCart.pdhCart.addDishToOrder(selectedDish)
         if PDHOrderCart.pdhCart.totalDishes() > 0 {
             self.customDishCartView!.changeQuantity(PDHOrderCart.pdhCart.totalDishes())
             self.customDishCartView!.changeTotalPrice(PDHOrderCart.pdhCart.totalPrice())
-            self.window!.addSubview(self.customDishCartView!)
+            self.window!.rootViewController!.view.addSubview(self.customDishCartView!)
         } else {
             self.customDishCartView!.removeFromSuperview()
         }

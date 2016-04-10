@@ -11,7 +11,8 @@ import UIKit
 
 class PDHMenuView: PDHView {
 
-    @IBOutlet var dishSearchBar: UISearchBar!
+    @IBOutlet weak var dishSearchBar: UISearchBar!
+    @IBOutlet weak var screenTitle: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

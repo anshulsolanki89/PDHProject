@@ -691,6 +691,7 @@
                         </constraints>
                         <connections>
                             <outlet property="dishSearchBar" destination="g7M-vU-g0q" id="bxj-J5-opI"/>
+                            <outlet property="screenTitle" destination="uQ6-zd-qOI" id="TtQ-ag-gwG"/>
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" id="oA8-8u-qOm"/>
@@ -827,7 +828,7 @@ App Store.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y6f-7x-uLW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="772" y="1492"/>
+            <point key="canvasLocation" x="772" y="1469"/>
         </scene>
         <!--OrderHistoryVC-->
         <scene sceneID="zTi-DV-UGH">
@@ -960,7 +961,7 @@ App Store.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FbG-kR-S3l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1645" y="483"/>
+            <point key="canvasLocation" x="1630" y="390"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="BeO-ji-Ept">
@@ -1000,7 +1001,7 @@ App Store.</string>
                                         <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VXq-Qu-Dk1">
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VXq-Qu-Dk1">
                                         <rect key="frame" x="0.0" y="40" width="280" height="120"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <prototypes>
@@ -1008,7 +1009,7 @@ App Store.</string>
                                                 <rect key="frame" x="0.0" y="28" width="280" height="60"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="60" tableViewCell="a37-kA-lP3" id="32s-ft-EIa">
-                                                    <rect key="frame" x="0.0" y="0.0" width="280" height="59.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="280" height="60"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Veg Salad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mGY-7k-4Si">
@@ -1102,7 +1103,7 @@ App Store.</string>
                                                 <rect key="frame" x="0.0" y="88" width="280" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Cd9-bl-zAl" id="dov-mx-bYD">
-                                                    <rect key="frame" x="0.0" y="0.0" width="280" height="43.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="280" height="44"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Half Rs 260/-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZGh-El-Ws0">
@@ -1226,13 +1227,33 @@ App Store.</string>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cxr-W2-Rqn" userLabel="BottomButton">
+                                <rect key="frame" x="0.0" y="384" width="320" height="184"/>
+                                <connections>
+                                    <action selector="dismissQuantitySelectorView:" destination="sn2-wn-aEi" eventType="touchUpInside" id="GaT-Ib-f4K"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wrF-oe-sHW" userLabel="TopButton">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="184"/>
+                                <connections>
+                                    <action selector="dismissQuantitySelectorView:" destination="sn2-wn-aEi" eventType="touchUpInside" id="JFs-L6-26K"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.75" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="wrF-oe-sHW" firstAttribute="top" secondItem="sn2-wn-aEi" secondAttribute="top" id="5An-zC-jSh"/>
+                            <constraint firstItem="rw6-4p-9tH" firstAttribute="top" secondItem="wrF-oe-sHW" secondAttribute="bottom" id="7HT-U5-hop"/>
+                            <constraint firstItem="wrF-oe-sHW" firstAttribute="leading" secondItem="sn2-wn-aEi" secondAttribute="leading" id="9Sm-kW-kMv"/>
+                            <constraint firstAttribute="trailing" secondItem="wrF-oe-sHW" secondAttribute="trailing" id="AMa-XU-dla"/>
+                            <constraint firstItem="wrF-oe-sHW" firstAttribute="height" secondItem="cxr-W2-Rqn" secondAttribute="height" id="PE3-YU-iqM"/>
                             <constraint firstItem="rw6-4p-9tH" firstAttribute="centerX" secondItem="sn2-wn-aEi" secondAttribute="centerX" id="ZAs-PU-VAi"/>
+                            <constraint firstItem="cxr-W2-Rqn" firstAttribute="top" secondItem="rw6-4p-9tH" secondAttribute="bottom" id="f7w-xn-ljH"/>
+                            <constraint firstItem="cxr-W2-Rqn" firstAttribute="leading" secondItem="sn2-wn-aEi" secondAttribute="leading" id="gIv-uZ-Ryw"/>
                             <constraint firstItem="rw6-4p-9tH" firstAttribute="leading" secondItem="sn2-wn-aEi" secondAttribute="leading" constant="20" id="j3P-FH-d5h"/>
                             <constraint firstItem="rw6-4p-9tH" firstAttribute="centerY" secondItem="sn2-wn-aEi" secondAttribute="centerY" id="ktS-Ln-cYG"/>
+                            <constraint firstAttribute="trailing" secondItem="cxr-W2-Rqn" secondAttribute="trailing" id="niV-z1-3Jc"/>
                         </constraints>
                         <connections>
                             <outlet property="addToOrderTableView" destination="VXq-Qu-Dk1" id="UCB-Ds-0yM"/>
@@ -1754,6 +1775,9 @@ App Store.</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="iyZ-qp-k8z"/>
+                    <connections>
+                        <segue destination="e5B-Pk-aej" kind="push" identifier="PDHCurrentOrderController" id="16x-pK-8pj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fna-GW-0U2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2677,7 +2701,7 @@ Mob No - 9999912345</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3DE-z6-UZw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1598" y="1077"/>
+            <point key="canvasLocation" x="1641" y="1814"/>
         </scene>
         <!--AddressBookViewController-->
         <scene sceneID="XaW-vI-Ldr">
@@ -3143,12 +3167,12 @@ Amritsar, Punjab 143001
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0wY-fB-jYh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1943" y="1916"/>
+            <point key="canvasLocation" x="2086" y="1814"/>
         </scene>
         <!--Current Order Controller-->
         <scene sceneID="t4J-q8-M96">
             <objects>
-                <viewController id="e5B-Pk-aej" customClass="PDHCurrentOrderController" customModule="PDH" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PDHCurrentOrderController" id="e5B-Pk-aej" customClass="PDHCurrentOrderController" customModule="PDH" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0JU-8l-QXi"/>
                         <viewControllerLayoutGuide type="bottom" id="sSU-3l-Zvo"/>
@@ -3536,10 +3560,11 @@ Amritsar, Punjab 143001
                             <constraint firstItem="rQd-mW-qeU" firstAttribute="top" secondItem="DYw-8p-jkG" secondAttribute="bottom" id="yuq-lG-M7j"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="KdP-lc-KBf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oyE-eY-42h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2368" y="1916"/>
+            <point key="canvasLocation" x="772" y="817"/>
         </scene>
         <!--ProfileViewController-->
         <scene sceneID="756-il-XDR">

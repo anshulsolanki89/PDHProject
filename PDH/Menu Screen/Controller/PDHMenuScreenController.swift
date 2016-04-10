@@ -36,7 +36,14 @@ class PDHMenuScreenController: PDHViewController {
         menuDataManager.getDishOfWeek()
         menuDataManager.getRestaurantMenu()
     }
-    
+
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "PDHMenuViewController" {
+            (segue.destinationViewController as! PDHMenuViewController).screenTitle
+                = sender as! String
+        }
+    }
+
     deinit {
         print("\(self) DEALLOCATED")
     }
@@ -69,10 +76,10 @@ extension PDHMenuScreenController: ViewActionDelegate {
         case .MenuBtnClciked:
             delegate?.toggleLeftPanel?()
         case .AddToOrder:
-            //addDishToOrderCart(data!["dish"] as! PDHDishDataObject)
+//            showAddToOrderView()
             break
         case .CategoryClicked:
-            self.performSegueWithIdentifier("PDHMenuViewController", sender: nil)
+            self.performSegueWithIdentifier("PDHMenuViewController", sender: data!["categoryName"])
         default:
             print("Default Implementation")
         }
@@ -83,6 +90,7 @@ extension PDHMenuScreenController: ViewActionDelegate {
             PDHProgressIndicator.hideLoadingIndicator()
         }
     }
+
 }
 
 // MARK:- DataManager Protocol

@@ -25,13 +25,9 @@ class PDHQuantitySelectorView: UIView, UITableViewDataSource, UITableViewDelegat
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        let tapGesture = UITapGestureRecognizer(
-            target: self,
-            action: "dismissQuantitySelectorView:")
-        self.addGestureRecognizer(tapGesture)
     }
 
-    func dismissQuantitySelectorView(tapGesture: UITapGestureRecognizer) {
+    @IBAction func dismissQuantitySelectorView(sender: UIButton) {
         delegate?.dismissQuantitySelectorView()
     }
 

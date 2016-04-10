@@ -121,15 +121,25 @@
                     <color key="textColor" red="0.68235294117647061" green="0.68235294117647061" blue="0.68235294117647061" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vpE-t8-Wbc">
+                    <rect key="frame" x="0.0" y="20" width="320" height="53"/>
+                    <connections>
+                        <action selector="cartButtonClicked:" destination="nm2-dm-7f4" eventType="touchUpInside" id="Rch-aM-Arr"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="vpE-t8-Wbc" firstAttribute="top" secondItem="nm2-dm-7f4" secondAttribute="top" constant="20" id="0Zz-Jb-UFT"/>
                 <constraint firstItem="gDu-Ud-Zbh" firstAttribute="top" secondItem="nm2-dm-7f4" secondAttribute="top" id="6qN-PR-3oj"/>
                 <constraint firstAttribute="trailing" secondItem="0OD-ve-H4J" secondAttribute="trailing" id="8iC-f6-Zbv"/>
                 <constraint firstAttribute="bottom" secondItem="0OD-ve-H4J" secondAttribute="bottom" id="FvO-iq-Kvb"/>
                 <constraint firstItem="gDu-Ud-Zbh" firstAttribute="centerX" secondItem="nm2-dm-7f4" secondAttribute="centerX" id="GfT-n6-g7x"/>
                 <constraint firstItem="goO-hR-pq1" firstAttribute="centerX" secondItem="0OD-ve-H4J" secondAttribute="centerX" id="O9V-lK-bhB"/>
+                <constraint firstAttribute="trailing" secondItem="vpE-t8-Wbc" secondAttribute="trailing" id="aUX-Yv-a4g"/>
+                <constraint firstItem="vpE-t8-Wbc" firstAttribute="leading" secondItem="nm2-dm-7f4" secondAttribute="leading" id="m0F-4c-wXj"/>
                 <constraint firstItem="goO-hR-pq1" firstAttribute="leading" secondItem="nm2-dm-7f4" secondAttribute="leading" constant="8" id="mAC-EH-9ct"/>
+                <constraint firstAttribute="bottom" secondItem="vpE-t8-Wbc" secondAttribute="bottom" id="nTV-bg-SYr"/>
                 <constraint firstItem="0OD-ve-H4J" firstAttribute="leading" secondItem="nm2-dm-7f4" secondAttribute="leading" id="rka-18-EkX"/>
                 <constraint firstItem="0OD-ve-H4J" firstAttribute="top" secondItem="nm2-dm-7f4" secondAttribute="top" constant="20" id="sub-MG-u1u"/>
                 <constraint firstItem="goO-hR-pq1" firstAttribute="centerY" secondItem="0OD-ve-H4J" secondAttribute="centerY" id="vxE-Zu-Yaw"/>

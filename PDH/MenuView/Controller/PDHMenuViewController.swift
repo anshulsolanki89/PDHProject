@@ -13,6 +13,8 @@ class PDHMenuViewController: PDHViewController {
     
     @IBOutlet weak var bottomView: UIView!
     @IBOutlet weak var menuDishScrollView: UIScrollView!
+
+    var screenTitle: String!
     private var menuDataManager: PDHMenuDataManager!
     private var dishData = [PDHDishDataObject]()
 
@@ -34,11 +36,15 @@ class PDHMenuViewController: PDHViewController {
    
     var pageViewController: UIPageViewController!
     var pageViewContentArray :[PDHDishMenuController]!
-    
+
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        (self.view as! PDHMenuView).screenTitle.text = screenTitle
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         (self.view as! PDHMenuView).delegate = self
-
         PDHProgressIndicator.showLoadingIndicator(self.view)
 
         initializeDataManager()
