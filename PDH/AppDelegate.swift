@@ -52,16 +52,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 height: 73)
     }
 
-    func dishQuantityChanged(notification: NSNotification) {
-        let selectedDish = notification.object![SELECTED_DISH] as! PDHDishDataObject
-        PDHOrderCart.pdhCart.addDishToOrder(selectedDish)
+    func addCustomCartView() {
         if PDHOrderCart.pdhCart.totalDishes() > 0 {
             self.customDishCartView!.changeQuantity(PDHOrderCart.pdhCart.totalDishes())
             self.customDishCartView!.changeTotalPrice(PDHOrderCart.pdhCart.totalPrice())
             self.window!.addSubview(self.customDishCartView!)
         } else {
-            self.customDishCartView!.removeFromSuperview()
+            removeCartView()
         }
+    }
+
+    func removeCartView() {
+        self.customDishCartView!.removeFromSuperview()
+    }
+
+    func dishQuantityChanged(notification: NSNotification) {
+        let selectedDish = notification.object![SELECTED_DISH] as! PDHDishDataObject
+        PDHOrderCart.pdhCart.addDishToOrder(selectedDish)
+        addCustomCartView()
     }
 
     func applicationWillResignActive(application: UIApplication) {

@@ -15,7 +15,7 @@ class PDHViewController: UIViewController {
 
     func showAlert(message: String) {
         let alert = PDHErrorAlert.showErrorAlert(message)
-        self.presentViewController(alert, animated: true) { () -> Void in
+            self.presentViewController(alert, animated: true) { () -> Void in
         }
     }
 

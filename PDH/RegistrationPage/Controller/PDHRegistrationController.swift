@@ -17,7 +17,6 @@ class PDHRegistrationController: PDHViewController {
     override func awakeFromNib() {
         super.awakeFromNib()
         (self.view as! PDHRegistrationView).delegate = self
-        
     }
     
     deinit {

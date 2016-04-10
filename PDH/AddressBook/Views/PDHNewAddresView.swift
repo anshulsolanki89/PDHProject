@@ -14,15 +14,18 @@ class PDHNewAddresView: PDHView {
     @IBOutlet private weak var name: UITextField!
     @IBOutlet private weak var address1: UITextField!
     @IBOutlet private weak var address2: UITextField!
-
     @IBOutlet private weak var pincode: UITextField!
-
     @IBOutlet private weak var locality: UITextField!
     @IBOutlet private weak var mobile: UITextField!
+
+    @IBOutlet weak var contentView: UIView!
+    @IBOutlet weak var viewCentreConstraint: NSLayoutConstraint!
+    private var currentTextField: UITextField!
 
     var userID: String!
     override func awakeFromNib() {
         super.awakeFromNib()
+        addNotificationObserver()
     }
 
     @IBAction func backButtonAction(sender: UIButton) {
@@ -46,7 +49,46 @@ class PDHNewAddresView: PDHView {
         pincode.text = ""
         mobile.text = ""
     }
-    
+
+    func keyboardWillShow(notification:NSNotification) {
+        adjustingHeight(notification)
+    }
+
+    func keyboardWillHide(notification:NSNotification) {
+        resetViewPotision()
+    }
+
+
+    func adjustingHeight(notification:NSNotification) {
+        var userInfo = notification.userInfo!
+        let keyboardFrame = (userInfo[UIKeyboardFrameBeginUserInfoKey] as! NSValue).CGRectValue()
+        let currentTextFieldFrame = currentTextField.convertRect(currentTextField.frame, toView: self)
+        var contentHeight: CGFloat = 0
+        if (currentTextFieldFrame.origin.y + currentTextFieldFrame.size.height)
+            > (self.frame.size.height - keyboardFrame.size.height - 10 ) {
+                contentHeight = (currentTextFieldFrame.origin.y + currentTextFieldFrame.size.height)
+                    - (self.frame.size.height - keyboardFrame.size.height - 10)
+        }
+
+        let animationDurarion = userInfo[UIKeyboardAnimationDurationUserInfoKey] as! NSTimeInterval
+        UIView.animateWithDuration(animationDurarion, animations: { () -> Void in
+            debugPrint(self.viewCentreConstraint.constant)
+            self.viewCentreConstraint.constant = -contentHeight
+        }) { (finished) -> Void in
+            debugPrint(self.viewCentreConstraint.constant)
+        }
+
+    }
+
+    func resetViewPotision() {
+        viewCentreConstraint.constant = 0
+    }
+
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        self.endEditing(true)
+    }
+
+
     deinit {
         removeNotificationObserver()
         print("\(self) DEALLOCATED")
@@ -112,6 +154,7 @@ extension PDHNewAddresView {
 extension PDHNewAddresView: UITextFieldDelegate {
 
     func textFieldShouldBeginEditing(textField: UITextField) -> Bool {
+        currentTextField = textField
         return true
     }
 

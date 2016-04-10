@@ -10,12 +10,17 @@ import Foundation
 import UIKit
 
 class PDHCurrentOrderView: PDHView {
-    
+
+    @IBOutlet weak var currentOrderTableView: UITableView!
+    @IBOutlet weak var currentOrderPrice: UILabel!
+    @IBOutlet weak var instructionTextView: UITextView!
+
     private var ROW_HEIGHT: CGFloat = 71
     private var FOOTER_HEIGHT: CGFloat = 71
     private var numberOfSection = 1
     private var numberOfRowsInSection = 2
-    
+    private var currentDishesOrderArray = [PDHCurrentOrderDataObject]()
+
     override func awakeFromNib() {
         super.awakeFromNib()
     }
@@ -23,8 +28,24 @@ class PDHCurrentOrderView: PDHView {
     @IBAction func backBtnClicked() {
         delegate?.viewDidPerformAction(.Back, data: nil)
     }
+
+    func updateData(data: [PDHCurrentOrderDataObject]) {
+        currentDishesOrderArray = data
+        currentOrderTableView.reloadData()
+    }
 }
 
+// MARK:- Private 
+extension PDHCurrentOrderView {
+    private func calculateUnitPrice(index: Int) -> String {
+        return
+            String(
+                Int(currentDishesOrderArray[index].dishPrice)!
+                    / Int(currentDishesOrderArray[index].dishQuantity)!)
+    }
+}
+
+// MARK :- TableView data source
 extension PDHCurrentOrderView: UITableViewDataSource {
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -32,16 +53,26 @@ extension PDHCurrentOrderView: UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return numberOfRowsInSection
+        return currentDishesOrderArray.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(
-            "DishQuantityCell",
-            forIndexPath: indexPath)
+            "PDHDishCell",
+            forIndexPath: indexPath) as! PDHDishCell
+        cell.dishName.text = currentDishesOrderArray[indexPath.row].dishMenuTitle
+        cell.dishQuantity.text = currentDishesOrderArray[indexPath.row].dishQuantity
+        cell.dishTotalPrice.text = currentDishesOrderArray[indexPath.row].dishPrice
+        cell.dishUnitPrice.text = calculateUnitPrice(indexPath.row)
+
         return cell
     }
     
+}
+
+// MARK:- TextView Delegate
+extension PDHCurrentOrderView: UITextViewDelegate {
+
 }
 
 extension PDHCurrentOrderView: UITableViewDelegate {

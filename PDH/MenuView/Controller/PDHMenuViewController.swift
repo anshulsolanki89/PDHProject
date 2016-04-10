@@ -40,6 +40,8 @@ class PDHMenuViewController: PDHViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         (self.view as! PDHMenuView).screenTitle.text = screenTitle
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        appDelegate.addCustomCartView()
     }
 
     override func viewDidLoad() {

@@ -23,6 +23,10 @@
 		E5189DB11C07705E008CC84C /* PDHLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5189DB01C07705E008CC84C /* PDHLoginViewController.swift */; };
 		E5189DB51C0770DB008CC84C /* PDHLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5189DB41C0770DB008CC84C /* PDHLoginView.swift */; };
 		E5189DB91C0770E5008CC84C /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5189DB81C0770E5008CC84C /* LandingView.swift */; };
+		E52C697F1CBA70DC0027BFF0 /* PDHCurrentOrderDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52C697E1CBA70DC0027BFF0 /* PDHCurrentOrderDataManager.swift */; settings = {ASSET_TAGS = (); }; };
+		E52C69811CBA715C0027BFF0 /* PDHCurrentOrderDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52C69801CBA715C0027BFF0 /* PDHCurrentOrderDataParser.swift */; settings = {ASSET_TAGS = (); }; };
+		E52C69831CBA728C0027BFF0 /* PDHCurrentOrderDataObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52C69821CBA728C0027BFF0 /* PDHCurrentOrderDataObject.swift */; settings = {ASSET_TAGS = (); }; };
+		E52C69851CBA78230027BFF0 /* PDHDishCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52C69841CBA78230027BFF0 /* PDHDishCell.swift */; settings = {ASSET_TAGS = (); }; };
 		E52F15301C0815E80027DE10 /* PDHHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52F152F1C0815E80027DE10 /* PDHHelper.swift */; };
 		E52F15341C081B430027DE10 /* PDHUtilityExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52F15331C081B430027DE10 /* PDHUtilityExtension.swift */; };
 		E52F153E1C0823250027DE10 /* PDHRegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52F153D1C0823250027DE10 /* PDHRegistrationView.swift */; };
@@ -137,6 +141,10 @@
 		E5189DB01C07705E008CC84C /* PDHLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHLoginViewController.swift; sourceTree = "<group>"; };
 		E5189DB41C0770DB008CC84C /* PDHLoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHLoginView.swift; sourceTree = "<group>"; };
 		E5189DB81C0770E5008CC84C /* LandingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
+		E52C697E1CBA70DC0027BFF0 /* PDHCurrentOrderDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHCurrentOrderDataManager.swift; sourceTree = "<group>"; };
+		E52C69801CBA715C0027BFF0 /* PDHCurrentOrderDataParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHCurrentOrderDataParser.swift; sourceTree = "<group>"; };
+		E52C69821CBA728C0027BFF0 /* PDHCurrentOrderDataObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHCurrentOrderDataObject.swift; sourceTree = "<group>"; };
+		E52C69841CBA78230027BFF0 /* PDHDishCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHDishCell.swift; sourceTree = "<group>"; };
 		E52F152F1C0815E80027DE10 /* PDHHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHHelper.swift; sourceTree = "<group>"; };
 		E52F15331C081B430027DE10 /* PDHUtilityExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHUtilityExtension.swift; sourceTree = "<group>"; };
 		E52F153D1C0823250027DE10 /* PDHRegistrationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHRegistrationView.swift; sourceTree = "<group>"; };
@@ -453,6 +461,7 @@
 		E521B8671C2DA9B8001253BC /* CurrentOrder */ = {
 			isa = PBXGroup;
 			children = (
+				E52C697C1CBA70C70027BFF0 /* DataManager */,
 				E521B8681C2DA9B8001253BC /* Controller */,
 				E521B8691C2DA9B8001253BC /* Model */,
 				E521B86A1C2DA9B8001253BC /* Views */,
@@ -471,6 +480,7 @@
 		E521B8691C2DA9B8001253BC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E52C69821CBA728C0027BFF0 /* PDHCurrentOrderDataObject.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -479,8 +489,18 @@
 			isa = PBXGroup;
 			children = (
 				E5C721FC1C2DB6F2005FAFD4 /* PDHCurrentOrderView.swift */,
+				E52C69841CBA78230027BFF0 /* PDHDishCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		E52C697C1CBA70C70027BFF0 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				E52C697E1CBA70DC0027BFF0 /* PDHCurrentOrderDataManager.swift */,
+				E52C69801CBA715C0027BFF0 /* PDHCurrentOrderDataParser.swift */,
+			);
+			path = DataManager;
 			sourceTree = "<group>";
 		};
 		E52F152E1C0815CE0027DE10 /* Helper */ = {
@@ -846,7 +866,6 @@
 				E57C3F271CB0F442009615B4 /* DataManager */,
 				E57C3F281CB0F442009615B4 /* DataModel */,
 				E5DF0ED41C2C52FB0042300F /* Controller */,
-				E5DF0ED51C2C52FB0042300F /* Model */,
 				E5DF0ED61C2C52FB0042300F /* Views */,
 			);
 			path = AddressBook;
@@ -859,13 +878,6 @@
 				E57C3F2F1CB1197E009615B4 /* PDHNewAddressViewController.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		E5DF0ED51C2C52FB0042300F /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		E5DF0ED61C2C52FB0042300F /* Views */ = {
@@ -1093,6 +1105,7 @@
 				E57C3F301CB1197E009615B4 /* PDHNewAddressViewController.swift in Sources */,
 				E5F44F3D1C32F4280047B18D /* PDHDishDataObject.swift in Sources */,
 				E5C721FD1C2DB6F2005FAFD4 /* PDHCurrentOrderView.swift in Sources */,
+				E52C69831CBA728C0027BFF0 /* PDHCurrentOrderDataObject.swift in Sources */,
 				E535E8D71C1DD7C200B4A9B7 /* PDHDeliveryAddressCustomCell.swift in Sources */,
 				E505D0D01C1346C100571A4B /* PDHDishMenuController.swift in Sources */,
 				E52F15401C08233E0027DE10 /* PDHRegistrationController.swift in Sources */,
@@ -1121,6 +1134,7 @@
 				E53C0D1B1C38EF1400DA776E /* PDHMenuContainerViewController.swift in Sources */,
 				E53AB4E61C2FD7FC000E6F07 /* PDHCustomCircleButton.swift in Sources */,
 				E53AB4E41C2FD7FC000E6F07 /* PDHViewController.swift in Sources */,
+				E52C697F1CBA70DC0027BFF0 /* PDHCurrentOrderDataManager.swift in Sources */,
 				E505D0CC1C1345AA00571A4B /* PDHMenuViewController.swift in Sources */,
 				E59E719B1C36C40A00BAF731 /* PDHQuantitySelectorCell.swift in Sources */,
 				E53AB5001C3053B7000E6F07 /* PDHRegistrationDataParser.swift in Sources */,
@@ -1133,6 +1147,7 @@
 				E54D314F1C9D9D8500CD4D11 /* PDHVegDishDataObject.swift in Sources */,
 				E53AB4E91C2FD7FC000E6F07 /* PDHCustomDishCartView.swift in Sources */,
 				E54D314D1C9D9D4E00CD4D11 /* PDHDishOfWeekDataObject.swift in Sources */,
+				E52C69811CBA715C0027BFF0 /* PDHCurrentOrderDataParser.swift in Sources */,
 				E5E4935D1C2D6CAF00469745 /* PDHMyOrderViewController.swift in Sources */,
 				E53AB4EF1C2FD7FC000E6F07 /* PDHNetworkManager.swift in Sources */,
 				E5026B7E1C1F49B600B1839E /* PDHOrderConfirmationView.swift in Sources */,
@@ -1146,6 +1161,7 @@
 				E53AB4EE1C2FD7FC000E6F07 /* PDHDataManagerProtocol.swift in Sources */,
 				E53AB4F51C2FDCB4000E6F07 /* PDHErrorObject.swift in Sources */,
 				E53AB4491C26C8A9007494DA /* PDHMenuOptionsCell.swift in Sources */,
+				E52C69851CBA78230027BFF0 /* PDHDishCell.swift in Sources */,
 				E5E0044F1C2EFCE00082EED6 /* PDHLoginDataManager.swift in Sources */,
 				E53487281C0F42D200203548 /* PDHMenuScreenView.swift in Sources */,
 				E53AB4EB1C2FD7FC000E6F07 /* PDHCustomImageView.swift in Sources */,

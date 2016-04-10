@@ -42,6 +42,12 @@ class PDHMenuContainerViewController: PDHViewController {
         let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: "handlePanGesture:")
         centerViewController.view.addGestureRecognizer(panGestureRecognizer)
     }
+
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        appDelegate.addCustomCartView()
+    }
 }
 
 // MARK: CenterViewController delegate

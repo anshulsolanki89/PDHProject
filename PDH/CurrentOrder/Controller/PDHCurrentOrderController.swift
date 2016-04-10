@@ -10,10 +10,24 @@ import Foundation
 import UIKit
 
 class PDHCurrentOrderController: PDHViewController {
-    
+
+    private var currentOrderDataManager: PDHCurrentOrderDataManager!
     override func viewDidLoad() {
         super.viewDidLoad()
         (self.view as! PDHCurrentOrderView).delegate = self
+    }
+
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        initializeDataManager()
+        fetchCurrentOrderDishes()
+        PDHProgressIndicator.showLoadingIndicator(self.view)
+    }
+
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        appDelegate.removeCartView()
     }
     
     override func didReceiveMemoryWarning() {
@@ -22,6 +36,31 @@ class PDHCurrentOrderController: PDHViewController {
     
     deinit {
         print("\(self) DEALLOCATED")
+    }
+}
+
+// MARK:- Private Methods
+extension PDHCurrentOrderController {
+    private func initializeDataManager() {
+        if currentOrderDataManager == nil {
+            currentOrderDataManager = PDHCurrentOrderDataManager()
+        }
+        currentOrderDataManager.delegate = self
+    }
+
+    private func fetchCurrentOrderDishes() {
+        currentOrderDataManager.getDishesFromCart(
+            ["uid" : PDHDataManager.getUserData()!.email])
+    }
+}
+
+// MARK:- DataManager Delegate
+extension PDHCurrentOrderController {
+    func didReceiveDataWithSuccess(response: AnyObject) {
+        PDHProgressIndicator.hideLoadingIndicator()
+        if let response = response as? [PDHCurrentOrderDataObject] {
+            (self.view as! PDHCurrentOrderView).updateData(response)
+        }
     }
 }
 
