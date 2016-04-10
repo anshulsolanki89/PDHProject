@@ -175,7 +175,8 @@ extension PDHMenuScreenView {
     private func showAddToOrderView() {
         addToOrderView.updateDishQuantity(dishOfWeek)
         self.delegate?.viewDidPerformAction(ViewActions.AddToOrder, data: nil)
-        self.addSubview(addToOrderView!)
+        window!.addSubview(addToOrderView!)
+        self.bringSubviewToFront(addToOrderView)
     }
     
     private func addNotificationObserver() {

@@ -9,9 +9,6 @@
 import Foundation
 import UIKit
 
-let ADD_TO_ORDER_VIEW = "addToOrderView"
-let REMOVE_ORDER_VIEW = "removeOrderView"
-
 class PDHDishSearchTableView: PDHView {
 
     @IBOutlet weak var dishTableView: UITableView!
@@ -52,9 +49,7 @@ extension PDHDishSearchTableView {
 
     private func showAddToOrderView() {
         addToOrderView.updateDishQuantity(dishSelected)
-        NSNotificationCenter.defaultCenter().postNotificationName(
-            ADD_TO_ORDER_VIEW,
-            object: [ADD_TO_ORDER_VIEW : addToOrderView])
+        window?.addSubview(addToOrderView)
     }
 
     private func updateSelectedDishQuantity(cell: PDHDishCustomCell, selectedDish: PDHDishDataObject! ) {
@@ -91,15 +86,11 @@ extension PDHDishSearchTableView: PDHQuantitySelectorViewDelegate {
             DISH_QUANTITY_CHANGED_NOTIFICATION,
             object: [SELECTED_DISH : dishSelected])
         refreshData()
-        NSNotificationCenter.defaultCenter().postNotificationName(
-            REMOVE_ORDER_VIEW,
-            object: [REMOVE_ORDER_VIEW : addToOrderView])
+        addToOrderView.removeFromSuperview()
     }
 
     func dismissQuantitySelectorView() {
-        NSNotificationCenter.defaultCenter().postNotificationName(
-            REMOVE_ORDER_VIEW,
-            object: [REMOVE_ORDER_VIEW : addToOrderView])
+        addToOrderView.removeFromSuperview()
     }
 }
 

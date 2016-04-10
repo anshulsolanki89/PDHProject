@@ -51,16 +51,6 @@ class PDHMenuViewController: PDHViewController {
         menuDataManager.getDishMenu()
         menuDishScrollView.showsHorizontalScrollIndicator = false
         menuDishScrollView.showsVerticalScrollIndicator = false
-
-        NSNotificationCenter.defaultCenter().addObserver(self,
-            selector: "addOrderView:",
-            name: ADD_TO_ORDER_VIEW,
-            object: nil)
-
-        NSNotificationCenter.defaultCenter().addObserver(self,
-            selector: "removeOrderView:",
-            name: REMOVE_ORDER_VIEW,
-            object: nil)
     }
 
     override func viewWillLayoutSubviews() {
@@ -102,19 +92,7 @@ class PDHMenuViewController: PDHViewController {
     
     deinit {
         print("\(self) DEALLOCATED")
-        NSNotificationCenter.defaultCenter().removeObserver(self, name: ADD_TO_ORDER_VIEW, object: nil)
-        NSNotificationCenter.defaultCenter().removeObserver(self, name: REMOVE_ORDER_VIEW, object: nil)
-    }
-
-    func addOrderView(notification: NSNotification) {
-        let orderView = notification.object![ADD_TO_ORDER_VIEW]
-        self.view.addSubview(orderView as! UIView)
-    }
-
-    func removeOrderView(notification: NSNotification) {
-        let orderView = notification.object![REMOVE_ORDER_VIEW]
-        (orderView as! UIView).removeFromSuperview()
-    }
+     }
 }
 
 // Mark:- Private methods

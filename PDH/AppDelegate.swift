@@ -58,7 +58,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if PDHOrderCart.pdhCart.totalDishes() > 0 {
             self.customDishCartView!.changeQuantity(PDHOrderCart.pdhCart.totalDishes())
             self.customDishCartView!.changeTotalPrice(PDHOrderCart.pdhCart.totalPrice())
-            self.window!.rootViewController!.view.addSubview(self.customDishCartView!)
+            self.window!.addSubview(self.customDishCartView!)
         } else {
             self.customDishCartView!.removeFromSuperview()
         }
