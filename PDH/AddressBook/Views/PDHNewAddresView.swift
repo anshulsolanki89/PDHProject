@@ -38,6 +38,7 @@ class PDHNewAddresView: PDHView {
             return
         }
 
+        currentTextField.resignFirstResponder()
         delegate?.viewDidPerformAction(.SaveAddress, data: getNewAddressDataObject())
     }
 
