@@ -29,7 +29,11 @@ class PDHLoginView: PDHView {
     @IBAction func backBtnAction(sender: AnyObject) {
         delegate?.viewDidPerformAction(ViewActions.Back, data: nil)
     }
-   
+
+    @IBAction func forgotPasswordClicked(sender: AnyObject) {
+        delegate?.viewDidPerformAction(ViewActions.ForgotPassword, data: nil)
+    }
+
     @IBAction func loginBtnClicked(sender: AnyObject) {
         if !isFormFieldError() {
             delegate?.viewDidPerformAction(ViewActions.FormFieldError, data: nil)

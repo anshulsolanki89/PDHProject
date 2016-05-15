@@ -61,7 +61,7 @@ extension PDHDishSearchTableView {
             cell.dishQuantityLabel.hidden = true
             cell.addToOrderBtn.backgroundColor = UIColor.clearColor()
             cell.addToOrderBtn.layer.borderColor = UIColor.rgb(121, g: 207, b: 63, α: 1).CGColor
-            cell.addToOrderBtn.setTitleColor(UIColor.rgb(255, g: 196, b: 18, α: 1),
+            cell.addToOrderBtn.setTitleColor(UIColor.rgb(121, g: 207, b: 63, α: 1),
                 forState: .Normal)
             cell.addToOrderBtn.setTitle("Add to order", forState: .Normal)
         } else {

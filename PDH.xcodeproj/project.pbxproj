@@ -23,6 +23,7 @@
 		E5189DB11C07705E008CC84C /* PDHLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5189DB01C07705E008CC84C /* PDHLoginViewController.swift */; };
 		E5189DB51C0770DB008CC84C /* PDHLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5189DB41C0770DB008CC84C /* PDHLoginView.swift */; };
 		E5189DB91C0770E5008CC84C /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5189DB81C0770E5008CC84C /* LandingView.swift */; };
+		E51C645E1CE83C56002638FB /* PDHChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51C645D1CE83C56002638FB /* PDHChangePasswordViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		E52C697F1CBA70DC0027BFF0 /* PDHCurrentOrderDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52C697E1CBA70DC0027BFF0 /* PDHCurrentOrderDataManager.swift */; settings = {ASSET_TAGS = (); }; };
 		E52C69811CBA715C0027BFF0 /* PDHCurrentOrderDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52C69801CBA715C0027BFF0 /* PDHCurrentOrderDataParser.swift */; settings = {ASSET_TAGS = (); }; };
 		E52C69831CBA728C0027BFF0 /* PDHCurrentOrderDataObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52C69821CBA728C0027BFF0 /* PDHCurrentOrderDataObject.swift */; settings = {ASSET_TAGS = (); }; };
@@ -141,6 +142,7 @@
 		E5189DB01C07705E008CC84C /* PDHLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHLoginViewController.swift; sourceTree = "<group>"; };
 		E5189DB41C0770DB008CC84C /* PDHLoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHLoginView.swift; sourceTree = "<group>"; };
 		E5189DB81C0770E5008CC84C /* LandingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
+		E51C645D1CE83C56002638FB /* PDHChangePasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHChangePasswordViewController.swift; sourceTree = "<group>"; };
 		E52C697E1CBA70DC0027BFF0 /* PDHCurrentOrderDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHCurrentOrderDataManager.swift; sourceTree = "<group>"; };
 		E52C69801CBA715C0027BFF0 /* PDHCurrentOrderDataParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHCurrentOrderDataParser.swift; sourceTree = "<group>"; };
 		E52C69821CBA728C0027BFF0 /* PDHCurrentOrderDataObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHCurrentOrderDataObject.swift; sourceTree = "<group>"; };
@@ -458,6 +460,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		E51C645C1CE83C3A002638FB /* ChangePassword */ = {
+			isa = PBXGroup;
+			children = (
+				E51C645D1CE83C56002638FB /* PDHChangePasswordViewController.swift */,
+			);
+			path = ChangePassword;
+			sourceTree = "<group>";
+		};
 		E521B8671C2DA9B8001253BC /* CurrentOrder */ = {
 			isa = PBXGroup;
 			children = (
@@ -751,6 +761,7 @@
 				E553E4AF1C05F2D9007DD045 /* Assets.xcassets */,
 				E53AB43B1C26C84C007494DA /* DishImages */,
 				E553E4AC1C05F2D9007DD045 /* Main.storyboard */,
+				E51C645C1CE83C3A002638FB /* ChangePassword */,
 				E553E4B11C05F2D9007DD045 /* LaunchScreen.storyboard */,
 				E59B4F381C0CBA2B00D1B6E7 /* Resources */,
 				E553E4B41C05F2D9007DD045 /* Info.plist */,
@@ -989,7 +1000,7 @@
 				TargetAttributes = {
 					E553E4A41C05F2D9007DD045 = {
 						CreatedOnToolsVersion = 7.1.1;
-						DevelopmentTeam = 5N4QD5MNPN;
+						DevelopmentTeam = X74ANFV7Z7;
 					};
 				};
 			};
@@ -1159,6 +1170,7 @@
 				E5DE86DF1C1D9CFC0009EEAC /* PDHDeliveryAddressView.swift in Sources */,
 				E553E4A91C05F2D9007DD045 /* AppDelegate.swift in Sources */,
 				E53AB4EE1C2FD7FC000E6F07 /* PDHDataManagerProtocol.swift in Sources */,
+				E51C645E1CE83C56002638FB /* PDHChangePasswordViewController.swift in Sources */,
 				E53AB4F51C2FDCB4000E6F07 /* PDHErrorObject.swift in Sources */,
 				E53AB4491C26C8A9007494DA /* PDHMenuOptionsCell.swift in Sources */,
 				E52C69851CBA78230027BFF0 /* PDHDishCell.swift in Sources */,
@@ -1318,9 +1330,9 @@
 					"$(PROJECT_DIR)/PDH/Resources",
 				);
 				OTHER_LDFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.PDH;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bemisaal.pdh;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "9d6d7ca9-2fc5-4e28-9502-6370c8cade7e";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				USER_HEADER_SEARCH_PATHS = "";
@@ -1334,8 +1346,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Robin Arora (X74ANFV7Z7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Robin Arora (X74ANFV7Z7)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -1353,9 +1365,9 @@
 					"$(PROJECT_DIR)/PDH/Resources",
 				);
 				OTHER_LDFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.PDH;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bemisaal.pdh;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "9d6d7ca9-2fc5-4e28-9502-6370c8cade7e";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				USER_HEADER_SEARCH_PATHS = "";
 			};

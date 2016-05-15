@@ -97,6 +97,8 @@
             <string>Skia-Regular</string>
             <string>Skia-Regular</string>
             <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
+            <string>Skia-Regular</string>
             <string>Skia-Regular_Light</string>
             <string>Skia-Regular</string>
             <string>Skia-Regular</string>
@@ -655,7 +657,7 @@
                                     <constraint firstItem="gbl-8L-5jb" firstAttribute="width" secondItem="nen-Bh-joO" secondAttribute="width" id="vys-PH-Vas"/>
                                 </constraints>
                             </view>
-                            <searchBar contentMode="redraw" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="g7M-vU-g0q">
+                            <searchBar contentMode="redraw" placeholder="Search your dish" translatesAutoresizingMaskIntoConstraints="NO" id="g7M-vU-g0q">
                                 <rect key="frame" x="0.0" y="64" width="320" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="p5w-1y-ski"/>
@@ -719,7 +721,7 @@
                             <view contentMode="scaleToFill" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="64" translatesAutoresizingMaskIntoConstraints="NO" id="var-EI-jjl">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Thank You" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P6w-3M-YU0">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank You" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P6w-3M-YU0">
                                         <rect key="frame" x="117" y="28" width="85.5" height="18"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="18" id="cOo-8l-JMr"/>
@@ -767,7 +769,7 @@
                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="srV-8D-JAG">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="srV-8D-JAG">
                                 <rect key="frame" x="8" y="334" width="304" height="66"/>
                                 <string key="text">Our chef is preparing your food and we're sure you'll love it. You can track your order by calling us on +91-999984772
 or by telling us your order number.
@@ -778,7 +780,7 @@ App Store.</string>
                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="251" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atb-BN-uLR" customClass="PDHButton" customModule="PDH" customModuleProvider="target">
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atb-BN-uLR" customClass="PDHButton" customModule="PDH" customModuleProvider="target">
                                 <rect key="frame" x="20" y="432" width="280" height="40"/>
                                 <color key="backgroundColor" red="0.47450980392156861" green="0.81176470588235294" blue="0.24705882352941178" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -917,7 +919,7 @@ App Store.</string>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G8e-UD-FfF" userLabel="Bottom Line">
                                                     <rect key="frame" x="8" y="64" width="304" height="1"/>
-                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="backgroundColor" red="0.8666666666666667" green="0.86274509803921573" blue="0.86274509803921573" alpha="0.5" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="1" id="SRE-Hd-8DD"/>
                                                     </constraints>
@@ -1106,7 +1108,7 @@ App Store.</string>
                                                     <rect key="frame" x="0.0" y="0.0" width="280" height="44"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Half Rs 260/-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZGh-El-Ws0">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Half Rs 260/-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZGh-El-Ws0">
                                                             <rect key="frame" x="8" y="15" width="156" height="14"/>
                                                             <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="14"/>
                                                             <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -1296,7 +1298,7 @@ App Store.</string>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MEn-WK-Q3b">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SpF-4T-Oy0">
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SpF-4T-Oy0">
                                         <rect key="frame" x="8" y="27" width="20" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="20" id="4W4-6L-Huo"/>
@@ -1307,7 +1309,7 @@ App Store.</string>
                                             <action selector="menuBtnClicked:" destination="lh3-3D-ih3" eventType="touchUpInside" id="LOl-NQ-8aB"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="PDH" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DhB-R1-ZO3">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PDH" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DhB-R1-ZO3">
                                         <rect key="frame" x="139" y="33" width="41" height="18"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="41" id="2zm-Uw-J7h"/>
@@ -1435,7 +1437,7 @@ App Store.</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.17254901960784313" green="0.16470588235294117" blue="0.15294117647058825" alpha="0.75" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.17254901960784313" green="0.16470588235294117" blue="0.15294117647058825" alpha="0.95000000000000007" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="G4U-4v-MZS" firstAttribute="top" secondItem="X0Z-bT-Ybh" secondAttribute="bottom" constant="2" id="3lR-dp-REE"/>
                                     <constraint firstItem="X0Z-bT-Ybh" firstAttribute="leading" secondItem="dBs-Cn-n5p" secondAttribute="leading" constant="16" id="8bj-a2-9S1"/>
@@ -1486,7 +1488,16 @@ App Store.</string>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Chinese Order" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iPU-6U-OvR">
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mMo-Hd-cZx">
+                                                    <rect key="frame" x="0.0" y="0.0" width="83" height="83"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.35000000000000003" colorSpace="calibratedWhite"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <integer key="value" value="32"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chinese Order" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iPU-6U-OvR">
                                                     <rect key="frame" x="8" y="27" width="67" height="28"/>
                                                     <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="14"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1649,6 +1660,9 @@ App Store.</string>
                                         <state key="normal" title="Forget Password?">
                                             <color key="titleColor" red="0.83529411764705885" green="0.6470588235294118" blue="0.086274509803921567" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="forgotPasswordClicked:" destination="0Ee-Ae-Hja" eventType="touchUpInside" id="una-EC-EgA"/>
+                                        </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Email" translatesAutoresizingMaskIntoConstraints="NO" id="xst-vT-Ror">
                                         <rect key="frame" x="10" y="37" width="22" height="16"/>
@@ -1932,7 +1946,7 @@ App Store.</string>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="83" id="WRa-N7-HH7"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="12"/>
                                                     <state key="normal" title="Add to Order">
                                                         <color key="titleColor" red="0.47450980392156861" green="0.81176470588235294" blue="0.24705882352941178" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
@@ -1971,12 +1985,11 @@ App Store.</string>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="312" placeholderIntrinsicHeight="1" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="11P-aB-yrM" userLabel="HorizontalLine">
                                                     <rect key="frame" x="8" y="69" width="304" height="1"/>
-                                                    <color key="backgroundColor" red="0.8666666666666667" green="0.86274509803921573" blue="0.86274509803921573" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" red="0.8666666666666667" green="0.86274509803921573" blue="0.86274509803921573" alpha="0.5" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="1" id="DZf-cF-SJb"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.8666666666666667" green="0.86274509803921573" blue="0.86274509803921573" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XmX-M6-ehI" customClass="PDHCustomCircleLabel" customModule="PDH" customModuleProvider="target">
@@ -2549,7 +2562,7 @@ App Store.</string>
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                         </button>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ADD NEW ADDRESS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bms-S1-FEH">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADD NEW ADDRESS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bms-S1-FEH">
                                             <rect key="frame" x="36" y="14" width="132.5" height="16"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="16" id="Afv-oa-Jos"/>
@@ -2816,7 +2829,7 @@ Mob No - 9999912345</string>
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                         </button>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ADD NEW ADDRESS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6rR-Zl-ALT">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADD NEW ADDRESS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6rR-Zl-ALT">
                                             <rect key="frame" x="36" y="14" width="132.5" height="16"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="16" id="O3N-I3-rOu"/>
@@ -2854,17 +2867,18 @@ Mob No - 9999912345</string>
                                     </constraints>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PDHAddressTypeIdentifier" rowHeight="50" id="l3y-rO-hvx">
-                                        <rect key="frame" x="0.0" y="72" width="320" height="50"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PDHAddressTypeIdentifier" rowHeight="40" id="l3y-rO-hvx">
+                                        <rect key="frame" x="0.0" y="72" width="320" height="40"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="l3y-rO-hvx" id="UlR-5m-v3g">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PERSONAL ADDRESS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x6M-v1-G52">
-                                                    <rect key="frame" x="8" y="18" width="304" height="16"/>
+                                                    <rect key="frame" x="8" y="16" width="136" height="16"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="16" id="eiP-Qm-Icd"/>
+                                                        <constraint firstAttribute="height" constant="16" id="Dh8-V0-ttR"/>
+                                                        <constraint firstAttribute="width" constant="136" id="z59-ji-08U"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="14"/>
                                                     <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -2872,15 +2886,14 @@ Mob No - 9999912345</string>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="x6M-v1-G52" secondAttribute="bottom" constant="16" id="6LC-M7-RzC"/>
-                                                <constraint firstItem="x6M-v1-G52" firstAttribute="leading" secondItem="UlR-5m-v3g" secondAttribute="leading" constant="8" id="BiY-ls-fVK"/>
-                                                <constraint firstItem="x6M-v1-G52" firstAttribute="top" secondItem="UlR-5m-v3g" secondAttribute="top" constant="18" id="FcF-h9-ioS"/>
-                                                <constraint firstAttribute="trailing" secondItem="x6M-v1-G52" secondAttribute="trailing" constant="8" id="q9d-1c-Tfu"/>
+                                                <constraint firstItem="x6M-v1-G52" firstAttribute="top" secondItem="UlR-5m-v3g" secondAttribute="topMargin" constant="8" id="0hJ-M4-OA5"/>
+                                                <constraint firstItem="x6M-v1-G52" firstAttribute="bottom" secondItem="UlR-5m-v3g" secondAttribute="bottomMargin" id="QsY-Hu-r2u"/>
+                                                <constraint firstItem="x6M-v1-G52" firstAttribute="leading" secondItem="UlR-5m-v3g" secondAttribute="leadingMargin" id="k9G-3X-RxE"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PDHDeliveryAddressCustomCell" rowHeight="100" id="nG0-lA-41I" customClass="PDHDeliveryAddressCustomCell" customModule="PDH" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="122" width="320" height="100"/>
+                                        <rect key="frame" x="0.0" y="112" width="320" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nG0-lA-41I" id="2Pb-En-bSw">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
@@ -2891,7 +2904,7 @@ Mob No - 9999912345</string>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="16" id="Di8-pd-Esj"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="16"/>
                                                     <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -2906,31 +2919,18 @@ Mob No - 9999912345</string>
                                                         <action selector="changeAddressBtnClicked:" destination="nG0-lA-41I" eventType="touchUpInside" id="o1J-Ar-0L6"/>
                                                     </connections>
                                                 </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Akd-oJ-PXV">
-                                                    <rect key="frame" x="8" y="43" width="274" height="40"/>
-                                                    <attributedString key="attributedText">
-                                                        <fragment>
-                                                            <string key="content">D-1, Central revenue Colony, lawrence Road
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Akd-oJ-PXV">
+                                                    <rect key="frame" x="8" y="39" width="274" height="44"/>
+                                                    <string key="text">sector 2
 Amritsar, Punjab 143001
-</string>
-                                                            <attributes>
-                                                                <color key="NSColor" red="0.47450980390000003" green="0.47450980390000003" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <font key="NSFont" size="12" name="Skia-Regular"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                        <fragment content="Mob No - 9999912345">
-                                                            <attributes>
-                                                                <color key="NSColor" red="0.47450980390000003" green="0.47450980390000003" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <font key="NSFont" size="12" name="Skia-Regular"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+Mob No - 9999912345</string>
+                                                    <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="14"/>
+                                                    <color key="textColor" red="0.47450980390000003" green="0.47450980390000003" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4yf-d0-7JI" userLabel="Bottom LIne">
                                                     <rect key="frame" x="8" y="99" width="304" height="1"/>
-                                                    <color key="backgroundColor" red="0.86666666670000003" green="0.86274509799999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" red="0.86666666670000003" green="0.86274509799999999" blue="0.86274509799999999" alpha="0.5" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="1" id="bB6-bB-xMJ"/>
                                                     </constraints>
@@ -2942,7 +2942,7 @@ Amritsar, Punjab 143001
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="4yf-d0-7JI" secondAttribute="trailing" constant="8" id="1gj-bA-WgZ"/>
                                                 <constraint firstAttribute="trailing" secondItem="Akd-oJ-PXV" secondAttribute="trailing" constant="38" id="ExE-J2-bjI"/>
-                                                <constraint firstItem="Akd-oJ-PXV" firstAttribute="top" secondItem="H2Y-QG-brS" secondAttribute="bottom" constant="16" id="KYr-83-MEd"/>
+                                                <constraint firstItem="Akd-oJ-PXV" firstAttribute="top" secondItem="H2Y-QG-brS" secondAttribute="bottom" constant="12" id="KYr-83-MEd"/>
                                                 <constraint firstAttribute="bottom" secondItem="4yf-d0-7JI" secondAttribute="bottom" id="ULn-yG-tjk"/>
                                                 <constraint firstItem="50g-7u-IN4" firstAttribute="top" secondItem="2Pb-En-bSw" secondAttribute="top" constant="8" id="Wie-Zt-4rB"/>
                                                 <constraint firstAttribute="trailing" secondItem="50g-7u-IN4" secondAttribute="trailing" constant="8" id="exj-eQ-uHZ"/>
@@ -3413,16 +3413,16 @@ Amritsar, Punjab 143001
                                                     <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" misplaced="YES" text="Chicken Salt &amp; Pepper" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UKV-Py-BRd">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Chicken Salt &amp; Pepper" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UKV-Py-BRd">
                                                     <rect key="frame" x="8" y="16" width="219" height="16"/>
                                                     <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="16"/>
                                                     <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0KV-ek-A5F" customClass="PDHCustomStepper" customModule="PDH" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0KV-ek-A5F" customClass="PDHCustomStepper" customModule="PDH" customModuleProvider="target">
                                                     <rect key="frame" x="8" y="32" width="91.5" height="30"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" placeholderIntrinsicWidth="24" placeholderIntrinsicHeight="30" text="Qty" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aan-l2-oxR">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="24" placeholderIntrinsicHeight="30" text="Qty" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aan-l2-oxR">
                                                             <rect key="frame" x="0.0" y="0.0" width="24" height="30"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="24" id="Jfs-Pm-ADX"/>
@@ -3431,7 +3431,7 @@ Amritsar, Punjab 143001
                                                             <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" placeholderIntrinsicWidth="14.5" placeholderIntrinsicHeight="30" text="99" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="2at-8M-PqJ">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="14.5" placeholderIntrinsicHeight="30" text="99" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="2at-8M-PqJ">
                                                             <rect key="frame" x="51" y="0.0" width="17" height="30"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="30" id="Zvf-f9-FSB"/>
@@ -3440,7 +3440,7 @@ Amritsar, Punjab 143001
                                                             <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" placeholderIntrinsicWidth="20" placeholderIntrinsicHeight="20" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Bw-oe-UWE">
+                                                        <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="20" placeholderIntrinsicHeight="20" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Bw-oe-UWE">
                                                             <rect key="frame" x="71" y="5" width="20" height="20"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="20" id="Htq-IT-jcS"/>
@@ -3448,7 +3448,7 @@ Amritsar, Punjab 143001
                                                             </constraints>
                                                             <state key="normal" backgroundImage="AddBtn"/>
                                                         </button>
-                                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" placeholderIntrinsicWidth="20" placeholderIntrinsicHeight="20" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YTr-4R-pDr">
+                                                        <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="20" placeholderIntrinsicHeight="20" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YTr-4R-pDr">
                                                             <rect key="frame" x="27" y="5" width="20" height="20"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="20" id="8N5-Sl-bFm"/>
@@ -3473,7 +3473,7 @@ Amritsar, Punjab 143001
                                                         <constraint firstItem="YTr-4R-pDr" firstAttribute="leading" secondItem="Aan-l2-oxR" secondAttribute="trailing" constant="3" id="yHY-HI-AkQ"/>
                                                     </constraints>
                                                 </view>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="x Rs 250" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xiU-Ch-6Th">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x Rs 250" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xiU-Ch-6Th">
                                                     <rect key="frame" x="108" y="40" width="59" height="14"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="59" id="Dvc-8c-NkJ"/>
@@ -3618,16 +3618,10 @@ Amritsar, Punjab 143001
                         <viewControllerLayoutGuide type="top" id="W5K-oY-5t8"/>
                         <viewControllerLayoutGuide type="bottom" id="BRf-gP-aKY"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="3tk-gx-F76" userLabel="ProfileView" customClass="PDHMyProfileView" customModule="PDH" customModuleProvider="target">
+                    <view key="view" contentMode="center" id="3tk-gx-F76" userLabel="ProfileView" customClass="PDHMyProfileView" customModule="PDH" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CEn-UW-JWl">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <connections>
-                                    <segue destination="HM9-ls-E7w" kind="embed" id="fbb-q6-50l"/>
-                                </connections>
-                            </containerView>
                             <view contentMode="scaleToFill" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="64" translatesAutoresizingMaskIntoConstraints="NO" id="G6R-5i-r2F">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
                                 <subviews>
@@ -3642,7 +3636,7 @@ Amritsar, Punjab 143001
                                             <action selector="backBtnClicked:" destination="3tk-gx-F76" eventType="touchUpInside" id="0S8-fy-xz1"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="MY PROFILE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ovs-Jd-Cix">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MY PROFILE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ovs-Jd-Cix">
                                         <rect key="frame" x="114" y="27" width="92.5" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="lw4-ex-FoC"/>
@@ -3651,7 +3645,7 @@ Amritsar, Punjab 143001
                                         <color key="textColor" red="0.2156862745" green="0.17254901959999999" blue="0.062745098040000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pvq-40-CJ0">
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pvq-40-CJ0">
                                         <rect key="frame" x="276" y="27" width="36" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="GhK-nh-Anm"/>
@@ -3683,6 +3677,9 @@ Amritsar, Punjab 143001
                                 <state key="normal" title="CHANGE PASSWORD →">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="changePasswordClicked:" destination="3tk-gx-F76" eventType="touchUpInside" id="P5I-b4-IYO"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="156" image="MyProfilePic" translatesAutoresizingMaskIntoConstraints="NO" id="g2W-gs-cES">
                                 <rect key="frame" x="0.0" y="64" width="320" height="156"/>
@@ -3744,6 +3741,9 @@ Amritsar, Punjab 143001
                                         <color key="textColor" red="0.34509803919999998" green="0.34509803919999998" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="16"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="3tk-gx-F76" id="z0O-gh-zKO"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                                 <constraints>
@@ -3783,6 +3783,9 @@ Amritsar, Punjab 143001
                                         <color key="textColor" red="0.34509803919999998" green="0.34509803919999998" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="16"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="3tk-gx-F76" id="DYk-HD-EJH"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                                 <constraints>
@@ -3822,6 +3825,9 @@ Amritsar, Punjab 143001
                                         <color key="textColor" red="0.34509803919999998" green="0.34509803919999998" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="16"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="3tk-gx-F76" id="Gej-Oj-Fyi"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                                 <constraints>
@@ -3839,7 +3845,7 @@ Amritsar, Punjab 143001
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6QB-mS-GFS">
                                 <rect key="frame" x="0.0" y="424" width="320" height="40"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Login_mobile" translatesAutoresizingMaskIntoConstraints="NO" id="oMn-C4-XuS">
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Contact_Us" translatesAutoresizingMaskIntoConstraints="NO" id="oMn-C4-XuS">
                                         <rect key="frame" x="16" y="6" width="16" height="28"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="28" id="DgX-El-3VL"/>
@@ -3861,6 +3867,9 @@ Amritsar, Punjab 143001
                                         <color key="textColor" red="0.34509803919999998" green="0.34509803919999998" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="16"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="3tk-gx-F76" id="BSw-I9-YZe"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                                 <constraints>
@@ -3887,7 +3896,6 @@ Amritsar, Punjab 143001
                             <constraint firstItem="27r-ac-xhC" firstAttribute="top" secondItem="G6R-5i-r2F" secondAttribute="bottom" id="BCg-dq-MVI"/>
                             <constraint firstAttribute="trailing" secondItem="YGo-wx-oMq" secondAttribute="trailing" id="BUG-91-CEz"/>
                             <constraint firstItem="BRf-gP-aKY" firstAttribute="top" secondItem="V4L-iZ-VYW" secondAttribute="bottom" id="Ca6-Aj-8L8"/>
-                            <constraint firstAttribute="trailing" secondItem="CEn-UW-JWl" secondAttribute="trailing" id="HSW-ym-jTJ"/>
                             <constraint firstItem="Ftv-Ao-yO9" firstAttribute="top" secondItem="YGo-wx-oMq" secondAttribute="bottom" id="Ipv-rQ-bpy"/>
                             <constraint firstItem="G6R-5i-r2F" firstAttribute="leading" secondItem="3tk-gx-F76" secondAttribute="leading" id="Krs-zL-JFE"/>
                             <constraint firstItem="6QB-mS-GFS" firstAttribute="top" secondItem="ovv-T8-yPE" secondAttribute="bottom" id="LbX-Ek-hDt"/>
@@ -3904,16 +3912,16 @@ Amritsar, Punjab 143001
                             <constraint firstItem="Ftv-Ao-yO9" firstAttribute="leading" secondItem="3tk-gx-F76" secondAttribute="leading" id="fGS-aY-FyW"/>
                             <constraint firstItem="V4L-iZ-VYW" firstAttribute="leading" secondItem="3tk-gx-F76" secondAttribute="leading" id="ls9-Hw-ReZ"/>
                             <constraint firstItem="27r-ac-xhC" firstAttribute="leading" secondItem="3tk-gx-F76" secondAttribute="leading" id="mFO-ua-dgQ"/>
-                            <constraint firstItem="CEn-UW-JWl" firstAttribute="top" secondItem="3tk-gx-F76" secondAttribute="top" id="tQy-Hb-nRq"/>
-                            <constraint firstItem="BRf-gP-aKY" firstAttribute="top" secondItem="CEn-UW-JWl" secondAttribute="bottom" id="tVw-6c-DW2"/>
                             <constraint firstItem="G6R-5i-r2F" firstAttribute="top" secondItem="3tk-gx-F76" secondAttribute="top" id="tdQ-ks-kEj"/>
-                            <constraint firstItem="CEn-UW-JWl" firstAttribute="leading" secondItem="3tk-gx-F76" secondAttribute="leading" id="vYz-2t-h4n"/>
                             <constraint firstAttribute="trailing" secondItem="6QB-mS-GFS" secondAttribute="trailing" id="vuf-Bp-XCl"/>
                             <constraint firstItem="6QB-mS-GFS" firstAttribute="leading" secondItem="3tk-gx-F76" secondAttribute="leading" id="w1s-df-4Bc"/>
                             <constraint firstItem="hjA-b8-5Hq" firstAttribute="top" secondItem="s1Q-Ra-1hd" secondAttribute="bottom" constant="8" id="wcK-eY-HSB"/>
                             <constraint firstItem="YGo-wx-oMq" firstAttribute="leading" secondItem="3tk-gx-F76" secondAttribute="leading" id="ycZ-vk-fon"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="HM9-ls-E7w" kind="modal" identifier="PDHChangePasswordViewController" id="I67-JB-7Ur"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="URL-Sh-goY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -3922,7 +3930,7 @@ Amritsar, Punjab 143001
         <!--ChangePasswordViewController-->
         <scene sceneID="Zss-Y3-J85">
             <objects>
-                <viewController id="HM9-ls-E7w" userLabel="ChangePasswordViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PDHChangePasswordViewController" id="HM9-ls-E7w" userLabel="ChangePasswordViewController" customClass="PDHChangePasswordViewController" customModule="PDH" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RSE-3Y-f2F"/>
                         <viewControllerLayoutGuide type="bottom" id="APh-rL-NxZ"/>
@@ -3935,7 +3943,7 @@ Amritsar, Punjab 143001
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jGn-Od-dz8" customClass="PDHCustomCurveView" customModule="PDH" customModuleProvider="target">
-                                        <rect key="frame" x="16" y="154" width="288" height="260"/>
+                                        <rect key="frame" x="16" y="144" width="288" height="260"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fU9-ax-fXk">
                                                 <rect key="frame" x="0.0" y="10" width="288" height="50"/>
@@ -3954,7 +3962,7 @@ Amritsar, Punjab 143001
                                                             <constraint firstAttribute="height" constant="1" id="SI1-Ms-bKm"/>
                                                         </constraints>
                                                     </view>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Old Password" placeholder="Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oJL-Cj-WNY">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Old Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oJL-Cj-WNY">
                                                         <rect key="frame" x="36" y="20" width="236" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="qj3-md-Xs0"/>
@@ -3962,6 +3970,9 @@ Amritsar, Punjab 143001
                                                         <color key="textColor" red="0.34509803919999998" green="0.34509803919999998" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="16"/>
                                                         <textInputTraits key="textInputTraits"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="HM9-ls-E7w" id="WoP-ac-auK"/>
+                                                        </connections>
                                                     </textField>
                                                 </subviews>
                                                 <constraints>
@@ -3986,6 +3997,9 @@ Amritsar, Punjab 143001
                                                 <state key="normal" title="Submit">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="submitBtnClicked:" destination="HM9-ls-E7w" eventType="touchUpInside" id="eci-7Y-ycs"/>
+                                                </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jvR-gc-b1q">
                                                 <rect key="frame" x="0.0" y="68" width="288" height="50"/>
@@ -4004,7 +4018,7 @@ Amritsar, Punjab 143001
                                                             <constraint firstAttribute="height" constant="1" id="LtY-zt-q4K"/>
                                                         </constraints>
                                                     </view>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="New Password" placeholder="Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h07-d4-yfN">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="New Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h07-d4-yfN">
                                                         <rect key="frame" x="40" y="20" width="232" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="59T-w9-Eli"/>
@@ -4012,6 +4026,9 @@ Amritsar, Punjab 143001
                                                         <color key="textColor" red="0.34509803919999998" green="0.34509803919999998" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="16"/>
                                                         <textInputTraits key="textInputTraits"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="HM9-ls-E7w" id="Eww-Ps-Dkz"/>
+                                                        </connections>
                                                     </textField>
                                                 </subviews>
                                                 <constraints>
@@ -4043,7 +4060,7 @@ Amritsar, Punjab 143001
                                                             <constraint firstAttribute="height" constant="1" id="h6v-cd-bkz"/>
                                                         </constraints>
                                                     </view>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Confirm Password" placeholder="Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7KG-y2-No1">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7KG-y2-No1">
                                                         <rect key="frame" x="40" y="20" width="232" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="rJT-FK-ptM"/>
@@ -4051,6 +4068,9 @@ Amritsar, Punjab 143001
                                                         <color key="textColor" red="0.34509803919999998" green="0.34509803919999998" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="16"/>
                                                         <textInputTraits key="textInputTraits"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="HM9-ls-E7w" id="zYg-WO-Yvs"/>
+                                                        </connections>
                                                     </textField>
                                                 </subviews>
                                                 <constraints>
@@ -4095,7 +4115,7 @@ Amritsar, Punjab 143001
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="e1Q-sd-7Uw" secondAttribute="bottom" id="1G2-v7-aYt"/>
                             <constraint firstItem="e1Q-sd-7Uw" firstAttribute="top" secondItem="qhi-3j-iqM" secondAttribute="top" id="Tvd-GF-Th2"/>
-                            <constraint firstItem="jGn-Od-dz8" firstAttribute="centerY" secondItem="qhi-3j-iqM" secondAttribute="centerY" id="UtR-mH-D5t"/>
+                            <constraint firstItem="jGn-Od-dz8" firstAttribute="centerY" secondItem="qhi-3j-iqM" secondAttribute="centerY" constant="-10" id="UtR-mH-D5t"/>
                             <constraint firstAttribute="trailing" secondItem="e1Q-sd-7Uw" secondAttribute="trailing" id="t3W-La-8ib"/>
                             <constraint firstItem="e1Q-sd-7Uw" firstAttribute="leading" secondItem="qhi-3j-iqM" secondAttribute="leading" id="vSu-zv-EfM"/>
                         </constraints>
@@ -4138,6 +4158,6 @@ Amritsar, Punjab 143001
         <image name="menu_bar" width="20" height="15"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="iCq-fi-znT"/>
+        <segue reference="0vK-HD-yRN"/>
     </inferredMetricsTieBreakers>
 </document>

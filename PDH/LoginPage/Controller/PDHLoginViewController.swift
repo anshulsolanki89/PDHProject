@@ -33,6 +33,10 @@ class PDHLoginViewController: PDHViewController {
         initaializeDataManager()
         login(data)
     }
+
+    private func showForgotPasswordView() {
+        self.performSegueWithIdentifier("", sender: nil)
+    }
 }
 
 // MARK:- ViewAction Delegate
@@ -45,6 +49,8 @@ extension PDHLoginViewController: ViewActionDelegate {
             performLogin(data!)
         case .FormFieldError:
             showFormFieldError()
+        case .ForgotPassword:
+            showForgotPasswordView()
         default:
             fatalError("Error, casenot handled")
         }

@@ -15,6 +15,10 @@ class PDHMyProfileController: PDHViewController {
         super.viewDidLoad()
         (self.view as! PDHMyProfileView).delegate = self
     }
+
+    private func showChangePasswordScreen() {
+        self.performSegueWithIdentifier("PDHChangePasswordViewController", sender: nil)
+    }
 }
 
 extension PDHMyProfileController: ViewActionDelegate {
@@ -23,6 +27,8 @@ extension PDHMyProfileController: ViewActionDelegate {
         switch action {
         case .Back:
             navigationController?.popViewControllerAnimated(true)
+        case .ChangePassword:
+            showChangePasswordScreen()
         default:
             fatalError("\(self) Please handle switch case")
         }
