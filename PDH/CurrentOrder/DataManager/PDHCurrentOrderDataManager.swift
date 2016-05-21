@@ -2,8 +2,8 @@
 //  PDHCurrentOrderDataManager.swift
 //  PDH
 //
-//  Created by Anshul Solanki on 4/10/16.
-//  Copyright © 2016 Anshul Solanki. All rights reserved.
+//  Created by Ellan Jesse on 4/10/16.
+//  Copyright © 2016 Ellan Jesse. All rights reserved.
 //
 
 import Foundation
